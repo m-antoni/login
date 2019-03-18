@@ -10,7 +10,9 @@ class Admin extends Authenticatable
 {
     use Notifiable;
     
+    // custom guard authentication
     protected $guard = 'admin';
+
     /**
      * The attributes that are mass assignable.
      *

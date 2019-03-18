@@ -18,10 +18,17 @@
 // Auth::routes();
 // Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('admin/login', 'Auth\AdminLoginController@showLoginForm')->name('login')->middleware('guest:admin');
-Route::post('admin/login', 'Auth\AdminLoginController@login')->name('admin.login.submit')->middleware('guest:admin');
+Route::prefix('admin')->group(function(){
+		// Login Form
+		Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('login')->middleware('guest:admin');
+		Route::post('/login', 'Auth\AdminLoginController@login')->name('login.submit')->middleware('guest:admin');
+		
+		Route::get('/dashboard', 'AdminsController@index')->name('dashboard')->middleware('auth:admin');
+		Route::get('/register', 'RegistersController@index')->name('register')->middleware('auth:admin');
+		Route::get('/register/create', 'RegistersController@create')->name('register.create')->middleware('auth:admin');
+		Route::post('/register/create', 'RegistersController@created')->name('register.created')->middleware('auth:admin');
 
-Route::get('admin/admin', 'AdminsController@index')->name('admin.dashboard')->middleware('auth:admin');
-Route::get('admin/logout', 'Auth\AdminLoginController@adminLogout')->name('admin.logout');
 
 
+		Route::get('/logout', 'Auth\AdminLoginController@adminLogout')->name('logout');
+});

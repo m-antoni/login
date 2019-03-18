@@ -19,15 +19,15 @@ class AdminLoginController extends Controller
     {
 
         // Validation form data
-        $data = request()->validate([
+        $data = $request->validate([
             'username' => 'required',
-            'password' => 'required|min:3'
+            'password' => 'required|min:6'
         ]);
 
         // Attempt to log in using qrcode
         if(Auth::guard('admin')->attempt(['username' => $request->username, 'password' => $request->password])){
 
-            return redirect()->intended(route('admin.dashboard'));
+            return redirect()->intended(route('dashboard'));
 
             // this is for vue-components only
             //return ['redirect' => route('admin.dashboard')];
@@ -43,7 +43,6 @@ class AdminLoginController extends Controller
         //                     ->header('Content-Type', 'text/plan');
         // return $response;
     }
-
 
     public function adminLogout()
     {
