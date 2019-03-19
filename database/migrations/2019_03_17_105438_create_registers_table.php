@@ -15,12 +15,18 @@ class CreateRegistersTable extends Migration
     {
         Schema::create('registers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('fullname');
+            $table->string('first');
+            $table->string('last');
+            $table->string('middle')->nullable();
+            $table->string('gender');
+            $table->string('birthday');
             $table->string('contact');
-            $table->string('address');
             $table->string('email');
-            $table->string('department');
+            $table->string('address');
+            $table->bigInteger('department');
+            $table->string('date_hired');
             $table->string('user_type');
+            $table->string('id_number');
             $table->string('password');
             $table->timestamps();
         });

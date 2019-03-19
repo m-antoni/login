@@ -24,11 +24,13 @@ Route::prefix('admin')->group(function(){
 		Route::post('/login', 'Auth\AdminLoginController@login')->name('login.submit')->middleware('guest:admin');
 		
 		Route::get('/dashboard', 'AdminsController@index')->name('dashboard')->middleware('auth:admin');
-		Route::get('/register', 'RegistersController@index')->name('register')->middleware('auth:admin');
+		Route::get('/register', 'RegistersController@index')->name('register.index')->middleware('auth:admin');
 		Route::get('/register/create', 'RegistersController@create')->name('register.create')->middleware('auth:admin');
-		Route::post('/register/create', 'RegistersController@created')->name('register.created')->middleware('auth:admin');
-
-
+		Route::post('/register/create/store', 'RegistersController@store')->name('register.store')->middleware('auth:admin');
+		Route::get('/register/{register}', 'RegistersController@show')->name('register.show')->middleware('auth:admin');
+		Route::get('/register/{register}/edit', 'RegistersController@edit')->name('register.edit')->middleware('auth:admin');
+		Route::patch('/register/{register}', 'RegistersController@update')->name('register.update')->middleware('auth:admin');
+		Route::delete('/register/{register}', 'RegistersController@destroy')->name('register.delete')->middleware('auth:admin');
 
 		Route::get('/logout', 'Auth\AdminLoginController@adminLogout')->name('logout');
 });

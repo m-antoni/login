@@ -9,8 +9,11 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-import fontAwesome from '@fortawesome/fontawesome-free';
+import FontAwesome from '@fortawesome/fontawesome-free';
 import '@fortawesome/fontawesome-free/css/all.css';
+
+import FlipClock from 'flipclock';
+import 'flipclock/dist/flipclock.css';
 
 
 /**

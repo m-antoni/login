@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.7.2",
+        "flipclock": "^0.10.0",
         "jspdf": "^1.5.3",
         "jspdf-autotable": "^3.0.13",
         "vee-validate": "^2.1.7",

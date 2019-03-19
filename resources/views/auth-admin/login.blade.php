@@ -2,7 +2,12 @@
 
 @section('content')
 
-<div class="container mt-5 pt-5">
+<div class="container mt-3">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="clock"></div>
+        </div>
+    </div>
     <div class="row justify-content-center">
         <div class="col-md-5">
             <div class="card">
@@ -39,19 +44,7 @@
                                 @endif
                             </div>
                         </div>
-
-                       {{--  <div class="form-group row">
-                            <div class="col-md-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div> --}}
-
+                        
                         <div class="form-group row mb-0 pt-4">
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-lg btn-info btn-block">
