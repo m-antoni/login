@@ -10,7 +10,7 @@ class RegistersController extends Controller
 {
     public function index()
     {
-    	$registers = Register::all();
+    	$registers = Register::orderBy('created_at', 'DESC')->get();
 
         return view('register.index', compact('registers'));
     }
@@ -18,6 +18,7 @@ class RegistersController extends Controller
     public function create()
     {
         $department = $this->department();
+
         return view('register.create', compact('department'));
     }
 
@@ -54,6 +55,7 @@ class RegistersController extends Controller
 
     private function validateRequest()
     {
+        // Validate the form data
         return request()->validate([
             'first' => 'required',
             'last' => 'required',

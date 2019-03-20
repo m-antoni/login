@@ -11,10 +11,10 @@
     </li>
  </ol>
 
- <table class="table table-sm table-hover table-striped table-responsive-sm">
+ <table class="table table-hover table-striped table-responsive-sm">
 				<tr class="bg-dark text-info">
-	 				<th>fullname</th>
-	 				<th>gender</th>
+	 				<th>name</th>
+	 				<th>id no</th>
 	 				<th>contact</th>
 	 				<th>department</th>
 	 				<th>user type</th>
@@ -23,7 +23,7 @@
 	 		@foreach($registers as $register)
 	 			<tr>
 	 					<td><a href="{{route('register.show', $register->id)}}">{{$register->last . ', ' . $register->first}}</a></td>
-	 					<td>{{$register->gender}}</td>
+	 					<td>{{$register->id_number}}</td>
 	 					<td>{{$register->contact}}</td>
 	 					<td>{{$register->department}}</td>
 	 					<td>{{$register->user_type}}</td>

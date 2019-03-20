@@ -18,13 +18,13 @@
 			<div class="card-header">
 				<div class="row">
 						<div class="ml-1">
-								<a class="btn btn-sm btn-primary" href="{{route('register.edit', $register->id)}}"><i class="fa fa-edit"></i> edit</a>
+								<a class="btn btn-default" href="{{route('register.edit', $register->id)}}"><i class="fa fa-edit"></i> edit</a>
 						</div>
 						<div class="ml-auto mr-md-1">
 							<form action="{{route('register.delete', $register->id)}}" method="POST">
 									@method('DELETE')
 									@csrf
-									<button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-times"></i> delete</button>
+									<button type="submit" class="btn btn-default text-danger"><i class="fa fa-times"></i> delete</button>
 							</form>
 						</div>
 				</div>
@@ -44,7 +44,6 @@
 									<p><strong class="text-secondary">Date Hired: </strong>{{$register->date_hired}}</p>
 							</div>
 							<div class="col-md-4">
-									
 									<p><strong class="text-secondary">User Type: </strong>{{$register->user_type}}</p>
 									<p><strong class="text-secondary">ID Number: </strong>{{$register->id_number}}</p>
 									<p><strong class="text-secondary">User Password: </strong>{{$register->password}}</p>

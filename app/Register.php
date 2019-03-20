@@ -10,7 +10,7 @@ class Register extends Model
 
     public function getDepartmentAttribute($attribute)
     {
-    		return $this->departmentOption()[$attribute];
+    	return $this->departmentOption()[$attribute];
     }
 
     public function departmentOption()

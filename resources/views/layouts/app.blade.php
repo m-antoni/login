@@ -19,8 +19,8 @@
     <link href="{{ asset('css/flipclock.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sb-admin.min.css') }}" rel="stylesheet">
 </head>
-<body class="{{Request::is('admin/login') ? 'bg-dark' : ''}}">
-
+<body class="{{Request::is('admin/login') ? 'bg-secondary' : ''}}">
+{{-- <body> --}}
 <div id="app" >
     @auth('admin')
         <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
@@ -126,7 +126,7 @@
     <script src="{{ asset('js/flipclock.min.js') }}"></script>
     <script src="{{ asset('js/sb-admin.min.js') }}"></script>
 
-  {{--   <script type="text/javascript">
+    <script type="text/javascript">
       var clock;
       
       $(document).ready(function() {
@@ -134,6 +134,6 @@
           clockFace: 'TwelveHourClock'
         });
       });
-    </script> --}}
+    </script>
 </body>
 </html>
