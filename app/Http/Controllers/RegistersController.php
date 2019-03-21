@@ -18,8 +18,9 @@ class RegistersController extends Controller
     public function create()
     {
         $department = $this->department();
+        $register = new Register();
 
-        return view('register.create', compact('department'));
+        return view('register.create', compact('department', 'register'));
     }
 
     public function store()
@@ -36,7 +37,9 @@ class RegistersController extends Controller
 
     public function edit(Register $register)
     {
-        return view('register.edit', compact('register')); 
+        $department = $this->department();
+
+        return view('register.edit', compact('register', 'department')); 
     }
 
     public function update(Register $register)
@@ -76,15 +79,15 @@ class RegistersController extends Controller
     public function department()
     {
       return [
-             '0' => 'President\'s Office',
-             '1' => 'Finance',
-             '2' => 'Accounting',
-             '3' => 'Purchasing',
-             '4' => 'IT Dept',
-             '5' => 'Design & Engineering',
-             '6' => 'Human Resource',
-             '7' => 'Maintenance',
-             '8' => 'Security',
+         '0' => 'President\'s Office',
+         '1' => 'Finance',
+         '2' => 'Accounting',
+         '3' => 'Purchasing',
+         '4' => 'IT Dept',
+         '5' => 'Design & Engineering',
+         '6' => 'Human Resource',
+         '7' => 'Maintenance',
+         '8' => 'Security',
         ];
     }
 }
