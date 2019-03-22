@@ -12,7 +12,7 @@
  </ol>
 
  <table class="table table-hover table-striped table-responsive-sm">
-				<tr class="bg-dark text-info">
+				<tr class="text-white bg-secondary">
 	 				<th>name</th>
 	 				<th>id no</th>
 	 				<th>contact</th>

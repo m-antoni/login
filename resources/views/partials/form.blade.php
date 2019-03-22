@@ -41,37 +41,37 @@
 </div>
 
 <div class="form-group row">
-		<div class="col-md-3">	
-	     <label>Birthday:</label>
-	        <input type="date" name="birthday" class="form-control{{ $errors->has('birthday') ? ' is-invalid' : '' }}" value="{{ old('birthday') ?? $register->birthday }}">
-	        @if ($errors->has('birthday'))
-	            <span class="text-danger" role="alert">
-	                {{ $errors->first('birthday') }}
-	            </span>
-	        @endif
-		</div>
-
-		<div class="col-md-3">	
-	     <label>Contact:</label>
-	        <input type="text" name="contact" class="form-control{{ $errors->has('contact') ? ' is-invalid' : '' }}" value="{{ old('contact') ?? $register->contact}}">
-	        @if ($errors->has('contact'))
-	            <span class="text-danger" role="alert">
-	                {{ $errors->first('contact') }}
-	            </span>
-	        @endif
-		</div>
-
-		<div class="col-md-3">	
-	    	<label>Email address:</label>
-        <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') ?? $register->email}}">
-        @if ($errors->has('email'))
+	<div class="col-md-3">	
+     <label>Birthday:</label>
+        <input type="date" name="birthday" class="form-control{{ $errors->has('birthday') ? ' is-invalid' : '' }}" value="{{ old('birthday') ?? $register->birthday }}">
+        @if ($errors->has('birthday'))
             <span class="text-danger" role="alert">
-                {{ $errors->first('email') }}
+                {{ $errors->first('birthday') }}
             </span>
         @endif
-		</div>	
+	</div>
 
-		<div class="col-md-3">    
+	<div class="col-md-3">	
+     <label>Contact:</label>
+        <input type="text" name="contact" class="form-control{{ $errors->has('contact') ? ' is-invalid' : '' }}" value="{{ old('contact') ?? $register->contact}}">
+        @if ($errors->has('contact'))
+            <span class="text-danger" role="alert">
+                {{ $errors->first('contact') }}
+            </span>
+        @endif
+	</div>
+
+	<div class="col-md-3">	
+    	<label>Email address:</label>
+    <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') ?? $register->email}}">
+    @if ($errors->has('email'))
+        <span class="text-danger" role="alert">
+            {{ $errors->first('email') }}
+        </span>
+    @endif
+	</div>	
+
+	<div class="col-md-3">    
         <label>User Type:</label>
         <select name="user_type" class="form-control{{ $errors->has('user_type') ? ' is-invalid' : '' }}">
         	<option value="" selected disabled>Choose here...</option>
@@ -87,7 +87,7 @@
 </div>
 
 <div class="form-group row">
-		<div class="col-md-4">
+	<div class="col-md-4">
       <label>Address:</label>
       <textarea name="address" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}">{{ old('address') ?? $register->address}}</textarea>
 	        @if ($errors->has('address'))
@@ -114,19 +114,18 @@
     </div>
 
   	<div class="col-md-4">	
-	     <label>Date Hired:</label>
-	        <input type="date" name="date_hired" class="form-control{{ $errors->has('date_hired') ? ' is-invalid' : '' }}" value="{{ old('date_hired') ?? $register->date_hired }}">
-	        @if ($errors->has('date_hired'))
-	            <span class="text-danger" role="alert">
-	                {{ $errors->first('date_hired') }}
-	            </span>
-	        @endif
-		</div>
+        <label>Date Hired:</label>
+        <input type="date" name="date_hired" class="form-control{{ $errors->has('date_hired') ? ' is-invalid' : '' }}" value="{{ old('date_hired') ?? $register->date_hired }}">
+        @if ($errors->has('date_hired'))
+            <span class="text-danger" role="alert">
+                {{ $errors->first('date_hired') }}
+            </span>
+        @endif
+	</div>
 </div>
 
 <div class="form-group row">
-
-		<div class="col-md-4">
+	<div class="col-md-4">
         <label>Set ID Number:</label>
         <input type="text" name="id_number" class="form-control{{ $errors->has('id_number') ? ' is-invalid' : '' }}" name="id_number" value="{{ old('id_number') ?? $register->id_number}}">
         @if ($errors->has('id_number'))
@@ -138,14 +137,14 @@
 
    	<div class="col-md-4">
         <label>Set Password:</label>
-        <input type="text" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="{{ old('password') ?? $register->password}}">
-    {{--     <input id="password-field" type="password" class="form-control" name="password" value="secret">
-        <span toggle="#password-field" class="fa fa-lg fa-eye field-icon toggle-password"></span> --}}
-        @if ($errors->has('password'))
+        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="{{ Request::is('admin/register/create') ? old('password') : $register->getPassword() }}">
+        @if ($errors->has('password')) 
             <span class="text-danger" role="alert">
                 {{ $errors->first('password') }}
             </span>
-        @endif
+        @endif 
+        <br/>
+        <input type="checkbox" onclick="myFunction()">Show Password
   	</div>
 </div>
 

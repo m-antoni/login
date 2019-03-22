@@ -127,6 +127,17 @@
     <script src="{{ asset('js/sb-admin.min.js') }}"></script>
 
     <script type="text/javascript">
+      // password visibility script
+      function myFunction() {
+        var x = document.getElementById("password");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+
+      // Flip Clock script
       var clock;
       
       $(document).ready(function() {

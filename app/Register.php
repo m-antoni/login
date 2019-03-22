@@ -2,13 +2,26 @@
 
 namespace App;
 
+use Illuminate\Support\Facades\Crypt;
 use Illuminate\Database\Eloquent\Model;
 
 class Register extends Model
 {
   	protected	$guarded = [];
 
-    // This will set a default value in department select value
+    // encrypt password
+    public function setPasswordAttribute($value)
+    {
+      $this->attributes['password'] = Crypt::encryptString($value);
+    }
+
+    // decrypt password
+    public function getPassword()
+    {
+      return Crypt::decryptString($this->attributes['password']);
+    }
+
+    // default value in department option
     protected $attributes = [
         'department' => 0
     ];
@@ -29,8 +42,7 @@ class Register extends Model
            '4' => 'IT Dept',
            '5' => 'Design & Engineering',
            '6' => 'Human Resource',
-           '7' => 'Maintenance',
-           '8' => 'Security'
+           '7' => 'Security'
       	];
     }
 }
