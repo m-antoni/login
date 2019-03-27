@@ -11,14 +11,17 @@
     </li>
  </ol>
 
+	{{--  alert messages --}}
+	@include('partials.message')
+
  <table class="table table-hover table-striped table-responsive-sm">
-				<tr class="text-white bg-secondary">
-	 				<th>name</th>
-	 				<th>id no</th>
-	 				<th>contact</th>
-	 				<th>department</th>
-	 				<th>user type</th>
-				</tr>
+		<tr class="text-white bg-secondary">
+				<th>name</th>
+				<th>id no</th>
+				<th>contact</th>
+				<th>department</th>
+				<th>user type</th>
+		</tr>
  		@if(count($registers) > 0)
 	 		@foreach($registers as $register)
 	 			<tr>
@@ -33,5 +36,7 @@
 	 		<h2>There is no data</h2>
 	 	@endif
  </table>
+{{--  pagintation --}}
+ {{$registers->links()}}
 
 @endsection

@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Database\Eloquent\Model;
 
+
 class Register extends Model
 {
   	protected	$guarded = [];
@@ -42,7 +43,15 @@ class Register extends Model
            '4' => 'IT Dept',
            '5' => 'Design & Engineering',
            '6' => 'Human Resource',
-           '7' => 'Security'
+           '7' => 'Maintenance',
+           '8' => 'Security'
       	];
     }
+
+    // protected $dates = [
+    //   'birthday',
+    //   'date_hired',
+    //   'created_at',
+    //   'updated_at'
+    // ];
 }

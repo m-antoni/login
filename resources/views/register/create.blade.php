@@ -11,7 +11,7 @@
   </li>
 </ol>
 
-<div class="card mt-2 mb-5">
+<div class="card mt-2">
 	<div class="card-body">
 			<form method="POST" action="{{ route('register.store') }}">
 				@csrf

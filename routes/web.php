@@ -33,4 +33,7 @@ Route::prefix('admin')->group(function(){
 		Route::get('/register/{register}/edit', 'RegistersController@edit')->name('register.edit')->middleware('auth:admin');
 		Route::patch('/register/{register}', 'RegistersController@update')->name('register.update')->middleware('auth:admin');
 		Route::delete('/register/{register}', 'RegistersController@destroy')->name('register.delete')->middleware('auth:admin');
+
+		// Upload Photo
+		Route::get('/register/{register}/photo', 'UploadPhotoController@index')->name('upload')->middleware('auth:admin');
 });

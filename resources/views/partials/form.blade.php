@@ -105,7 +105,7 @@
                 </option>
         	@endforeach
 		</select>
-
+        
         @if ($errors->has('department'))
             <span class="text-danger" role="alert">
                 {{ $errors->first('department') }}
@@ -136,15 +136,17 @@
   	</div>
 
    	<div class="col-md-4">
-        <label>Set Password:</label>
-        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="{{ Request::is('admin/register/create') ? old('password') : $register->getPassword() }}">
-        @if ($errors->has('password')) 
-            <span class="text-danger" role="alert">
-                {{ $errors->first('password') }}
-            </span>
-        @endif 
-        <br/>
-        <input type="checkbox" onclick="myFunction()">Show Password
+    <label>Set Password:</label>
+    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="{{ Request::is('admin/register/create') ? old('password') : $register->getPassword() }}">
+    @if ($errors->has('password')) 
+        <span class="text-danger" role="alert">
+            {{ $errors->first('password') }}
+        </span>
+    @endif 
+    <br/>
+    <input id="showPassword" type="checkbox" onclick="myFunction()"> 
+    <i class="fa fw fa-eye"></i>
+    <label for="showPassword">Show password</label>
   	</div>
 </div>
 

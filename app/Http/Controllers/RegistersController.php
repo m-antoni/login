@@ -5,12 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Register;
+use Carbon\Carbon;
 
 class RegistersController extends Controller
 {
     public function index()
     {
-    	$registers = Register::orderBy('created_at', 'DESC')->get();
+    	$registers = Register::orderBy('created_at', 'DESC')->paginate(7);
 
         return view('register.index', compact('registers'));
     }
@@ -26,6 +27,8 @@ class RegistersController extends Controller
     public function store()
     {   
         Register::create($this->validateRequest());
+
+        session()->flash('message', 'New user has been successfully added');
 
         return redirect()->route('register.index');
     }
@@ -46,12 +49,16 @@ class RegistersController extends Controller
     {
         $register->update($this->validateRequest());
 
+        session()->flash('message', 'User has been updated successfully');
+
         return redirect()->route('register.show', $register->id);
     }
 
     public function destroy(Register $register)
     {
         $register->delete();
+
+        session()->flash('message', 'User has been deleted successfully');
 
         return redirect()->route('register.index');
     } 
