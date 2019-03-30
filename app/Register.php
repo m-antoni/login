@@ -48,6 +48,7 @@ class Register extends Model
       	];
     }
 
+    // Using Carbon
     // protected $dates = [
     //   'birthday',
     //   'date_hired',

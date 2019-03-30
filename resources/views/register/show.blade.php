@@ -35,8 +35,16 @@
 			<div class="card-body">
 					<div class="row">
 							<div class="col-md-3">
-									<img src="{{asset('img/default.jpg')}}" class="img-thumbnail border-secondary mb-2">
-									<a class="btn btn-sm btn-info btn-block" href="{{route('upload', $register->id)}}"><i class="fa fw fa-edit"></i> EDIT PHOTO</a>
+									<img src="{{asset('/storage/photos/' . $register->photo)}}" class="img-thumbnail border-secondary mb-2">
+											@if($register->photo == 'default.jpg')
+													<a class="btn btn-sm btn-info btn-block" href="{{route('upload', $register->id)}}"><i class="fa fw fa-edit"></i> Edit Image</a>
+											@else
+												<form action="{{route('upload.delete', $register->id)}}" method="POST">
+														@method('PATCH')
+														@csrf
+														<button type="submit" class="btn btn-sm btn-danger btn-block"><i class="fa fw fa-image"></i> Delete Image</button>	
+												</form>
+											@endif
 							</div>
 							<div class="col-md-4">
 									<p><strong class="text-secondary">Name: </strong>{{$register->last . ', ' . $register->first . ' ' . $register->middle}}</p>

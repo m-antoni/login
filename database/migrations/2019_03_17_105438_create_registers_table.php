@@ -28,6 +28,7 @@ class CreateRegistersTable extends Migration
             $table->string('user_type');
             $table->string('id_number');
             $table->string('password');
+            $table->string('photo')->default($value = 'default.jpg');
             $table->timestamps();
         });
     }

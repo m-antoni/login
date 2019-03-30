@@ -13,16 +13,15 @@
 
 	{{--  alert messages --}}
 	@include('partials.message')
-
- <table class="table table-hover table-striped table-responsive-sm">
-		<tr class="text-white bg-secondary">
-				<th>name</th>
-				<th>id no</th>
-				<th>contact</th>
-				<th>department</th>
-				<th>user type</th>
-		</tr>
  		@if(count($registers) > 0)
+ 		 	<table class="table table-hover table-striped table-responsive-sm">
+				<tr class="text-white bg-secondary">
+						<th>name</th>
+						<th>id no</th>
+						<th>contact</th>
+						<th>department</th>
+						<th>user type</th>
+				</tr>
 	 		@foreach($registers as $register)
 	 			<tr>
 	 					<td><a href="{{route('register.show', $register->id)}}">{{$register->last . ', ' . $register->first}}</a></td>
@@ -33,7 +32,7 @@
 	 			</tr>
 	 		@endforeach
 	 	@else
-	 		<h2>There is no data</h2>
+	 		<h1 class="display-4">There is no data to show...</h1>
 	 	@endif
  </table>
 {{--  pagintation --}}

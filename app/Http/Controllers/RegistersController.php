@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Register;
-use Carbon\Carbon;
 
 class RegistersController extends Controller
 {
@@ -24,17 +23,55 @@ class RegistersController extends Controller
         return view('register.create', compact('department', 'register'));
     }
 
-    public function store()
+    public function store(Request $request)
     {   
-        Register::create($this->validateRequest());
+    
+        if($request->hasFile('photo')){
+            // Get filename with the extension
+            $filenamewithExtension = $request->photo->getClientOriginalName();
+            // Get filesize
+            $fileSize = $request->photo->getClientSize();
+            // Get just filename
+            $filename = pathinfo($filenamewithExtension, PATHINFO_FILENAME);
+            // Get just extension
+            $extension = $request->file('photo')->getClientOriginalExtension();
+            // Filename to store
+            $filenametoStore = $filename . '_' . time() . '.' . $extension;
+            // Upload Image
+            $path = $request->file('photo')->storeAs('public/photos', $filenametoStore); 
+
+        }else{
+            // set the default image file
+            $filenametoStore = 'default.jpg';
+        }
+
+        $this->validateRequest();
+
+        // Store in database
+        $register = Register::create([
+            'first' => $request->first,
+            'last' => $request->last,
+            'middle' => $request->middle,
+            'gender' => $request->gender,
+            'birthday' => $request->birthday,
+            'contact' => $request->contact,
+            'email' => $request->email,
+            'address' => $request->address,
+            'department' => $request->department,
+            'date_hired' => $request->date_hired,
+            'user_type' => $request->user_type,
+            'id_number' => $request->id_number,
+            'password' => $request->password,
+            'photo' => $filenametoStore,
+        ]);    
 
         session()->flash('message', 'New user has been successfully added');
-
+        
         return redirect()->route('register.index');
     }
 
     public function show(Register $register)
-    {
+    {   
         return view('register.show', compact('register'));
     }
 
@@ -46,7 +83,8 @@ class RegistersController extends Controller
     }
 
     public function update(Register $register)
-    {
+    {   
+        // Validation and Store in database
         $register->update($this->validateRequest());
 
         session()->flash('message', 'User has been updated successfully');
@@ -61,7 +99,7 @@ class RegistersController extends Controller
         session()->flash('message', 'User has been deleted successfully');
 
         return redirect()->route('register.index');
-    } 
+    }
 
     private function validateRequest()
     {
@@ -79,7 +117,8 @@ class RegistersController extends Controller
             'date_hired' => 'required|date',
             'user_type' => 'required',
             'id_number' => 'required',
-            'password' => 'required|min:6'
+            'password' => 'required|min:6',
+            'photo' => 'image|nullable|max:1999',
         ]);
     }
 

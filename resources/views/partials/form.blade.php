@@ -152,8 +152,16 @@
 
 <div class="form-group row mb-0">
     <div class="col-md-12">
+{{--         <input type="file" name="photo">            
+                <br> 
+                @if ($errors->has('photo'))
+            <span class="text-danger" role="alert">
+                {{ $errors->first('photo') }}
+            </span>
+        @endif
+        <br> --}}
         <button type="submit" class="btn btn-info">
-           {{Request::is('admin/register/create') ? 'Create New User' : 'Update User'}}
+           <i class="fa fw fa-user-circle"></i> {{Request::is('admin/register/create') ? 'Add New User' : 'Update User'}}
         </button>
     </div>
 </div>

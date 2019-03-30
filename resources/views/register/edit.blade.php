@@ -21,7 +21,6 @@
 				@csrf
 
 				@include('partials.form')
-		
 			</form>
 	</div>
 </div>
