@@ -45,13 +45,15 @@ class RegistersController extends Controller
             $filenametoStore = 'default.jpg';
         }
 
+        // Validate the database
         $this->validateRequest();
 
         // Store in database
         $register = Register::create([
             'first' => $request->first,
             'last' => $request->last,
-            'middle' => $request->middle,
+            'middle' => strtoupper($request->middle),
+            'age' => $request->age,
             'gender' => $request->gender,
             'birthday' => $request->birthday,
             'contact' => $request->contact,
@@ -67,7 +69,7 @@ class RegistersController extends Controller
 
         session()->flash('message', 'New user has been successfully added');
         
-        return redirect()->route('register.index');
+        return redirect()->route('register.show', $register->id);
     }
 
     public function show(Register $register)
@@ -103,11 +105,12 @@ class RegistersController extends Controller
 
     private function validateRequest()
     {
-        // Validate the form data
+        // Validate the data
         return request()->validate([
             'first' => 'required',
             'last' => 'required',
             'middle' => 'nullable',
+            'age' => 'required|numeric',
             'gender' => 'required',
             'birthday' => 'required|date',
             'contact' => 'required|numeric',

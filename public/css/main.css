@@ -6,3 +6,11 @@ footer{
 	margin-top: 20px;
 	height: 3rem !important;
 }
+
+.modal-header{
+	border-radius: 0px 0px 0px 0px !important;
+}
+
+/*.img-thumbnail{
+	border-radius: 8rem !important;
+}*/

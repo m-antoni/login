@@ -19,11 +19,12 @@ class CreateRegistersTable extends Migration
             $table->string('last');
             $table->string('middle')->nullable();
             $table->string('gender');
+            $table->string('age');
             $table->string('birthday');
             $table->string('contact');
             $table->string('email');
             $table->string('address');
-            $table->bigInteger('department');
+            $table->integer('department');
             $table->string('date_hired');
             $table->string('user_type');
             $table->string('id_number');

@@ -1,7 +1,8 @@
 <div class="form-group row">
    	<div class="col-md-3">
         <label>First:</label>
-        <input type="text" name="first" class="form-control{{ $errors->has('first') ? ' is-invalid' : '' }}"  value="{{ old('first') ?? $register->first}}">
+        <input type="text" name="first" class="form-control{{ $errors->has('first') ? ' is-invalid' : '' }}" 
+        value="{{ old('first') ?? $register->first}}">
         @if ($errors->has('first'))
             <span class="text-danger" role="alert">
                 {{ $errors->first('first') }}
@@ -11,7 +12,8 @@
 
     <div class="col-md-3">
         <label>Last:</label>
-        <input type="text" name="last" class="form-control{{ $errors->has('last') ? ' is-invalid' : '' }}" value="{{ old('last') ?? $register->last}}">
+        <input type="text" name="last" class="form-control{{ $errors->has('last') ? ' is-invalid' : '' }}" 
+        value="{{ old('last') ?? $register->last}}">
         @if ($errors->has('last'))
             <span class="text-danger" role="alert">
                 {{ $errors->first('last') }}
@@ -19,13 +21,13 @@
         @endif
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-2">
         <label>Middle:</label>
         <input type="text" name="middle" class="form-control" value="{{ old('middle') ?? $register->middle}}">
     </div>
 
-    <div class="col-md-3">	
-	    	<label>Gender:</label>
+    <div class="col-md-2">	
+	    <label>Gender:</label>
         <select name="gender" class="form-control{{ $errors->has('gender') ? ' is-invalid' : '' }}">
         <option value="" selected disabled>Choose here...</option>
 		  <option value="Male" {{old('gender', $register->gender) == 'Male' ? 'selected' : '' }}>Male</option>
@@ -38,12 +40,23 @@
             </span>
         @endif
     </div>	
+    <div class="col-md-2">  
+        <label>Age:</label>
+       <input type="text" name="age" class="form-control{{ $errors->has('age') ? ' is-invalid' : '' }}" 
+       value="{{ old('age') ?? $register->age }}">
+        @if ($errors->has('age'))
+            <span class="text-danger" role="alert">
+                {{ $errors->first('age') }}
+            </span>
+        @endif
+    </div>  
 </div>
 
 <div class="form-group row">
 	<div class="col-md-3">	
      <label>Birthday:</label>
-        <input type="date" name="birthday" class="form-control{{ $errors->has('birthday') ? ' is-invalid' : '' }}" value="{{ old('birthday') ?? $register->birthday }}">
+        <input type="date" name="birthday" class="form-control{{ $errors->has('birthday') ? ' is-invalid' : '' }}" 
+        value="{{ old('birthday') ?? $register->birthday }}">
         @if ($errors->has('birthday'))
             <span class="text-danger" role="alert">
                 {{ $errors->first('birthday') }}
@@ -53,7 +66,8 @@
 
 	<div class="col-md-3">	
      <label>Contact:</label>
-        <input type="text" name="contact" class="form-control{{ $errors->has('contact') ? ' is-invalid' : '' }}" value="{{ old('contact') ?? $register->contact}}">
+        <input type="text" name="contact" class="form-control{{ $errors->has('contact') ? ' is-invalid' : '' }}" 
+        value="{{ old('contact') ?? $register->contact}}">
         @if ($errors->has('contact'))
             <span class="text-danger" role="alert">
                 {{ $errors->first('contact') }}
@@ -63,7 +77,8 @@
 
 	<div class="col-md-3">	
     	<label>Email address:</label>
-    <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') ?? $register->email}}">
+    <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" 
+    name="email" value="{{ old('email') ?? $register->email}}">
     @if ($errors->has('email'))
         <span class="text-danger" role="alert">
             {{ $errors->first('email') }}
@@ -75,8 +90,8 @@
         <label>User Type:</label>
         <select name="user_type" class="form-control{{ $errors->has('user_type') ? ' is-invalid' : '' }}">
         	<option value="" selected disabled>Choose here...</option>
-					<option value="Employee" {{old('user_type' , $register->user_type) == 'Employee' ? 'selected' : ''}}>Employee</option>
-		      <option value="Intern" {{old('user_type' , $register->user_type) == 'Intern' ? 'selected' : ''}}>Intern</option>
+			<option value="Employee" {{old('user_type' , $register->user_type) == 'Employee' ? 'selected' : ''}}>Employee</option>
+		    <option value="Intern" {{old('user_type' , $register->user_type) == 'Intern' ? 'selected' : ''}}>Intern</option>
 		    </select>
         @if ($errors->has('user_type'))
             <span class="text-danger" role="alert">
@@ -90,11 +105,11 @@
 	<div class="col-md-4">
       <label>Address:</label>
       <textarea name="address" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}">{{ old('address') ?? $register->address}}</textarea>
-	        @if ($errors->has('address'))
-	            <span class="text-danger" role="alert">
-	                {{ $errors->first('address') }}
-	            </span>
-	        @endif
+        @if ($errors->has('address'))
+            <span class="text-danger" role="alert">
+                {{ $errors->first('address') }}
+            </span>
+        @endif
     </div>
 
     <div class="col-md-4">
@@ -127,7 +142,8 @@
 <div class="form-group row">
 	<div class="col-md-4">
         <label>Set ID Number:</label>
-        <input type="text" name="id_number" class="form-control{{ $errors->has('id_number') ? ' is-invalid' : '' }}" name="id_number" value="{{ old('id_number') ?? $register->id_number}}">
+        <input type="text" name="id_number" class="form-control{{ $errors->has('id_number') ? ' is-invalid' : '' }}" 
+        name="id_number" value="{{ old('id_number') ?? $register->id_number}}">
         @if ($errors->has('id_number'))
             <span class="text-danger" role="alert">
                 {{ $errors->first('id_number') }}
@@ -137,7 +153,7 @@
 
    	<div class="col-md-4">
     <label>Set Password:</label>
-    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="{{ Request::is('admin/register/create') ? old('password') : $register->getPassword() }}">
+    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="{{Request::is('admin/register/create') ? old('password') : $register->getPassword() }}">
     @if ($errors->has('password')) 
         <span class="text-danger" role="alert">
             {{ $errors->first('password') }}
@@ -152,14 +168,6 @@
 
 <div class="form-group row mb-0">
     <div class="col-md-12">
-{{--         <input type="file" name="photo">            
-                <br> 
-                @if ($errors->has('photo'))
-            <span class="text-danger" role="alert">
-                {{ $errors->first('photo') }}
-            </span>
-        @endif
-        <br> --}}
         <button type="submit" class="btn btn-info">
            <i class="fa fw fa-user-circle"></i> {{Request::is('admin/register/create') ? 'Add New User' : 'Update User'}}
         </button>

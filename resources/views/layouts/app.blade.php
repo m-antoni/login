@@ -19,7 +19,7 @@
     <link href="{{ asset('css/flipclock.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sb-admin.min.css') }}" rel="stylesheet">
 </head>
-<body class="{{Request::is('admin/login') ? 'bg-secondary' : ''}}">
+<body class="{{Request::is('admin/login','user/login') ? 'bg-danger' : ''}}">
 {{-- <body> --}}
 <div id="app" >
     @auth('admin')
@@ -70,15 +70,15 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="admin/login">
+            <a class="nav-link" href="{{route('logs.index')}}">
               <i class="fa fa-user-clock"></i>
-              <span>Login</span></a>
+              <span>Logs</span></a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" href="admin/login">
               <i class="fa fa-clock"></i>
-              <span>Logs</span></a>
+              <span>User</span></a>
           </li>
 
           <li class="nav-item">
@@ -122,30 +122,14 @@
   </div><!-- wrapper -->
 </div><!-- app -->
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/flipclock.min.js') }}"></script>
-    <script src="{{ asset('js/sb-admin.min.js') }}"></script>
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/flipclock.min.js') }}"></script>
+<script src="{{ asset('js/sb-admin.min.js') }}"></script>
+<script src="{{ asset('js/script.js') }}"></script>
 
-    <script type="text/javascript">
-      // password visibility script
-      function myFunction() {
-        var x = document.getElementById("password");
-        if (x.type === "password") {
-          x.type = "text";
-        } else {
-          x.type = "password";
-        }
-      }
+{{-- Added scripts --}}
+@yield('script')
 
-      // Flip Clock script
-      var clock;
-      
-      $(document).ready(function() {
-        clock = $('.clock').FlipClock({
-          clockFace: 'TwelveHourClock'
-        });
-      });
-    </script>
 </body>
 </html>
