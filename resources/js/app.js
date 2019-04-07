@@ -1,4 +1,3 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -9,12 +8,16 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-import FontAwesome from '@fortawesome/fontawesome-free';
+//import FontAwesome from '@fortawesome/fontawesome-free';
 import '@fortawesome/fontawesome-free/css/all.css';
 
 import FlipClock from 'flipclock';
 import 'flipclock/dist/flipclock.css';
 
+import VueQRCodeReader from 'vue-qrcode-reader';
+import 'vue-qrcode-reader/dist/vue-qrcode-reader.css';
+
+Vue.use(VueQRCodeReader);
 
 /**
  * The following block of code may be used to automatically register your
@@ -27,7 +30,8 @@ import 'flipclock/dist/flipclock.css';
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+//Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+//Vue.component('admin-login', require('./components/AdminLogin/AdminLogin.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

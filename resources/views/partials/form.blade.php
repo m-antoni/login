@@ -21,12 +21,12 @@
         @endif
     </div>
 
-    <div class="col-md-2">
+    <div class="col-md-3">
         <label>Middle:</label>
         <input type="text" name="middle" class="form-control" value="{{ old('middle') ?? $register->middle}}">
     </div>
 
-    <div class="col-md-2">	
+    <div class="col-md-3">	
 	    <label>Gender:</label>
         <select name="gender" class="form-control{{ $errors->has('gender') ? ' is-invalid' : '' }}">
         <option value="" selected disabled>Choose here...</option>
@@ -40,7 +40,11 @@
             </span>
         @endif
     </div>	
-    <div class="col-md-2">  
+    
+</div>
+
+<div class="form-group row">
+    <div class="col-md-3">  
         <label>Age:</label>
        <input type="text" name="age" class="form-control{{ $errors->has('age') ? ' is-invalid' : '' }}" 
        value="{{ old('age') ?? $register->age }}">
@@ -50,9 +54,7 @@
             </span>
         @endif
     </div>  
-</div>
 
-<div class="form-group row">
 	<div class="col-md-3">	
      <label>Birthday:</label>
         <input type="date" name="birthday" class="form-control{{ $errors->has('birthday') ? ' is-invalid' : '' }}" 
@@ -85,20 +87,6 @@
         </span>
     @endif
 	</div>	
-
-	<div class="col-md-3">    
-        <label>User Type:</label>
-        <select name="user_type" class="form-control{{ $errors->has('user_type') ? ' is-invalid' : '' }}">
-        	<option value="" selected disabled>Choose here...</option>
-			<option value="Employee" {{old('user_type' , $register->user_type) == 'Employee' ? 'selected' : ''}}>Employee</option>
-		    <option value="Intern" {{old('user_type' , $register->user_type) == 'Intern' ? 'selected' : ''}}>Intern</option>
-		    </select>
-        @if ($errors->has('user_type'))
-            <span class="text-danger" role="alert">
-                {{ $errors->first('user_type') }}
-            </span>
-        @endif
-  	</div>
 </div>
 
 <div class="form-group row">
@@ -142,7 +130,7 @@
 <div class="form-group row">
 	<div class="col-md-4">
         <label>Set ID Number:</label>
-        <input type="text" name="id_number" class="form-control{{ $errors->has('id_number') ? ' is-invalid' : '' }}" 
+        <input id="password" type="text" name="id_number" class="form-control{{ $errors->has('id_number') ? ' is-invalid' : '' }}" 
         name="id_number" value="{{ old('id_number') ?? $register->id_number}}">
         @if ($errors->has('id_number'))
             <span class="text-danger" role="alert">
@@ -151,19 +139,33 @@
         @endif
   	</div>
 
-   	<div class="col-md-4">
-    <label>Set Password:</label>
-    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="{{Request::is('admin/register/create') ? old('password') : $register->getPassword() }}">
-    @if ($errors->has('password')) 
-        <span class="text-danger" role="alert">
-            {{ $errors->first('password') }}
-        </span>
-    @endif 
-    <br/>
-    <input id="showPassword" type="checkbox" onclick="myFunction()"> 
-    <i class="fa fw fa-eye"></i>
-    <label for="showPassword">Show password</label>
-  	</div>
+    <div class="col-md-3">    
+        <label>User Type:</label>
+        <select name="user_type" class="form-control{{ $errors->has('user_type') ? ' is-invalid' : '' }}">
+            <option value="" selected disabled>Choose here...</option>
+            <option value="Employee" {{old('user_type' , $register->user_type) == 'Employee' ? 'selected' : ''}}>Employee</option>
+            <option value="Intern" {{old('user_type' , $register->user_type) == 'Intern' ? 'selected' : ''}}>Intern</option>
+            </select>
+        @if ($errors->has('user_type'))
+            <span class="text-danger" role="alert">
+                {{ $errors->first('user_type') }}
+            </span>
+        @endif
+    </div>
+
+   	{{-- <div class="col-md-4">
+        <label>Set Password:</label>
+        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="{{Request::is('admin/register/create') ? old('password') : $register->getPassword() }}">
+        @if ($errors->has('password')) 
+            <span class="text-danger" role="alert">
+                {{ $errors->first('password') }}
+            </span>
+        @endif 
+        <br/>
+        <input id="showPassword" type="checkbox" onclick="myFunction()"> 
+        <i class="fa fw fa-eye"></i>
+        <label for="showPassword">Show password</label>
+  	</div> --}}
 </div>
 
 <div class="form-group row mb-0">

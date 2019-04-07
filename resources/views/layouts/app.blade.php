@@ -12,17 +12,16 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-
+    
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/flipclock.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sb-admin.min.css') }}" rel="stylesheet">
 </head>
-<body class="{{Request::is('admin/login','user/login') ? 'bg-danger' : ''}}">
+<body class="{{Request::is('admin/login') ? 'bg-danger' : ''}} || {{Request::is('/', 'login') ? 'bg-dark' : ''}}">
 {{-- <body> --}}
 <div id="app" >
-    @auth('admin')
+    @auth()
         <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
             <a class="navbar-brand mr-1 text-info" href="admin/dashboard">{{ config('app.name')}}</a>
                 <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
@@ -99,26 +98,28 @@
                 <span>Setting</span></a>
           </li>
         </ul>
-@endauth
+        
+    @endauth
 
-    <div id="content-wrapper">
-        <div class="container-fluid">
-         <main>
+      <div id="content-wrapper">
+          <div class="container-fluid">
+              <main>
 
-            @yield('content')
+                  @yield('content')
 
-        </main>
-        @auth('admin')
-            <footer class="sticky-footer">
-                <div class="container my-auto">
-                  <div class="copyright text-center my-auto">
-                    <span>Copyright © Your Website 2019</span>
-                  </div>
-                </div>
-            </footer>
-        @endauth
-        </div><!-- container-fluid -->
-    </div> <!-- content-wrapper -->  
+              </main>
+
+              @auth()
+                  <footer class="sticky-footer">
+                      <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                          <span>Copyright © Your Website 2019</span>
+                        </div>
+                      </div>
+                  </footer>
+              @endauth
+          </div><!-- container-fluid -->
+      </div> <!-- content-wrapper -->  
   </div><!-- wrapper -->
 </div><!-- app -->
 

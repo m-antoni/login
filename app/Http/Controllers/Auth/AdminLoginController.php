@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Admin;
-use Validator;
 
 class AdminLoginController extends Controller
 {
@@ -20,12 +19,11 @@ class AdminLoginController extends Controller
 
         // Validation form data
         $data = $request->validate([
-            'username' => 'required',
-            'password' => 'required|min:6'
+            'password' => 'required',
         ]);
 
         // Attempt to log in using qrcode
-        if(Auth::guard('admin')->attempt(['username' => $request->username, 'password' => $request->password])){
+        if(Auth::guard('admin')->attempt(['username' => 'admin', 'password' => $request->password])){
 
             return redirect()->intended(route('dashboard'));
 

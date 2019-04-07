@@ -5,11 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class AdminsController extends Controller
+class UserQRCodeLoginController extends Controller
 {
-	public function index()
-	{
-		return view('dashboard.index');
-	}
-
+  public function login()
+  {
+  		return dd(request());
+  }
 }

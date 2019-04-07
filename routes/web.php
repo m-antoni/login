@@ -10,9 +10,6 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 // Auth::routes();
 // Route::get('/home', 'HomeController@index')->name('home');
@@ -26,6 +23,12 @@
 	2019-03-30: File Upload Implementation
  
 */
+
+Route::prefix('/')->group(function(){
+		Route::view('', 'welcome')->name('home');
+		Route::view('login', 'user.index')->name('user.login');
+});
+
 Route::prefix('admin')->group(function(){
 		// Login Form
 		Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('login')->middleware('guest:admin');
@@ -33,8 +36,7 @@ Route::prefix('admin')->group(function(){
 		Route::get('/logout', 'Auth\AdminLoginController@adminLogout')->name('logout');
 
 		Route::get('/dashboard', 'AdminsController@index')->name('dashboard')->middleware('auth:admin');
-
-		// Users
+		// Register Users
 		Route::get('/register', 'RegistersController@index')->name('register.index')->middleware('auth:admin');
 		Route::get('/register/create', 'RegistersController@create')->name('register.create')->middleware('auth:admin');
 		Route::post('/register/create/store', 'RegistersController@store')->name('register.store')->middleware('auth:admin');
@@ -42,16 +44,12 @@ Route::prefix('admin')->group(function(){
 		Route::get('/register/{register}/edit', 'RegistersController@edit')->name('register.edit')->middleware('auth:admin');
 		Route::patch('/register/{register}', 'RegistersController@update')->name('register.update')->middleware('auth:admin');
 		Route::delete('/register/{register}', 'RegistersController@destroy')->name('register.delete')->middleware('auth:admin');
-		
+
 		// Upload Photo
 		Route::get('/register/{register}/photo', 'UploadPhotoController@index')->name('upload')->middleware('auth:admin');
 		Route::patch('/register/{register}/update', 'UploadPhotoController@update')->name('upload.update')->middleware('auth:admin');
 		Route::patch('/register/{register}/photo', 'UploadPhotoController@destroy')->name('upload.delete')->middleware('auth:admin');
-
-		// Logs
+		
+		// LogsController
 		Route::get('/logs', 'LogsController@index')->name('logs.index')->middleware('auth:admin');
 });
-
-
-Route::get('user/login', 'UserLoginController@index')->name('user.login');
-Route::post('user/login', 'UserLoginController@store')->name('user.store');

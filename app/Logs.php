@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Logs extends Model
 {
-    public function register()
-    {
-      return $this->belongsTo('App\Register');
-    }
+	  public function register()
+	  {
+	    return $this->belongsTo('App\Register');
+	  }
 }

@@ -55,13 +55,11 @@
 													                {{ $errors->first('photo') }}
 													            </span>
 									        				@endif
-																	<button type="submit" class="btn btn-info btn-sm btn-block">
+																	<button type="submit" class="btn btn-info btn-sm">
 																		<i class="fa fw fa-image"></i> Upload Image
 																	</button>
 															</div>
 													</div>
-												
-										    
 												</form>
 											@else
 												<form action="{{route('upload.delete', $register->id)}}" method="POST">
@@ -85,13 +83,10 @@
 									<p><strong class="text-secondary">Department: </strong>{{$register->department}}</p>
 									<p><strong class="text-secondary">User Type: </strong>{{$register->user_type}}</p>
 									<p><strong class="text-secondary">ID Number: </strong>{{$register->id_number}}</p>
-									<p><strong class="text-secondary">Password is Encrypted: </strong><i class="fa fw fa-key"></i></p>
 							</div>
 					</div>
 			</div>
 	</div>
-
-
 
 	<!-- Modal for delete user-->
 	<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

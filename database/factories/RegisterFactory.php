@@ -16,8 +16,7 @@ $factory->define(App\Register::class, function (Faker $faker) {
         'department' => $faker->numberBetween($min = 0, $max = 6),
         'date_hired' => $faker->date($format = 'Y-m-d', $max = 'now'),
         'user_type' => $faker->randomElement(array('Employee', 'Intern')),
-        'id_number' => $faker->numerify('2019-######'),
-        'password' => '',
+        'id_number' => $faker->numerify('2019####'),
         'photo' => 'default.jpg',
     ];
 });

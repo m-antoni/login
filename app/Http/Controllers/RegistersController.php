@@ -63,7 +63,6 @@ class RegistersController extends Controller
             'date_hired' => $request->date_hired,
             'user_type' => $request->user_type,
             'id_number' => $request->id_number,
-            'password' => $request->password,
             'photo' => $filenametoStore,
         ]);    
 
@@ -119,8 +118,7 @@ class RegistersController extends Controller
             'department' => 'required',
             'date_hired' => 'required|date',
             'user_type' => 'required',
-            'id_number' => 'required',
-            'password' => 'required|min:6',
+            'id_number' => 'required|numeric',
             'photo' => 'image|nullable|max:1999',
         ]);
     }
