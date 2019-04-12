@@ -5,7 +5,6 @@
 - Employee's Login using QR Code
 - Admin can add new users
 - Image Upload
-- Send Weekly Report
 
 
 
