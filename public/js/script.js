@@ -7,9 +7,3 @@
       x.type = "password";
     }
   }
-
-  $(document).ready(function() {
- 
-
-        
-  });

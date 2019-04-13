@@ -15,6 +15,7 @@ class CreateRegistersTable extends Migration
     {
         Schema::create('registers', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('qrcode');
             $table->string('first');
             $table->string('last');
             $table->string('middle')->nullable();

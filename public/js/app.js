@@ -86,198 +86,15 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/@fortawesome/fontawesome-free/css/all.css":
-/*!****************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/css/all.css ***!
-  \****************************************************************/
+/***/ "./node_modules/@babel/runtime/regenerator/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime-module.js");
 
-var content = __webpack_require__(/*! !../../../css-loader??ref--6-1!../../../postcss-loader/src??ref--6-2!./all.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/@fortawesome/fontawesome-free/css/all.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?d9d17590c975aad1be0ddab673f9c769";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg?80533988ff5fecd5be26557d08ce8237";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?c39278f7abfc798a241551194f55e29f";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff":
-/*!********************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff?b90365bccdabd68c6c03902b4b141f09";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2 ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?4b115e1153a9ea339d6a0bb284cc8ed3";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot":
-/*!********************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?414ff5daad323a1c47c5177d4bd29674";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg":
-/*!********************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg?e7e957c87c454bccaa3bf9fdaa6874f8";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf":
-/*!********************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf?f6c6f6c8cb7784254ad00056f6fbd74e";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff?5dd3976cb5d61e2e561f2a46b916f377";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2 ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2?65779ebcc35604a25c2ba77309c5b8af";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot":
-/*!******************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?b5596f4d339f99e3d69bc41be78db962";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg":
-/*!******************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg?82905d8d1c06969df11c8c378e9bdd4c";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf":
-/*!******************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf?b70cea0339374107969eb53e5b1f603f";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff?61969d433bf265b9717a6c357a1e04e4";
-
-/***/ }),
-
-/***/ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2":
-/*!********************************************************************************!*\
-  !*** ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2?462806316fea535a6a57651bc2b000b0";
 
 /***/ }),
 
@@ -1946,6 +1763,335 @@ module.exports = {
   trim: trim
 };
 
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/AdminLogin.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Login/AdminLogin.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      result: '',
+      error: '',
+      message: {}
+    };
+  },
+  methods: {
+    onDecode: function onDecode(result) {
+      var _this = this;
+
+      var password = result;
+      axios.post('/admin/login', {
+        password: password
+      }).then(function (response) {
+        window.location = response.data.redirect;
+      }).catch(function (error) {
+        if (error.response.status == 422) {
+          _this.message = error.response.data.message;
+
+          _this.$toast.error('<strong>' + _this.message + '</strong>', 'Error', {
+            icon: 'ico-warning',
+            position: 'topCenter',
+            transitionOut: 'fadeOutUp'
+          });
+        } else {
+          _this.$toast.error('Server Error Please Try Again', 'Error', {
+            position: 'topCenter',
+            transitionOut: 'fadeOutUp'
+          });
+        }
+      });
+    },
+    onInit: function () {
+      var _onInit = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(promise) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.prev = 0;
+                _context.next = 3;
+                return promise;
+
+              case 3:
+                _context.next = 8;
+                break;
+
+              case 5:
+                _context.prev = 5;
+                _context.t0 = _context["catch"](0);
+
+                if (_context.t0.name === 'NotAllowedError') {
+                  this.error = "ERROR: you need to grant camera access permisson";
+                } else if (_context.t0.name === 'NotFoundError') {
+                  this.error = "ERROR: no camera on this device";
+                } else if (_context.t0.name === 'NotSupportedError') {
+                  this.error = "ERROR: secure context required (HTTPS, localhost)";
+                } else if (_context.t0.name === 'NotReadableError') {
+                  this.error = "ERROR: is the camera already in use?";
+                } else if (_context.t0.name === 'OverconstrainedError') {
+                  this.error = "ERROR: installed cameras are not suitable";
+                } else if (_context.t0.name === 'StreamApiNotSupportedError') {
+                  this.error = "ERROR: Stream API is not supported in this browser";
+                }
+
+              case 8:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this, [[0, 5]]);
+      }));
+
+      function onInit(_x) {
+        return _onInit.apply(this, arguments);
+      }
+
+      return onInit;
+    }()
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/UserLogin.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Login/UserLogin.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      result: '',
+      error: ''
+    };
+  },
+  methods: {
+    onDecode: function onDecode(result) {
+      var _this = this;
+
+      this.result = result;
+      axios.post('/login', {
+        qrcode: this.result
+      }).then(function (response) {
+        // response message
+        if (response.data.message) {
+          _this.$toast.show('<strong>' + response.data.message + '</strong>', 'Success', {
+            icon: 'fa fa-user-circle',
+            iconColor: 'rgb(0, 255, 184)',
+            theme: 'dark',
+            progressBarColor: 'rgb(0, 255, 184)',
+            position: 'topCenter',
+            transitionIn: 'bounceInLeft',
+            transitionOut: 'fadeOutUp'
+          });
+        } else {
+          _this.$toast.error('<strong>' + 'Unauthorized Log In attempt!' + '</strong>', 'Error', {
+            icon: 'fa fa-warning',
+            position: 'topCenter',
+            transitionIn: 'bounceInDown',
+            transitionOut: 'fadeOutUp'
+          });
+        }
+      }).catch(function (error) {
+        // console.log(error)
+        _this.$toast.error('<strong>' + 'QR Code is not registered' + '</strong>', 'Error', {
+          icon: 'fa fa-warning',
+          position: 'topCenter',
+          progressBarColor: '#333',
+          transitionIn: 'bounceInDown',
+          transitionOut: 'fadeOutUp'
+        });
+      });
+    },
+    onInit: function () {
+      var _onInit = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(promise) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.prev = 0;
+                _context.next = 3;
+                return promise;
+
+              case 3:
+                _context.next = 8;
+                break;
+
+              case 5:
+                _context.prev = 5;
+                _context.t0 = _context["catch"](0);
+
+                if (_context.t0.name === 'NotAllowedError') {
+                  this.error = "ERROR: you need to grant camera access permisson";
+                } else if (_context.t0.name === 'NotFoundError') {
+                  this.error = "ERROR: no camera on this device";
+                } else if (_context.t0.name === 'NotSupportedError') {
+                  this.error = "ERROR: secure context required (HTTPS, localhost)";
+                } else if (_context.t0.name === 'NotReadableError') {
+                  this.error = "ERROR: is the camera already in use?";
+                } else if (_context.t0.name === 'OverconstrainedError') {
+                  this.error = "ERROR: installed cameras are not suitable";
+                } else if (_context.t0.name === 'StreamApiNotSupportedError') {
+                  this.error = "ERROR: Stream API is not supported in this browser";
+                }
+
+              case 8:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this, [[0, 5]]);
+      }));
+
+      function onInit(_x) {
+        return _onInit.apply(this, arguments);
+      }
+
+      return onInit;
+    }()
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Register/DownloadFile.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Register/DownloadFile.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      title: 'Download QR Code'
+    };
+  },
+  methods: {
+    download: function download(e) {
+      e.preventDefault();
+    }
+  }
+});
 
 /***/ }),
 
@@ -6394,26 +6540,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/@fortawesome/fontawesome-free/css/all.css":
-/*!************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/@fortawesome/fontawesome-free/css/all.css ***!
-  \************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var escape = __webpack_require__(/*! ../../../css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
-exports = module.exports = __webpack_require__(/*! ../../../css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".fa,\n.fas,\n.far,\n.fal,\n.fab {\n  -moz-osx-font-smoothing: grayscale;\n  -webkit-font-smoothing: antialiased;\n  display: inline-block;\n  font-style: normal;\n  font-variant: normal;\n  text-rendering: auto;\n  line-height: 1; }\n\n.fa-lg {\n  font-size: 1.33333em;\n  line-height: 0.75em;\n  vertical-align: -.0667em; }\n\n.fa-xs {\n  font-size: .75em; }\n\n.fa-sm {\n  font-size: .875em; }\n\n.fa-1x {\n  font-size: 1em; }\n\n.fa-2x {\n  font-size: 2em; }\n\n.fa-3x {\n  font-size: 3em; }\n\n.fa-4x {\n  font-size: 4em; }\n\n.fa-5x {\n  font-size: 5em; }\n\n.fa-6x {\n  font-size: 6em; }\n\n.fa-7x {\n  font-size: 7em; }\n\n.fa-8x {\n  font-size: 8em; }\n\n.fa-9x {\n  font-size: 9em; }\n\n.fa-10x {\n  font-size: 10em; }\n\n.fa-fw {\n  text-align: center;\n  width: 1.25em; }\n\n.fa-ul {\n  list-style-type: none;\n  margin-left: 2.5em;\n  padding-left: 0; }\n  .fa-ul > li {\n    position: relative; }\n\n.fa-li {\n  left: -2em;\n  position: absolute;\n  text-align: center;\n  width: 2em;\n  line-height: inherit; }\n\n.fa-border {\n  border: solid 0.08em #eee;\n  border-radius: .1em;\n  padding: .2em .25em .15em; }\n\n.fa-pull-left {\n  float: left; }\n\n.fa-pull-right {\n  float: right; }\n\n.fa.fa-pull-left,\n.fas.fa-pull-left,\n.far.fa-pull-left,\n.fal.fa-pull-left,\n.fab.fa-pull-left {\n  margin-right: .3em; }\n\n.fa.fa-pull-right,\n.fas.fa-pull-right,\n.far.fa-pull-right,\n.fal.fa-pull-right,\n.fab.fa-pull-right {\n  margin-left: .3em; }\n\n.fa-spin {\n  -webkit-animation: fa-spin 2s infinite linear;\n          animation: fa-spin 2s infinite linear; }\n\n.fa-pulse {\n  -webkit-animation: fa-spin 1s infinite steps(8);\n          animation: fa-spin 1s infinite steps(8); }\n\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg); } }\n\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg); } }\n\n.fa-rotate-90 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";\n  -webkit-transform: rotate(90deg);\n          transform: rotate(90deg); }\n\n.fa-rotate-180 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";\n  -webkit-transform: rotate(180deg);\n          transform: rotate(180deg); }\n\n.fa-rotate-270 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";\n  -webkit-transform: rotate(270deg);\n          transform: rotate(270deg); }\n\n.fa-flip-horizontal {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";\n  -webkit-transform: scale(-1, 1);\n          transform: scale(-1, 1); }\n\n.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(1, -1);\n          transform: scale(1, -1); }\n\n.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(-1, -1);\n          transform: scale(-1, -1); }\n\n:root .fa-rotate-90,\n:root .fa-rotate-180,\n:root .fa-rotate-270,\n:root .fa-flip-horizontal,\n:root .fa-flip-vertical,\n:root .fa-flip-both {\n  -webkit-filter: none;\n          filter: none; }\n\n.fa-stack {\n  display: inline-block;\n  height: 2em;\n  line-height: 2em;\n  position: relative;\n  vertical-align: middle;\n  width: 2.5em; }\n\n.fa-stack-1x,\n.fa-stack-2x {\n  left: 0;\n  position: absolute;\n  text-align: center;\n  width: 100%; }\n\n.fa-stack-1x {\n  line-height: inherit; }\n\n.fa-stack-2x {\n  font-size: 2em; }\n\n.fa-inverse {\n  color: #fff; }\n\n/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen\nreaders do not read off random characters that represent icons */\n.fa-500px:before {\n  content: \"\\F26E\"; }\n\n.fa-accessible-icon:before {\n  content: \"\\F368\"; }\n\n.fa-accusoft:before {\n  content: \"\\F369\"; }\n\n.fa-acquisitions-incorporated:before {\n  content: \"\\F6AF\"; }\n\n.fa-ad:before {\n  content: \"\\F641\"; }\n\n.fa-address-book:before {\n  content: \"\\F2B9\"; }\n\n.fa-address-card:before {\n  content: \"\\F2BB\"; }\n\n.fa-adjust:before {\n  content: \"\\F042\"; }\n\n.fa-adn:before {\n  content: \"\\F170\"; }\n\n.fa-adobe:before {\n  content: \"\\F778\"; }\n\n.fa-adversal:before {\n  content: \"\\F36A\"; }\n\n.fa-affiliatetheme:before {\n  content: \"\\F36B\"; }\n\n.fa-air-freshener:before {\n  content: \"\\F5D0\"; }\n\n.fa-algolia:before {\n  content: \"\\F36C\"; }\n\n.fa-align-center:before {\n  content: \"\\F037\"; }\n\n.fa-align-justify:before {\n  content: \"\\F039\"; }\n\n.fa-align-left:before {\n  content: \"\\F036\"; }\n\n.fa-align-right:before {\n  content: \"\\F038\"; }\n\n.fa-alipay:before {\n  content: \"\\F642\"; }\n\n.fa-allergies:before {\n  content: \"\\F461\"; }\n\n.fa-amazon:before {\n  content: \"\\F270\"; }\n\n.fa-amazon-pay:before {\n  content: \"\\F42C\"; }\n\n.fa-ambulance:before {\n  content: \"\\F0F9\"; }\n\n.fa-american-sign-language-interpreting:before {\n  content: \"\\F2A3\"; }\n\n.fa-amilia:before {\n  content: \"\\F36D\"; }\n\n.fa-anchor:before {\n  content: \"\\F13D\"; }\n\n.fa-android:before {\n  content: \"\\F17B\"; }\n\n.fa-angellist:before {\n  content: \"\\F209\"; }\n\n.fa-angle-double-down:before {\n  content: \"\\F103\"; }\n\n.fa-angle-double-left:before {\n  content: \"\\F100\"; }\n\n.fa-angle-double-right:before {\n  content: \"\\F101\"; }\n\n.fa-angle-double-up:before {\n  content: \"\\F102\"; }\n\n.fa-angle-down:before {\n  content: \"\\F107\"; }\n\n.fa-angle-left:before {\n  content: \"\\F104\"; }\n\n.fa-angle-right:before {\n  content: \"\\F105\"; }\n\n.fa-angle-up:before {\n  content: \"\\F106\"; }\n\n.fa-angry:before {\n  content: \"\\F556\"; }\n\n.fa-angrycreative:before {\n  content: \"\\F36E\"; }\n\n.fa-angular:before {\n  content: \"\\F420\"; }\n\n.fa-ankh:before {\n  content: \"\\F644\"; }\n\n.fa-app-store:before {\n  content: \"\\F36F\"; }\n\n.fa-app-store-ios:before {\n  content: \"\\F370\"; }\n\n.fa-apper:before {\n  content: \"\\F371\"; }\n\n.fa-apple:before {\n  content: \"\\F179\"; }\n\n.fa-apple-alt:before {\n  content: \"\\F5D1\"; }\n\n.fa-apple-pay:before {\n  content: \"\\F415\"; }\n\n.fa-archive:before {\n  content: \"\\F187\"; }\n\n.fa-archway:before {\n  content: \"\\F557\"; }\n\n.fa-arrow-alt-circle-down:before {\n  content: \"\\F358\"; }\n\n.fa-arrow-alt-circle-left:before {\n  content: \"\\F359\"; }\n\n.fa-arrow-alt-circle-right:before {\n  content: \"\\F35A\"; }\n\n.fa-arrow-alt-circle-up:before {\n  content: \"\\F35B\"; }\n\n.fa-arrow-circle-down:before {\n  content: \"\\F0AB\"; }\n\n.fa-arrow-circle-left:before {\n  content: \"\\F0A8\"; }\n\n.fa-arrow-circle-right:before {\n  content: \"\\F0A9\"; }\n\n.fa-arrow-circle-up:before {\n  content: \"\\F0AA\"; }\n\n.fa-arrow-down:before {\n  content: \"\\F063\"; }\n\n.fa-arrow-left:before {\n  content: \"\\F060\"; }\n\n.fa-arrow-right:before {\n  content: \"\\F061\"; }\n\n.fa-arrow-up:before {\n  content: \"\\F062\"; }\n\n.fa-arrows-alt:before {\n  content: \"\\F0B2\"; }\n\n.fa-arrows-alt-h:before {\n  content: \"\\F337\"; }\n\n.fa-arrows-alt-v:before {\n  content: \"\\F338\"; }\n\n.fa-artstation:before {\n  content: \"\\F77A\"; }\n\n.fa-assistive-listening-systems:before {\n  content: \"\\F2A2\"; }\n\n.fa-asterisk:before {\n  content: \"\\F069\"; }\n\n.fa-asymmetrik:before {\n  content: \"\\F372\"; }\n\n.fa-at:before {\n  content: \"\\F1FA\"; }\n\n.fa-atlas:before {\n  content: \"\\F558\"; }\n\n.fa-atlassian:before {\n  content: \"\\F77B\"; }\n\n.fa-atom:before {\n  content: \"\\F5D2\"; }\n\n.fa-audible:before {\n  content: \"\\F373\"; }\n\n.fa-audio-description:before {\n  content: \"\\F29E\"; }\n\n.fa-autoprefixer:before {\n  content: \"\\F41C\"; }\n\n.fa-avianex:before {\n  content: \"\\F374\"; }\n\n.fa-aviato:before {\n  content: \"\\F421\"; }\n\n.fa-award:before {\n  content: \"\\F559\"; }\n\n.fa-aws:before {\n  content: \"\\F375\"; }\n\n.fa-baby:before {\n  content: \"\\F77C\"; }\n\n.fa-baby-carriage:before {\n  content: \"\\F77D\"; }\n\n.fa-backspace:before {\n  content: \"\\F55A\"; }\n\n.fa-backward:before {\n  content: \"\\F04A\"; }\n\n.fa-bacon:before {\n  content: \"\\F7E5\"; }\n\n.fa-balance-scale:before {\n  content: \"\\F24E\"; }\n\n.fa-ban:before {\n  content: \"\\F05E\"; }\n\n.fa-band-aid:before {\n  content: \"\\F462\"; }\n\n.fa-bandcamp:before {\n  content: \"\\F2D5\"; }\n\n.fa-barcode:before {\n  content: \"\\F02A\"; }\n\n.fa-bars:before {\n  content: \"\\F0C9\"; }\n\n.fa-baseball-ball:before {\n  content: \"\\F433\"; }\n\n.fa-basketball-ball:before {\n  content: \"\\F434\"; }\n\n.fa-bath:before {\n  content: \"\\F2CD\"; }\n\n.fa-battery-empty:before {\n  content: \"\\F244\"; }\n\n.fa-battery-full:before {\n  content: \"\\F240\"; }\n\n.fa-battery-half:before {\n  content: \"\\F242\"; }\n\n.fa-battery-quarter:before {\n  content: \"\\F243\"; }\n\n.fa-battery-three-quarters:before {\n  content: \"\\F241\"; }\n\n.fa-bed:before {\n  content: \"\\F236\"; }\n\n.fa-beer:before {\n  content: \"\\F0FC\"; }\n\n.fa-behance:before {\n  content: \"\\F1B4\"; }\n\n.fa-behance-square:before {\n  content: \"\\F1B5\"; }\n\n.fa-bell:before {\n  content: \"\\F0F3\"; }\n\n.fa-bell-slash:before {\n  content: \"\\F1F6\"; }\n\n.fa-bezier-curve:before {\n  content: \"\\F55B\"; }\n\n.fa-bible:before {\n  content: \"\\F647\"; }\n\n.fa-bicycle:before {\n  content: \"\\F206\"; }\n\n.fa-bimobject:before {\n  content: \"\\F378\"; }\n\n.fa-binoculars:before {\n  content: \"\\F1E5\"; }\n\n.fa-biohazard:before {\n  content: \"\\F780\"; }\n\n.fa-birthday-cake:before {\n  content: \"\\F1FD\"; }\n\n.fa-bitbucket:before {\n  content: \"\\F171\"; }\n\n.fa-bitcoin:before {\n  content: \"\\F379\"; }\n\n.fa-bity:before {\n  content: \"\\F37A\"; }\n\n.fa-black-tie:before {\n  content: \"\\F27E\"; }\n\n.fa-blackberry:before {\n  content: \"\\F37B\"; }\n\n.fa-blender:before {\n  content: \"\\F517\"; }\n\n.fa-blender-phone:before {\n  content: \"\\F6B6\"; }\n\n.fa-blind:before {\n  content: \"\\F29D\"; }\n\n.fa-blog:before {\n  content: \"\\F781\"; }\n\n.fa-blogger:before {\n  content: \"\\F37C\"; }\n\n.fa-blogger-b:before {\n  content: \"\\F37D\"; }\n\n.fa-bluetooth:before {\n  content: \"\\F293\"; }\n\n.fa-bluetooth-b:before {\n  content: \"\\F294\"; }\n\n.fa-bold:before {\n  content: \"\\F032\"; }\n\n.fa-bolt:before {\n  content: \"\\F0E7\"; }\n\n.fa-bomb:before {\n  content: \"\\F1E2\"; }\n\n.fa-bone:before {\n  content: \"\\F5D7\"; }\n\n.fa-bong:before {\n  content: \"\\F55C\"; }\n\n.fa-book:before {\n  content: \"\\F02D\"; }\n\n.fa-book-dead:before {\n  content: \"\\F6B7\"; }\n\n.fa-book-medical:before {\n  content: \"\\F7E6\"; }\n\n.fa-book-open:before {\n  content: \"\\F518\"; }\n\n.fa-book-reader:before {\n  content: \"\\F5DA\"; }\n\n.fa-bookmark:before {\n  content: \"\\F02E\"; }\n\n.fa-bowling-ball:before {\n  content: \"\\F436\"; }\n\n.fa-box:before {\n  content: \"\\F466\"; }\n\n.fa-box-open:before {\n  content: \"\\F49E\"; }\n\n.fa-boxes:before {\n  content: \"\\F468\"; }\n\n.fa-braille:before {\n  content: \"\\F2A1\"; }\n\n.fa-brain:before {\n  content: \"\\F5DC\"; }\n\n.fa-bread-slice:before {\n  content: \"\\F7EC\"; }\n\n.fa-briefcase:before {\n  content: \"\\F0B1\"; }\n\n.fa-briefcase-medical:before {\n  content: \"\\F469\"; }\n\n.fa-broadcast-tower:before {\n  content: \"\\F519\"; }\n\n.fa-broom:before {\n  content: \"\\F51A\"; }\n\n.fa-brush:before {\n  content: \"\\F55D\"; }\n\n.fa-btc:before {\n  content: \"\\F15A\"; }\n\n.fa-bug:before {\n  content: \"\\F188\"; }\n\n.fa-building:before {\n  content: \"\\F1AD\"; }\n\n.fa-bullhorn:before {\n  content: \"\\F0A1\"; }\n\n.fa-bullseye:before {\n  content: \"\\F140\"; }\n\n.fa-burn:before {\n  content: \"\\F46A\"; }\n\n.fa-buromobelexperte:before {\n  content: \"\\F37F\"; }\n\n.fa-bus:before {\n  content: \"\\F207\"; }\n\n.fa-bus-alt:before {\n  content: \"\\F55E\"; }\n\n.fa-business-time:before {\n  content: \"\\F64A\"; }\n\n.fa-buysellads:before {\n  content: \"\\F20D\"; }\n\n.fa-calculator:before {\n  content: \"\\F1EC\"; }\n\n.fa-calendar:before {\n  content: \"\\F133\"; }\n\n.fa-calendar-alt:before {\n  content: \"\\F073\"; }\n\n.fa-calendar-check:before {\n  content: \"\\F274\"; }\n\n.fa-calendar-day:before {\n  content: \"\\F783\"; }\n\n.fa-calendar-minus:before {\n  content: \"\\F272\"; }\n\n.fa-calendar-plus:before {\n  content: \"\\F271\"; }\n\n.fa-calendar-times:before {\n  content: \"\\F273\"; }\n\n.fa-calendar-week:before {\n  content: \"\\F784\"; }\n\n.fa-camera:before {\n  content: \"\\F030\"; }\n\n.fa-camera-retro:before {\n  content: \"\\F083\"; }\n\n.fa-campground:before {\n  content: \"\\F6BB\"; }\n\n.fa-canadian-maple-leaf:before {\n  content: \"\\F785\"; }\n\n.fa-candy-cane:before {\n  content: \"\\F786\"; }\n\n.fa-cannabis:before {\n  content: \"\\F55F\"; }\n\n.fa-capsules:before {\n  content: \"\\F46B\"; }\n\n.fa-car:before {\n  content: \"\\F1B9\"; }\n\n.fa-car-alt:before {\n  content: \"\\F5DE\"; }\n\n.fa-car-battery:before {\n  content: \"\\F5DF\"; }\n\n.fa-car-crash:before {\n  content: \"\\F5E1\"; }\n\n.fa-car-side:before {\n  content: \"\\F5E4\"; }\n\n.fa-caret-down:before {\n  content: \"\\F0D7\"; }\n\n.fa-caret-left:before {\n  content: \"\\F0D9\"; }\n\n.fa-caret-right:before {\n  content: \"\\F0DA\"; }\n\n.fa-caret-square-down:before {\n  content: \"\\F150\"; }\n\n.fa-caret-square-left:before {\n  content: \"\\F191\"; }\n\n.fa-caret-square-right:before {\n  content: \"\\F152\"; }\n\n.fa-caret-square-up:before {\n  content: \"\\F151\"; }\n\n.fa-caret-up:before {\n  content: \"\\F0D8\"; }\n\n.fa-carrot:before {\n  content: \"\\F787\"; }\n\n.fa-cart-arrow-down:before {\n  content: \"\\F218\"; }\n\n.fa-cart-plus:before {\n  content: \"\\F217\"; }\n\n.fa-cash-register:before {\n  content: \"\\F788\"; }\n\n.fa-cat:before {\n  content: \"\\F6BE\"; }\n\n.fa-cc-amazon-pay:before {\n  content: \"\\F42D\"; }\n\n.fa-cc-amex:before {\n  content: \"\\F1F3\"; }\n\n.fa-cc-apple-pay:before {\n  content: \"\\F416\"; }\n\n.fa-cc-diners-club:before {\n  content: \"\\F24C\"; }\n\n.fa-cc-discover:before {\n  content: \"\\F1F2\"; }\n\n.fa-cc-jcb:before {\n  content: \"\\F24B\"; }\n\n.fa-cc-mastercard:before {\n  content: \"\\F1F1\"; }\n\n.fa-cc-paypal:before {\n  content: \"\\F1F4\"; }\n\n.fa-cc-stripe:before {\n  content: \"\\F1F5\"; }\n\n.fa-cc-visa:before {\n  content: \"\\F1F0\"; }\n\n.fa-centercode:before {\n  content: \"\\F380\"; }\n\n.fa-centos:before {\n  content: \"\\F789\"; }\n\n.fa-certificate:before {\n  content: \"\\F0A3\"; }\n\n.fa-chair:before {\n  content: \"\\F6C0\"; }\n\n.fa-chalkboard:before {\n  content: \"\\F51B\"; }\n\n.fa-chalkboard-teacher:before {\n  content: \"\\F51C\"; }\n\n.fa-charging-station:before {\n  content: \"\\F5E7\"; }\n\n.fa-chart-area:before {\n  content: \"\\F1FE\"; }\n\n.fa-chart-bar:before {\n  content: \"\\F080\"; }\n\n.fa-chart-line:before {\n  content: \"\\F201\"; }\n\n.fa-chart-pie:before {\n  content: \"\\F200\"; }\n\n.fa-check:before {\n  content: \"\\F00C\"; }\n\n.fa-check-circle:before {\n  content: \"\\F058\"; }\n\n.fa-check-double:before {\n  content: \"\\F560\"; }\n\n.fa-check-square:before {\n  content: \"\\F14A\"; }\n\n.fa-cheese:before {\n  content: \"\\F7EF\"; }\n\n.fa-chess:before {\n  content: \"\\F439\"; }\n\n.fa-chess-bishop:before {\n  content: \"\\F43A\"; }\n\n.fa-chess-board:before {\n  content: \"\\F43C\"; }\n\n.fa-chess-king:before {\n  content: \"\\F43F\"; }\n\n.fa-chess-knight:before {\n  content: \"\\F441\"; }\n\n.fa-chess-pawn:before {\n  content: \"\\F443\"; }\n\n.fa-chess-queen:before {\n  content: \"\\F445\"; }\n\n.fa-chess-rook:before {\n  content: \"\\F447\"; }\n\n.fa-chevron-circle-down:before {\n  content: \"\\F13A\"; }\n\n.fa-chevron-circle-left:before {\n  content: \"\\F137\"; }\n\n.fa-chevron-circle-right:before {\n  content: \"\\F138\"; }\n\n.fa-chevron-circle-up:before {\n  content: \"\\F139\"; }\n\n.fa-chevron-down:before {\n  content: \"\\F078\"; }\n\n.fa-chevron-left:before {\n  content: \"\\F053\"; }\n\n.fa-chevron-right:before {\n  content: \"\\F054\"; }\n\n.fa-chevron-up:before {\n  content: \"\\F077\"; }\n\n.fa-child:before {\n  content: \"\\F1AE\"; }\n\n.fa-chrome:before {\n  content: \"\\F268\"; }\n\n.fa-church:before {\n  content: \"\\F51D\"; }\n\n.fa-circle:before {\n  content: \"\\F111\"; }\n\n.fa-circle-notch:before {\n  content: \"\\F1CE\"; }\n\n.fa-city:before {\n  content: \"\\F64F\"; }\n\n.fa-clinic-medical:before {\n  content: \"\\F7F2\"; }\n\n.fa-clipboard:before {\n  content: \"\\F328\"; }\n\n.fa-clipboard-check:before {\n  content: \"\\F46C\"; }\n\n.fa-clipboard-list:before {\n  content: \"\\F46D\"; }\n\n.fa-clock:before {\n  content: \"\\F017\"; }\n\n.fa-clone:before {\n  content: \"\\F24D\"; }\n\n.fa-closed-captioning:before {\n  content: \"\\F20A\"; }\n\n.fa-cloud:before {\n  content: \"\\F0C2\"; }\n\n.fa-cloud-download-alt:before {\n  content: \"\\F381\"; }\n\n.fa-cloud-meatball:before {\n  content: \"\\F73B\"; }\n\n.fa-cloud-moon:before {\n  content: \"\\F6C3\"; }\n\n.fa-cloud-moon-rain:before {\n  content: \"\\F73C\"; }\n\n.fa-cloud-rain:before {\n  content: \"\\F73D\"; }\n\n.fa-cloud-showers-heavy:before {\n  content: \"\\F740\"; }\n\n.fa-cloud-sun:before {\n  content: \"\\F6C4\"; }\n\n.fa-cloud-sun-rain:before {\n  content: \"\\F743\"; }\n\n.fa-cloud-upload-alt:before {\n  content: \"\\F382\"; }\n\n.fa-cloudscale:before {\n  content: \"\\F383\"; }\n\n.fa-cloudsmith:before {\n  content: \"\\F384\"; }\n\n.fa-cloudversify:before {\n  content: \"\\F385\"; }\n\n.fa-cocktail:before {\n  content: \"\\F561\"; }\n\n.fa-code:before {\n  content: \"\\F121\"; }\n\n.fa-code-branch:before {\n  content: \"\\F126\"; }\n\n.fa-codepen:before {\n  content: \"\\F1CB\"; }\n\n.fa-codiepie:before {\n  content: \"\\F284\"; }\n\n.fa-coffee:before {\n  content: \"\\F0F4\"; }\n\n.fa-cog:before {\n  content: \"\\F013\"; }\n\n.fa-cogs:before {\n  content: \"\\F085\"; }\n\n.fa-coins:before {\n  content: \"\\F51E\"; }\n\n.fa-columns:before {\n  content: \"\\F0DB\"; }\n\n.fa-comment:before {\n  content: \"\\F075\"; }\n\n.fa-comment-alt:before {\n  content: \"\\F27A\"; }\n\n.fa-comment-dollar:before {\n  content: \"\\F651\"; }\n\n.fa-comment-dots:before {\n  content: \"\\F4AD\"; }\n\n.fa-comment-medical:before {\n  content: \"\\F7F5\"; }\n\n.fa-comment-slash:before {\n  content: \"\\F4B3\"; }\n\n.fa-comments:before {\n  content: \"\\F086\"; }\n\n.fa-comments-dollar:before {\n  content: \"\\F653\"; }\n\n.fa-compact-disc:before {\n  content: \"\\F51F\"; }\n\n.fa-compass:before {\n  content: \"\\F14E\"; }\n\n.fa-compress:before {\n  content: \"\\F066\"; }\n\n.fa-compress-arrows-alt:before {\n  content: \"\\F78C\"; }\n\n.fa-concierge-bell:before {\n  content: \"\\F562\"; }\n\n.fa-confluence:before {\n  content: \"\\F78D\"; }\n\n.fa-connectdevelop:before {\n  content: \"\\F20E\"; }\n\n.fa-contao:before {\n  content: \"\\F26D\"; }\n\n.fa-cookie:before {\n  content: \"\\F563\"; }\n\n.fa-cookie-bite:before {\n  content: \"\\F564\"; }\n\n.fa-copy:before {\n  content: \"\\F0C5\"; }\n\n.fa-copyright:before {\n  content: \"\\F1F9\"; }\n\n.fa-couch:before {\n  content: \"\\F4B8\"; }\n\n.fa-cpanel:before {\n  content: \"\\F388\"; }\n\n.fa-creative-commons:before {\n  content: \"\\F25E\"; }\n\n.fa-creative-commons-by:before {\n  content: \"\\F4E7\"; }\n\n.fa-creative-commons-nc:before {\n  content: \"\\F4E8\"; }\n\n.fa-creative-commons-nc-eu:before {\n  content: \"\\F4E9\"; }\n\n.fa-creative-commons-nc-jp:before {\n  content: \"\\F4EA\"; }\n\n.fa-creative-commons-nd:before {\n  content: \"\\F4EB\"; }\n\n.fa-creative-commons-pd:before {\n  content: \"\\F4EC\"; }\n\n.fa-creative-commons-pd-alt:before {\n  content: \"\\F4ED\"; }\n\n.fa-creative-commons-remix:before {\n  content: \"\\F4EE\"; }\n\n.fa-creative-commons-sa:before {\n  content: \"\\F4EF\"; }\n\n.fa-creative-commons-sampling:before {\n  content: \"\\F4F0\"; }\n\n.fa-creative-commons-sampling-plus:before {\n  content: \"\\F4F1\"; }\n\n.fa-creative-commons-share:before {\n  content: \"\\F4F2\"; }\n\n.fa-creative-commons-zero:before {\n  content: \"\\F4F3\"; }\n\n.fa-credit-card:before {\n  content: \"\\F09D\"; }\n\n.fa-critical-role:before {\n  content: \"\\F6C9\"; }\n\n.fa-crop:before {\n  content: \"\\F125\"; }\n\n.fa-crop-alt:before {\n  content: \"\\F565\"; }\n\n.fa-cross:before {\n  content: \"\\F654\"; }\n\n.fa-crosshairs:before {\n  content: \"\\F05B\"; }\n\n.fa-crow:before {\n  content: \"\\F520\"; }\n\n.fa-crown:before {\n  content: \"\\F521\"; }\n\n.fa-crutch:before {\n  content: \"\\F7F7\"; }\n\n.fa-css3:before {\n  content: \"\\F13C\"; }\n\n.fa-css3-alt:before {\n  content: \"\\F38B\"; }\n\n.fa-cube:before {\n  content: \"\\F1B2\"; }\n\n.fa-cubes:before {\n  content: \"\\F1B3\"; }\n\n.fa-cut:before {\n  content: \"\\F0C4\"; }\n\n.fa-cuttlefish:before {\n  content: \"\\F38C\"; }\n\n.fa-d-and-d:before {\n  content: \"\\F38D\"; }\n\n.fa-d-and-d-beyond:before {\n  content: \"\\F6CA\"; }\n\n.fa-dashcube:before {\n  content: \"\\F210\"; }\n\n.fa-database:before {\n  content: \"\\F1C0\"; }\n\n.fa-deaf:before {\n  content: \"\\F2A4\"; }\n\n.fa-delicious:before {\n  content: \"\\F1A5\"; }\n\n.fa-democrat:before {\n  content: \"\\F747\"; }\n\n.fa-deploydog:before {\n  content: \"\\F38E\"; }\n\n.fa-deskpro:before {\n  content: \"\\F38F\"; }\n\n.fa-desktop:before {\n  content: \"\\F108\"; }\n\n.fa-dev:before {\n  content: \"\\F6CC\"; }\n\n.fa-deviantart:before {\n  content: \"\\F1BD\"; }\n\n.fa-dharmachakra:before {\n  content: \"\\F655\"; }\n\n.fa-dhl:before {\n  content: \"\\F790\"; }\n\n.fa-diagnoses:before {\n  content: \"\\F470\"; }\n\n.fa-diaspora:before {\n  content: \"\\F791\"; }\n\n.fa-dice:before {\n  content: \"\\F522\"; }\n\n.fa-dice-d20:before {\n  content: \"\\F6CF\"; }\n\n.fa-dice-d6:before {\n  content: \"\\F6D1\"; }\n\n.fa-dice-five:before {\n  content: \"\\F523\"; }\n\n.fa-dice-four:before {\n  content: \"\\F524\"; }\n\n.fa-dice-one:before {\n  content: \"\\F525\"; }\n\n.fa-dice-six:before {\n  content: \"\\F526\"; }\n\n.fa-dice-three:before {\n  content: \"\\F527\"; }\n\n.fa-dice-two:before {\n  content: \"\\F528\"; }\n\n.fa-digg:before {\n  content: \"\\F1A6\"; }\n\n.fa-digital-ocean:before {\n  content: \"\\F391\"; }\n\n.fa-digital-tachograph:before {\n  content: \"\\F566\"; }\n\n.fa-directions:before {\n  content: \"\\F5EB\"; }\n\n.fa-discord:before {\n  content: \"\\F392\"; }\n\n.fa-discourse:before {\n  content: \"\\F393\"; }\n\n.fa-divide:before {\n  content: \"\\F529\"; }\n\n.fa-dizzy:before {\n  content: \"\\F567\"; }\n\n.fa-dna:before {\n  content: \"\\F471\"; }\n\n.fa-dochub:before {\n  content: \"\\F394\"; }\n\n.fa-docker:before {\n  content: \"\\F395\"; }\n\n.fa-dog:before {\n  content: \"\\F6D3\"; }\n\n.fa-dollar-sign:before {\n  content: \"\\F155\"; }\n\n.fa-dolly:before {\n  content: \"\\F472\"; }\n\n.fa-dolly-flatbed:before {\n  content: \"\\F474\"; }\n\n.fa-donate:before {\n  content: \"\\F4B9\"; }\n\n.fa-door-closed:before {\n  content: \"\\F52A\"; }\n\n.fa-door-open:before {\n  content: \"\\F52B\"; }\n\n.fa-dot-circle:before {\n  content: \"\\F192\"; }\n\n.fa-dove:before {\n  content: \"\\F4BA\"; }\n\n.fa-download:before {\n  content: \"\\F019\"; }\n\n.fa-draft2digital:before {\n  content: \"\\F396\"; }\n\n.fa-drafting-compass:before {\n  content: \"\\F568\"; }\n\n.fa-dragon:before {\n  content: \"\\F6D5\"; }\n\n.fa-draw-polygon:before {\n  content: \"\\F5EE\"; }\n\n.fa-dribbble:before {\n  content: \"\\F17D\"; }\n\n.fa-dribbble-square:before {\n  content: \"\\F397\"; }\n\n.fa-dropbox:before {\n  content: \"\\F16B\"; }\n\n.fa-drum:before {\n  content: \"\\F569\"; }\n\n.fa-drum-steelpan:before {\n  content: \"\\F56A\"; }\n\n.fa-drumstick-bite:before {\n  content: \"\\F6D7\"; }\n\n.fa-drupal:before {\n  content: \"\\F1A9\"; }\n\n.fa-dumbbell:before {\n  content: \"\\F44B\"; }\n\n.fa-dumpster:before {\n  content: \"\\F793\"; }\n\n.fa-dumpster-fire:before {\n  content: \"\\F794\"; }\n\n.fa-dungeon:before {\n  content: \"\\F6D9\"; }\n\n.fa-dyalog:before {\n  content: \"\\F399\"; }\n\n.fa-earlybirds:before {\n  content: \"\\F39A\"; }\n\n.fa-ebay:before {\n  content: \"\\F4F4\"; }\n\n.fa-edge:before {\n  content: \"\\F282\"; }\n\n.fa-edit:before {\n  content: \"\\F044\"; }\n\n.fa-egg:before {\n  content: \"\\F7FB\"; }\n\n.fa-eject:before {\n  content: \"\\F052\"; }\n\n.fa-elementor:before {\n  content: \"\\F430\"; }\n\n.fa-ellipsis-h:before {\n  content: \"\\F141\"; }\n\n.fa-ellipsis-v:before {\n  content: \"\\F142\"; }\n\n.fa-ello:before {\n  content: \"\\F5F1\"; }\n\n.fa-ember:before {\n  content: \"\\F423\"; }\n\n.fa-empire:before {\n  content: \"\\F1D1\"; }\n\n.fa-envelope:before {\n  content: \"\\F0E0\"; }\n\n.fa-envelope-open:before {\n  content: \"\\F2B6\"; }\n\n.fa-envelope-open-text:before {\n  content: \"\\F658\"; }\n\n.fa-envelope-square:before {\n  content: \"\\F199\"; }\n\n.fa-envira:before {\n  content: \"\\F299\"; }\n\n.fa-equals:before {\n  content: \"\\F52C\"; }\n\n.fa-eraser:before {\n  content: \"\\F12D\"; }\n\n.fa-erlang:before {\n  content: \"\\F39D\"; }\n\n.fa-ethereum:before {\n  content: \"\\F42E\"; }\n\n.fa-ethernet:before {\n  content: \"\\F796\"; }\n\n.fa-etsy:before {\n  content: \"\\F2D7\"; }\n\n.fa-euro-sign:before {\n  content: \"\\F153\"; }\n\n.fa-exchange-alt:before {\n  content: \"\\F362\"; }\n\n.fa-exclamation:before {\n  content: \"\\F12A\"; }\n\n.fa-exclamation-circle:before {\n  content: \"\\F06A\"; }\n\n.fa-exclamation-triangle:before {\n  content: \"\\F071\"; }\n\n.fa-expand:before {\n  content: \"\\F065\"; }\n\n.fa-expand-arrows-alt:before {\n  content: \"\\F31E\"; }\n\n.fa-expeditedssl:before {\n  content: \"\\F23E\"; }\n\n.fa-external-link-alt:before {\n  content: \"\\F35D\"; }\n\n.fa-external-link-square-alt:before {\n  content: \"\\F360\"; }\n\n.fa-eye:before {\n  content: \"\\F06E\"; }\n\n.fa-eye-dropper:before {\n  content: \"\\F1FB\"; }\n\n.fa-eye-slash:before {\n  content: \"\\F070\"; }\n\n.fa-facebook:before {\n  content: \"\\F09A\"; }\n\n.fa-facebook-f:before {\n  content: \"\\F39E\"; }\n\n.fa-facebook-messenger:before {\n  content: \"\\F39F\"; }\n\n.fa-facebook-square:before {\n  content: \"\\F082\"; }\n\n.fa-fantasy-flight-games:before {\n  content: \"\\F6DC\"; }\n\n.fa-fast-backward:before {\n  content: \"\\F049\"; }\n\n.fa-fast-forward:before {\n  content: \"\\F050\"; }\n\n.fa-fax:before {\n  content: \"\\F1AC\"; }\n\n.fa-feather:before {\n  content: \"\\F52D\"; }\n\n.fa-feather-alt:before {\n  content: \"\\F56B\"; }\n\n.fa-fedex:before {\n  content: \"\\F797\"; }\n\n.fa-fedora:before {\n  content: \"\\F798\"; }\n\n.fa-female:before {\n  content: \"\\F182\"; }\n\n.fa-fighter-jet:before {\n  content: \"\\F0FB\"; }\n\n.fa-figma:before {\n  content: \"\\F799\"; }\n\n.fa-file:before {\n  content: \"\\F15B\"; }\n\n.fa-file-alt:before {\n  content: \"\\F15C\"; }\n\n.fa-file-archive:before {\n  content: \"\\F1C6\"; }\n\n.fa-file-audio:before {\n  content: \"\\F1C7\"; }\n\n.fa-file-code:before {\n  content: \"\\F1C9\"; }\n\n.fa-file-contract:before {\n  content: \"\\F56C\"; }\n\n.fa-file-csv:before {\n  content: \"\\F6DD\"; }\n\n.fa-file-download:before {\n  content: \"\\F56D\"; }\n\n.fa-file-excel:before {\n  content: \"\\F1C3\"; }\n\n.fa-file-export:before {\n  content: \"\\F56E\"; }\n\n.fa-file-image:before {\n  content: \"\\F1C5\"; }\n\n.fa-file-import:before {\n  content: \"\\F56F\"; }\n\n.fa-file-invoice:before {\n  content: \"\\F570\"; }\n\n.fa-file-invoice-dollar:before {\n  content: \"\\F571\"; }\n\n.fa-file-medical:before {\n  content: \"\\F477\"; }\n\n.fa-file-medical-alt:before {\n  content: \"\\F478\"; }\n\n.fa-file-pdf:before {\n  content: \"\\F1C1\"; }\n\n.fa-file-powerpoint:before {\n  content: \"\\F1C4\"; }\n\n.fa-file-prescription:before {\n  content: \"\\F572\"; }\n\n.fa-file-signature:before {\n  content: \"\\F573\"; }\n\n.fa-file-upload:before {\n  content: \"\\F574\"; }\n\n.fa-file-video:before {\n  content: \"\\F1C8\"; }\n\n.fa-file-word:before {\n  content: \"\\F1C2\"; }\n\n.fa-fill:before {\n  content: \"\\F575\"; }\n\n.fa-fill-drip:before {\n  content: \"\\F576\"; }\n\n.fa-film:before {\n  content: \"\\F008\"; }\n\n.fa-filter:before {\n  content: \"\\F0B0\"; }\n\n.fa-fingerprint:before {\n  content: \"\\F577\"; }\n\n.fa-fire:before {\n  content: \"\\F06D\"; }\n\n.fa-fire-alt:before {\n  content: \"\\F7E4\"; }\n\n.fa-fire-extinguisher:before {\n  content: \"\\F134\"; }\n\n.fa-firefox:before {\n  content: \"\\F269\"; }\n\n.fa-first-aid:before {\n  content: \"\\F479\"; }\n\n.fa-first-order:before {\n  content: \"\\F2B0\"; }\n\n.fa-first-order-alt:before {\n  content: \"\\F50A\"; }\n\n.fa-firstdraft:before {\n  content: \"\\F3A1\"; }\n\n.fa-fish:before {\n  content: \"\\F578\"; }\n\n.fa-fist-raised:before {\n  content: \"\\F6DE\"; }\n\n.fa-flag:before {\n  content: \"\\F024\"; }\n\n.fa-flag-checkered:before {\n  content: \"\\F11E\"; }\n\n.fa-flag-usa:before {\n  content: \"\\F74D\"; }\n\n.fa-flask:before {\n  content: \"\\F0C3\"; }\n\n.fa-flickr:before {\n  content: \"\\F16E\"; }\n\n.fa-flipboard:before {\n  content: \"\\F44D\"; }\n\n.fa-flushed:before {\n  content: \"\\F579\"; }\n\n.fa-fly:before {\n  content: \"\\F417\"; }\n\n.fa-folder:before {\n  content: \"\\F07B\"; }\n\n.fa-folder-minus:before {\n  content: \"\\F65D\"; }\n\n.fa-folder-open:before {\n  content: \"\\F07C\"; }\n\n.fa-folder-plus:before {\n  content: \"\\F65E\"; }\n\n.fa-font:before {\n  content: \"\\F031\"; }\n\n.fa-font-awesome:before {\n  content: \"\\F2B4\"; }\n\n.fa-font-awesome-alt:before {\n  content: \"\\F35C\"; }\n\n.fa-font-awesome-flag:before {\n  content: \"\\F425\"; }\n\n.fa-font-awesome-logo-full:before {\n  content: \"\\F4E6\"; }\n\n.fa-fonticons:before {\n  content: \"\\F280\"; }\n\n.fa-fonticons-fi:before {\n  content: \"\\F3A2\"; }\n\n.fa-football-ball:before {\n  content: \"\\F44E\"; }\n\n.fa-fort-awesome:before {\n  content: \"\\F286\"; }\n\n.fa-fort-awesome-alt:before {\n  content: \"\\F3A3\"; }\n\n.fa-forumbee:before {\n  content: \"\\F211\"; }\n\n.fa-forward:before {\n  content: \"\\F04E\"; }\n\n.fa-foursquare:before {\n  content: \"\\F180\"; }\n\n.fa-free-code-camp:before {\n  content: \"\\F2C5\"; }\n\n.fa-freebsd:before {\n  content: \"\\F3A4\"; }\n\n.fa-frog:before {\n  content: \"\\F52E\"; }\n\n.fa-frown:before {\n  content: \"\\F119\"; }\n\n.fa-frown-open:before {\n  content: \"\\F57A\"; }\n\n.fa-fulcrum:before {\n  content: \"\\F50B\"; }\n\n.fa-funnel-dollar:before {\n  content: \"\\F662\"; }\n\n.fa-futbol:before {\n  content: \"\\F1E3\"; }\n\n.fa-galactic-republic:before {\n  content: \"\\F50C\"; }\n\n.fa-galactic-senate:before {\n  content: \"\\F50D\"; }\n\n.fa-gamepad:before {\n  content: \"\\F11B\"; }\n\n.fa-gas-pump:before {\n  content: \"\\F52F\"; }\n\n.fa-gavel:before {\n  content: \"\\F0E3\"; }\n\n.fa-gem:before {\n  content: \"\\F3A5\"; }\n\n.fa-genderless:before {\n  content: \"\\F22D\"; }\n\n.fa-get-pocket:before {\n  content: \"\\F265\"; }\n\n.fa-gg:before {\n  content: \"\\F260\"; }\n\n.fa-gg-circle:before {\n  content: \"\\F261\"; }\n\n.fa-ghost:before {\n  content: \"\\F6E2\"; }\n\n.fa-gift:before {\n  content: \"\\F06B\"; }\n\n.fa-gifts:before {\n  content: \"\\F79C\"; }\n\n.fa-git:before {\n  content: \"\\F1D3\"; }\n\n.fa-git-square:before {\n  content: \"\\F1D2\"; }\n\n.fa-github:before {\n  content: \"\\F09B\"; }\n\n.fa-github-alt:before {\n  content: \"\\F113\"; }\n\n.fa-github-square:before {\n  content: \"\\F092\"; }\n\n.fa-gitkraken:before {\n  content: \"\\F3A6\"; }\n\n.fa-gitlab:before {\n  content: \"\\F296\"; }\n\n.fa-gitter:before {\n  content: \"\\F426\"; }\n\n.fa-glass-cheers:before {\n  content: \"\\F79F\"; }\n\n.fa-glass-martini:before {\n  content: \"\\F000\"; }\n\n.fa-glass-martini-alt:before {\n  content: \"\\F57B\"; }\n\n.fa-glass-whiskey:before {\n  content: \"\\F7A0\"; }\n\n.fa-glasses:before {\n  content: \"\\F530\"; }\n\n.fa-glide:before {\n  content: \"\\F2A5\"; }\n\n.fa-glide-g:before {\n  content: \"\\F2A6\"; }\n\n.fa-globe:before {\n  content: \"\\F0AC\"; }\n\n.fa-globe-africa:before {\n  content: \"\\F57C\"; }\n\n.fa-globe-americas:before {\n  content: \"\\F57D\"; }\n\n.fa-globe-asia:before {\n  content: \"\\F57E\"; }\n\n.fa-globe-europe:before {\n  content: \"\\F7A2\"; }\n\n.fa-gofore:before {\n  content: \"\\F3A7\"; }\n\n.fa-golf-ball:before {\n  content: \"\\F450\"; }\n\n.fa-goodreads:before {\n  content: \"\\F3A8\"; }\n\n.fa-goodreads-g:before {\n  content: \"\\F3A9\"; }\n\n.fa-google:before {\n  content: \"\\F1A0\"; }\n\n.fa-google-drive:before {\n  content: \"\\F3AA\"; }\n\n.fa-google-play:before {\n  content: \"\\F3AB\"; }\n\n.fa-google-plus:before {\n  content: \"\\F2B3\"; }\n\n.fa-google-plus-g:before {\n  content: \"\\F0D5\"; }\n\n.fa-google-plus-square:before {\n  content: \"\\F0D4\"; }\n\n.fa-google-wallet:before {\n  content: \"\\F1EE\"; }\n\n.fa-gopuram:before {\n  content: \"\\F664\"; }\n\n.fa-graduation-cap:before {\n  content: \"\\F19D\"; }\n\n.fa-gratipay:before {\n  content: \"\\F184\"; }\n\n.fa-grav:before {\n  content: \"\\F2D6\"; }\n\n.fa-greater-than:before {\n  content: \"\\F531\"; }\n\n.fa-greater-than-equal:before {\n  content: \"\\F532\"; }\n\n.fa-grimace:before {\n  content: \"\\F57F\"; }\n\n.fa-grin:before {\n  content: \"\\F580\"; }\n\n.fa-grin-alt:before {\n  content: \"\\F581\"; }\n\n.fa-grin-beam:before {\n  content: \"\\F582\"; }\n\n.fa-grin-beam-sweat:before {\n  content: \"\\F583\"; }\n\n.fa-grin-hearts:before {\n  content: \"\\F584\"; }\n\n.fa-grin-squint:before {\n  content: \"\\F585\"; }\n\n.fa-grin-squint-tears:before {\n  content: \"\\F586\"; }\n\n.fa-grin-stars:before {\n  content: \"\\F587\"; }\n\n.fa-grin-tears:before {\n  content: \"\\F588\"; }\n\n.fa-grin-tongue:before {\n  content: \"\\F589\"; }\n\n.fa-grin-tongue-squint:before {\n  content: \"\\F58A\"; }\n\n.fa-grin-tongue-wink:before {\n  content: \"\\F58B\"; }\n\n.fa-grin-wink:before {\n  content: \"\\F58C\"; }\n\n.fa-grip-horizontal:before {\n  content: \"\\F58D\"; }\n\n.fa-grip-lines:before {\n  content: \"\\F7A4\"; }\n\n.fa-grip-lines-vertical:before {\n  content: \"\\F7A5\"; }\n\n.fa-grip-vertical:before {\n  content: \"\\F58E\"; }\n\n.fa-gripfire:before {\n  content: \"\\F3AC\"; }\n\n.fa-grunt:before {\n  content: \"\\F3AD\"; }\n\n.fa-guitar:before {\n  content: \"\\F7A6\"; }\n\n.fa-gulp:before {\n  content: \"\\F3AE\"; }\n\n.fa-h-square:before {\n  content: \"\\F0FD\"; }\n\n.fa-hacker-news:before {\n  content: \"\\F1D4\"; }\n\n.fa-hacker-news-square:before {\n  content: \"\\F3AF\"; }\n\n.fa-hackerrank:before {\n  content: \"\\F5F7\"; }\n\n.fa-hamburger:before {\n  content: \"\\F805\"; }\n\n.fa-hammer:before {\n  content: \"\\F6E3\"; }\n\n.fa-hamsa:before {\n  content: \"\\F665\"; }\n\n.fa-hand-holding:before {\n  content: \"\\F4BD\"; }\n\n.fa-hand-holding-heart:before {\n  content: \"\\F4BE\"; }\n\n.fa-hand-holding-usd:before {\n  content: \"\\F4C0\"; }\n\n.fa-hand-lizard:before {\n  content: \"\\F258\"; }\n\n.fa-hand-middle-finger:before {\n  content: \"\\F806\"; }\n\n.fa-hand-paper:before {\n  content: \"\\F256\"; }\n\n.fa-hand-peace:before {\n  content: \"\\F25B\"; }\n\n.fa-hand-point-down:before {\n  content: \"\\F0A7\"; }\n\n.fa-hand-point-left:before {\n  content: \"\\F0A5\"; }\n\n.fa-hand-point-right:before {\n  content: \"\\F0A4\"; }\n\n.fa-hand-point-up:before {\n  content: \"\\F0A6\"; }\n\n.fa-hand-pointer:before {\n  content: \"\\F25A\"; }\n\n.fa-hand-rock:before {\n  content: \"\\F255\"; }\n\n.fa-hand-scissors:before {\n  content: \"\\F257\"; }\n\n.fa-hand-spock:before {\n  content: \"\\F259\"; }\n\n.fa-hands:before {\n  content: \"\\F4C2\"; }\n\n.fa-hands-helping:before {\n  content: \"\\F4C4\"; }\n\n.fa-handshake:before {\n  content: \"\\F2B5\"; }\n\n.fa-hanukiah:before {\n  content: \"\\F6E6\"; }\n\n.fa-hard-hat:before {\n  content: \"\\F807\"; }\n\n.fa-hashtag:before {\n  content: \"\\F292\"; }\n\n.fa-hat-wizard:before {\n  content: \"\\F6E8\"; }\n\n.fa-haykal:before {\n  content: \"\\F666\"; }\n\n.fa-hdd:before {\n  content: \"\\F0A0\"; }\n\n.fa-heading:before {\n  content: \"\\F1DC\"; }\n\n.fa-headphones:before {\n  content: \"\\F025\"; }\n\n.fa-headphones-alt:before {\n  content: \"\\F58F\"; }\n\n.fa-headset:before {\n  content: \"\\F590\"; }\n\n.fa-heart:before {\n  content: \"\\F004\"; }\n\n.fa-heart-broken:before {\n  content: \"\\F7A9\"; }\n\n.fa-heartbeat:before {\n  content: \"\\F21E\"; }\n\n.fa-helicopter:before {\n  content: \"\\F533\"; }\n\n.fa-highlighter:before {\n  content: \"\\F591\"; }\n\n.fa-hiking:before {\n  content: \"\\F6EC\"; }\n\n.fa-hippo:before {\n  content: \"\\F6ED\"; }\n\n.fa-hips:before {\n  content: \"\\F452\"; }\n\n.fa-hire-a-helper:before {\n  content: \"\\F3B0\"; }\n\n.fa-history:before {\n  content: \"\\F1DA\"; }\n\n.fa-hockey-puck:before {\n  content: \"\\F453\"; }\n\n.fa-holly-berry:before {\n  content: \"\\F7AA\"; }\n\n.fa-home:before {\n  content: \"\\F015\"; }\n\n.fa-hooli:before {\n  content: \"\\F427\"; }\n\n.fa-hornbill:before {\n  content: \"\\F592\"; }\n\n.fa-horse:before {\n  content: \"\\F6F0\"; }\n\n.fa-horse-head:before {\n  content: \"\\F7AB\"; }\n\n.fa-hospital:before {\n  content: \"\\F0F8\"; }\n\n.fa-hospital-alt:before {\n  content: \"\\F47D\"; }\n\n.fa-hospital-symbol:before {\n  content: \"\\F47E\"; }\n\n.fa-hot-tub:before {\n  content: \"\\F593\"; }\n\n.fa-hotdog:before {\n  content: \"\\F80F\"; }\n\n.fa-hotel:before {\n  content: \"\\F594\"; }\n\n.fa-hotjar:before {\n  content: \"\\F3B1\"; }\n\n.fa-hourglass:before {\n  content: \"\\F254\"; }\n\n.fa-hourglass-end:before {\n  content: \"\\F253\"; }\n\n.fa-hourglass-half:before {\n  content: \"\\F252\"; }\n\n.fa-hourglass-start:before {\n  content: \"\\F251\"; }\n\n.fa-house-damage:before {\n  content: \"\\F6F1\"; }\n\n.fa-houzz:before {\n  content: \"\\F27C\"; }\n\n.fa-hryvnia:before {\n  content: \"\\F6F2\"; }\n\n.fa-html5:before {\n  content: \"\\F13B\"; }\n\n.fa-hubspot:before {\n  content: \"\\F3B2\"; }\n\n.fa-i-cursor:before {\n  content: \"\\F246\"; }\n\n.fa-ice-cream:before {\n  content: \"\\F810\"; }\n\n.fa-icicles:before {\n  content: \"\\F7AD\"; }\n\n.fa-id-badge:before {\n  content: \"\\F2C1\"; }\n\n.fa-id-card:before {\n  content: \"\\F2C2\"; }\n\n.fa-id-card-alt:before {\n  content: \"\\F47F\"; }\n\n.fa-igloo:before {\n  content: \"\\F7AE\"; }\n\n.fa-image:before {\n  content: \"\\F03E\"; }\n\n.fa-images:before {\n  content: \"\\F302\"; }\n\n.fa-imdb:before {\n  content: \"\\F2D8\"; }\n\n.fa-inbox:before {\n  content: \"\\F01C\"; }\n\n.fa-indent:before {\n  content: \"\\F03C\"; }\n\n.fa-industry:before {\n  content: \"\\F275\"; }\n\n.fa-infinity:before {\n  content: \"\\F534\"; }\n\n.fa-info:before {\n  content: \"\\F129\"; }\n\n.fa-info-circle:before {\n  content: \"\\F05A\"; }\n\n.fa-instagram:before {\n  content: \"\\F16D\"; }\n\n.fa-intercom:before {\n  content: \"\\F7AF\"; }\n\n.fa-internet-explorer:before {\n  content: \"\\F26B\"; }\n\n.fa-invision:before {\n  content: \"\\F7B0\"; }\n\n.fa-ioxhost:before {\n  content: \"\\F208\"; }\n\n.fa-italic:before {\n  content: \"\\F033\"; }\n\n.fa-itunes:before {\n  content: \"\\F3B4\"; }\n\n.fa-itunes-note:before {\n  content: \"\\F3B5\"; }\n\n.fa-java:before {\n  content: \"\\F4E4\"; }\n\n.fa-jedi:before {\n  content: \"\\F669\"; }\n\n.fa-jedi-order:before {\n  content: \"\\F50E\"; }\n\n.fa-jenkins:before {\n  content: \"\\F3B6\"; }\n\n.fa-jira:before {\n  content: \"\\F7B1\"; }\n\n.fa-joget:before {\n  content: \"\\F3B7\"; }\n\n.fa-joint:before {\n  content: \"\\F595\"; }\n\n.fa-joomla:before {\n  content: \"\\F1AA\"; }\n\n.fa-journal-whills:before {\n  content: \"\\F66A\"; }\n\n.fa-js:before {\n  content: \"\\F3B8\"; }\n\n.fa-js-square:before {\n  content: \"\\F3B9\"; }\n\n.fa-jsfiddle:before {\n  content: \"\\F1CC\"; }\n\n.fa-kaaba:before {\n  content: \"\\F66B\"; }\n\n.fa-kaggle:before {\n  content: \"\\F5FA\"; }\n\n.fa-key:before {\n  content: \"\\F084\"; }\n\n.fa-keybase:before {\n  content: \"\\F4F5\"; }\n\n.fa-keyboard:before {\n  content: \"\\F11C\"; }\n\n.fa-keycdn:before {\n  content: \"\\F3BA\"; }\n\n.fa-khanda:before {\n  content: \"\\F66D\"; }\n\n.fa-kickstarter:before {\n  content: \"\\F3BB\"; }\n\n.fa-kickstarter-k:before {\n  content: \"\\F3BC\"; }\n\n.fa-kiss:before {\n  content: \"\\F596\"; }\n\n.fa-kiss-beam:before {\n  content: \"\\F597\"; }\n\n.fa-kiss-wink-heart:before {\n  content: \"\\F598\"; }\n\n.fa-kiwi-bird:before {\n  content: \"\\F535\"; }\n\n.fa-korvue:before {\n  content: \"\\F42F\"; }\n\n.fa-landmark:before {\n  content: \"\\F66F\"; }\n\n.fa-language:before {\n  content: \"\\F1AB\"; }\n\n.fa-laptop:before {\n  content: \"\\F109\"; }\n\n.fa-laptop-code:before {\n  content: \"\\F5FC\"; }\n\n.fa-laptop-medical:before {\n  content: \"\\F812\"; }\n\n.fa-laravel:before {\n  content: \"\\F3BD\"; }\n\n.fa-lastfm:before {\n  content: \"\\F202\"; }\n\n.fa-lastfm-square:before {\n  content: \"\\F203\"; }\n\n.fa-laugh:before {\n  content: \"\\F599\"; }\n\n.fa-laugh-beam:before {\n  content: \"\\F59A\"; }\n\n.fa-laugh-squint:before {\n  content: \"\\F59B\"; }\n\n.fa-laugh-wink:before {\n  content: \"\\F59C\"; }\n\n.fa-layer-group:before {\n  content: \"\\F5FD\"; }\n\n.fa-leaf:before {\n  content: \"\\F06C\"; }\n\n.fa-leanpub:before {\n  content: \"\\F212\"; }\n\n.fa-lemon:before {\n  content: \"\\F094\"; }\n\n.fa-less:before {\n  content: \"\\F41D\"; }\n\n.fa-less-than:before {\n  content: \"\\F536\"; }\n\n.fa-less-than-equal:before {\n  content: \"\\F537\"; }\n\n.fa-level-down-alt:before {\n  content: \"\\F3BE\"; }\n\n.fa-level-up-alt:before {\n  content: \"\\F3BF\"; }\n\n.fa-life-ring:before {\n  content: \"\\F1CD\"; }\n\n.fa-lightbulb:before {\n  content: \"\\F0EB\"; }\n\n.fa-line:before {\n  content: \"\\F3C0\"; }\n\n.fa-link:before {\n  content: \"\\F0C1\"; }\n\n.fa-linkedin:before {\n  content: \"\\F08C\"; }\n\n.fa-linkedin-in:before {\n  content: \"\\F0E1\"; }\n\n.fa-linode:before {\n  content: \"\\F2B8\"; }\n\n.fa-linux:before {\n  content: \"\\F17C\"; }\n\n.fa-lira-sign:before {\n  content: \"\\F195\"; }\n\n.fa-list:before {\n  content: \"\\F03A\"; }\n\n.fa-list-alt:before {\n  content: \"\\F022\"; }\n\n.fa-list-ol:before {\n  content: \"\\F0CB\"; }\n\n.fa-list-ul:before {\n  content: \"\\F0CA\"; }\n\n.fa-location-arrow:before {\n  content: \"\\F124\"; }\n\n.fa-lock:before {\n  content: \"\\F023\"; }\n\n.fa-lock-open:before {\n  content: \"\\F3C1\"; }\n\n.fa-long-arrow-alt-down:before {\n  content: \"\\F309\"; }\n\n.fa-long-arrow-alt-left:before {\n  content: \"\\F30A\"; }\n\n.fa-long-arrow-alt-right:before {\n  content: \"\\F30B\"; }\n\n.fa-long-arrow-alt-up:before {\n  content: \"\\F30C\"; }\n\n.fa-low-vision:before {\n  content: \"\\F2A8\"; }\n\n.fa-luggage-cart:before {\n  content: \"\\F59D\"; }\n\n.fa-lyft:before {\n  content: \"\\F3C3\"; }\n\n.fa-magento:before {\n  content: \"\\F3C4\"; }\n\n.fa-magic:before {\n  content: \"\\F0D0\"; }\n\n.fa-magnet:before {\n  content: \"\\F076\"; }\n\n.fa-mail-bulk:before {\n  content: \"\\F674\"; }\n\n.fa-mailchimp:before {\n  content: \"\\F59E\"; }\n\n.fa-male:before {\n  content: \"\\F183\"; }\n\n.fa-mandalorian:before {\n  content: \"\\F50F\"; }\n\n.fa-map:before {\n  content: \"\\F279\"; }\n\n.fa-map-marked:before {\n  content: \"\\F59F\"; }\n\n.fa-map-marked-alt:before {\n  content: \"\\F5A0\"; }\n\n.fa-map-marker:before {\n  content: \"\\F041\"; }\n\n.fa-map-marker-alt:before {\n  content: \"\\F3C5\"; }\n\n.fa-map-pin:before {\n  content: \"\\F276\"; }\n\n.fa-map-signs:before {\n  content: \"\\F277\"; }\n\n.fa-markdown:before {\n  content: \"\\F60F\"; }\n\n.fa-marker:before {\n  content: \"\\F5A1\"; }\n\n.fa-mars:before {\n  content: \"\\F222\"; }\n\n.fa-mars-double:before {\n  content: \"\\F227\"; }\n\n.fa-mars-stroke:before {\n  content: \"\\F229\"; }\n\n.fa-mars-stroke-h:before {\n  content: \"\\F22B\"; }\n\n.fa-mars-stroke-v:before {\n  content: \"\\F22A\"; }\n\n.fa-mask:before {\n  content: \"\\F6FA\"; }\n\n.fa-mastodon:before {\n  content: \"\\F4F6\"; }\n\n.fa-maxcdn:before {\n  content: \"\\F136\"; }\n\n.fa-medal:before {\n  content: \"\\F5A2\"; }\n\n.fa-medapps:before {\n  content: \"\\F3C6\"; }\n\n.fa-medium:before {\n  content: \"\\F23A\"; }\n\n.fa-medium-m:before {\n  content: \"\\F3C7\"; }\n\n.fa-medkit:before {\n  content: \"\\F0FA\"; }\n\n.fa-medrt:before {\n  content: \"\\F3C8\"; }\n\n.fa-meetup:before {\n  content: \"\\F2E0\"; }\n\n.fa-megaport:before {\n  content: \"\\F5A3\"; }\n\n.fa-meh:before {\n  content: \"\\F11A\"; }\n\n.fa-meh-blank:before {\n  content: \"\\F5A4\"; }\n\n.fa-meh-rolling-eyes:before {\n  content: \"\\F5A5\"; }\n\n.fa-memory:before {\n  content: \"\\F538\"; }\n\n.fa-mendeley:before {\n  content: \"\\F7B3\"; }\n\n.fa-menorah:before {\n  content: \"\\F676\"; }\n\n.fa-mercury:before {\n  content: \"\\F223\"; }\n\n.fa-meteor:before {\n  content: \"\\F753\"; }\n\n.fa-microchip:before {\n  content: \"\\F2DB\"; }\n\n.fa-microphone:before {\n  content: \"\\F130\"; }\n\n.fa-microphone-alt:before {\n  content: \"\\F3C9\"; }\n\n.fa-microphone-alt-slash:before {\n  content: \"\\F539\"; }\n\n.fa-microphone-slash:before {\n  content: \"\\F131\"; }\n\n.fa-microscope:before {\n  content: \"\\F610\"; }\n\n.fa-microsoft:before {\n  content: \"\\F3CA\"; }\n\n.fa-minus:before {\n  content: \"\\F068\"; }\n\n.fa-minus-circle:before {\n  content: \"\\F056\"; }\n\n.fa-minus-square:before {\n  content: \"\\F146\"; }\n\n.fa-mitten:before {\n  content: \"\\F7B5\"; }\n\n.fa-mix:before {\n  content: \"\\F3CB\"; }\n\n.fa-mixcloud:before {\n  content: \"\\F289\"; }\n\n.fa-mizuni:before {\n  content: \"\\F3CC\"; }\n\n.fa-mobile:before {\n  content: \"\\F10B\"; }\n\n.fa-mobile-alt:before {\n  content: \"\\F3CD\"; }\n\n.fa-modx:before {\n  content: \"\\F285\"; }\n\n.fa-monero:before {\n  content: \"\\F3D0\"; }\n\n.fa-money-bill:before {\n  content: \"\\F0D6\"; }\n\n.fa-money-bill-alt:before {\n  content: \"\\F3D1\"; }\n\n.fa-money-bill-wave:before {\n  content: \"\\F53A\"; }\n\n.fa-money-bill-wave-alt:before {\n  content: \"\\F53B\"; }\n\n.fa-money-check:before {\n  content: \"\\F53C\"; }\n\n.fa-money-check-alt:before {\n  content: \"\\F53D\"; }\n\n.fa-monument:before {\n  content: \"\\F5A6\"; }\n\n.fa-moon:before {\n  content: \"\\F186\"; }\n\n.fa-mortar-pestle:before {\n  content: \"\\F5A7\"; }\n\n.fa-mosque:before {\n  content: \"\\F678\"; }\n\n.fa-motorcycle:before {\n  content: \"\\F21C\"; }\n\n.fa-mountain:before {\n  content: \"\\F6FC\"; }\n\n.fa-mouse-pointer:before {\n  content: \"\\F245\"; }\n\n.fa-mug-hot:before {\n  content: \"\\F7B6\"; }\n\n.fa-music:before {\n  content: \"\\F001\"; }\n\n.fa-napster:before {\n  content: \"\\F3D2\"; }\n\n.fa-neos:before {\n  content: \"\\F612\"; }\n\n.fa-network-wired:before {\n  content: \"\\F6FF\"; }\n\n.fa-neuter:before {\n  content: \"\\F22C\"; }\n\n.fa-newspaper:before {\n  content: \"\\F1EA\"; }\n\n.fa-nimblr:before {\n  content: \"\\F5A8\"; }\n\n.fa-nintendo-switch:before {\n  content: \"\\F418\"; }\n\n.fa-node:before {\n  content: \"\\F419\"; }\n\n.fa-node-js:before {\n  content: \"\\F3D3\"; }\n\n.fa-not-equal:before {\n  content: \"\\F53E\"; }\n\n.fa-notes-medical:before {\n  content: \"\\F481\"; }\n\n.fa-npm:before {\n  content: \"\\F3D4\"; }\n\n.fa-ns8:before {\n  content: \"\\F3D5\"; }\n\n.fa-nutritionix:before {\n  content: \"\\F3D6\"; }\n\n.fa-object-group:before {\n  content: \"\\F247\"; }\n\n.fa-object-ungroup:before {\n  content: \"\\F248\"; }\n\n.fa-odnoklassniki:before {\n  content: \"\\F263\"; }\n\n.fa-odnoklassniki-square:before {\n  content: \"\\F264\"; }\n\n.fa-oil-can:before {\n  content: \"\\F613\"; }\n\n.fa-old-republic:before {\n  content: \"\\F510\"; }\n\n.fa-om:before {\n  content: \"\\F679\"; }\n\n.fa-opencart:before {\n  content: \"\\F23D\"; }\n\n.fa-openid:before {\n  content: \"\\F19B\"; }\n\n.fa-opera:before {\n  content: \"\\F26A\"; }\n\n.fa-optin-monster:before {\n  content: \"\\F23C\"; }\n\n.fa-osi:before {\n  content: \"\\F41A\"; }\n\n.fa-otter:before {\n  content: \"\\F700\"; }\n\n.fa-outdent:before {\n  content: \"\\F03B\"; }\n\n.fa-page4:before {\n  content: \"\\F3D7\"; }\n\n.fa-pagelines:before {\n  content: \"\\F18C\"; }\n\n.fa-pager:before {\n  content: \"\\F815\"; }\n\n.fa-paint-brush:before {\n  content: \"\\F1FC\"; }\n\n.fa-paint-roller:before {\n  content: \"\\F5AA\"; }\n\n.fa-palette:before {\n  content: \"\\F53F\"; }\n\n.fa-palfed:before {\n  content: \"\\F3D8\"; }\n\n.fa-pallet:before {\n  content: \"\\F482\"; }\n\n.fa-paper-plane:before {\n  content: \"\\F1D8\"; }\n\n.fa-paperclip:before {\n  content: \"\\F0C6\"; }\n\n.fa-parachute-box:before {\n  content: \"\\F4CD\"; }\n\n.fa-paragraph:before {\n  content: \"\\F1DD\"; }\n\n.fa-parking:before {\n  content: \"\\F540\"; }\n\n.fa-passport:before {\n  content: \"\\F5AB\"; }\n\n.fa-pastafarianism:before {\n  content: \"\\F67B\"; }\n\n.fa-paste:before {\n  content: \"\\F0EA\"; }\n\n.fa-patreon:before {\n  content: \"\\F3D9\"; }\n\n.fa-pause:before {\n  content: \"\\F04C\"; }\n\n.fa-pause-circle:before {\n  content: \"\\F28B\"; }\n\n.fa-paw:before {\n  content: \"\\F1B0\"; }\n\n.fa-paypal:before {\n  content: \"\\F1ED\"; }\n\n.fa-peace:before {\n  content: \"\\F67C\"; }\n\n.fa-pen:before {\n  content: \"\\F304\"; }\n\n.fa-pen-alt:before {\n  content: \"\\F305\"; }\n\n.fa-pen-fancy:before {\n  content: \"\\F5AC\"; }\n\n.fa-pen-nib:before {\n  content: \"\\F5AD\"; }\n\n.fa-pen-square:before {\n  content: \"\\F14B\"; }\n\n.fa-pencil-alt:before {\n  content: \"\\F303\"; }\n\n.fa-pencil-ruler:before {\n  content: \"\\F5AE\"; }\n\n.fa-penny-arcade:before {\n  content: \"\\F704\"; }\n\n.fa-people-carry:before {\n  content: \"\\F4CE\"; }\n\n.fa-pepper-hot:before {\n  content: \"\\F816\"; }\n\n.fa-percent:before {\n  content: \"\\F295\"; }\n\n.fa-percentage:before {\n  content: \"\\F541\"; }\n\n.fa-periscope:before {\n  content: \"\\F3DA\"; }\n\n.fa-person-booth:before {\n  content: \"\\F756\"; }\n\n.fa-phabricator:before {\n  content: \"\\F3DB\"; }\n\n.fa-phoenix-framework:before {\n  content: \"\\F3DC\"; }\n\n.fa-phoenix-squadron:before {\n  content: \"\\F511\"; }\n\n.fa-phone:before {\n  content: \"\\F095\"; }\n\n.fa-phone-slash:before {\n  content: \"\\F3DD\"; }\n\n.fa-phone-square:before {\n  content: \"\\F098\"; }\n\n.fa-phone-volume:before {\n  content: \"\\F2A0\"; }\n\n.fa-php:before {\n  content: \"\\F457\"; }\n\n.fa-pied-piper:before {\n  content: \"\\F2AE\"; }\n\n.fa-pied-piper-alt:before {\n  content: \"\\F1A8\"; }\n\n.fa-pied-piper-hat:before {\n  content: \"\\F4E5\"; }\n\n.fa-pied-piper-pp:before {\n  content: \"\\F1A7\"; }\n\n.fa-piggy-bank:before {\n  content: \"\\F4D3\"; }\n\n.fa-pills:before {\n  content: \"\\F484\"; }\n\n.fa-pinterest:before {\n  content: \"\\F0D2\"; }\n\n.fa-pinterest-p:before {\n  content: \"\\F231\"; }\n\n.fa-pinterest-square:before {\n  content: \"\\F0D3\"; }\n\n.fa-pizza-slice:before {\n  content: \"\\F818\"; }\n\n.fa-place-of-worship:before {\n  content: \"\\F67F\"; }\n\n.fa-plane:before {\n  content: \"\\F072\"; }\n\n.fa-plane-arrival:before {\n  content: \"\\F5AF\"; }\n\n.fa-plane-departure:before {\n  content: \"\\F5B0\"; }\n\n.fa-play:before {\n  content: \"\\F04B\"; }\n\n.fa-play-circle:before {\n  content: \"\\F144\"; }\n\n.fa-playstation:before {\n  content: \"\\F3DF\"; }\n\n.fa-plug:before {\n  content: \"\\F1E6\"; }\n\n.fa-plus:before {\n  content: \"\\F067\"; }\n\n.fa-plus-circle:before {\n  content: \"\\F055\"; }\n\n.fa-plus-square:before {\n  content: \"\\F0FE\"; }\n\n.fa-podcast:before {\n  content: \"\\F2CE\"; }\n\n.fa-poll:before {\n  content: \"\\F681\"; }\n\n.fa-poll-h:before {\n  content: \"\\F682\"; }\n\n.fa-poo:before {\n  content: \"\\F2FE\"; }\n\n.fa-poo-storm:before {\n  content: \"\\F75A\"; }\n\n.fa-poop:before {\n  content: \"\\F619\"; }\n\n.fa-portrait:before {\n  content: \"\\F3E0\"; }\n\n.fa-pound-sign:before {\n  content: \"\\F154\"; }\n\n.fa-power-off:before {\n  content: \"\\F011\"; }\n\n.fa-pray:before {\n  content: \"\\F683\"; }\n\n.fa-praying-hands:before {\n  content: \"\\F684\"; }\n\n.fa-prescription:before {\n  content: \"\\F5B1\"; }\n\n.fa-prescription-bottle:before {\n  content: \"\\F485\"; }\n\n.fa-prescription-bottle-alt:before {\n  content: \"\\F486\"; }\n\n.fa-print:before {\n  content: \"\\F02F\"; }\n\n.fa-procedures:before {\n  content: \"\\F487\"; }\n\n.fa-product-hunt:before {\n  content: \"\\F288\"; }\n\n.fa-project-diagram:before {\n  content: \"\\F542\"; }\n\n.fa-pushed:before {\n  content: \"\\F3E1\"; }\n\n.fa-puzzle-piece:before {\n  content: \"\\F12E\"; }\n\n.fa-python:before {\n  content: \"\\F3E2\"; }\n\n.fa-qq:before {\n  content: \"\\F1D6\"; }\n\n.fa-qrcode:before {\n  content: \"\\F029\"; }\n\n.fa-question:before {\n  content: \"\\F128\"; }\n\n.fa-question-circle:before {\n  content: \"\\F059\"; }\n\n.fa-quidditch:before {\n  content: \"\\F458\"; }\n\n.fa-quinscape:before {\n  content: \"\\F459\"; }\n\n.fa-quora:before {\n  content: \"\\F2C4\"; }\n\n.fa-quote-left:before {\n  content: \"\\F10D\"; }\n\n.fa-quote-right:before {\n  content: \"\\F10E\"; }\n\n.fa-quran:before {\n  content: \"\\F687\"; }\n\n.fa-r-project:before {\n  content: \"\\F4F7\"; }\n\n.fa-radiation:before {\n  content: \"\\F7B9\"; }\n\n.fa-radiation-alt:before {\n  content: \"\\F7BA\"; }\n\n.fa-rainbow:before {\n  content: \"\\F75B\"; }\n\n.fa-random:before {\n  content: \"\\F074\"; }\n\n.fa-raspberry-pi:before {\n  content: \"\\F7BB\"; }\n\n.fa-ravelry:before {\n  content: \"\\F2D9\"; }\n\n.fa-react:before {\n  content: \"\\F41B\"; }\n\n.fa-reacteurope:before {\n  content: \"\\F75D\"; }\n\n.fa-readme:before {\n  content: \"\\F4D5\"; }\n\n.fa-rebel:before {\n  content: \"\\F1D0\"; }\n\n.fa-receipt:before {\n  content: \"\\F543\"; }\n\n.fa-recycle:before {\n  content: \"\\F1B8\"; }\n\n.fa-red-river:before {\n  content: \"\\F3E3\"; }\n\n.fa-reddit:before {\n  content: \"\\F1A1\"; }\n\n.fa-reddit-alien:before {\n  content: \"\\F281\"; }\n\n.fa-reddit-square:before {\n  content: \"\\F1A2\"; }\n\n.fa-redhat:before {\n  content: \"\\F7BC\"; }\n\n.fa-redo:before {\n  content: \"\\F01E\"; }\n\n.fa-redo-alt:before {\n  content: \"\\F2F9\"; }\n\n.fa-registered:before {\n  content: \"\\F25D\"; }\n\n.fa-renren:before {\n  content: \"\\F18B\"; }\n\n.fa-reply:before {\n  content: \"\\F3E5\"; }\n\n.fa-reply-all:before {\n  content: \"\\F122\"; }\n\n.fa-replyd:before {\n  content: \"\\F3E6\"; }\n\n.fa-republican:before {\n  content: \"\\F75E\"; }\n\n.fa-researchgate:before {\n  content: \"\\F4F8\"; }\n\n.fa-resolving:before {\n  content: \"\\F3E7\"; }\n\n.fa-restroom:before {\n  content: \"\\F7BD\"; }\n\n.fa-retweet:before {\n  content: \"\\F079\"; }\n\n.fa-rev:before {\n  content: \"\\F5B2\"; }\n\n.fa-ribbon:before {\n  content: \"\\F4D6\"; }\n\n.fa-ring:before {\n  content: \"\\F70B\"; }\n\n.fa-road:before {\n  content: \"\\F018\"; }\n\n.fa-robot:before {\n  content: \"\\F544\"; }\n\n.fa-rocket:before {\n  content: \"\\F135\"; }\n\n.fa-rocketchat:before {\n  content: \"\\F3E8\"; }\n\n.fa-rockrms:before {\n  content: \"\\F3E9\"; }\n\n.fa-route:before {\n  content: \"\\F4D7\"; }\n\n.fa-rss:before {\n  content: \"\\F09E\"; }\n\n.fa-rss-square:before {\n  content: \"\\F143\"; }\n\n.fa-ruble-sign:before {\n  content: \"\\F158\"; }\n\n.fa-ruler:before {\n  content: \"\\F545\"; }\n\n.fa-ruler-combined:before {\n  content: \"\\F546\"; }\n\n.fa-ruler-horizontal:before {\n  content: \"\\F547\"; }\n\n.fa-ruler-vertical:before {\n  content: \"\\F548\"; }\n\n.fa-running:before {\n  content: \"\\F70C\"; }\n\n.fa-rupee-sign:before {\n  content: \"\\F156\"; }\n\n.fa-sad-cry:before {\n  content: \"\\F5B3\"; }\n\n.fa-sad-tear:before {\n  content: \"\\F5B4\"; }\n\n.fa-safari:before {\n  content: \"\\F267\"; }\n\n.fa-sass:before {\n  content: \"\\F41E\"; }\n\n.fa-satellite:before {\n  content: \"\\F7BF\"; }\n\n.fa-satellite-dish:before {\n  content: \"\\F7C0\"; }\n\n.fa-save:before {\n  content: \"\\F0C7\"; }\n\n.fa-schlix:before {\n  content: \"\\F3EA\"; }\n\n.fa-school:before {\n  content: \"\\F549\"; }\n\n.fa-screwdriver:before {\n  content: \"\\F54A\"; }\n\n.fa-scribd:before {\n  content: \"\\F28A\"; }\n\n.fa-scroll:before {\n  content: \"\\F70E\"; }\n\n.fa-sd-card:before {\n  content: \"\\F7C2\"; }\n\n.fa-search:before {\n  content: \"\\F002\"; }\n\n.fa-search-dollar:before {\n  content: \"\\F688\"; }\n\n.fa-search-location:before {\n  content: \"\\F689\"; }\n\n.fa-search-minus:before {\n  content: \"\\F010\"; }\n\n.fa-search-plus:before {\n  content: \"\\F00E\"; }\n\n.fa-searchengin:before {\n  content: \"\\F3EB\"; }\n\n.fa-seedling:before {\n  content: \"\\F4D8\"; }\n\n.fa-sellcast:before {\n  content: \"\\F2DA\"; }\n\n.fa-sellsy:before {\n  content: \"\\F213\"; }\n\n.fa-server:before {\n  content: \"\\F233\"; }\n\n.fa-servicestack:before {\n  content: \"\\F3EC\"; }\n\n.fa-shapes:before {\n  content: \"\\F61F\"; }\n\n.fa-share:before {\n  content: \"\\F064\"; }\n\n.fa-share-alt:before {\n  content: \"\\F1E0\"; }\n\n.fa-share-alt-square:before {\n  content: \"\\F1E1\"; }\n\n.fa-share-square:before {\n  content: \"\\F14D\"; }\n\n.fa-shekel-sign:before {\n  content: \"\\F20B\"; }\n\n.fa-shield-alt:before {\n  content: \"\\F3ED\"; }\n\n.fa-ship:before {\n  content: \"\\F21A\"; }\n\n.fa-shipping-fast:before {\n  content: \"\\F48B\"; }\n\n.fa-shirtsinbulk:before {\n  content: \"\\F214\"; }\n\n.fa-shoe-prints:before {\n  content: \"\\F54B\"; }\n\n.fa-shopping-bag:before {\n  content: \"\\F290\"; }\n\n.fa-shopping-basket:before {\n  content: \"\\F291\"; }\n\n.fa-shopping-cart:before {\n  content: \"\\F07A\"; }\n\n.fa-shopware:before {\n  content: \"\\F5B5\"; }\n\n.fa-shower:before {\n  content: \"\\F2CC\"; }\n\n.fa-shuttle-van:before {\n  content: \"\\F5B6\"; }\n\n.fa-sign:before {\n  content: \"\\F4D9\"; }\n\n.fa-sign-in-alt:before {\n  content: \"\\F2F6\"; }\n\n.fa-sign-language:before {\n  content: \"\\F2A7\"; }\n\n.fa-sign-out-alt:before {\n  content: \"\\F2F5\"; }\n\n.fa-signal:before {\n  content: \"\\F012\"; }\n\n.fa-signature:before {\n  content: \"\\F5B7\"; }\n\n.fa-sim-card:before {\n  content: \"\\F7C4\"; }\n\n.fa-simplybuilt:before {\n  content: \"\\F215\"; }\n\n.fa-sistrix:before {\n  content: \"\\F3EE\"; }\n\n.fa-sitemap:before {\n  content: \"\\F0E8\"; }\n\n.fa-sith:before {\n  content: \"\\F512\"; }\n\n.fa-skating:before {\n  content: \"\\F7C5\"; }\n\n.fa-sketch:before {\n  content: \"\\F7C6\"; }\n\n.fa-skiing:before {\n  content: \"\\F7C9\"; }\n\n.fa-skiing-nordic:before {\n  content: \"\\F7CA\"; }\n\n.fa-skull:before {\n  content: \"\\F54C\"; }\n\n.fa-skull-crossbones:before {\n  content: \"\\F714\"; }\n\n.fa-skyatlas:before {\n  content: \"\\F216\"; }\n\n.fa-skype:before {\n  content: \"\\F17E\"; }\n\n.fa-slack:before {\n  content: \"\\F198\"; }\n\n.fa-slack-hash:before {\n  content: \"\\F3EF\"; }\n\n.fa-slash:before {\n  content: \"\\F715\"; }\n\n.fa-sleigh:before {\n  content: \"\\F7CC\"; }\n\n.fa-sliders-h:before {\n  content: \"\\F1DE\"; }\n\n.fa-slideshare:before {\n  content: \"\\F1E7\"; }\n\n.fa-smile:before {\n  content: \"\\F118\"; }\n\n.fa-smile-beam:before {\n  content: \"\\F5B8\"; }\n\n.fa-smile-wink:before {\n  content: \"\\F4DA\"; }\n\n.fa-smog:before {\n  content: \"\\F75F\"; }\n\n.fa-smoking:before {\n  content: \"\\F48D\"; }\n\n.fa-smoking-ban:before {\n  content: \"\\F54D\"; }\n\n.fa-sms:before {\n  content: \"\\F7CD\"; }\n\n.fa-snapchat:before {\n  content: \"\\F2AB\"; }\n\n.fa-snapchat-ghost:before {\n  content: \"\\F2AC\"; }\n\n.fa-snapchat-square:before {\n  content: \"\\F2AD\"; }\n\n.fa-snowboarding:before {\n  content: \"\\F7CE\"; }\n\n.fa-snowflake:before {\n  content: \"\\F2DC\"; }\n\n.fa-snowman:before {\n  content: \"\\F7D0\"; }\n\n.fa-snowplow:before {\n  content: \"\\F7D2\"; }\n\n.fa-socks:before {\n  content: \"\\F696\"; }\n\n.fa-solar-panel:before {\n  content: \"\\F5BA\"; }\n\n.fa-sort:before {\n  content: \"\\F0DC\"; }\n\n.fa-sort-alpha-down:before {\n  content: \"\\F15D\"; }\n\n.fa-sort-alpha-up:before {\n  content: \"\\F15E\"; }\n\n.fa-sort-amount-down:before {\n  content: \"\\F160\"; }\n\n.fa-sort-amount-up:before {\n  content: \"\\F161\"; }\n\n.fa-sort-down:before {\n  content: \"\\F0DD\"; }\n\n.fa-sort-numeric-down:before {\n  content: \"\\F162\"; }\n\n.fa-sort-numeric-up:before {\n  content: \"\\F163\"; }\n\n.fa-sort-up:before {\n  content: \"\\F0DE\"; }\n\n.fa-soundcloud:before {\n  content: \"\\F1BE\"; }\n\n.fa-sourcetree:before {\n  content: \"\\F7D3\"; }\n\n.fa-spa:before {\n  content: \"\\F5BB\"; }\n\n.fa-space-shuttle:before {\n  content: \"\\F197\"; }\n\n.fa-speakap:before {\n  content: \"\\F3F3\"; }\n\n.fa-spider:before {\n  content: \"\\F717\"; }\n\n.fa-spinner:before {\n  content: \"\\F110\"; }\n\n.fa-splotch:before {\n  content: \"\\F5BC\"; }\n\n.fa-spotify:before {\n  content: \"\\F1BC\"; }\n\n.fa-spray-can:before {\n  content: \"\\F5BD\"; }\n\n.fa-square:before {\n  content: \"\\F0C8\"; }\n\n.fa-square-full:before {\n  content: \"\\F45C\"; }\n\n.fa-square-root-alt:before {\n  content: \"\\F698\"; }\n\n.fa-squarespace:before {\n  content: \"\\F5BE\"; }\n\n.fa-stack-exchange:before {\n  content: \"\\F18D\"; }\n\n.fa-stack-overflow:before {\n  content: \"\\F16C\"; }\n\n.fa-stamp:before {\n  content: \"\\F5BF\"; }\n\n.fa-star:before {\n  content: \"\\F005\"; }\n\n.fa-star-and-crescent:before {\n  content: \"\\F699\"; }\n\n.fa-star-half:before {\n  content: \"\\F089\"; }\n\n.fa-star-half-alt:before {\n  content: \"\\F5C0\"; }\n\n.fa-star-of-david:before {\n  content: \"\\F69A\"; }\n\n.fa-star-of-life:before {\n  content: \"\\F621\"; }\n\n.fa-staylinked:before {\n  content: \"\\F3F5\"; }\n\n.fa-steam:before {\n  content: \"\\F1B6\"; }\n\n.fa-steam-square:before {\n  content: \"\\F1B7\"; }\n\n.fa-steam-symbol:before {\n  content: \"\\F3F6\"; }\n\n.fa-step-backward:before {\n  content: \"\\F048\"; }\n\n.fa-step-forward:before {\n  content: \"\\F051\"; }\n\n.fa-stethoscope:before {\n  content: \"\\F0F1\"; }\n\n.fa-sticker-mule:before {\n  content: \"\\F3F7\"; }\n\n.fa-sticky-note:before {\n  content: \"\\F249\"; }\n\n.fa-stop:before {\n  content: \"\\F04D\"; }\n\n.fa-stop-circle:before {\n  content: \"\\F28D\"; }\n\n.fa-stopwatch:before {\n  content: \"\\F2F2\"; }\n\n.fa-store:before {\n  content: \"\\F54E\"; }\n\n.fa-store-alt:before {\n  content: \"\\F54F\"; }\n\n.fa-strava:before {\n  content: \"\\F428\"; }\n\n.fa-stream:before {\n  content: \"\\F550\"; }\n\n.fa-street-view:before {\n  content: \"\\F21D\"; }\n\n.fa-strikethrough:before {\n  content: \"\\F0CC\"; }\n\n.fa-stripe:before {\n  content: \"\\F429\"; }\n\n.fa-stripe-s:before {\n  content: \"\\F42A\"; }\n\n.fa-stroopwafel:before {\n  content: \"\\F551\"; }\n\n.fa-studiovinari:before {\n  content: \"\\F3F8\"; }\n\n.fa-stumbleupon:before {\n  content: \"\\F1A4\"; }\n\n.fa-stumbleupon-circle:before {\n  content: \"\\F1A3\"; }\n\n.fa-subscript:before {\n  content: \"\\F12C\"; }\n\n.fa-subway:before {\n  content: \"\\F239\"; }\n\n.fa-suitcase:before {\n  content: \"\\F0F2\"; }\n\n.fa-suitcase-rolling:before {\n  content: \"\\F5C1\"; }\n\n.fa-sun:before {\n  content: \"\\F185\"; }\n\n.fa-superpowers:before {\n  content: \"\\F2DD\"; }\n\n.fa-superscript:before {\n  content: \"\\F12B\"; }\n\n.fa-supple:before {\n  content: \"\\F3F9\"; }\n\n.fa-surprise:before {\n  content: \"\\F5C2\"; }\n\n.fa-suse:before {\n  content: \"\\F7D6\"; }\n\n.fa-swatchbook:before {\n  content: \"\\F5C3\"; }\n\n.fa-swimmer:before {\n  content: \"\\F5C4\"; }\n\n.fa-swimming-pool:before {\n  content: \"\\F5C5\"; }\n\n.fa-synagogue:before {\n  content: \"\\F69B\"; }\n\n.fa-sync:before {\n  content: \"\\F021\"; }\n\n.fa-sync-alt:before {\n  content: \"\\F2F1\"; }\n\n.fa-syringe:before {\n  content: \"\\F48E\"; }\n\n.fa-table:before {\n  content: \"\\F0CE\"; }\n\n.fa-table-tennis:before {\n  content: \"\\F45D\"; }\n\n.fa-tablet:before {\n  content: \"\\F10A\"; }\n\n.fa-tablet-alt:before {\n  content: \"\\F3FA\"; }\n\n.fa-tablets:before {\n  content: \"\\F490\"; }\n\n.fa-tachometer-alt:before {\n  content: \"\\F3FD\"; }\n\n.fa-tag:before {\n  content: \"\\F02B\"; }\n\n.fa-tags:before {\n  content: \"\\F02C\"; }\n\n.fa-tape:before {\n  content: \"\\F4DB\"; }\n\n.fa-tasks:before {\n  content: \"\\F0AE\"; }\n\n.fa-taxi:before {\n  content: \"\\F1BA\"; }\n\n.fa-teamspeak:before {\n  content: \"\\F4F9\"; }\n\n.fa-teeth:before {\n  content: \"\\F62E\"; }\n\n.fa-teeth-open:before {\n  content: \"\\F62F\"; }\n\n.fa-telegram:before {\n  content: \"\\F2C6\"; }\n\n.fa-telegram-plane:before {\n  content: \"\\F3FE\"; }\n\n.fa-temperature-high:before {\n  content: \"\\F769\"; }\n\n.fa-temperature-low:before {\n  content: \"\\F76B\"; }\n\n.fa-tencent-weibo:before {\n  content: \"\\F1D5\"; }\n\n.fa-tenge:before {\n  content: \"\\F7D7\"; }\n\n.fa-terminal:before {\n  content: \"\\F120\"; }\n\n.fa-text-height:before {\n  content: \"\\F034\"; }\n\n.fa-text-width:before {\n  content: \"\\F035\"; }\n\n.fa-th:before {\n  content: \"\\F00A\"; }\n\n.fa-th-large:before {\n  content: \"\\F009\"; }\n\n.fa-th-list:before {\n  content: \"\\F00B\"; }\n\n.fa-the-red-yeti:before {\n  content: \"\\F69D\"; }\n\n.fa-theater-masks:before {\n  content: \"\\F630\"; }\n\n.fa-themeco:before {\n  content: \"\\F5C6\"; }\n\n.fa-themeisle:before {\n  content: \"\\F2B2\"; }\n\n.fa-thermometer:before {\n  content: \"\\F491\"; }\n\n.fa-thermometer-empty:before {\n  content: \"\\F2CB\"; }\n\n.fa-thermometer-full:before {\n  content: \"\\F2C7\"; }\n\n.fa-thermometer-half:before {\n  content: \"\\F2C9\"; }\n\n.fa-thermometer-quarter:before {\n  content: \"\\F2CA\"; }\n\n.fa-thermometer-three-quarters:before {\n  content: \"\\F2C8\"; }\n\n.fa-think-peaks:before {\n  content: \"\\F731\"; }\n\n.fa-thumbs-down:before {\n  content: \"\\F165\"; }\n\n.fa-thumbs-up:before {\n  content: \"\\F164\"; }\n\n.fa-thumbtack:before {\n  content: \"\\F08D\"; }\n\n.fa-ticket-alt:before {\n  content: \"\\F3FF\"; }\n\n.fa-times:before {\n  content: \"\\F00D\"; }\n\n.fa-times-circle:before {\n  content: \"\\F057\"; }\n\n.fa-tint:before {\n  content: \"\\F043\"; }\n\n.fa-tint-slash:before {\n  content: \"\\F5C7\"; }\n\n.fa-tired:before {\n  content: \"\\F5C8\"; }\n\n.fa-toggle-off:before {\n  content: \"\\F204\"; }\n\n.fa-toggle-on:before {\n  content: \"\\F205\"; }\n\n.fa-toilet:before {\n  content: \"\\F7D8\"; }\n\n.fa-toilet-paper:before {\n  content: \"\\F71E\"; }\n\n.fa-toolbox:before {\n  content: \"\\F552\"; }\n\n.fa-tools:before {\n  content: \"\\F7D9\"; }\n\n.fa-tooth:before {\n  content: \"\\F5C9\"; }\n\n.fa-torah:before {\n  content: \"\\F6A0\"; }\n\n.fa-torii-gate:before {\n  content: \"\\F6A1\"; }\n\n.fa-tractor:before {\n  content: \"\\F722\"; }\n\n.fa-trade-federation:before {\n  content: \"\\F513\"; }\n\n.fa-trademark:before {\n  content: \"\\F25C\"; }\n\n.fa-traffic-light:before {\n  content: \"\\F637\"; }\n\n.fa-train:before {\n  content: \"\\F238\"; }\n\n.fa-tram:before {\n  content: \"\\F7DA\"; }\n\n.fa-transgender:before {\n  content: \"\\F224\"; }\n\n.fa-transgender-alt:before {\n  content: \"\\F225\"; }\n\n.fa-trash:before {\n  content: \"\\F1F8\"; }\n\n.fa-trash-alt:before {\n  content: \"\\F2ED\"; }\n\n.fa-trash-restore:before {\n  content: \"\\F829\"; }\n\n.fa-trash-restore-alt:before {\n  content: \"\\F82A\"; }\n\n.fa-tree:before {\n  content: \"\\F1BB\"; }\n\n.fa-trello:before {\n  content: \"\\F181\"; }\n\n.fa-tripadvisor:before {\n  content: \"\\F262\"; }\n\n.fa-trophy:before {\n  content: \"\\F091\"; }\n\n.fa-truck:before {\n  content: \"\\F0D1\"; }\n\n.fa-truck-loading:before {\n  content: \"\\F4DE\"; }\n\n.fa-truck-monster:before {\n  content: \"\\F63B\"; }\n\n.fa-truck-moving:before {\n  content: \"\\F4DF\"; }\n\n.fa-truck-pickup:before {\n  content: \"\\F63C\"; }\n\n.fa-tshirt:before {\n  content: \"\\F553\"; }\n\n.fa-tty:before {\n  content: \"\\F1E4\"; }\n\n.fa-tumblr:before {\n  content: \"\\F173\"; }\n\n.fa-tumblr-square:before {\n  content: \"\\F174\"; }\n\n.fa-tv:before {\n  content: \"\\F26C\"; }\n\n.fa-twitch:before {\n  content: \"\\F1E8\"; }\n\n.fa-twitter:before {\n  content: \"\\F099\"; }\n\n.fa-twitter-square:before {\n  content: \"\\F081\"; }\n\n.fa-typo3:before {\n  content: \"\\F42B\"; }\n\n.fa-uber:before {\n  content: \"\\F402\"; }\n\n.fa-ubuntu:before {\n  content: \"\\F7DF\"; }\n\n.fa-uikit:before {\n  content: \"\\F403\"; }\n\n.fa-umbrella:before {\n  content: \"\\F0E9\"; }\n\n.fa-umbrella-beach:before {\n  content: \"\\F5CA\"; }\n\n.fa-underline:before {\n  content: \"\\F0CD\"; }\n\n.fa-undo:before {\n  content: \"\\F0E2\"; }\n\n.fa-undo-alt:before {\n  content: \"\\F2EA\"; }\n\n.fa-uniregistry:before {\n  content: \"\\F404\"; }\n\n.fa-universal-access:before {\n  content: \"\\F29A\"; }\n\n.fa-university:before {\n  content: \"\\F19C\"; }\n\n.fa-unlink:before {\n  content: \"\\F127\"; }\n\n.fa-unlock:before {\n  content: \"\\F09C\"; }\n\n.fa-unlock-alt:before {\n  content: \"\\F13E\"; }\n\n.fa-untappd:before {\n  content: \"\\F405\"; }\n\n.fa-upload:before {\n  content: \"\\F093\"; }\n\n.fa-ups:before {\n  content: \"\\F7E0\"; }\n\n.fa-usb:before {\n  content: \"\\F287\"; }\n\n.fa-user:before {\n  content: \"\\F007\"; }\n\n.fa-user-alt:before {\n  content: \"\\F406\"; }\n\n.fa-user-alt-slash:before {\n  content: \"\\F4FA\"; }\n\n.fa-user-astronaut:before {\n  content: \"\\F4FB\"; }\n\n.fa-user-check:before {\n  content: \"\\F4FC\"; }\n\n.fa-user-circle:before {\n  content: \"\\F2BD\"; }\n\n.fa-user-clock:before {\n  content: \"\\F4FD\"; }\n\n.fa-user-cog:before {\n  content: \"\\F4FE\"; }\n\n.fa-user-edit:before {\n  content: \"\\F4FF\"; }\n\n.fa-user-friends:before {\n  content: \"\\F500\"; }\n\n.fa-user-graduate:before {\n  content: \"\\F501\"; }\n\n.fa-user-injured:before {\n  content: \"\\F728\"; }\n\n.fa-user-lock:before {\n  content: \"\\F502\"; }\n\n.fa-user-md:before {\n  content: \"\\F0F0\"; }\n\n.fa-user-minus:before {\n  content: \"\\F503\"; }\n\n.fa-user-ninja:before {\n  content: \"\\F504\"; }\n\n.fa-user-nurse:before {\n  content: \"\\F82F\"; }\n\n.fa-user-plus:before {\n  content: \"\\F234\"; }\n\n.fa-user-secret:before {\n  content: \"\\F21B\"; }\n\n.fa-user-shield:before {\n  content: \"\\F505\"; }\n\n.fa-user-slash:before {\n  content: \"\\F506\"; }\n\n.fa-user-tag:before {\n  content: \"\\F507\"; }\n\n.fa-user-tie:before {\n  content: \"\\F508\"; }\n\n.fa-user-times:before {\n  content: \"\\F235\"; }\n\n.fa-users:before {\n  content: \"\\F0C0\"; }\n\n.fa-users-cog:before {\n  content: \"\\F509\"; }\n\n.fa-usps:before {\n  content: \"\\F7E1\"; }\n\n.fa-ussunnah:before {\n  content: \"\\F407\"; }\n\n.fa-utensil-spoon:before {\n  content: \"\\F2E5\"; }\n\n.fa-utensils:before {\n  content: \"\\F2E7\"; }\n\n.fa-vaadin:before {\n  content: \"\\F408\"; }\n\n.fa-vector-square:before {\n  content: \"\\F5CB\"; }\n\n.fa-venus:before {\n  content: \"\\F221\"; }\n\n.fa-venus-double:before {\n  content: \"\\F226\"; }\n\n.fa-venus-mars:before {\n  content: \"\\F228\"; }\n\n.fa-viacoin:before {\n  content: \"\\F237\"; }\n\n.fa-viadeo:before {\n  content: \"\\F2A9\"; }\n\n.fa-viadeo-square:before {\n  content: \"\\F2AA\"; }\n\n.fa-vial:before {\n  content: \"\\F492\"; }\n\n.fa-vials:before {\n  content: \"\\F493\"; }\n\n.fa-viber:before {\n  content: \"\\F409\"; }\n\n.fa-video:before {\n  content: \"\\F03D\"; }\n\n.fa-video-slash:before {\n  content: \"\\F4E2\"; }\n\n.fa-vihara:before {\n  content: \"\\F6A7\"; }\n\n.fa-vimeo:before {\n  content: \"\\F40A\"; }\n\n.fa-vimeo-square:before {\n  content: \"\\F194\"; }\n\n.fa-vimeo-v:before {\n  content: \"\\F27D\"; }\n\n.fa-vine:before {\n  content: \"\\F1CA\"; }\n\n.fa-vk:before {\n  content: \"\\F189\"; }\n\n.fa-vnv:before {\n  content: \"\\F40B\"; }\n\n.fa-volleyball-ball:before {\n  content: \"\\F45F\"; }\n\n.fa-volume-down:before {\n  content: \"\\F027\"; }\n\n.fa-volume-mute:before {\n  content: \"\\F6A9\"; }\n\n.fa-volume-off:before {\n  content: \"\\F026\"; }\n\n.fa-volume-up:before {\n  content: \"\\F028\"; }\n\n.fa-vote-yea:before {\n  content: \"\\F772\"; }\n\n.fa-vr-cardboard:before {\n  content: \"\\F729\"; }\n\n.fa-vuejs:before {\n  content: \"\\F41F\"; }\n\n.fa-walking:before {\n  content: \"\\F554\"; }\n\n.fa-wallet:before {\n  content: \"\\F555\"; }\n\n.fa-warehouse:before {\n  content: \"\\F494\"; }\n\n.fa-water:before {\n  content: \"\\F773\"; }\n\n.fa-weebly:before {\n  content: \"\\F5CC\"; }\n\n.fa-weibo:before {\n  content: \"\\F18A\"; }\n\n.fa-weight:before {\n  content: \"\\F496\"; }\n\n.fa-weight-hanging:before {\n  content: \"\\F5CD\"; }\n\n.fa-weixin:before {\n  content: \"\\F1D7\"; }\n\n.fa-whatsapp:before {\n  content: \"\\F232\"; }\n\n.fa-whatsapp-square:before {\n  content: \"\\F40C\"; }\n\n.fa-wheelchair:before {\n  content: \"\\F193\"; }\n\n.fa-whmcs:before {\n  content: \"\\F40D\"; }\n\n.fa-wifi:before {\n  content: \"\\F1EB\"; }\n\n.fa-wikipedia-w:before {\n  content: \"\\F266\"; }\n\n.fa-wind:before {\n  content: \"\\F72E\"; }\n\n.fa-window-close:before {\n  content: \"\\F410\"; }\n\n.fa-window-maximize:before {\n  content: \"\\F2D0\"; }\n\n.fa-window-minimize:before {\n  content: \"\\F2D1\"; }\n\n.fa-window-restore:before {\n  content: \"\\F2D2\"; }\n\n.fa-windows:before {\n  content: \"\\F17A\"; }\n\n.fa-wine-bottle:before {\n  content: \"\\F72F\"; }\n\n.fa-wine-glass:before {\n  content: \"\\F4E3\"; }\n\n.fa-wine-glass-alt:before {\n  content: \"\\F5CE\"; }\n\n.fa-wix:before {\n  content: \"\\F5CF\"; }\n\n.fa-wizards-of-the-coast:before {\n  content: \"\\F730\"; }\n\n.fa-wolf-pack-battalion:before {\n  content: \"\\F514\"; }\n\n.fa-won-sign:before {\n  content: \"\\F159\"; }\n\n.fa-wordpress:before {\n  content: \"\\F19A\"; }\n\n.fa-wordpress-simple:before {\n  content: \"\\F411\"; }\n\n.fa-wpbeginner:before {\n  content: \"\\F297\"; }\n\n.fa-wpexplorer:before {\n  content: \"\\F2DE\"; }\n\n.fa-wpforms:before {\n  content: \"\\F298\"; }\n\n.fa-wpressr:before {\n  content: \"\\F3E4\"; }\n\n.fa-wrench:before {\n  content: \"\\F0AD\"; }\n\n.fa-x-ray:before {\n  content: \"\\F497\"; }\n\n.fa-xbox:before {\n  content: \"\\F412\"; }\n\n.fa-xing:before {\n  content: \"\\F168\"; }\n\n.fa-xing-square:before {\n  content: \"\\F169\"; }\n\n.fa-y-combinator:before {\n  content: \"\\F23B\"; }\n\n.fa-yahoo:before {\n  content: \"\\F19E\"; }\n\n.fa-yandex:before {\n  content: \"\\F413\"; }\n\n.fa-yandex-international:before {\n  content: \"\\F414\"; }\n\n.fa-yarn:before {\n  content: \"\\F7E3\"; }\n\n.fa-yelp:before {\n  content: \"\\F1E9\"; }\n\n.fa-yen-sign:before {\n  content: \"\\F157\"; }\n\n.fa-yin-yang:before {\n  content: \"\\F6AD\"; }\n\n.fa-yoast:before {\n  content: \"\\F2B1\"; }\n\n.fa-youtube:before {\n  content: \"\\F167\"; }\n\n.fa-youtube-square:before {\n  content: \"\\F431\"; }\n\n.fa-zhihu:before {\n  content: \"\\F63F\"; }\n\n.sr-only {\n  border: 0;\n  clip: rect(0, 0, 0, 0);\n  height: 1px;\n  margin: -1px;\n  overflow: hidden;\n  padding: 0;\n  position: absolute;\n  width: 1px; }\n\n.sr-only-focusable:active, .sr-only-focusable:focus {\n  clip: auto;\n  height: auto;\n  margin: 0;\n  overflow: visible;\n  position: static;\n  width: auto; }\n@font-face {\n  font-family: 'Font Awesome 5 Brands';\n  font-style: normal;\n  font-weight: normal;\n  font-display: auto;\n  src: url(" + escape(__webpack_require__(/*! ../webfonts/fa-brands-400.eot */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot")) + ");\n  src: url(" + escape(__webpack_require__(/*! ../webfonts/fa-brands-400.eot */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot")) + "?#iefix) format(\"embedded-opentype\"), url(" + escape(__webpack_require__(/*! ../webfonts/fa-brands-400.woff2 */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2")) + ") format(\"woff2\"), url(" + escape(__webpack_require__(/*! ../webfonts/fa-brands-400.woff */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff")) + ") format(\"woff\"), url(" + escape(__webpack_require__(/*! ../webfonts/fa-brands-400.ttf */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf")) + ") format(\"truetype\"), url(" + escape(__webpack_require__(/*! ../webfonts/fa-brands-400.svg */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg")) + "#fontawesome) format(\"svg\"); }\n\n.fab {\n  font-family: 'Font Awesome 5 Brands'; }\n@font-face {\n  font-family: 'Font Awesome 5 Free';\n  font-style: normal;\n  font-weight: 400;\n  font-display: auto;\n  src: url(" + escape(__webpack_require__(/*! ../webfonts/fa-regular-400.eot */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot")) + ");\n  src: url(" + escape(__webpack_require__(/*! ../webfonts/fa-regular-400.eot */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot")) + "?#iefix) format(\"embedded-opentype\"), url(" + escape(__webpack_require__(/*! ../webfonts/fa-regular-400.woff2 */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2")) + ") format(\"woff2\"), url(" + escape(__webpack_require__(/*! ../webfonts/fa-regular-400.woff */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff")) + ") format(\"woff\"), url(" + escape(__webpack_require__(/*! ../webfonts/fa-regular-400.ttf */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf")) + ") format(\"truetype\"), url(" + escape(__webpack_require__(/*! ../webfonts/fa-regular-400.svg */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg")) + "#fontawesome) format(\"svg\"); }\n\n.far {\n  font-family: 'Font Awesome 5 Free';\n  font-weight: 400; }\n@font-face {\n  font-family: 'Font Awesome 5 Free';\n  font-style: normal;\n  font-weight: 900;\n  font-display: auto;\n  src: url(" + escape(__webpack_require__(/*! ../webfonts/fa-solid-900.eot */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot")) + ");\n  src: url(" + escape(__webpack_require__(/*! ../webfonts/fa-solid-900.eot */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot")) + "?#iefix) format(\"embedded-opentype\"), url(" + escape(__webpack_require__(/*! ../webfonts/fa-solid-900.woff2 */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2")) + ") format(\"woff2\"), url(" + escape(__webpack_require__(/*! ../webfonts/fa-solid-900.woff */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff")) + ") format(\"woff\"), url(" + escape(__webpack_require__(/*! ../webfonts/fa-solid-900.ttf */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf")) + ") format(\"truetype\"), url(" + escape(__webpack_require__(/*! ../webfonts/fa-solid-900.svg */ "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg")) + "#fontawesome) format(\"svg\"); }\n\n.fa,\n.fas {\n  font-family: 'Font Awesome 5 Free';\n  font-weight: 900; }\n", ""]);
-
-// exports
-
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/flipclock/dist/flipclock.css":
 /*!***********************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/flipclock/dist/flipclock.css ***!
@@ -6433,6 +6559,45 @@ exports.push([module.i, ".flip-clock {\n  font-family: \"Helvetica Neue\", Helve
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/font-awesome/css/font-awesome.css":
+/*!****************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/font-awesome/css/font-awesome.css ***!
+  \****************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var escape = __webpack_require__(/*! ../../css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
+exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*!\n *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome\n *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n */\n/* FONT PATH\n * -------------------------- */\n@font-face {\n  font-family: 'FontAwesome';\n  src: url(" + escape(__webpack_require__(/*! ../fonts/fontawesome-webfont.eot?v=4.7.0 */ "./node_modules/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0")) + ");\n  src: url(" + escape(__webpack_require__(/*! ../fonts/fontawesome-webfont.eot */ "./node_modules/font-awesome/fonts/fontawesome-webfont.eot")) + "?#iefix&v=4.7.0) format('embedded-opentype'), url(" + escape(__webpack_require__(/*! ../fonts/fontawesome-webfont.woff2?v=4.7.0 */ "./node_modules/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0")) + ") format('woff2'), url(" + escape(__webpack_require__(/*! ../fonts/fontawesome-webfont.woff?v=4.7.0 */ "./node_modules/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0")) + ") format('woff'), url(" + escape(__webpack_require__(/*! ../fonts/fontawesome-webfont.ttf?v=4.7.0 */ "./node_modules/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0")) + ") format('truetype'), url(" + escape(__webpack_require__(/*! ../fonts/fontawesome-webfont.svg?v=4.7.0 */ "./node_modules/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0")) + "#fontawesomeregular) format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n.fa {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n/* makes the font 33% larger relative to the icon container */\n.fa-lg {\n  font-size: 1.33333333em;\n  line-height: 0.75em;\n  vertical-align: -15%;\n}\n.fa-2x {\n  font-size: 2em;\n}\n.fa-3x {\n  font-size: 3em;\n}\n.fa-4x {\n  font-size: 4em;\n}\n.fa-5x {\n  font-size: 5em;\n}\n.fa-fw {\n  width: 1.28571429em;\n  text-align: center;\n}\n.fa-ul {\n  padding-left: 0;\n  margin-left: 2.14285714em;\n  list-style-type: none;\n}\n.fa-ul > li {\n  position: relative;\n}\n.fa-li {\n  position: absolute;\n  left: -2.14285714em;\n  width: 2.14285714em;\n  top: 0.14285714em;\n  text-align: center;\n}\n.fa-li.fa-lg {\n  left: -1.85714286em;\n}\n.fa-border {\n  padding: .2em .25em .15em;\n  border: solid 0.08em #eeeeee;\n  border-radius: .1em;\n}\n.fa-pull-left {\n  float: left;\n}\n.fa-pull-right {\n  float: right;\n}\n.fa.fa-pull-left {\n  margin-right: .3em;\n}\n.fa.fa-pull-right {\n  margin-left: .3em;\n}\n/* Deprecated as of 4.4.0 */\n.pull-right {\n  float: right;\n}\n.pull-left {\n  float: left;\n}\n.fa.pull-left {\n  margin-right: .3em;\n}\n.fa.pull-right {\n  margin-left: .3em;\n}\n.fa-spin {\n  -webkit-animation: fa-spin 2s infinite linear;\n  animation: fa-spin 2s infinite linear;\n}\n.fa-pulse {\n  -webkit-animation: fa-spin 1s infinite steps(8);\n  animation: fa-spin 1s infinite steps(8);\n}\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n.fa-rotate-90 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";\n  -webkit-transform: rotate(90deg);\n  transform: rotate(90deg);\n}\n.fa-rotate-180 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";\n  -webkit-transform: rotate(180deg);\n  transform: rotate(180deg);\n}\n.fa-rotate-270 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";\n  -webkit-transform: rotate(270deg);\n  transform: rotate(270deg);\n}\n.fa-flip-horizontal {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";\n  -webkit-transform: scale(-1, 1);\n  transform: scale(-1, 1);\n}\n.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(1, -1);\n  transform: scale(1, -1);\n}\n:root .fa-rotate-90,\n:root .fa-rotate-180,\n:root .fa-rotate-270,\n:root .fa-flip-horizontal,\n:root .fa-flip-vertical {\n  -webkit-filter: none;\n          filter: none;\n}\n.fa-stack {\n  position: relative;\n  display: inline-block;\n  width: 2em;\n  height: 2em;\n  line-height: 2em;\n  vertical-align: middle;\n}\n.fa-stack-1x,\n.fa-stack-2x {\n  position: absolute;\n  left: 0;\n  width: 100%;\n  text-align: center;\n}\n.fa-stack-1x {\n  line-height: inherit;\n}\n.fa-stack-2x {\n  font-size: 2em;\n}\n.fa-inverse {\n  color: #ffffff;\n}\n/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen\n   readers do not read off random characters that represent icons */\n.fa-glass:before {\n  content: \"\\F000\";\n}\n.fa-music:before {\n  content: \"\\F001\";\n}\n.fa-search:before {\n  content: \"\\F002\";\n}\n.fa-envelope-o:before {\n  content: \"\\F003\";\n}\n.fa-heart:before {\n  content: \"\\F004\";\n}\n.fa-star:before {\n  content: \"\\F005\";\n}\n.fa-star-o:before {\n  content: \"\\F006\";\n}\n.fa-user:before {\n  content: \"\\F007\";\n}\n.fa-film:before {\n  content: \"\\F008\";\n}\n.fa-th-large:before {\n  content: \"\\F009\";\n}\n.fa-th:before {\n  content: \"\\F00A\";\n}\n.fa-th-list:before {\n  content: \"\\F00B\";\n}\n.fa-check:before {\n  content: \"\\F00C\";\n}\n.fa-remove:before,\n.fa-close:before,\n.fa-times:before {\n  content: \"\\F00D\";\n}\n.fa-search-plus:before {\n  content: \"\\F00E\";\n}\n.fa-search-minus:before {\n  content: \"\\F010\";\n}\n.fa-power-off:before {\n  content: \"\\F011\";\n}\n.fa-signal:before {\n  content: \"\\F012\";\n}\n.fa-gear:before,\n.fa-cog:before {\n  content: \"\\F013\";\n}\n.fa-trash-o:before {\n  content: \"\\F014\";\n}\n.fa-home:before {\n  content: \"\\F015\";\n}\n.fa-file-o:before {\n  content: \"\\F016\";\n}\n.fa-clock-o:before {\n  content: \"\\F017\";\n}\n.fa-road:before {\n  content: \"\\F018\";\n}\n.fa-download:before {\n  content: \"\\F019\";\n}\n.fa-arrow-circle-o-down:before {\n  content: \"\\F01A\";\n}\n.fa-arrow-circle-o-up:before {\n  content: \"\\F01B\";\n}\n.fa-inbox:before {\n  content: \"\\F01C\";\n}\n.fa-play-circle-o:before {\n  content: \"\\F01D\";\n}\n.fa-rotate-right:before,\n.fa-repeat:before {\n  content: \"\\F01E\";\n}\n.fa-refresh:before {\n  content: \"\\F021\";\n}\n.fa-list-alt:before {\n  content: \"\\F022\";\n}\n.fa-lock:before {\n  content: \"\\F023\";\n}\n.fa-flag:before {\n  content: \"\\F024\";\n}\n.fa-headphones:before {\n  content: \"\\F025\";\n}\n.fa-volume-off:before {\n  content: \"\\F026\";\n}\n.fa-volume-down:before {\n  content: \"\\F027\";\n}\n.fa-volume-up:before {\n  content: \"\\F028\";\n}\n.fa-qrcode:before {\n  content: \"\\F029\";\n}\n.fa-barcode:before {\n  content: \"\\F02A\";\n}\n.fa-tag:before {\n  content: \"\\F02B\";\n}\n.fa-tags:before {\n  content: \"\\F02C\";\n}\n.fa-book:before {\n  content: \"\\F02D\";\n}\n.fa-bookmark:before {\n  content: \"\\F02E\";\n}\n.fa-print:before {\n  content: \"\\F02F\";\n}\n.fa-camera:before {\n  content: \"\\F030\";\n}\n.fa-font:before {\n  content: \"\\F031\";\n}\n.fa-bold:before {\n  content: \"\\F032\";\n}\n.fa-italic:before {\n  content: \"\\F033\";\n}\n.fa-text-height:before {\n  content: \"\\F034\";\n}\n.fa-text-width:before {\n  content: \"\\F035\";\n}\n.fa-align-left:before {\n  content: \"\\F036\";\n}\n.fa-align-center:before {\n  content: \"\\F037\";\n}\n.fa-align-right:before {\n  content: \"\\F038\";\n}\n.fa-align-justify:before {\n  content: \"\\F039\";\n}\n.fa-list:before {\n  content: \"\\F03A\";\n}\n.fa-dedent:before,\n.fa-outdent:before {\n  content: \"\\F03B\";\n}\n.fa-indent:before {\n  content: \"\\F03C\";\n}\n.fa-video-camera:before {\n  content: \"\\F03D\";\n}\n.fa-photo:before,\n.fa-image:before,\n.fa-picture-o:before {\n  content: \"\\F03E\";\n}\n.fa-pencil:before {\n  content: \"\\F040\";\n}\n.fa-map-marker:before {\n  content: \"\\F041\";\n}\n.fa-adjust:before {\n  content: \"\\F042\";\n}\n.fa-tint:before {\n  content: \"\\F043\";\n}\n.fa-edit:before,\n.fa-pencil-square-o:before {\n  content: \"\\F044\";\n}\n.fa-share-square-o:before {\n  content: \"\\F045\";\n}\n.fa-check-square-o:before {\n  content: \"\\F046\";\n}\n.fa-arrows:before {\n  content: \"\\F047\";\n}\n.fa-step-backward:before {\n  content: \"\\F048\";\n}\n.fa-fast-backward:before {\n  content: \"\\F049\";\n}\n.fa-backward:before {\n  content: \"\\F04A\";\n}\n.fa-play:before {\n  content: \"\\F04B\";\n}\n.fa-pause:before {\n  content: \"\\F04C\";\n}\n.fa-stop:before {\n  content: \"\\F04D\";\n}\n.fa-forward:before {\n  content: \"\\F04E\";\n}\n.fa-fast-forward:before {\n  content: \"\\F050\";\n}\n.fa-step-forward:before {\n  content: \"\\F051\";\n}\n.fa-eject:before {\n  content: \"\\F052\";\n}\n.fa-chevron-left:before {\n  content: \"\\F053\";\n}\n.fa-chevron-right:before {\n  content: \"\\F054\";\n}\n.fa-plus-circle:before {\n  content: \"\\F055\";\n}\n.fa-minus-circle:before {\n  content: \"\\F056\";\n}\n.fa-times-circle:before {\n  content: \"\\F057\";\n}\n.fa-check-circle:before {\n  content: \"\\F058\";\n}\n.fa-question-circle:before {\n  content: \"\\F059\";\n}\n.fa-info-circle:before {\n  content: \"\\F05A\";\n}\n.fa-crosshairs:before {\n  content: \"\\F05B\";\n}\n.fa-times-circle-o:before {\n  content: \"\\F05C\";\n}\n.fa-check-circle-o:before {\n  content: \"\\F05D\";\n}\n.fa-ban:before {\n  content: \"\\F05E\";\n}\n.fa-arrow-left:before {\n  content: \"\\F060\";\n}\n.fa-arrow-right:before {\n  content: \"\\F061\";\n}\n.fa-arrow-up:before {\n  content: \"\\F062\";\n}\n.fa-arrow-down:before {\n  content: \"\\F063\";\n}\n.fa-mail-forward:before,\n.fa-share:before {\n  content: \"\\F064\";\n}\n.fa-expand:before {\n  content: \"\\F065\";\n}\n.fa-compress:before {\n  content: \"\\F066\";\n}\n.fa-plus:before {\n  content: \"\\F067\";\n}\n.fa-minus:before {\n  content: \"\\F068\";\n}\n.fa-asterisk:before {\n  content: \"\\F069\";\n}\n.fa-exclamation-circle:before {\n  content: \"\\F06A\";\n}\n.fa-gift:before {\n  content: \"\\F06B\";\n}\n.fa-leaf:before {\n  content: \"\\F06C\";\n}\n.fa-fire:before {\n  content: \"\\F06D\";\n}\n.fa-eye:before {\n  content: \"\\F06E\";\n}\n.fa-eye-slash:before {\n  content: \"\\F070\";\n}\n.fa-warning:before,\n.fa-exclamation-triangle:before {\n  content: \"\\F071\";\n}\n.fa-plane:before {\n  content: \"\\F072\";\n}\n.fa-calendar:before {\n  content: \"\\F073\";\n}\n.fa-random:before {\n  content: \"\\F074\";\n}\n.fa-comment:before {\n  content: \"\\F075\";\n}\n.fa-magnet:before {\n  content: \"\\F076\";\n}\n.fa-chevron-up:before {\n  content: \"\\F077\";\n}\n.fa-chevron-down:before {\n  content: \"\\F078\";\n}\n.fa-retweet:before {\n  content: \"\\F079\";\n}\n.fa-shopping-cart:before {\n  content: \"\\F07A\";\n}\n.fa-folder:before {\n  content: \"\\F07B\";\n}\n.fa-folder-open:before {\n  content: \"\\F07C\";\n}\n.fa-arrows-v:before {\n  content: \"\\F07D\";\n}\n.fa-arrows-h:before {\n  content: \"\\F07E\";\n}\n.fa-bar-chart-o:before,\n.fa-bar-chart:before {\n  content: \"\\F080\";\n}\n.fa-twitter-square:before {\n  content: \"\\F081\";\n}\n.fa-facebook-square:before {\n  content: \"\\F082\";\n}\n.fa-camera-retro:before {\n  content: \"\\F083\";\n}\n.fa-key:before {\n  content: \"\\F084\";\n}\n.fa-gears:before,\n.fa-cogs:before {\n  content: \"\\F085\";\n}\n.fa-comments:before {\n  content: \"\\F086\";\n}\n.fa-thumbs-o-up:before {\n  content: \"\\F087\";\n}\n.fa-thumbs-o-down:before {\n  content: \"\\F088\";\n}\n.fa-star-half:before {\n  content: \"\\F089\";\n}\n.fa-heart-o:before {\n  content: \"\\F08A\";\n}\n.fa-sign-out:before {\n  content: \"\\F08B\";\n}\n.fa-linkedin-square:before {\n  content: \"\\F08C\";\n}\n.fa-thumb-tack:before {\n  content: \"\\F08D\";\n}\n.fa-external-link:before {\n  content: \"\\F08E\";\n}\n.fa-sign-in:before {\n  content: \"\\F090\";\n}\n.fa-trophy:before {\n  content: \"\\F091\";\n}\n.fa-github-square:before {\n  content: \"\\F092\";\n}\n.fa-upload:before {\n  content: \"\\F093\";\n}\n.fa-lemon-o:before {\n  content: \"\\F094\";\n}\n.fa-phone:before {\n  content: \"\\F095\";\n}\n.fa-square-o:before {\n  content: \"\\F096\";\n}\n.fa-bookmark-o:before {\n  content: \"\\F097\";\n}\n.fa-phone-square:before {\n  content: \"\\F098\";\n}\n.fa-twitter:before {\n  content: \"\\F099\";\n}\n.fa-facebook-f:before,\n.fa-facebook:before {\n  content: \"\\F09A\";\n}\n.fa-github:before {\n  content: \"\\F09B\";\n}\n.fa-unlock:before {\n  content: \"\\F09C\";\n}\n.fa-credit-card:before {\n  content: \"\\F09D\";\n}\n.fa-feed:before,\n.fa-rss:before {\n  content: \"\\F09E\";\n}\n.fa-hdd-o:before {\n  content: \"\\F0A0\";\n}\n.fa-bullhorn:before {\n  content: \"\\F0A1\";\n}\n.fa-bell:before {\n  content: \"\\F0F3\";\n}\n.fa-certificate:before {\n  content: \"\\F0A3\";\n}\n.fa-hand-o-right:before {\n  content: \"\\F0A4\";\n}\n.fa-hand-o-left:before {\n  content: \"\\F0A5\";\n}\n.fa-hand-o-up:before {\n  content: \"\\F0A6\";\n}\n.fa-hand-o-down:before {\n  content: \"\\F0A7\";\n}\n.fa-arrow-circle-left:before {\n  content: \"\\F0A8\";\n}\n.fa-arrow-circle-right:before {\n  content: \"\\F0A9\";\n}\n.fa-arrow-circle-up:before {\n  content: \"\\F0AA\";\n}\n.fa-arrow-circle-down:before {\n  content: \"\\F0AB\";\n}\n.fa-globe:before {\n  content: \"\\F0AC\";\n}\n.fa-wrench:before {\n  content: \"\\F0AD\";\n}\n.fa-tasks:before {\n  content: \"\\F0AE\";\n}\n.fa-filter:before {\n  content: \"\\F0B0\";\n}\n.fa-briefcase:before {\n  content: \"\\F0B1\";\n}\n.fa-arrows-alt:before {\n  content: \"\\F0B2\";\n}\n.fa-group:before,\n.fa-users:before {\n  content: \"\\F0C0\";\n}\n.fa-chain:before,\n.fa-link:before {\n  content: \"\\F0C1\";\n}\n.fa-cloud:before {\n  content: \"\\F0C2\";\n}\n.fa-flask:before {\n  content: \"\\F0C3\";\n}\n.fa-cut:before,\n.fa-scissors:before {\n  content: \"\\F0C4\";\n}\n.fa-copy:before,\n.fa-files-o:before {\n  content: \"\\F0C5\";\n}\n.fa-paperclip:before {\n  content: \"\\F0C6\";\n}\n.fa-save:before,\n.fa-floppy-o:before {\n  content: \"\\F0C7\";\n}\n.fa-square:before {\n  content: \"\\F0C8\";\n}\n.fa-navicon:before,\n.fa-reorder:before,\n.fa-bars:before {\n  content: \"\\F0C9\";\n}\n.fa-list-ul:before {\n  content: \"\\F0CA\";\n}\n.fa-list-ol:before {\n  content: \"\\F0CB\";\n}\n.fa-strikethrough:before {\n  content: \"\\F0CC\";\n}\n.fa-underline:before {\n  content: \"\\F0CD\";\n}\n.fa-table:before {\n  content: \"\\F0CE\";\n}\n.fa-magic:before {\n  content: \"\\F0D0\";\n}\n.fa-truck:before {\n  content: \"\\F0D1\";\n}\n.fa-pinterest:before {\n  content: \"\\F0D2\";\n}\n.fa-pinterest-square:before {\n  content: \"\\F0D3\";\n}\n.fa-google-plus-square:before {\n  content: \"\\F0D4\";\n}\n.fa-google-plus:before {\n  content: \"\\F0D5\";\n}\n.fa-money:before {\n  content: \"\\F0D6\";\n}\n.fa-caret-down:before {\n  content: \"\\F0D7\";\n}\n.fa-caret-up:before {\n  content: \"\\F0D8\";\n}\n.fa-caret-left:before {\n  content: \"\\F0D9\";\n}\n.fa-caret-right:before {\n  content: \"\\F0DA\";\n}\n.fa-columns:before {\n  content: \"\\F0DB\";\n}\n.fa-unsorted:before,\n.fa-sort:before {\n  content: \"\\F0DC\";\n}\n.fa-sort-down:before,\n.fa-sort-desc:before {\n  content: \"\\F0DD\";\n}\n.fa-sort-up:before,\n.fa-sort-asc:before {\n  content: \"\\F0DE\";\n}\n.fa-envelope:before {\n  content: \"\\F0E0\";\n}\n.fa-linkedin:before {\n  content: \"\\F0E1\";\n}\n.fa-rotate-left:before,\n.fa-undo:before {\n  content: \"\\F0E2\";\n}\n.fa-legal:before,\n.fa-gavel:before {\n  content: \"\\F0E3\";\n}\n.fa-dashboard:before,\n.fa-tachometer:before {\n  content: \"\\F0E4\";\n}\n.fa-comment-o:before {\n  content: \"\\F0E5\";\n}\n.fa-comments-o:before {\n  content: \"\\F0E6\";\n}\n.fa-flash:before,\n.fa-bolt:before {\n  content: \"\\F0E7\";\n}\n.fa-sitemap:before {\n  content: \"\\F0E8\";\n}\n.fa-umbrella:before {\n  content: \"\\F0E9\";\n}\n.fa-paste:before,\n.fa-clipboard:before {\n  content: \"\\F0EA\";\n}\n.fa-lightbulb-o:before {\n  content: \"\\F0EB\";\n}\n.fa-exchange:before {\n  content: \"\\F0EC\";\n}\n.fa-cloud-download:before {\n  content: \"\\F0ED\";\n}\n.fa-cloud-upload:before {\n  content: \"\\F0EE\";\n}\n.fa-user-md:before {\n  content: \"\\F0F0\";\n}\n.fa-stethoscope:before {\n  content: \"\\F0F1\";\n}\n.fa-suitcase:before {\n  content: \"\\F0F2\";\n}\n.fa-bell-o:before {\n  content: \"\\F0A2\";\n}\n.fa-coffee:before {\n  content: \"\\F0F4\";\n}\n.fa-cutlery:before {\n  content: \"\\F0F5\";\n}\n.fa-file-text-o:before {\n  content: \"\\F0F6\";\n}\n.fa-building-o:before {\n  content: \"\\F0F7\";\n}\n.fa-hospital-o:before {\n  content: \"\\F0F8\";\n}\n.fa-ambulance:before {\n  content: \"\\F0F9\";\n}\n.fa-medkit:before {\n  content: \"\\F0FA\";\n}\n.fa-fighter-jet:before {\n  content: \"\\F0FB\";\n}\n.fa-beer:before {\n  content: \"\\F0FC\";\n}\n.fa-h-square:before {\n  content: \"\\F0FD\";\n}\n.fa-plus-square:before {\n  content: \"\\F0FE\";\n}\n.fa-angle-double-left:before {\n  content: \"\\F100\";\n}\n.fa-angle-double-right:before {\n  content: \"\\F101\";\n}\n.fa-angle-double-up:before {\n  content: \"\\F102\";\n}\n.fa-angle-double-down:before {\n  content: \"\\F103\";\n}\n.fa-angle-left:before {\n  content: \"\\F104\";\n}\n.fa-angle-right:before {\n  content: \"\\F105\";\n}\n.fa-angle-up:before {\n  content: \"\\F106\";\n}\n.fa-angle-down:before {\n  content: \"\\F107\";\n}\n.fa-desktop:before {\n  content: \"\\F108\";\n}\n.fa-laptop:before {\n  content: \"\\F109\";\n}\n.fa-tablet:before {\n  content: \"\\F10A\";\n}\n.fa-mobile-phone:before,\n.fa-mobile:before {\n  content: \"\\F10B\";\n}\n.fa-circle-o:before {\n  content: \"\\F10C\";\n}\n.fa-quote-left:before {\n  content: \"\\F10D\";\n}\n.fa-quote-right:before {\n  content: \"\\F10E\";\n}\n.fa-spinner:before {\n  content: \"\\F110\";\n}\n.fa-circle:before {\n  content: \"\\F111\";\n}\n.fa-mail-reply:before,\n.fa-reply:before {\n  content: \"\\F112\";\n}\n.fa-github-alt:before {\n  content: \"\\F113\";\n}\n.fa-folder-o:before {\n  content: \"\\F114\";\n}\n.fa-folder-open-o:before {\n  content: \"\\F115\";\n}\n.fa-smile-o:before {\n  content: \"\\F118\";\n}\n.fa-frown-o:before {\n  content: \"\\F119\";\n}\n.fa-meh-o:before {\n  content: \"\\F11A\";\n}\n.fa-gamepad:before {\n  content: \"\\F11B\";\n}\n.fa-keyboard-o:before {\n  content: \"\\F11C\";\n}\n.fa-flag-o:before {\n  content: \"\\F11D\";\n}\n.fa-flag-checkered:before {\n  content: \"\\F11E\";\n}\n.fa-terminal:before {\n  content: \"\\F120\";\n}\n.fa-code:before {\n  content: \"\\F121\";\n}\n.fa-mail-reply-all:before,\n.fa-reply-all:before {\n  content: \"\\F122\";\n}\n.fa-star-half-empty:before,\n.fa-star-half-full:before,\n.fa-star-half-o:before {\n  content: \"\\F123\";\n}\n.fa-location-arrow:before {\n  content: \"\\F124\";\n}\n.fa-crop:before {\n  content: \"\\F125\";\n}\n.fa-code-fork:before {\n  content: \"\\F126\";\n}\n.fa-unlink:before,\n.fa-chain-broken:before {\n  content: \"\\F127\";\n}\n.fa-question:before {\n  content: \"\\F128\";\n}\n.fa-info:before {\n  content: \"\\F129\";\n}\n.fa-exclamation:before {\n  content: \"\\F12A\";\n}\n.fa-superscript:before {\n  content: \"\\F12B\";\n}\n.fa-subscript:before {\n  content: \"\\F12C\";\n}\n.fa-eraser:before {\n  content: \"\\F12D\";\n}\n.fa-puzzle-piece:before {\n  content: \"\\F12E\";\n}\n.fa-microphone:before {\n  content: \"\\F130\";\n}\n.fa-microphone-slash:before {\n  content: \"\\F131\";\n}\n.fa-shield:before {\n  content: \"\\F132\";\n}\n.fa-calendar-o:before {\n  content: \"\\F133\";\n}\n.fa-fire-extinguisher:before {\n  content: \"\\F134\";\n}\n.fa-rocket:before {\n  content: \"\\F135\";\n}\n.fa-maxcdn:before {\n  content: \"\\F136\";\n}\n.fa-chevron-circle-left:before {\n  content: \"\\F137\";\n}\n.fa-chevron-circle-right:before {\n  content: \"\\F138\";\n}\n.fa-chevron-circle-up:before {\n  content: \"\\F139\";\n}\n.fa-chevron-circle-down:before {\n  content: \"\\F13A\";\n}\n.fa-html5:before {\n  content: \"\\F13B\";\n}\n.fa-css3:before {\n  content: \"\\F13C\";\n}\n.fa-anchor:before {\n  content: \"\\F13D\";\n}\n.fa-unlock-alt:before {\n  content: \"\\F13E\";\n}\n.fa-bullseye:before {\n  content: \"\\F140\";\n}\n.fa-ellipsis-h:before {\n  content: \"\\F141\";\n}\n.fa-ellipsis-v:before {\n  content: \"\\F142\";\n}\n.fa-rss-square:before {\n  content: \"\\F143\";\n}\n.fa-play-circle:before {\n  content: \"\\F144\";\n}\n.fa-ticket:before {\n  content: \"\\F145\";\n}\n.fa-minus-square:before {\n  content: \"\\F146\";\n}\n.fa-minus-square-o:before {\n  content: \"\\F147\";\n}\n.fa-level-up:before {\n  content: \"\\F148\";\n}\n.fa-level-down:before {\n  content: \"\\F149\";\n}\n.fa-check-square:before {\n  content: \"\\F14A\";\n}\n.fa-pencil-square:before {\n  content: \"\\F14B\";\n}\n.fa-external-link-square:before {\n  content: \"\\F14C\";\n}\n.fa-share-square:before {\n  content: \"\\F14D\";\n}\n.fa-compass:before {\n  content: \"\\F14E\";\n}\n.fa-toggle-down:before,\n.fa-caret-square-o-down:before {\n  content: \"\\F150\";\n}\n.fa-toggle-up:before,\n.fa-caret-square-o-up:before {\n  content: \"\\F151\";\n}\n.fa-toggle-right:before,\n.fa-caret-square-o-right:before {\n  content: \"\\F152\";\n}\n.fa-euro:before,\n.fa-eur:before {\n  content: \"\\F153\";\n}\n.fa-gbp:before {\n  content: \"\\F154\";\n}\n.fa-dollar:before,\n.fa-usd:before {\n  content: \"\\F155\";\n}\n.fa-rupee:before,\n.fa-inr:before {\n  content: \"\\F156\";\n}\n.fa-cny:before,\n.fa-rmb:before,\n.fa-yen:before,\n.fa-jpy:before {\n  content: \"\\F157\";\n}\n.fa-ruble:before,\n.fa-rouble:before,\n.fa-rub:before {\n  content: \"\\F158\";\n}\n.fa-won:before,\n.fa-krw:before {\n  content: \"\\F159\";\n}\n.fa-bitcoin:before,\n.fa-btc:before {\n  content: \"\\F15A\";\n}\n.fa-file:before {\n  content: \"\\F15B\";\n}\n.fa-file-text:before {\n  content: \"\\F15C\";\n}\n.fa-sort-alpha-asc:before {\n  content: \"\\F15D\";\n}\n.fa-sort-alpha-desc:before {\n  content: \"\\F15E\";\n}\n.fa-sort-amount-asc:before {\n  content: \"\\F160\";\n}\n.fa-sort-amount-desc:before {\n  content: \"\\F161\";\n}\n.fa-sort-numeric-asc:before {\n  content: \"\\F162\";\n}\n.fa-sort-numeric-desc:before {\n  content: \"\\F163\";\n}\n.fa-thumbs-up:before {\n  content: \"\\F164\";\n}\n.fa-thumbs-down:before {\n  content: \"\\F165\";\n}\n.fa-youtube-square:before {\n  content: \"\\F166\";\n}\n.fa-youtube:before {\n  content: \"\\F167\";\n}\n.fa-xing:before {\n  content: \"\\F168\";\n}\n.fa-xing-square:before {\n  content: \"\\F169\";\n}\n.fa-youtube-play:before {\n  content: \"\\F16A\";\n}\n.fa-dropbox:before {\n  content: \"\\F16B\";\n}\n.fa-stack-overflow:before {\n  content: \"\\F16C\";\n}\n.fa-instagram:before {\n  content: \"\\F16D\";\n}\n.fa-flickr:before {\n  content: \"\\F16E\";\n}\n.fa-adn:before {\n  content: \"\\F170\";\n}\n.fa-bitbucket:before {\n  content: \"\\F171\";\n}\n.fa-bitbucket-square:before {\n  content: \"\\F172\";\n}\n.fa-tumblr:before {\n  content: \"\\F173\";\n}\n.fa-tumblr-square:before {\n  content: \"\\F174\";\n}\n.fa-long-arrow-down:before {\n  content: \"\\F175\";\n}\n.fa-long-arrow-up:before {\n  content: \"\\F176\";\n}\n.fa-long-arrow-left:before {\n  content: \"\\F177\";\n}\n.fa-long-arrow-right:before {\n  content: \"\\F178\";\n}\n.fa-apple:before {\n  content: \"\\F179\";\n}\n.fa-windows:before {\n  content: \"\\F17A\";\n}\n.fa-android:before {\n  content: \"\\F17B\";\n}\n.fa-linux:before {\n  content: \"\\F17C\";\n}\n.fa-dribbble:before {\n  content: \"\\F17D\";\n}\n.fa-skype:before {\n  content: \"\\F17E\";\n}\n.fa-foursquare:before {\n  content: \"\\F180\";\n}\n.fa-trello:before {\n  content: \"\\F181\";\n}\n.fa-female:before {\n  content: \"\\F182\";\n}\n.fa-male:before {\n  content: \"\\F183\";\n}\n.fa-gittip:before,\n.fa-gratipay:before {\n  content: \"\\F184\";\n}\n.fa-sun-o:before {\n  content: \"\\F185\";\n}\n.fa-moon-o:before {\n  content: \"\\F186\";\n}\n.fa-archive:before {\n  content: \"\\F187\";\n}\n.fa-bug:before {\n  content: \"\\F188\";\n}\n.fa-vk:before {\n  content: \"\\F189\";\n}\n.fa-weibo:before {\n  content: \"\\F18A\";\n}\n.fa-renren:before {\n  content: \"\\F18B\";\n}\n.fa-pagelines:before {\n  content: \"\\F18C\";\n}\n.fa-stack-exchange:before {\n  content: \"\\F18D\";\n}\n.fa-arrow-circle-o-right:before {\n  content: \"\\F18E\";\n}\n.fa-arrow-circle-o-left:before {\n  content: \"\\F190\";\n}\n.fa-toggle-left:before,\n.fa-caret-square-o-left:before {\n  content: \"\\F191\";\n}\n.fa-dot-circle-o:before {\n  content: \"\\F192\";\n}\n.fa-wheelchair:before {\n  content: \"\\F193\";\n}\n.fa-vimeo-square:before {\n  content: \"\\F194\";\n}\n.fa-turkish-lira:before,\n.fa-try:before {\n  content: \"\\F195\";\n}\n.fa-plus-square-o:before {\n  content: \"\\F196\";\n}\n.fa-space-shuttle:before {\n  content: \"\\F197\";\n}\n.fa-slack:before {\n  content: \"\\F198\";\n}\n.fa-envelope-square:before {\n  content: \"\\F199\";\n}\n.fa-wordpress:before {\n  content: \"\\F19A\";\n}\n.fa-openid:before {\n  content: \"\\F19B\";\n}\n.fa-institution:before,\n.fa-bank:before,\n.fa-university:before {\n  content: \"\\F19C\";\n}\n.fa-mortar-board:before,\n.fa-graduation-cap:before {\n  content: \"\\F19D\";\n}\n.fa-yahoo:before {\n  content: \"\\F19E\";\n}\n.fa-google:before {\n  content: \"\\F1A0\";\n}\n.fa-reddit:before {\n  content: \"\\F1A1\";\n}\n.fa-reddit-square:before {\n  content: \"\\F1A2\";\n}\n.fa-stumbleupon-circle:before {\n  content: \"\\F1A3\";\n}\n.fa-stumbleupon:before {\n  content: \"\\F1A4\";\n}\n.fa-delicious:before {\n  content: \"\\F1A5\";\n}\n.fa-digg:before {\n  content: \"\\F1A6\";\n}\n.fa-pied-piper-pp:before {\n  content: \"\\F1A7\";\n}\n.fa-pied-piper-alt:before {\n  content: \"\\F1A8\";\n}\n.fa-drupal:before {\n  content: \"\\F1A9\";\n}\n.fa-joomla:before {\n  content: \"\\F1AA\";\n}\n.fa-language:before {\n  content: \"\\F1AB\";\n}\n.fa-fax:before {\n  content: \"\\F1AC\";\n}\n.fa-building:before {\n  content: \"\\F1AD\";\n}\n.fa-child:before {\n  content: \"\\F1AE\";\n}\n.fa-paw:before {\n  content: \"\\F1B0\";\n}\n.fa-spoon:before {\n  content: \"\\F1B1\";\n}\n.fa-cube:before {\n  content: \"\\F1B2\";\n}\n.fa-cubes:before {\n  content: \"\\F1B3\";\n}\n.fa-behance:before {\n  content: \"\\F1B4\";\n}\n.fa-behance-square:before {\n  content: \"\\F1B5\";\n}\n.fa-steam:before {\n  content: \"\\F1B6\";\n}\n.fa-steam-square:before {\n  content: \"\\F1B7\";\n}\n.fa-recycle:before {\n  content: \"\\F1B8\";\n}\n.fa-automobile:before,\n.fa-car:before {\n  content: \"\\F1B9\";\n}\n.fa-cab:before,\n.fa-taxi:before {\n  content: \"\\F1BA\";\n}\n.fa-tree:before {\n  content: \"\\F1BB\";\n}\n.fa-spotify:before {\n  content: \"\\F1BC\";\n}\n.fa-deviantart:before {\n  content: \"\\F1BD\";\n}\n.fa-soundcloud:before {\n  content: \"\\F1BE\";\n}\n.fa-database:before {\n  content: \"\\F1C0\";\n}\n.fa-file-pdf-o:before {\n  content: \"\\F1C1\";\n}\n.fa-file-word-o:before {\n  content: \"\\F1C2\";\n}\n.fa-file-excel-o:before {\n  content: \"\\F1C3\";\n}\n.fa-file-powerpoint-o:before {\n  content: \"\\F1C4\";\n}\n.fa-file-photo-o:before,\n.fa-file-picture-o:before,\n.fa-file-image-o:before {\n  content: \"\\F1C5\";\n}\n.fa-file-zip-o:before,\n.fa-file-archive-o:before {\n  content: \"\\F1C6\";\n}\n.fa-file-sound-o:before,\n.fa-file-audio-o:before {\n  content: \"\\F1C7\";\n}\n.fa-file-movie-o:before,\n.fa-file-video-o:before {\n  content: \"\\F1C8\";\n}\n.fa-file-code-o:before {\n  content: \"\\F1C9\";\n}\n.fa-vine:before {\n  content: \"\\F1CA\";\n}\n.fa-codepen:before {\n  content: \"\\F1CB\";\n}\n.fa-jsfiddle:before {\n  content: \"\\F1CC\";\n}\n.fa-life-bouy:before,\n.fa-life-buoy:before,\n.fa-life-saver:before,\n.fa-support:before,\n.fa-life-ring:before {\n  content: \"\\F1CD\";\n}\n.fa-circle-o-notch:before {\n  content: \"\\F1CE\";\n}\n.fa-ra:before,\n.fa-resistance:before,\n.fa-rebel:before {\n  content: \"\\F1D0\";\n}\n.fa-ge:before,\n.fa-empire:before {\n  content: \"\\F1D1\";\n}\n.fa-git-square:before {\n  content: \"\\F1D2\";\n}\n.fa-git:before {\n  content: \"\\F1D3\";\n}\n.fa-y-combinator-square:before,\n.fa-yc-square:before,\n.fa-hacker-news:before {\n  content: \"\\F1D4\";\n}\n.fa-tencent-weibo:before {\n  content: \"\\F1D5\";\n}\n.fa-qq:before {\n  content: \"\\F1D6\";\n}\n.fa-wechat:before,\n.fa-weixin:before {\n  content: \"\\F1D7\";\n}\n.fa-send:before,\n.fa-paper-plane:before {\n  content: \"\\F1D8\";\n}\n.fa-send-o:before,\n.fa-paper-plane-o:before {\n  content: \"\\F1D9\";\n}\n.fa-history:before {\n  content: \"\\F1DA\";\n}\n.fa-circle-thin:before {\n  content: \"\\F1DB\";\n}\n.fa-header:before {\n  content: \"\\F1DC\";\n}\n.fa-paragraph:before {\n  content: \"\\F1DD\";\n}\n.fa-sliders:before {\n  content: \"\\F1DE\";\n}\n.fa-share-alt:before {\n  content: \"\\F1E0\";\n}\n.fa-share-alt-square:before {\n  content: \"\\F1E1\";\n}\n.fa-bomb:before {\n  content: \"\\F1E2\";\n}\n.fa-soccer-ball-o:before,\n.fa-futbol-o:before {\n  content: \"\\F1E3\";\n}\n.fa-tty:before {\n  content: \"\\F1E4\";\n}\n.fa-binoculars:before {\n  content: \"\\F1E5\";\n}\n.fa-plug:before {\n  content: \"\\F1E6\";\n}\n.fa-slideshare:before {\n  content: \"\\F1E7\";\n}\n.fa-twitch:before {\n  content: \"\\F1E8\";\n}\n.fa-yelp:before {\n  content: \"\\F1E9\";\n}\n.fa-newspaper-o:before {\n  content: \"\\F1EA\";\n}\n.fa-wifi:before {\n  content: \"\\F1EB\";\n}\n.fa-calculator:before {\n  content: \"\\F1EC\";\n}\n.fa-paypal:before {\n  content: \"\\F1ED\";\n}\n.fa-google-wallet:before {\n  content: \"\\F1EE\";\n}\n.fa-cc-visa:before {\n  content: \"\\F1F0\";\n}\n.fa-cc-mastercard:before {\n  content: \"\\F1F1\";\n}\n.fa-cc-discover:before {\n  content: \"\\F1F2\";\n}\n.fa-cc-amex:before {\n  content: \"\\F1F3\";\n}\n.fa-cc-paypal:before {\n  content: \"\\F1F4\";\n}\n.fa-cc-stripe:before {\n  content: \"\\F1F5\";\n}\n.fa-bell-slash:before {\n  content: \"\\F1F6\";\n}\n.fa-bell-slash-o:before {\n  content: \"\\F1F7\";\n}\n.fa-trash:before {\n  content: \"\\F1F8\";\n}\n.fa-copyright:before {\n  content: \"\\F1F9\";\n}\n.fa-at:before {\n  content: \"\\F1FA\";\n}\n.fa-eyedropper:before {\n  content: \"\\F1FB\";\n}\n.fa-paint-brush:before {\n  content: \"\\F1FC\";\n}\n.fa-birthday-cake:before {\n  content: \"\\F1FD\";\n}\n.fa-area-chart:before {\n  content: \"\\F1FE\";\n}\n.fa-pie-chart:before {\n  content: \"\\F200\";\n}\n.fa-line-chart:before {\n  content: \"\\F201\";\n}\n.fa-lastfm:before {\n  content: \"\\F202\";\n}\n.fa-lastfm-square:before {\n  content: \"\\F203\";\n}\n.fa-toggle-off:before {\n  content: \"\\F204\";\n}\n.fa-toggle-on:before {\n  content: \"\\F205\";\n}\n.fa-bicycle:before {\n  content: \"\\F206\";\n}\n.fa-bus:before {\n  content: \"\\F207\";\n}\n.fa-ioxhost:before {\n  content: \"\\F208\";\n}\n.fa-angellist:before {\n  content: \"\\F209\";\n}\n.fa-cc:before {\n  content: \"\\F20A\";\n}\n.fa-shekel:before,\n.fa-sheqel:before,\n.fa-ils:before {\n  content: \"\\F20B\";\n}\n.fa-meanpath:before {\n  content: \"\\F20C\";\n}\n.fa-buysellads:before {\n  content: \"\\F20D\";\n}\n.fa-connectdevelop:before {\n  content: \"\\F20E\";\n}\n.fa-dashcube:before {\n  content: \"\\F210\";\n}\n.fa-forumbee:before {\n  content: \"\\F211\";\n}\n.fa-leanpub:before {\n  content: \"\\F212\";\n}\n.fa-sellsy:before {\n  content: \"\\F213\";\n}\n.fa-shirtsinbulk:before {\n  content: \"\\F214\";\n}\n.fa-simplybuilt:before {\n  content: \"\\F215\";\n}\n.fa-skyatlas:before {\n  content: \"\\F216\";\n}\n.fa-cart-plus:before {\n  content: \"\\F217\";\n}\n.fa-cart-arrow-down:before {\n  content: \"\\F218\";\n}\n.fa-diamond:before {\n  content: \"\\F219\";\n}\n.fa-ship:before {\n  content: \"\\F21A\";\n}\n.fa-user-secret:before {\n  content: \"\\F21B\";\n}\n.fa-motorcycle:before {\n  content: \"\\F21C\";\n}\n.fa-street-view:before {\n  content: \"\\F21D\";\n}\n.fa-heartbeat:before {\n  content: \"\\F21E\";\n}\n.fa-venus:before {\n  content: \"\\F221\";\n}\n.fa-mars:before {\n  content: \"\\F222\";\n}\n.fa-mercury:before {\n  content: \"\\F223\";\n}\n.fa-intersex:before,\n.fa-transgender:before {\n  content: \"\\F224\";\n}\n.fa-transgender-alt:before {\n  content: \"\\F225\";\n}\n.fa-venus-double:before {\n  content: \"\\F226\";\n}\n.fa-mars-double:before {\n  content: \"\\F227\";\n}\n.fa-venus-mars:before {\n  content: \"\\F228\";\n}\n.fa-mars-stroke:before {\n  content: \"\\F229\";\n}\n.fa-mars-stroke-v:before {\n  content: \"\\F22A\";\n}\n.fa-mars-stroke-h:before {\n  content: \"\\F22B\";\n}\n.fa-neuter:before {\n  content: \"\\F22C\";\n}\n.fa-genderless:before {\n  content: \"\\F22D\";\n}\n.fa-facebook-official:before {\n  content: \"\\F230\";\n}\n.fa-pinterest-p:before {\n  content: \"\\F231\";\n}\n.fa-whatsapp:before {\n  content: \"\\F232\";\n}\n.fa-server:before {\n  content: \"\\F233\";\n}\n.fa-user-plus:before {\n  content: \"\\F234\";\n}\n.fa-user-times:before {\n  content: \"\\F235\";\n}\n.fa-hotel:before,\n.fa-bed:before {\n  content: \"\\F236\";\n}\n.fa-viacoin:before {\n  content: \"\\F237\";\n}\n.fa-train:before {\n  content: \"\\F238\";\n}\n.fa-subway:before {\n  content: \"\\F239\";\n}\n.fa-medium:before {\n  content: \"\\F23A\";\n}\n.fa-yc:before,\n.fa-y-combinator:before {\n  content: \"\\F23B\";\n}\n.fa-optin-monster:before {\n  content: \"\\F23C\";\n}\n.fa-opencart:before {\n  content: \"\\F23D\";\n}\n.fa-expeditedssl:before {\n  content: \"\\F23E\";\n}\n.fa-battery-4:before,\n.fa-battery:before,\n.fa-battery-full:before {\n  content: \"\\F240\";\n}\n.fa-battery-3:before,\n.fa-battery-three-quarters:before {\n  content: \"\\F241\";\n}\n.fa-battery-2:before,\n.fa-battery-half:before {\n  content: \"\\F242\";\n}\n.fa-battery-1:before,\n.fa-battery-quarter:before {\n  content: \"\\F243\";\n}\n.fa-battery-0:before,\n.fa-battery-empty:before {\n  content: \"\\F244\";\n}\n.fa-mouse-pointer:before {\n  content: \"\\F245\";\n}\n.fa-i-cursor:before {\n  content: \"\\F246\";\n}\n.fa-object-group:before {\n  content: \"\\F247\";\n}\n.fa-object-ungroup:before {\n  content: \"\\F248\";\n}\n.fa-sticky-note:before {\n  content: \"\\F249\";\n}\n.fa-sticky-note-o:before {\n  content: \"\\F24A\";\n}\n.fa-cc-jcb:before {\n  content: \"\\F24B\";\n}\n.fa-cc-diners-club:before {\n  content: \"\\F24C\";\n}\n.fa-clone:before {\n  content: \"\\F24D\";\n}\n.fa-balance-scale:before {\n  content: \"\\F24E\";\n}\n.fa-hourglass-o:before {\n  content: \"\\F250\";\n}\n.fa-hourglass-1:before,\n.fa-hourglass-start:before {\n  content: \"\\F251\";\n}\n.fa-hourglass-2:before,\n.fa-hourglass-half:before {\n  content: \"\\F252\";\n}\n.fa-hourglass-3:before,\n.fa-hourglass-end:before {\n  content: \"\\F253\";\n}\n.fa-hourglass:before {\n  content: \"\\F254\";\n}\n.fa-hand-grab-o:before,\n.fa-hand-rock-o:before {\n  content: \"\\F255\";\n}\n.fa-hand-stop-o:before,\n.fa-hand-paper-o:before {\n  content: \"\\F256\";\n}\n.fa-hand-scissors-o:before {\n  content: \"\\F257\";\n}\n.fa-hand-lizard-o:before {\n  content: \"\\F258\";\n}\n.fa-hand-spock-o:before {\n  content: \"\\F259\";\n}\n.fa-hand-pointer-o:before {\n  content: \"\\F25A\";\n}\n.fa-hand-peace-o:before {\n  content: \"\\F25B\";\n}\n.fa-trademark:before {\n  content: \"\\F25C\";\n}\n.fa-registered:before {\n  content: \"\\F25D\";\n}\n.fa-creative-commons:before {\n  content: \"\\F25E\";\n}\n.fa-gg:before {\n  content: \"\\F260\";\n}\n.fa-gg-circle:before {\n  content: \"\\F261\";\n}\n.fa-tripadvisor:before {\n  content: \"\\F262\";\n}\n.fa-odnoklassniki:before {\n  content: \"\\F263\";\n}\n.fa-odnoklassniki-square:before {\n  content: \"\\F264\";\n}\n.fa-get-pocket:before {\n  content: \"\\F265\";\n}\n.fa-wikipedia-w:before {\n  content: \"\\F266\";\n}\n.fa-safari:before {\n  content: \"\\F267\";\n}\n.fa-chrome:before {\n  content: \"\\F268\";\n}\n.fa-firefox:before {\n  content: \"\\F269\";\n}\n.fa-opera:before {\n  content: \"\\F26A\";\n}\n.fa-internet-explorer:before {\n  content: \"\\F26B\";\n}\n.fa-tv:before,\n.fa-television:before {\n  content: \"\\F26C\";\n}\n.fa-contao:before {\n  content: \"\\F26D\";\n}\n.fa-500px:before {\n  content: \"\\F26E\";\n}\n.fa-amazon:before {\n  content: \"\\F270\";\n}\n.fa-calendar-plus-o:before {\n  content: \"\\F271\";\n}\n.fa-calendar-minus-o:before {\n  content: \"\\F272\";\n}\n.fa-calendar-times-o:before {\n  content: \"\\F273\";\n}\n.fa-calendar-check-o:before {\n  content: \"\\F274\";\n}\n.fa-industry:before {\n  content: \"\\F275\";\n}\n.fa-map-pin:before {\n  content: \"\\F276\";\n}\n.fa-map-signs:before {\n  content: \"\\F277\";\n}\n.fa-map-o:before {\n  content: \"\\F278\";\n}\n.fa-map:before {\n  content: \"\\F279\";\n}\n.fa-commenting:before {\n  content: \"\\F27A\";\n}\n.fa-commenting-o:before {\n  content: \"\\F27B\";\n}\n.fa-houzz:before {\n  content: \"\\F27C\";\n}\n.fa-vimeo:before {\n  content: \"\\F27D\";\n}\n.fa-black-tie:before {\n  content: \"\\F27E\";\n}\n.fa-fonticons:before {\n  content: \"\\F280\";\n}\n.fa-reddit-alien:before {\n  content: \"\\F281\";\n}\n.fa-edge:before {\n  content: \"\\F282\";\n}\n.fa-credit-card-alt:before {\n  content: \"\\F283\";\n}\n.fa-codiepie:before {\n  content: \"\\F284\";\n}\n.fa-modx:before {\n  content: \"\\F285\";\n}\n.fa-fort-awesome:before {\n  content: \"\\F286\";\n}\n.fa-usb:before {\n  content: \"\\F287\";\n}\n.fa-product-hunt:before {\n  content: \"\\F288\";\n}\n.fa-mixcloud:before {\n  content: \"\\F289\";\n}\n.fa-scribd:before {\n  content: \"\\F28A\";\n}\n.fa-pause-circle:before {\n  content: \"\\F28B\";\n}\n.fa-pause-circle-o:before {\n  content: \"\\F28C\";\n}\n.fa-stop-circle:before {\n  content: \"\\F28D\";\n}\n.fa-stop-circle-o:before {\n  content: \"\\F28E\";\n}\n.fa-shopping-bag:before {\n  content: \"\\F290\";\n}\n.fa-shopping-basket:before {\n  content: \"\\F291\";\n}\n.fa-hashtag:before {\n  content: \"\\F292\";\n}\n.fa-bluetooth:before {\n  content: \"\\F293\";\n}\n.fa-bluetooth-b:before {\n  content: \"\\F294\";\n}\n.fa-percent:before {\n  content: \"\\F295\";\n}\n.fa-gitlab:before {\n  content: \"\\F296\";\n}\n.fa-wpbeginner:before {\n  content: \"\\F297\";\n}\n.fa-wpforms:before {\n  content: \"\\F298\";\n}\n.fa-envira:before {\n  content: \"\\F299\";\n}\n.fa-universal-access:before {\n  content: \"\\F29A\";\n}\n.fa-wheelchair-alt:before {\n  content: \"\\F29B\";\n}\n.fa-question-circle-o:before {\n  content: \"\\F29C\";\n}\n.fa-blind:before {\n  content: \"\\F29D\";\n}\n.fa-audio-description:before {\n  content: \"\\F29E\";\n}\n.fa-volume-control-phone:before {\n  content: \"\\F2A0\";\n}\n.fa-braille:before {\n  content: \"\\F2A1\";\n}\n.fa-assistive-listening-systems:before {\n  content: \"\\F2A2\";\n}\n.fa-asl-interpreting:before,\n.fa-american-sign-language-interpreting:before {\n  content: \"\\F2A3\";\n}\n.fa-deafness:before,\n.fa-hard-of-hearing:before,\n.fa-deaf:before {\n  content: \"\\F2A4\";\n}\n.fa-glide:before {\n  content: \"\\F2A5\";\n}\n.fa-glide-g:before {\n  content: \"\\F2A6\";\n}\n.fa-signing:before,\n.fa-sign-language:before {\n  content: \"\\F2A7\";\n}\n.fa-low-vision:before {\n  content: \"\\F2A8\";\n}\n.fa-viadeo:before {\n  content: \"\\F2A9\";\n}\n.fa-viadeo-square:before {\n  content: \"\\F2AA\";\n}\n.fa-snapchat:before {\n  content: \"\\F2AB\";\n}\n.fa-snapchat-ghost:before {\n  content: \"\\F2AC\";\n}\n.fa-snapchat-square:before {\n  content: \"\\F2AD\";\n}\n.fa-pied-piper:before {\n  content: \"\\F2AE\";\n}\n.fa-first-order:before {\n  content: \"\\F2B0\";\n}\n.fa-yoast:before {\n  content: \"\\F2B1\";\n}\n.fa-themeisle:before {\n  content: \"\\F2B2\";\n}\n.fa-google-plus-circle:before,\n.fa-google-plus-official:before {\n  content: \"\\F2B3\";\n}\n.fa-fa:before,\n.fa-font-awesome:before {\n  content: \"\\F2B4\";\n}\n.fa-handshake-o:before {\n  content: \"\\F2B5\";\n}\n.fa-envelope-open:before {\n  content: \"\\F2B6\";\n}\n.fa-envelope-open-o:before {\n  content: \"\\F2B7\";\n}\n.fa-linode:before {\n  content: \"\\F2B8\";\n}\n.fa-address-book:before {\n  content: \"\\F2B9\";\n}\n.fa-address-book-o:before {\n  content: \"\\F2BA\";\n}\n.fa-vcard:before,\n.fa-address-card:before {\n  content: \"\\F2BB\";\n}\n.fa-vcard-o:before,\n.fa-address-card-o:before {\n  content: \"\\F2BC\";\n}\n.fa-user-circle:before {\n  content: \"\\F2BD\";\n}\n.fa-user-circle-o:before {\n  content: \"\\F2BE\";\n}\n.fa-user-o:before {\n  content: \"\\F2C0\";\n}\n.fa-id-badge:before {\n  content: \"\\F2C1\";\n}\n.fa-drivers-license:before,\n.fa-id-card:before {\n  content: \"\\F2C2\";\n}\n.fa-drivers-license-o:before,\n.fa-id-card-o:before {\n  content: \"\\F2C3\";\n}\n.fa-quora:before {\n  content: \"\\F2C4\";\n}\n.fa-free-code-camp:before {\n  content: \"\\F2C5\";\n}\n.fa-telegram:before {\n  content: \"\\F2C6\";\n}\n.fa-thermometer-4:before,\n.fa-thermometer:before,\n.fa-thermometer-full:before {\n  content: \"\\F2C7\";\n}\n.fa-thermometer-3:before,\n.fa-thermometer-three-quarters:before {\n  content: \"\\F2C8\";\n}\n.fa-thermometer-2:before,\n.fa-thermometer-half:before {\n  content: \"\\F2C9\";\n}\n.fa-thermometer-1:before,\n.fa-thermometer-quarter:before {\n  content: \"\\F2CA\";\n}\n.fa-thermometer-0:before,\n.fa-thermometer-empty:before {\n  content: \"\\F2CB\";\n}\n.fa-shower:before {\n  content: \"\\F2CC\";\n}\n.fa-bathtub:before,\n.fa-s15:before,\n.fa-bath:before {\n  content: \"\\F2CD\";\n}\n.fa-podcast:before {\n  content: \"\\F2CE\";\n}\n.fa-window-maximize:before {\n  content: \"\\F2D0\";\n}\n.fa-window-minimize:before {\n  content: \"\\F2D1\";\n}\n.fa-window-restore:before {\n  content: \"\\F2D2\";\n}\n.fa-times-rectangle:before,\n.fa-window-close:before {\n  content: \"\\F2D3\";\n}\n.fa-times-rectangle-o:before,\n.fa-window-close-o:before {\n  content: \"\\F2D4\";\n}\n.fa-bandcamp:before {\n  content: \"\\F2D5\";\n}\n.fa-grav:before {\n  content: \"\\F2D6\";\n}\n.fa-etsy:before {\n  content: \"\\F2D7\";\n}\n.fa-imdb:before {\n  content: \"\\F2D8\";\n}\n.fa-ravelry:before {\n  content: \"\\F2D9\";\n}\n.fa-eercast:before {\n  content: \"\\F2DA\";\n}\n.fa-microchip:before {\n  content: \"\\F2DB\";\n}\n.fa-snowflake-o:before {\n  content: \"\\F2DC\";\n}\n.fa-superpowers:before {\n  content: \"\\F2DD\";\n}\n.fa-wpexplorer:before {\n  content: \"\\F2DE\";\n}\n.fa-meetup:before {\n  content: \"\\F2E0\";\n}\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  border: 0;\n}\n.sr-only-focusable:active,\n.sr-only-focusable:focus {\n  position: static;\n  width: auto;\n  height: auto;\n  margin: 0;\n  overflow: visible;\n  clip: auto;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/izitoast/dist/css/iziToast.min.css":
+/*!*****************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/izitoast/dist/css/iziToast.min.css ***!
+  \*****************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*\r\n* iziToast | v1.4.0\r\n* http://izitoast.marcelodolce.com\r\n* by Marcelo Dolce.\r\n*/\r\n.iziToast-capsule{font-size:0;height:0;width:100%;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-backface-visibility:hidden;backface-visibility:hidden;transition:height .5s cubic-bezier(.25,.8,.25,1),-webkit-transform .5s cubic-bezier(.25,.8,.25,1);transition:transform .5s cubic-bezier(.25,.8,.25,1),height .5s cubic-bezier(.25,.8,.25,1);transition:transform .5s cubic-bezier(.25,.8,.25,1),height .5s cubic-bezier(.25,.8,.25,1),-webkit-transform .5s cubic-bezier(.25,.8,.25,1)}.iziToast-capsule,.iziToast-capsule *{box-sizing:border-box}.iziToast-overlay{display:block;position:fixed;top:-100px;left:0;right:0;bottom:-100px;z-index:997}.iziToast{display:inline-block;clear:both;position:relative;font-family:'Lato',Tahoma,Arial;font-size:14px;padding:8px 45px 9px 0;background:rgba(238,238,238,.9);border-color:rgba(238,238,238,.9);width:100%;pointer-events:all;cursor:default;-webkit-transform:translateX(0);transform:translateX(0);-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;min-height:54px}.iziToast>.iziToast-progressbar{position:absolute;left:0;bottom:0;width:100%;z-index:1;background:rgba(255,255,255,.2)}.iziToast>.iziToast-progressbar>div{height:2px;width:100%;background:rgba(0,0,0,.3);border-radius:0 0 3px 3px}.iziToast.iziToast-balloon:before{content:'';position:absolute;right:8px;left:auto;width:0;height:0;top:100%;border-right:0 solid transparent;border-left:15px solid transparent;border-top:10px solid #000;border-top-color:inherit;border-radius:0}.iziToast.iziToast-balloon .iziToast-progressbar{top:0;bottom:auto}.iziToast.iziToast-balloon>div{border-radius:0 0 0 3px}.iziToast>.iziToast-cover{position:absolute;left:0;top:0;bottom:0;height:100%;margin:0;background-size:100%;background-position:50% 50%;background-repeat:no-repeat;background-color:rgba(0,0,0,.1)}.iziToast>.iziToast-close{position:absolute;right:0;top:0;border:0;padding:0;opacity:.6;width:42px;height:100%;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAJPAAACTwBcGfW0QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAD3SURBVFiF1ZdtDoMgDEBfdi4PwAX8vLFn0qT7wxantojKupmQmCi8R4tSACpgjC2ICCUbEBa8ingjsU1AXRBeR8aLN64FiknswN8CYefBBDQ3whuFESy7WyQMeC0ipEI0A+0FeBvHUFN8xPaUhAH/iKoWsnXHGegy4J0yxialOfaHJAz4bhRzQzgDvdGnz4GbAonZbCQMuBm1K/kcFu8Mp1N2cFFpsxsMuJqqbIGExGl4loARajU1twskJLLhIsID7+tvUoDnIjTg5T9DPH9EBrz8rxjPzciAl9+O8SxI8CzJ8CxKFfh3ynK8Dyb8wNHM/XDqejx/AtNyPO87tNybAAAAAElFTkSuQmCC) no-repeat 50% 50%;background-size:8px;cursor:pointer;outline:0}.iziToast>.iziToast-close:hover{opacity:1}.iziToast>.iziToast-body{position:relative;padding:0 0 0 10px;height:auto;min-height:36px;margin:0 0 0 15px;text-align:left}.iziToast>.iziToast-body:after{content:\"\";display:table;clear:both}.iziToast>.iziToast-body .iziToast-texts{margin:10px 0 0;padding-right:2px;display:inline-block;float:left}.iziToast>.iziToast-body .iziToast-inputs{min-height:19px;float:left;margin:3px -2px}.iziToast>.iziToast-body .iziToast-inputs>input:not([type=checkbox]):not([type=radio]),.iziToast>.iziToast-body .iziToast-inputs>select{position:relative;display:inline-block;margin:2px;border-radius:2px;border:0;padding:4px 7px;font-size:13px;letter-spacing:.02em;background:rgba(0,0,0,.1);color:#000;box-shadow:0 0 0 1px rgba(0,0,0,.2);min-height:26px}.iziToast>.iziToast-body .iziToast-inputs>input:not([type=checkbox]):not([type=radio]):focus,.iziToast>.iziToast-body .iziToast-inputs>select:focus{box-shadow:0 0 0 1px rgba(0,0,0,.6)}.iziToast>.iziToast-body .iziToast-buttons{min-height:17px;float:left;margin:4px -2px}.iziToast>.iziToast-body .iziToast-buttons>a,.iziToast>.iziToast-body .iziToast-buttons>button,.iziToast>.iziToast-body .iziToast-buttons>input:not([type=checkbox]):not([type=radio]){position:relative;display:inline-block;margin:2px;border-radius:2px;border:0;padding:5px 10px;font-size:12px;letter-spacing:.02em;cursor:pointer;background:rgba(0,0,0,.1);color:#000}.iziToast>.iziToast-body .iziToast-buttons>a:hover,.iziToast>.iziToast-body .iziToast-buttons>button:hover,.iziToast>.iziToast-body .iziToast-buttons>input:not([type=checkbox]):not([type=radio]):hover{background:rgba(0,0,0,.2)}.iziToast>.iziToast-body .iziToast-buttons>a:focus,.iziToast>.iziToast-body .iziToast-buttons>button:focus,.iziToast>.iziToast-body .iziToast-buttons>input:not([type=checkbox]):not([type=radio]):focus{box-shadow:0 0 0 1px rgba(0,0,0,.6)}.iziToast>.iziToast-body .iziToast-buttons>a:active,.iziToast>.iziToast-body .iziToast-buttons>button:active,.iziToast>.iziToast-body .iziToast-buttons>input:not([type=checkbox]):not([type=radio]):active{top:1px}.iziToast>.iziToast-body .iziToast-icon{position:absolute;left:0;top:50%;display:table;font-size:23px;line-height:24px;margin-top:-12px;color:#000;width:24px;height:24px}.iziToast>.iziToast-body .iziToast-icon.ico-info{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAflBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCtoPsAAAAKXRSTlMA6PsIvDob+OapavVhWRYPrIry2MxGQ97czsOzpJaMcE0qJQOwVtKjfxCVFeIAAAI3SURBVFjDlJPZsoIwEETnCiGyb8q+qmjl/3/wFmGKwjBROS9QWbtnOqDDGPq4MdMkSc0m7gcDDhF4NRdv8NoL4EcMpzoJglPl/KTDz4WW3IdvXEvxkfIKn7BMZb1bFK4yZFqghZ03jk0nG8N5NBwzx9xU5cxAg8fXi20/hDdC316lcA8o7t16eRuQvW1XGd2d2P8QSHQDDbdIII/9CR3lUF+lbucfJy4WfMS64EJPORnrZxtfc2pjJdnbuags3l04TTtJMXrdTph4Pyg4XAjugAJqMDf5Rf+oXx2/qi4u6nipakIi7CsgiuMSEF9IGKg8heQJKkxIfFSUU/egWSwNrS1fPDtLfon8sZOcYUQml1Qv9a3kfwsEUyJEMgFBKzdV8o3Iw9yAjg1jdLQCV4qbd3no8yD2GugaC3oMbF0NYHCpJYSDhNI5N2DAWB4F4z9Aj/04Cna/x7eVAQ17vRjQZPh+G/kddYv0h49yY4NWNDWMMOMUIRYvlTECmrN8pUAjo5RCMn8KoPmbJ/+Appgnk//Sy90GYBCGgm7IAskQ7D9hFKW4ApB1ei3FSYD9PjGAKygAV+ARFYBH5BsVgG9kkBSAQWKUFYBRZpkUgGVinRWAdUZQDABBQdIcAElDVBUAUUXWHQBZx1gMAGMprM0AsLbVXHsA5trZe93/wp3svQ0YNb/jWV3AIOLsMtlznSNOH7JqjOpDVh7z8qCZR10ftvO4nxeOvPLkpSuvfXnxzKtvXr7j+v8C5ii0e71At7cAAAAASUVORK5CYII=) no-repeat 50% 50%;background-size:85%}.iziToast>.iziToast-body .iziToast-icon.ico-warning{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAMAAAAPzWOAAAAAkFBMVEUAAAAAAAABAAIAAAABAAIAAAMAAAABAAIBAAIBAAIAAAIAAAABAAIAAAABAAICAAICAAIAAAIAAAAAAAAAAAABAAIBAAIAAAMAAAABAAIBAAMBAAECAAIAAAIAAAIAAAABAAIBAAIBAAMBAAIBAAEAAAIAAAMAAAAAAAABAAECAAICAAIAAAIAAAMAAAQAAAE05yNAAAAAL3RSTlMAB+kD7V8Q+PXicwv7I9iYhkAzJxnx01IV5cmnk2xmHfzexsK4eEw5L7Gei39aRw640awAAAHQSURBVFjD7ZfJdoJAEEWJgCiI4oDiPM8m7///LidErRO7sHrY5u7YXLr7vKqu9kTC0HPmo9n8cJbEQOzqqAdAUHeUZACQuTkGDQBoDJwkHZR0XBz9FkpafXuHP0SJ09mGeJLZ5wwlTmcbA0THPmdEK7XPGTG1zxmInn3OiJ19zkB0jSVTKExMHT0wjAwlWzC0fSPHF1gWRpIhWMYm7fYTFcQGlbemf4dFfdTGg0B/KXM8qBU/3wntbq7rSGqvJ9kla6IpueFJet8fxfem5yhykjyOgNaWF1qSGd5JMNNxpNF7SZQaVh5JzLrTCZIEJ1GyEyVyd+pClMjdaSJK5O40giSRu5PfFiVyd1pAksjdKRnrSsbVdbiHrgT7yss315fkVQPLFQrL+4FHeOXKO5YRFEKv5AiFaMlKLlBpJuVCJlC5sJfvCgztru/3NmBYccPgGTxRAzxn1XGEMUf58pXZvjoOsOCgjL08+b53mtfAM/SVsZcjKLtysQZPqIy9HPP3m/3zKItRwT0LyQo8sTr26tcO83DIUMWIJjierHLsJda/tbNBFY0BP/bKtcM8HNIWCK3aYR4OMzgxo5w5EFLOLKDExXAm9gI4E3iAO94/Ct/lKWuM2LMGbgAAAABJRU5ErkJggg==) no-repeat 50% 50%;background-size:85%}.iziToast>.iziToast-body .iziToast-icon.ico-error{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAeFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVyEiIAAAAJ3RSTlMA3BsB98QV8uSyWVUFz7+kcWMM2LuZioBpTUVBNcq2qaibj4d1azLZZYABAAACZElEQVRYw7WX25KCMAyGAxUoFDkpiohnV97/DXeGBtoOUprZ2dyo1K82fxKbwJJVp+KQZ7so2mX5oThVQLKwjDe9YZu4DF3ptAn6rxY0qQPOEq9fNC9ha3y77a22ba24v+9Xbe8v8x03dPOC2/NdvB6xeSreLfGJpnx0TyotKqLm2s7Jd/WO6ivXNp0tCy02R/aFz5VQ5wUPlUL5fIfj5KIlVGU0nWHm/5QtoTVMWY8mzIVu1K9O7XH2JiU/xnOOT39gnUfj+lFHddx4tFjL3/H8jjzaFCy2Rf0c/fdQyQszI8BDR973IyMSKa4krjxAiW/lkRvMP+bKK9WbYS1ASQg8dKjaUGlYPwRe/WoIkz8tiQchH5QAEMv6T0k8MD4mUyWr4E7jAWqZ+xWcMIYkXvlwggJ3IvFK+wIOcpXAo8n8P0COAaXyKH4OsjBuZB4ew0IGu+H1SebhNazsQBbWm8yj+hFuUJB5eMsN0IUXmYendAFFfJB5uEkRMYwxmcd6zDGRtmQePEykAgubymMRFmMxCSIPCRbTuFNN5OGORTjmNGc0Po0m8Uv0gcCry6xUhR2QeLii9tofbEfhz/qvNti+OfPqNm2Mq6105FUMvdT4GPmufMiV8PqBMkc+DdT1bjYYbjzU/ew23VP4n3mLAz4n8Jtv/Ui3ceTT2mzz5o1mZt0gnBpmsdjqRqVlmplcPdqa7X23kL9brdm2t/uBYDPn2+tyu48mtIGD10JTuUrukVrbCFiwDzcHrPjxKt7PW+AZQyT/WESO+1WL7f3o+WLHL2dYMSZsg6dg/z360ofvP4//v1NPzgs28WlWAAAAAElFTkSuQmCC) no-repeat 50% 50%;background-size:80%}.iziToast>.iziToast-body .iziToast-icon.ico-success{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAIVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt0UjBAAAACnRSTlMApAPhIFn82wgGv8mVtwAAAKVJREFUSMft0LEJAkEARNFFFEw1NFJb8CKjAy1AEOzAxNw+bEEEg6nyFjbY4LOzcBwX7S/gwUxoTdIn+Jbv4Lv8bx446+kB6VsBtK0B+wbMCKxrwL33wOrVeeChX28n7KTOTjgoEu6DRSYAgAAAAkAmAIAAAAIACQIkMkACAAgAIACAyECBKAOJuCagTJwSUCaUAEMAABEBRwAAEQFLbCJgO4bW+AZKGnktR+jAFAAAAABJRU5ErkJggg==) no-repeat 50% 50%;background-size:85%}.iziToast>.iziToast-body .iziToast-icon.ico-question{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfhCQkUEhFovxTxAAAEDklEQVRo3s2ZTWgTQRTHf03ipTRUqghNSgsRjHgQrFUQC6JgD1Kak3gQUUoPqRdBglf1oBehBws9Cn4cGk+1SOmh2upBxAYVoeJHrR9tgq0i1Cq0lqYeks7MbpPdmU00/c8hm9n33v/t7Nt5M2+qMEWQI0QIibZKRrQpHvLL2KI2wnQzzBKrDm2RIeKEy01dTYKUI7G1ZRknQXV5yP10kTYgly1NF/5S6duZ8ES+1iZodyaocrjXxE0OFeifYYgp0mRIkwFChAkRJsIxGgrIP+I0n82fvZW5dc/zkss0O2o1c5mX6/TmaDWl77RFe5YkUW3tKEmyFv0lOvXJ/fTYnmCEFuMRbGHEZqVHLyT9DFjUJmkzJl9DG5MWWwM6Llif/gF1nukB6nhgGwUXdFrE+wiURA8QoM9i0zEWWpXQW+ZsyeRrOMuyEo5Fv4gmy4dXPvqcC+pH2VRYaMwy+OWG+iLGCgm0W0Kv9HdvR8ASjmKCXpuK/bxiV/76A/v5UdDIZuKcJGjrnec5KZ7wwsWFOp6xPX/9mt2sqDe7FO+Kf/fXHBPPDWpdXGhTpLvUG9VKwh1xMDDjkvu+cNDFBTk7ptX1QkKZ850m3duu6fcrWxwdaFFyREJ2j4vOpKP6Du6z4uJCv8sYJIVkCnJBGGZaBONO3roY2EqNrSfIPi7SKP4fdXyNUd6I6wbSAHEl33tFLe+FlSsusnK90A0+oEPcuufZgXnOi+u9LrKSJQZQw6LwqBnv2CKsfHORbFbyQhA6xN/pEuihSdj56Co7LWRjPiKie6gkB2LiKuUqK5kiPkLiz1QJ9K1cNXBAMoUCigNpQ9IqDtMI1HKA4/jyvUsaoSyZLA5kjOjDPFZen8Ql5TsvBskUgjciIPSX3QAXC86DT7VWvlEh/xZ+ij9BDVWJ0QL0SbZq6QaFxoLPcXPmBLveLCc4wXdDK6s+6/vwhCSniFLPXW0NJe5UB8zKCsviqpc7vGPVQFcyZbyPwGD+d5ZnxmNWlhG4xSBZZjivjIWHEQgoDkSMjMwTo54569JSE5IpA7EyJSMTyGTUAUFlO1ZKOtaHTMeL1PhYYFTcihmY2cQ5+ullj7EDkiVfVez2sCTz8yiv84djhg7IJVk81xFWJlPdfHBG0flkRC/zQFZ+DSllNtfDdUsOMCliyGX5uOzU3ZhIXFDof4m1gDuKbEx0t2YS25gVGpcMnr/I1kx3c6piB8P8ZoqEwfMX3ZyCXynJTmq/U7NUXqfUzCbWL1wqVKBQUeESzQYoUlW8TAcVL1RCxUu1G6BYXfFyfQ4VPbDI4T8d2WzgQ6sc/vmxnTsqfHCZQzUJxm1h5dxS5Tu6lQgTZ0ipqRVqSwzTbbLHMt+c19iO76tsx/cLZub+Ali+tYC93olEAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA5LTA5VDIwOjE4OjE3KzAyOjAwjKtfjgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOS0wOVQyMDoxODoxNyswMjowMP325zIAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC) no-repeat 50% 50%;background-size:85%}.iziToast>.iziToast-body .iziToast-message,.iziToast>.iziToast-body .iziToast-title{padding:0;font-size:14px;line-height:16px;text-align:left;float:left;white-space:normal}.iziToast>.iziToast-body .iziToast-title{color:#000;margin:0}.iziToast>.iziToast-body .iziToast-message{margin:0 0 10px;color:rgba(0,0,0,.6)}.iziToast.iziToast-animateInside .iziToast-buttons-child,.iziToast.iziToast-animateInside .iziToast-icon,.iziToast.iziToast-animateInside .iziToast-inputs-child,.iziToast.iziToast-animateInside .iziToast-message,.iziToast.iziToast-animateInside .iziToast-title{opacity:0}.iziToast-target{position:relative;width:100%;margin:0 auto}.iziToast-target .iziToast-capsule{overflow:hidden}.iziToast-target .iziToast-capsule:after{visibility:hidden;display:block;font-size:0;content:\" \";clear:both;height:0}.iziToast-target .iziToast-capsule .iziToast{width:100%;float:left}.iziToast-wrapper{z-index:99999;position:fixed;width:100%;pointer-events:none;display:flex;flex-direction:column}.iziToast-wrapper .iziToast.iziToast-balloon:before{border-right:0 solid transparent;border-left:15px solid transparent;border-top:10px solid #000;border-top-color:inherit;right:8px;left:auto}.iziToast-wrapper-bottomLeft{left:0;bottom:0;text-align:left}.iziToast-wrapper-bottomLeft .iziToast.iziToast-balloon:before,.iziToast-wrapper-topLeft .iziToast.iziToast-balloon:before{border-right:15px solid transparent;border-left:0 solid transparent;right:auto;left:8px}.iziToast-wrapper-bottomRight{right:0;bottom:0;text-align:right}.iziToast-wrapper-topLeft{left:0;top:0;text-align:left}.iziToast-wrapper-topRight{top:0;right:0;text-align:right}.iziToast-wrapper-topCenter{top:0;left:0;right:0;text-align:center}.iziToast-wrapper-bottomCenter,.iziToast-wrapper-center{bottom:0;left:0;right:0;text-align:center}.iziToast-wrapper-center{top:0;justify-content:center;flex-flow:column;align-items:center}.iziToast-rtl{direction:rtl;padding:8px 0 9px 45px;font-family:Tahoma,'Lato',Arial}.iziToast-rtl .iziToast-cover{left:auto;right:0}.iziToast-rtl .iziToast-close{right:auto;left:0}.iziToast-rtl .iziToast-body{padding:0 10px 0 0;margin:0 16px 0 0;text-align:right}.iziToast-rtl .iziToast-body .iziToast-buttons,.iziToast-rtl .iziToast-body .iziToast-inputs,.iziToast-rtl .iziToast-body .iziToast-message,.iziToast-rtl .iziToast-body .iziToast-texts,.iziToast-rtl .iziToast-body .iziToast-title{float:right;text-align:right}.iziToast-rtl .iziToast-body .iziToast-icon{left:auto;right:0}@media only screen and (min-width:568px){.iziToast-wrapper{padding:10px 15px}.iziToast{margin:5px 0;border-radius:3px;width:auto}.iziToast:after{content:'';z-index:-1;position:absolute;top:0;left:0;width:100%;height:100%;border-radius:3px;box-shadow:inset 0 -10px 20px -10px rgba(0,0,0,.2),inset 0 0 5px rgba(0,0,0,.1),0 8px 8px -5px rgba(0,0,0,.25)}.iziToast:not(.iziToast-rtl) .iziToast-cover{border-radius:3px 0 0 3px}.iziToast.iziToast-rtl .iziToast-cover{border-radius:0 3px 3px 0}.iziToast.iziToast-color-dark:after{box-shadow:inset 0 -10px 20px -10px rgba(255,255,255,.3),0 10px 10px -5px rgba(0,0,0,.25)}.iziToast.iziToast-balloon .iziToast-progressbar{background:0 0}.iziToast.iziToast-balloon:after{box-shadow:0 10px 10px -5px rgba(0,0,0,.25),inset 0 10px 20px -5px rgba(0,0,0,.25)}.iziToast-target .iziToast:after{box-shadow:inset 0 -10px 20px -10px rgba(0,0,0,.2),inset 0 0 5px rgba(0,0,0,.1)}}.iziToast.iziToast-theme-dark{background:#565c70;border-color:#565c70}.iziToast.iziToast-theme-dark .iziToast-title{color:#fff}.iziToast.iziToast-theme-dark .iziToast-message{color:rgba(255,255,255,.7);font-weight:300}.iziToast.iziToast-theme-dark .iziToast-close{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfgCR4OIQIPSao6AAAAwElEQVRIx72VUQ6EIAwFmz2XB+AConhjzqTJ7JeGKhLYlyx/BGdoBVpjIpMJNjgIZDKTkQHYmYfwmR2AfAqGFBcO2QjXZCd24bEggvd1KBx+xlwoDpYmvnBUUy68DYXD77ESr8WDtYqvxRex7a8oHP4Wo1Mkt5I68Mc+qYqv1h5OsZmZsQ3gj/02h6cO/KEYx29hu3R+VTTwz6D3TymIP1E8RvEiiVdZfEzicxYLiljSxKIqlnW5seitTW6uYnv/Aqh4whX3mEUrAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTA5LTMwVDE0OjMzOjAyKzAyOjAwl6RMVgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wOS0zMFQxNDozMzowMiswMjowMOb59OoAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC) no-repeat 50% 50%;background-size:8px}.iziToast.iziToast-theme-dark .iziToast-icon{color:#fff}.iziToast.iziToast-theme-dark .iziToast-icon.ico-info{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAflBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////vroaSAAAAKXRSTlMA6PsIvDob+OapavVhWRYPrIry2MxGQ97czsOzpJaMcE0qJQOwVtKjfxCVFeIAAAI3SURBVFjDlJPZsoIwEETnCiGyb8q+qmjl/3/wFmGKwjBROS9QWbtnOqDDGPq4MdMkSc0m7gcDDhF4NRdv8NoL4EcMpzoJglPl/KTDz4WW3IdvXEvxkfIKn7BMZb1bFK4yZFqghZ03jk0nG8N5NBwzx9xU5cxAg8fXi20/hDdC316lcA8o7t16eRuQvW1XGd2d2P8QSHQDDbdIII/9CR3lUF+lbucfJy4WfMS64EJPORnrZxtfc2pjJdnbuags3l04TTtJMXrdTph4Pyg4XAjugAJqMDf5Rf+oXx2/qi4u6nipakIi7CsgiuMSEF9IGKg8heQJKkxIfFSUU/egWSwNrS1fPDtLfon8sZOcYUQml1Qv9a3kfwsEUyJEMgFBKzdV8o3Iw9yAjg1jdLQCV4qbd3no8yD2GugaC3oMbF0NYHCpJYSDhNI5N2DAWB4F4z9Aj/04Cna/x7eVAQ17vRjQZPh+G/kddYv0h49yY4NWNDWMMOMUIRYvlTECmrN8pUAjo5RCMn8KoPmbJ/+Appgnk//Sy90GYBCGgm7IAskQ7D9hFKW4ApB1ei3FSYD9PjGAKygAV+ARFYBH5BsVgG9kkBSAQWKUFYBRZpkUgGVinRWAdUZQDABBQdIcAElDVBUAUUXWHQBZx1gMAGMprM0AsLbVXHsA5trZe93/wp3svQ0YNb/jWV3AIOLsMtlznSNOH7JqjOpDVh7z8qCZR10ftvO4nxeOvPLkpSuvfXnxzKtvXr7j+v8C5ii0e71At7cAAAAASUVORK5CYII=) no-repeat 50% 50%;background-size:85%}.iziToast.iziToast-theme-dark .iziToast-icon.ico-warning{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAMAAAAPzWOAAAAAllBMVEUAAAD////+//3+//3+//3///////z+//3+//3+//3////////////9//3////+//39//3///3////////////+//3+//39//3///z+//z+//7///3///3///3///3////////+//3+//3+//3+//z+//3+//7///3///z////////+//79//3///3///z///v+//3///+trXouAAAAMHRSTlMAB+j87RBf+PXiCwQClSPYhkAzJxnx05tSyadzcmxmHRbp5d7Gwrh4TDkvsYt/WkdQzCITAAAB1UlEQVRYw+3XaXKCQBCGYSIIighoxCVqNJrEPfly/8vFImKXduNsf/Mc4K1y7FnwlMLQc/bUbj85R6bA1LXRDICg6RjJcZa7NQYtnLUGTpERSiOXxrOPkv9s30iGKDmtbYir3H7OUHJa2ylAuvZzRvzUfs7Ii/2cgfTt54x82s8ZSM848gJmYtroQzA2jHwA+LkBIEuMGt+QIng1igzlyMrkuP2CyOi47axRaYTL5jhDJehoR+aovC29s3iIyly3Eb+hRCvZo2qsGTnhKr2cLDS+J73GsqBI9W80UCmWWpEuhIjh6ZRGjyNRarjzKGJ2Ou2himCvjHwqI+rTqQdlRH06TZQR9ek0hiqiPp06mV4ke7QPX6ERUZxO8Uo3sqrfhxvoRrCpvXwL/UjR9GRHMIvLgke4d5QbiwhM6JV2YKKF4vIl7XIBkwm4keryJVmvk/TfwcmPwQNkUQuyA2/sYGwnXL7GPu4bW1jYsmevrNj09/MGZMOEPXslQVqO8hqykD17JfPHP/bmo2yGGpdZiH3IZvzZa7B3+IdDjjpjesHJcvbs5dZ/e+cddVoDdvlq7x12Nac+iN7e4R8OXTjp0pw5CGnOLNDEzeBs5gVwFniAO+8f8wvfeXP2hyqnmwAAAABJRU5ErkJggg==) no-repeat 50% 50%;background-size:85%}.iziToast.iziToast-theme-dark .iziToast-icon.ico-error{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAeFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////GqOSsAAAAJ3RSTlMA3BsB98QV8uSyWVUFz6RxYwzYvbupmYqAaU1FQTXKv7abj4d1azKNUit3AAACZElEQVRYw7WXaZOCMAyGw30UORRQBLxX/v8/3BkaWjrY2szO5otKfGrzJrEp6Kw6F8f8sI+i/SE/FucKSBaWiT8p5idlaEtnXTB9tKDLLHAvdSatOan3je93k9F2vRF36+mr1a6eH2NFNydoHq/ieU/UXcWjjk9XykdNWq2ywtp4tXL6Wb2T/MqtzzZutsrNyfvA51KoQROhVCjfrnASIRpSVUZiD5v4RbWExjRdJzSmOsZFvzYz59kRSr6V5zE+/QELHkNdb3VRx45HS1b1u+zfkkcbRAZ3qJ9l/A4qefHUDMShJe+6kZKJDD2pLQ9Q4lu+5Q7rz7Plperd7AtQEgIPI6o2dxr2D4GXvxqCiKcn8cD4gxIAEt7/GYkHL16KqeJd0NB4gJbXfgVnzCGJlzGcocCVSLzUvoAj9xJ4NF7/R8gxoVQexc/hgBpSebjPjgPs59cHmYfn7NkDb6wXmUf1I1ygIPPw4gtgCE8yDw8eAop4J/PQcBExjQmZx37MsZB2ZB4cLKQCG5vKYxMWSzMxIg8pNtOyUkvkocEmXGo69mh8FgnxS4yBwMvDrJSNHZB4uC3ayz/YkcIP4lflwVIT+OU07ZSjrbTkZQ6dTPkYubZ8GC/Cqxu6WvJZII93dcCw46GdNqdpTeF/tiMOuDGB9z/NI6NvyWetGPM0g+bVNeovBmamHXWj0nCbEaGeTMN2PWrqd6cM26ZxP2DeJvj+ph/30Zi/GmRbtlK5SptI+nwGGnvH6gUruT+L16MJHF+58rwNIifTV0vM8+hwMeOXAb6Yx0wXT+b999WXfvn+8/X/F7fWzjdTord5AAAAAElFTkSuQmCC) no-repeat 50% 50%;background-size:80%}.iziToast.iziToast-theme-dark .iziToast-icon.ico-success{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAIVBMVEUAAAD////////////////////////////////////////PIev5AAAACnRSTlMApAPhIFn82wgGv8mVtwAAAKVJREFUSMft0LEJAkEARNFFFEw1NFJb8CKjAy1AEOzAxNw+bEEEg6nyFjbY4LOzcBwX7S/gwUxoTdIn+Jbv4Lv8bx446+kB6VsBtK0B+wbMCKxrwL33wOrVeeChX28n7KTOTjgoEu6DRSYAgAAAAkAmAIAAAAIACQIkMkACAAgAIACAyECBKAOJuCagTJwSUCaUAEMAABEBRwAAEQFLbCJgO4bW+AZKGnktR+jAFAAAAABJRU5ErkJggg==) no-repeat 50% 50%;background-size:85%}.iziToast.iziToast-theme-dark .iziToast-icon.ico-question{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfhCQkUEg18vki+AAAETUlEQVRo3s1ZTWhbRxD+VlIuxsLFCYVIIQYVopBDoK5bKDWUBupDMNbJ5FBKg/FBziUQdE9yaC+FHBrwsdCfQ9RTGoLxwWl+DqHEojUFFydxnB9bInZDqOsErBrr6yGvs/ueX97bldTKo4Pe7puZb3Z33s7srIIjMY1jyCEjP6ImvyX8pF64arSHznKC06wzijY5xSKz7YbuYokV2lODsyyxqz3gSY6z6gCuqcpxJluFH+Z8U+D/0jyHoxFUBHgfvsGHIS9WMIUlVFFDFTUAGWSRQRY5HMeBEP6b+Ew9dh/7INd2jGeO59kfKdXP85zbIbfGQVf4sYC3N1hm3lo6zzIbPvk6x+zBk7wQGMEMB5xncIAzAS0XrFySSV72iS1yyBVcdA1x0afrsoUJgdFfY2+z8ADAXl7zz0KcwJiPfZKpVuABgClO+nRG+QIHDdfb4qlWwUXvKW4Z7vi6L4J9vg+vbfCeCeZH2RfOdMOc/HbCA4BvIW6EMQz7XK/ltd+hP+VzR9mgva2YSfyGI17fA7ynnocqeQNFfIJ0oHsdv6CC2+rXGBN6cQdveY3fcVRtmy/HDete+93zy8jA8zV7YkwYMrjHzRddRsCdiVCwwmh6wg9iTNC7Y9XIF1iS7kbUpsvvGEdPuTfSgAEjRpR096x0liPFD/Eqt2NMuBQzB2XhrACAApjFsuQFh9XdGAX70B3oSuNdnMVBaX+sopYxjwVpHFBVACyKTXNoktjD+6Ll8xhenS9MAAkAI/Lux2YNUOs4I413Ypg1SgEAu7kpFvWjaeJe0fJHDGe/cNaZBkekudw8PMA+0fMwlndZeAsJ5KR/qhUDUJCnSiyvRsolkJHGUgvjH8QXDgZopEzKMKDqCKrwEQ4C6MH7GEXC665buLJG8hlQc4LP4paxfJrOqYVYYY2UARfEIazTbgDg2dB98GebzJd54b8L/iWNdLyooeR6CHyZ+6xk0yKxkYg6nEVSUG4VJ9QJ9cxRCxO+9WiOyvgUeexXP1hLGH5nGuBWVtiSp4vqe3VP0UFWI9Wan4Er3v8q7jjPWVtm4FtcQQMrOKO2nOQCM5AyDMi56FDrKHA/1nyppS1ppBpYaE8wciEjGI2AaeM41kI4doDX4XiT3Qm1gevyruCgZg9P8xIv8m1nCzTKq6oiJ9xTMiZ505P5m8cdZ0CnZMVXHVljM7WMBzxpyDxygtdxoCEFTaMIWbZU85UvBjgUMYy0fBaAF8V1Lj9qWQ1aMZ5f4k9r+AGMSkMP1vZoZih6k6sicc5h/OFHM9vDqU/VIU7zJZdYYsKGH4g4nAJMGiXZRds1pVMoZ69RM5vfkbh0qkBhsnS2RLMLilQdL9MBHS9UAh0v1e6CYnXHy/WeeCcvLDwl/9OVze69tPKM+M+v7eJN6OzFpWdEF0ucDbhVNFXadnVrmJFlkVNGTS2M6pzmhMvltfPhnN2B63sVuL7fcNP3D1TSk2ihosPrAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA5LTA5VDIwOjE4OjEzKzAyOjAweOR7nQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOS0wOVQyMDoxODoxMyswMjowMAm5wyEAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC) no-repeat 50% 50%;background-size:85%}.iziToast.iziToast-theme-dark .iziToast-buttons>a,.iziToast.iziToast-theme-dark .iziToast-buttons>button,.iziToast.iziToast-theme-dark .iziToast-buttons>input{color:#fff;background:rgba(255,255,255,.1)}.iziToast.iziToast-theme-dark .iziToast-buttons>a:hover,.iziToast.iziToast-theme-dark .iziToast-buttons>button:hover,.iziToast.iziToast-theme-dark .iziToast-buttons>input:hover{background:rgba(255,255,255,.2)}.iziToast.iziToast-theme-dark .iziToast-buttons>a:focus,.iziToast.iziToast-theme-dark .iziToast-buttons>button:focus,.iziToast.iziToast-theme-dark .iziToast-buttons>input:focus{box-shadow:0 0 0 1px rgba(255,255,255,.6)}.iziToast.iziToast-color-red{background:rgba(255,175,180,.9);border-color:rgba(255,175,180,.9)}.iziToast.iziToast-color-orange{background:rgba(255,207,165,.9);border-color:rgba(255,207,165,.9)}.iziToast.iziToast-color-yellow{background:rgba(255,249,178,.9);border-color:rgba(255,249,178,.9)}.iziToast.iziToast-color-blue{background:rgba(157,222,255,.9);border-color:rgba(157,222,255,.9)}.iziToast.iziToast-color-green{background:rgba(166,239,184,.9);border-color:rgba(166,239,184,.9)}.iziToast.iziToast-layout2 .iziToast-body .iziToast-message,.iziToast.iziToast-layout2 .iziToast-body .iziToast-texts{width:100%}.iziToast.iziToast-layout3{border-radius:2px}.iziToast.iziToast-layout3::after{display:none}.iziToast .revealIn,.iziToast.revealIn{-webkit-animation:iziT-revealIn 1s cubic-bezier(.25,1.6,.25,1) both;animation:iziT-revealIn 1s cubic-bezier(.25,1.6,.25,1) both}.iziToast .slideIn,.iziToast.slideIn{-webkit-animation:iziT-slideIn 1s cubic-bezier(.16,.81,.32,1) both;animation:iziT-slideIn 1s cubic-bezier(.16,.81,.32,1) both}.iziToast.bounceInLeft{-webkit-animation:iziT-bounceInLeft .7s ease-in-out both;animation:iziT-bounceInLeft .7s ease-in-out both}.iziToast.bounceInRight{-webkit-animation:iziT-bounceInRight .85s ease-in-out both;animation:iziT-bounceInRight .85s ease-in-out both}.iziToast.bounceInDown{-webkit-animation:iziT-bounceInDown .7s ease-in-out both;animation:iziT-bounceInDown .7s ease-in-out both}.iziToast.bounceInUp{-webkit-animation:iziT-bounceInUp .7s ease-in-out both;animation:iziT-bounceInUp .7s ease-in-out both}.iziToast .fadeIn,.iziToast.fadeIn{-webkit-animation:iziT-fadeIn .5s ease both;animation:iziT-fadeIn .5s ease both}.iziToast.fadeInUp{-webkit-animation:iziT-fadeInUp .7s ease both;animation:iziT-fadeInUp .7s ease both}.iziToast.fadeInDown{-webkit-animation:iziT-fadeInDown .7s ease both;animation:iziT-fadeInDown .7s ease both}.iziToast.fadeInLeft{-webkit-animation:iziT-fadeInLeft .85s cubic-bezier(.25,.8,.25,1) both;animation:iziT-fadeInLeft .85s cubic-bezier(.25,.8,.25,1) both}.iziToast.fadeInRight{-webkit-animation:iziT-fadeInRight .85s cubic-bezier(.25,.8,.25,1) both;animation:iziT-fadeInRight .85s cubic-bezier(.25,.8,.25,1) both}.iziToast.flipInX{-webkit-animation:iziT-flipInX .85s cubic-bezier(.35,0,.25,1) both;animation:iziT-flipInX .85s cubic-bezier(.35,0,.25,1) both}.iziToast.fadeOut{-webkit-animation:iziT-fadeOut .7s ease both;animation:iziT-fadeOut .7s ease both}.iziToast.fadeOutDown{-webkit-animation:iziT-fadeOutDown .7s cubic-bezier(.4,.45,.15,.91) both;animation:iziT-fadeOutDown .7s cubic-bezier(.4,.45,.15,.91) both}.iziToast.fadeOutUp{-webkit-animation:iziT-fadeOutUp .7s cubic-bezier(.4,.45,.15,.91) both;animation:iziT-fadeOutUp .7s cubic-bezier(.4,.45,.15,.91) both}.iziToast.fadeOutLeft{-webkit-animation:iziT-fadeOutLeft .5s ease both;animation:iziT-fadeOutLeft .5s ease both}.iziToast.fadeOutRight{-webkit-animation:iziT-fadeOutRight .5s ease both;animation:iziT-fadeOutRight .5s ease both}.iziToast.flipOutX{-webkit-backface-visibility:visible!important;backface-visibility:visible!important;-webkit-animation:iziT-flipOutX .7s cubic-bezier(.4,.45,.15,.91) both;animation:iziT-flipOutX .7s cubic-bezier(.4,.45,.15,.91) both}.iziToast-overlay.fadeIn{-webkit-animation:iziT-fadeIn .5s ease both;animation:iziT-fadeIn .5s ease both}.iziToast-overlay.fadeOut{-webkit-animation:iziT-fadeOut .7s ease both;animation:iziT-fadeOut .7s ease both}@-webkit-keyframes iziT-revealIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,1)}to{opacity:1}}@-webkit-keyframes iziT-slideIn{0%{opacity:0;-webkit-transform:translateX(50px)}to{opacity:1;-webkit-transform:translateX(0)}}@-webkit-keyframes iziT-bounceInLeft{0%{opacity:0;-webkit-transform:translateX(280px)}50%{opacity:1;-webkit-transform:translateX(-20px)}70%{-webkit-transform:translateX(10px)}to{-webkit-transform:translateX(0)}}@-webkit-keyframes iziT-bounceInRight{0%{opacity:0;-webkit-transform:translateX(-280px)}50%{opacity:1;-webkit-transform:translateX(20px)}70%{-webkit-transform:translateX(-10px)}to{-webkit-transform:translateX(0)}}@-webkit-keyframes iziT-bounceInDown{0%{opacity:0;-webkit-transform:translateY(-200px)}50%{opacity:1;-webkit-transform:translateY(10px)}70%{-webkit-transform:translateY(-5px)}to{-webkit-transform:translateY(0)}}@-webkit-keyframes iziT-bounceInUp{0%{opacity:0;-webkit-transform:translateY(200px)}50%{opacity:1;-webkit-transform:translateY(-10px)}70%{-webkit-transform:translateY(5px)}to{-webkit-transform:translateY(0)}}@-webkit-keyframes iziT-fadeIn{0%{opacity:0}to{opacity:1}}@-webkit-keyframes iziT-fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes iziT-fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes iziT-fadeInLeft{0%{opacity:0;-webkit-transform:translate3d(300px,0,0);transform:translate3d(300px,0,0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes iziT-fadeInRight{0%{opacity:0;-webkit-transform:translate3d(-300px,0,0);transform:translate3d(-300px,0,0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes iziT-flipInX{0%{-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);opacity:0}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg)}60%{-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}@-webkit-keyframes iziT-fadeOut{0%{opacity:1}to{opacity:0}}@-webkit-keyframes iziT-fadeOutDown{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@-webkit-keyframes iziT-fadeOutUp{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@-webkit-keyframes iziT-fadeOutLeft{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(-200px,0,0);transform:translate3d(-200px,0,0)}}@-webkit-keyframes iziT-fadeOutRight{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(200px,0,0);transform:translate3d(200px,0,0)}}@-webkit-keyframes iziT-flipOutX{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);opacity:1}to{-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);opacity:0}}@-webkit-keyframes iziT-revealIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,1);transform:scale3d(.3,.3,1)}to{opacity:1}}@keyframes iziT-revealIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,1);transform:scale3d(.3,.3,1)}to{opacity:1}}@-webkit-keyframes iziT-slideIn{0%{opacity:0;-webkit-transform:translateX(50px);transform:translateX(50px)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes iziT-slideIn{0%{opacity:0;-webkit-transform:translateX(50px);transform:translateX(50px)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes iziT-bounceInLeft{0%{opacity:0;-webkit-transform:translateX(280px);transform:translateX(280px)}50%{opacity:1;-webkit-transform:translateX(-20px);transform:translateX(-20px)}70%{-webkit-transform:translateX(10px);transform:translateX(10px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes iziT-bounceInLeft{0%{opacity:0;-webkit-transform:translateX(280px);transform:translateX(280px)}50%{opacity:1;-webkit-transform:translateX(-20px);transform:translateX(-20px)}70%{-webkit-transform:translateX(10px);transform:translateX(10px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes iziT-bounceInRight{0%{opacity:0;-webkit-transform:translateX(-280px);transform:translateX(-280px)}50%{opacity:1;-webkit-transform:translateX(20px);transform:translateX(20px)}70%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes iziT-bounceInRight{0%{opacity:0;-webkit-transform:translateX(-280px);transform:translateX(-280px)}50%{opacity:1;-webkit-transform:translateX(20px);transform:translateX(20px)}70%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes iziT-bounceInDown{0%{opacity:0;-webkit-transform:translateY(-200px);transform:translateY(-200px)}50%{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}70%{-webkit-transform:translateY(-5px);transform:translateY(-5px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes iziT-bounceInDown{0%{opacity:0;-webkit-transform:translateY(-200px);transform:translateY(-200px)}50%{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}70%{-webkit-transform:translateY(-5px);transform:translateY(-5px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}@-webkit-keyframes iziT-bounceInUp{0%{opacity:0;-webkit-transform:translateY(200px);transform:translateY(200px)}50%{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}70%{-webkit-transform:translateY(5px);transform:translateY(5px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes iziT-bounceInUp{0%{opacity:0;-webkit-transform:translateY(200px);transform:translateY(200px)}50%{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}70%{-webkit-transform:translateY(5px);transform:translateY(5px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}@-webkit-keyframes iziT-fadeIn{0%{opacity:0}to{opacity:1}}@keyframes iziT-fadeIn{0%{opacity:0}to{opacity:1}}@-webkit-keyframes iziT-fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:none;transform:none}}@keyframes iziT-fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes iziT-fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}to{opacity:1;-webkit-transform:none;transform:none}}@keyframes iziT-fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes iziT-fadeInLeft{0%{opacity:0;-webkit-transform:translate3d(300px,0,0);transform:translate3d(300px,0,0)}to{opacity:1;-webkit-transform:none;transform:none}}@keyframes iziT-fadeInLeft{0%{opacity:0;-webkit-transform:translate3d(300px,0,0);transform:translate3d(300px,0,0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes iziT-fadeInRight{0%{opacity:0;-webkit-transform:translate3d(-300px,0,0);transform:translate3d(-300px,0,0)}to{opacity:1;-webkit-transform:none;transform:none}}@keyframes iziT-fadeInRight{0%{opacity:0;-webkit-transform:translate3d(-300px,0,0);transform:translate3d(-300px,0,0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes iziT-flipInX{0%{-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);opacity:0}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg)}60%{-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}@keyframes iziT-flipInX{0%{-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);opacity:0}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg)}60%{-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}@-webkit-keyframes iziT-fadeOut{0%{opacity:1}to{opacity:0}}@keyframes iziT-fadeOut{0%{opacity:1}to{opacity:0}}@-webkit-keyframes iziT-fadeOutDown{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@keyframes iziT-fadeOutDown{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@-webkit-keyframes iziT-fadeOutUp{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@keyframes iziT-fadeOutUp{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@-webkit-keyframes iziT-fadeOutLeft{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(-200px,0,0);transform:translate3d(-200px,0,0)}}@keyframes iziT-fadeOutLeft{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(-200px,0,0);transform:translate3d(-200px,0,0)}}@-webkit-keyframes iziT-fadeOutRight{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(200px,0,0);transform:translate3d(200px,0,0)}}@keyframes iziT-fadeOutRight{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(200px,0,0);transform:translate3d(200px,0,0)}}@-webkit-keyframes iziT-flipOutX{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);opacity:1}to{-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);opacity:0}}@keyframes iziT-flipOutX{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);opacity:1}to{-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);opacity:0}}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-qrcode-reader/dist/vue-qrcode-reader.css":
 /*!***************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-qrcode-reader/dist/vue-qrcode-reader.css ***!
@@ -6446,6 +6611,63 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 // module
 exports.push([module.i, ".qrcode-reader{display:flex;flex-flow:row nowrap;justify-content:space-around;align-items:center}.qrcode-reader__inner-wrapper{position:relative;max-width:100%;max-height:100%;z-index:0}.qrcode-reader__overlay,.qrcode-reader__tracking-layer{position:absolute;width:100%;height:100%;top:0;left:0}.qrcode-reader__camera,.qrcode-reader__pause-frame{display:block;-o-object-fit:contain;object-fit:contain;max-width:100%;max-height:100%}.qrcode-stream{display:flex;flex-flow:row nowrap;justify-content:space-around;align-items:center}.qrcode-stream__inner-wrapper{position:relative;max-width:100%;max-height:100%;z-index:0}.qrcode-stream__overlay,.qrcode-stream__tracking-layer{position:absolute;width:100%;height:100%;top:0;left:0}.qrcode-stream__camera,.qrcode-stream__pause-frame{display:block;-o-object-fit:contain;object-fit:contain;max-width:100%;max-height:100%}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/AdminLogin.vue?vue&type=style&index=0&id=b7f4eb6a&scoped=true&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Login/AdminLogin.vue?vue&type=style&index=0&id=b7f4eb6a&scoped=true&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.error[data-v-b7f4eb6a] {\r\n  font-weight: bold;\r\n  color: red;\n}\n.qrcodeBox[data-v-b7f4eb6a]{\r\n  border: 2px #fff solid;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/UserLogin.vue?vue&type=style&index=0&id=0c104106&scoped=true&lang=css&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Login/UserLogin.vue?vue&type=style&index=0&id=0c104106&scoped=true&lang=css& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.error[data-v-0c104106] {\r\n  font-weight: bold;\r\n  color: red;\n}\n.qrcodeBox[data-v-0c104106]{\r\n  border: 2px #fff solid;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Register/DownloadFile.vue?vue&type=style&index=0&id=f40f6656&scoped=true&lang=css&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Register/DownloadFile.vue?vue&type=style&index=0&id=f40f6656&scoped=true&lang=css& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\nimg[data-v-f40f6656]{\r\n\twidth: 200px;\n}\t\r\n\r\n", ""]);
 
 // exports
 
@@ -6596,2120 +6818,99 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/flipclock/dist/flipclock.js":
-/*!**************************************************!*\
-  !*** ./node_modules/flipclock/dist/flipclock.js ***!
-  \**************************************************/
+/***/ "./node_modules/font-awesome/css/font-awesome.css":
+/*!********************************************************!*\
+  !*** ./node_modules/font-awesome/css/font-awesome.css ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-(function (global, factory) {
-     true ? module.exports = factory() :
-    undefined;
-}(this, (function () { 'use strict';
 
-    function _typeof(obj) {
-      if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-        _typeof = function (obj) {
-          return typeof obj;
-        };
-      } else {
-        _typeof = function (obj) {
-          return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-        };
-      }
+var content = __webpack_require__(/*! !../../css-loader??ref--6-1!../../postcss-loader/src??ref--6-2!./font-awesome.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/font-awesome/css/font-awesome.css");
 
-      return _typeof(obj);
-    }
+if(typeof content === 'string') content = [[module.i, content, '']];
 
-    function _classCallCheck(instance, Constructor) {
-      if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-      }
-    }
+var transform;
+var insertInto;
 
-    function _defineProperties(target, props) {
-      for (var i = 0; i < props.length; i++) {
-        var descriptor = props[i];
-        descriptor.enumerable = descriptor.enumerable || false;
-        descriptor.configurable = true;
-        if ("value" in descriptor) descriptor.writable = true;
-        Object.defineProperty(target, descriptor.key, descriptor);
-      }
-    }
 
-    function _createClass(Constructor, protoProps, staticProps) {
-      if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-      if (staticProps) _defineProperties(Constructor, staticProps);
-      return Constructor;
-    }
 
-    function _inherits(subClass, superClass) {
-      if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function");
-      }
+var options = {"hmr":true}
 
-      subClass.prototype = Object.create(superClass && superClass.prototype, {
-        constructor: {
-          value: subClass,
-          writable: true,
-          configurable: true
-        }
-      });
-      if (superClass) _setPrototypeOf(subClass, superClass);
-    }
+options.transform = transform
+options.insertInto = undefined;
 
-    function _getPrototypeOf(o) {
-      _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-        return o.__proto__ || Object.getPrototypeOf(o);
-      };
-      return _getPrototypeOf(o);
-    }
+var update = __webpack_require__(/*! ../../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
 
-    function _setPrototypeOf(o, p) {
-      _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-        o.__proto__ = p;
-        return o;
-      };
+if(content.locals) module.exports = content.locals;
 
-      return _setPrototypeOf(o, p);
-    }
+if(false) {}
 
-    function isNativeReflectConstruct() {
-      if (typeof Reflect === "undefined" || !Reflect.construct) return false;
-      if (Reflect.construct.sham) return false;
-      if (typeof Proxy === "function") return true;
+/***/ }),
 
-      try {
-        Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
-        return true;
-      } catch (e) {
-        return false;
-      }
-    }
+/***/ "./node_modules/font-awesome/fonts/fontawesome-webfont.eot":
+/*!*****************************************************************!*\
+  !*** ./node_modules/font-awesome/fonts/fontawesome-webfont.eot ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-    function _construct(Parent, args, Class) {
-      if (isNativeReflectConstruct()) {
-        _construct = Reflect.construct;
-      } else {
-        _construct = function _construct(Parent, args, Class) {
-          var a = [null];
-          a.push.apply(a, args);
-          var Constructor = Function.bind.apply(Parent, a);
-          var instance = new Constructor();
-          if (Class) _setPrototypeOf(instance, Class.prototype);
-          return instance;
-        };
-      }
+module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.eot?674f50d287a8c48dc19ba404d20fe713";
 
-      return _construct.apply(null, arguments);
-    }
+/***/ }),
 
-    function _assertThisInitialized(self) {
-      if (self === void 0) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-      }
+/***/ "./node_modules/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0":
+/*!*************************************************************************!*\
+  !*** ./node_modules/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0 ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-      return self;
-    }
+module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.eot?674f50d287a8c48dc19ba404d20fe713";
 
-    function _possibleConstructorReturn(self, call) {
-      if (call && (typeof call === "object" || typeof call === "function")) {
-        return call;
-      }
+/***/ }),
 
-      return _assertThisInitialized(self);
-    }
+/***/ "./node_modules/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0":
+/*!*************************************************************************!*\
+  !*** ./node_modules/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0 ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-    function _superPropBase(object, property) {
-      while (!Object.prototype.hasOwnProperty.call(object, property)) {
-        object = _getPrototypeOf(object);
-        if (object === null) break;
-      }
+module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.svg?912ec66d7572ff821749319396470bde";
 
-      return object;
-    }
+/***/ }),
 
-    function _get(target, property, receiver) {
-      if (typeof Reflect !== "undefined" && Reflect.get) {
-        _get = Reflect.get;
-      } else {
-        _get = function _get(target, property, receiver) {
-          var base = _superPropBase(target, property);
+/***/ "./node_modules/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0":
+/*!*************************************************************************!*\
+  !*** ./node_modules/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0 ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-          if (!base) return;
-          var desc = Object.getOwnPropertyDescriptor(base, property);
+module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.ttf?b06871f281fee6b241d60582ae9369b9";
 
-          if (desc.get) {
-            return desc.get.call(receiver);
-          }
+/***/ }),
 
-          return desc.value;
-        };
-      }
+/***/ "./node_modules/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0":
+/*!***************************************************************************!*\
+  !*** ./node_modules/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-      return _get(target, property, receiver || target);
-    }
+module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.woff2?af7ae505a9eed503f8b8e6982036873e";
 
-    function error(message) {
-      throw new Error(message);
-    }
-    function callback(fn) {
-      if (isFunction(fn)) {
-        return fn.apply(this, [].slice.call(arguments).slice(1));
-      }
-    }
-    function noop(value) {
-      return !isUndefined(value) && !isNull(value);
-    }
-    function chain(before, after) {
-      return function () {
-        return after(before());
-      };
-    }
-    function concatMap(fn) {
-      return function (x) {
-        return x.map(fn).reduce(function (x, y) {
-          return x.concat(y);
-        }, []);
-      };
-    }
-    function flatten(x) {
-      return concatMap(function (x) {
-        return x;
-      })(x);
-    }
-    function deepFlatten(x) {
-      return concatMap(function (x) {
-        return Array.isArray(x) ? deepFlatten(x) : x;
-      })(x);
-    }
-    function length(digits) {
-      return deepFlatten(digits).length;
-    }
-    function isNull(value) {
-      return value === null; // || typeof value === 'null';
-    }
-    function isUndefined(value) {
-      return typeof value === 'undefined';
-    }
-    function isClass(value) {
-      return value instanceof Function && !!value.name;
-    }
-    function isString(value) {
-      return typeof value === 'string';
-    }
-    function isArray(value) {
-      return value instanceof Array;
-    }
-    function isObject(value) {
-      var type = _typeof(value);
+/***/ }),
 
-      return value != null && !isArray(value) && (type == 'object' || type == 'function');
-    }
-    function isFunction(value) {
-      return value instanceof Function;
-    }
-    function isNumber(value) {
-      return !isNaN(value);
-    }
-    function kebabCase(str) {
-      return str.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\s+/g, '-').toLowerCase();
-    }
+/***/ "./node_modules/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0":
+/*!**************************************************************************!*\
+  !*** ./node_modules/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0 ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-    var Component =
-    /*#__PURE__*/
-    function () {
-      function Component(attributes) {
-        _classCallCheck(this, Component);
-
-        this.setAttribute(Object.assign({
-          events: {}
-        }, attributes));
-      }
-
-      _createClass(Component, [{
-        key: "emit",
-        value: function emit(key) {
-          var _this = this;
-
-          for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-            args[_key - 1] = arguments[_key];
-          }
-
-          if (this.events[key]) {
-            this.events[key].forEach(function (event) {
-              event.apply(_this, args);
-            });
-          }
-
-          return this;
-        }
-      }, {
-        key: "on",
-        value: function on(key, fn) {
-
-          if (!this.events[key]) {
-            this.events[key] = [];
-          }
-
-          this.events[key].push(fn);
-          return this;
-        }
-      }, {
-        key: "off",
-        value: function off(key, fn) {
-          if (this.events[key] && fn) {
-            this.events[key] = this.events[key].filter(function (event) {
-              return event !== fn;
-            });
-          } else {
-            this.events[key] = [];
-          }
-
-          return this;
-        }
-      }, {
-        key: "once",
-        value: function once(key, fn) {
-          var _this2 = this;
-
-          fn = chain(fn, function () {
-            return _this2.off(key, fn);
-          });
-          this.on(key, fn, true);
-        }
-      }, {
-        key: "getAttribute",
-        value: function getAttribute(key) {
-          return this.hasOwnProperty(key) ? this[key] : null;
-        }
-      }, {
-        key: "getAttributes",
-        value: function getAttributes() {
-          var _this3 = this;
-
-          var attributes = {};
-          Object.getOwnPropertyNames(this).forEach(function (key) {
-            attributes[key] = _this3.getAttribute(key);
-          });
-          return attributes;
-        }
-      }, {
-        key: "getPublicAttributes",
-        value: function getPublicAttributes() {
-          var _this4 = this;
-
-          return Object.keys(this.getAttributes()).filter(function (key) {
-            return !key.match(/^\$/);
-          }).reduce(function (obj, key) {
-            obj[key] = _this4.getAttribute(key);
-            return obj;
-          }, {});
-        }
-      }, {
-        key: "setAttribute",
-        value: function setAttribute(key, value) {
-          if (isObject(key)) {
-            this.setAttributes(key);
-          } else {
-            this[key] = value;
-          }
-        }
-      }, {
-        key: "setAttributes",
-        value: function setAttributes(values) {
-          for (var i in values) {
-            this.setAttribute(i, values[i]);
-          }
-        }
-      }, {
-        key: "callback",
-        value: function callback$$1(fn) {
-          return callback.call(this, fn);
-        }
-      }, {
-        key: "name",
-        get: function get() {
-          return this.constructor.name;
-        }
-      }, {
-        key: "className",
-        get: function get() {
-          return kebabCase(this.name);
-        }
-      }, {
-        key: "events",
-        get: function get() {
-          return this.$events;
-        },
-        set: function set(value) {
-          this.$events = value;
-        }
-      }], [{
-        key: "make",
-        value: function make() {
-          for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-            args[_key2] = arguments[_key2];
-          }
-
-          return _construct(this, args);
-        }
-      }]);
-
-      return Component;
-    }();
-
-    var Timer =
-    /*#__PURE__*/
-    function (_Component) {
-      _inherits(Timer, _Component);
-
-      function Timer(interval) {
-        _classCallCheck(this, Timer);
-
-        return _possibleConstructorReturn(this, _getPrototypeOf(Timer).call(this, Object.assign({
-          count: 0,
-          handle: null,
-          started: null,
-          running: false,
-          interval: interval
-        }, isObject(interval) ? interval : null)));
-      }
-      /**
-       * Gets the elapsed the time as an interger
-       *
-       * @return Integer
-       */
-
-
-      _createClass(Timer, [{
-        key: "reset",
-
-        /**
-         * Resets the timer. This method is chainable.
-         *
-         * @param  Function  fn
-         * @return this
-         */
-        value: function reset(fn) {
-          var _this = this;
-
-          this.stop(function () {
-            _this.count = 0;
-
-            _this.start(function () {
-              return callback.call(_this, fn);
-            });
-
-            _this.emit('reset');
-          });
-          return this;
-        }
-        /**
-         * Starts the timer. This method is chainable.
-         *
-         * @param  Function  fn
-         * @return this
-         */
-
-      }, {
-        key: "start",
-        value: function start(fn) {
-          var _this2 = this;
-
-          this.started = new Date();
-          this.lastLoop = Date.now();
-          this.running = true;
-          this.emit('start');
-
-          var loop = function loop() {
-            if (Date.now() - _this2.lastLoop >= _this2.interval) {
-              _this2.lastLoop = Date.now();
-              callback.call(_this2, fn);
-
-              _this2.emit('interval');
-
-              _this2.count++;
-            }
-
-            _this2.handle = window.requestAnimationFrame(loop);
-            return _this2;
-          };
-
-          return loop();
-        }
-        /**
-         * Stops the timer. This method is chainable.
-         *
-         * @param  Function fn
-         * @return this
-         */
-
-      }, {
-        key: "stop",
-        value: function stop(fn) {
-          var _this3 = this;
-
-          if (this.isRunning) {
-            setTimeout(function () {
-              window.cancelAnimationFrame(_this3.handle);
-              _this3.running = false;
-              callback.call(_this3, fn);
-
-              _this3.emit('stop');
-            });
-          }
-
-          return this;
-        }
-      }, {
-        key: "elapsed",
-        get: function get() {
-          return this.count * this.interval;
-        }
-        /**
-         * Returns true is the timer is running.
-         *
-         * @return Boolean
-         */
-
-      }, {
-        key: "isRunning",
-        get: function get() {
-          return this.running === true;
-        }
-        /**
-         * Returns true is the timer is not running.
-         *
-         * @return Boolean
-         */
-
-      }, {
-        key: "isStopped",
-        get: function get() {
-          return this.running === false;
-        }
-      }]);
-
-      return Timer;
-    }(Component);
-
-    function digitize(value) {
-      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-      options = Object.assign({
-        minimumDigits: 0,
-        prependLeadingZero: true
-      }, options);
-
-      function prepend(number) {
-        var shouldPrependZero = options.prependLeadingZero && number.toString().split('').length === 1;
-        return (shouldPrependZero ? '0' : '').concat(number);
-      }
-
-      function digits(arr, min) {
-        var length$$1 = deepFlatten(arr).length;
-
-        if (length$$1 < min) {
-          for (var i = 0; i < min - length$$1; i++) {
-            arr[0].unshift('0');
-          }
-        }
-
-        return arr;
-      }
-
-      return digits(flatten([value]).map(function (number) {
-        return flatten(deepFlatten([number]).map(function (number) {
-          return prepend(number).split('');
-        }));
-      }), options.minimumDigits || 0);
-    }
-
-    var ranges = [{
-      // 0-9
-      min: 48,
-      max: 57
-    }, {
-      // a-z
-      min: 65,
-      max: 90
-    }, {
-      // A-Z
-      min: 97,
-      max: 122
-    }];
-
-    function format(value, type) {
-      switch (type) {
-        case 'number':
-          return parseFloat(value);
-      }
-
-      return value;
-    }
-
-    function findRange(char) {
-      for (var i in ranges) {
-        var code = char.toString().charCodeAt(0);
-
-        if (ranges[i].min <= code && ranges[i].max >= code) {
-          return ranges[i];
-        }
-      }
-
-      return null;
-    }
-
-    function next(value) {
-      var converted = value.toString().split('').map(function (char) {
-        return charCode(char, function (range, code) {
-          return !range || code < range.max ? code + 1 : range.min;
-        });
-      }).join('');
-      return format(converted, _typeof(value));
-    }
-
-    function charCode(char, fn) {
-      var range = findRange(char);
-      var code = char.charCodeAt(0);
-      return String.fromCharCode(fn(range, code));
-    }
-
-    function prev(value) {
-      var converted = value.toString().split('').map(function (char) {
-        return charCode(char, function (range, code) {
-          return !range || code > range.min ? code - 1 : range.max;
-        });
-      }).join('');
-      return format(converted, _typeof(value));
-    }
-
-    var FaceValue =
-    /*#__PURE__*/
-    function (_Component) {
-      _inherits(FaceValue, _Component);
-
-      function FaceValue(value, attributes) {
-        var _this;
-
-        _classCallCheck(this, FaceValue);
-
-        _this = _possibleConstructorReturn(this, _getPrototypeOf(FaceValue).call(this, Object.assign({
-          format: function format(value) {
-            return value;
-          },
-          prependLeadingZero: true,
-          minimumDigits: 0
-        }, attributes)));
-
-        if (!_this.value) {
-          _this.value = value;
-        }
-
-        return _this;
-      }
-
-      _createClass(FaceValue, [{
-        key: "isNaN",
-        value: function (_isNaN) {
-          function isNaN() {
-            return _isNaN.apply(this, arguments);
-          }
-
-          isNaN.toString = function () {
-            return _isNaN.toString();
-          };
-
-          return isNaN;
-        }(function () {
-          return isNaN(this.value);
-        })
-      }, {
-        key: "isNumber",
-        value: function isNumber$$1() {
-          return isNumber();
-        }
-      }, {
-        key: "digits",
-        set: function set(value) {
-          this.$digits = value;
-          this.minimumDigits = Math.max(this.minimumDigits, length(value));
-        },
-        get: function get() {
-          return this.$digits;
-        }
-      }, {
-        key: "value",
-        get: function get() {
-          return this.$value;
-        },
-        set: function set(value) {
-          this.$value = value;
-          this.digits = digitize(this.format(value), {
-            minimumDigits: this.minimumDigits,
-            prependLeadingZero: this.prependLeadingZero
-          });
-        }
-      }]);
-
-      return FaceValue;
-    }(Component);
-
-    function validate(value) {
-      var success = false;
-
-      for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-        args[_key - 1] = arguments[_key];
-      }
-
-      flatten(args).forEach(function (arg) {
-        if (isNull(value) && isNull(arg) || isObject(arg) && value instanceof arg || isFunction(arg) && !isClass(arg) && arg(value) === true || isString(arg) && _typeof(value) === arg) {
-          success = true;
-        }
-      });
-      return success;
-    }
-
-    var ConsoleMessages = {
-      items: 'The items property must be an array.',
-      theme: 'The theme property must be an object.',
-      language: 'The language must be an object.',
-      date: 'The value must be an instance of a Date.',
-      face: 'The face must be an instance of a Face class.',
-      element: 'The element must be an instance of an HTMLElement',
-      faceValue: 'The face must be an instance of a FaceValue class.',
-      timer: 'The timer property must be an instance of a Timer class.'
-    };
-
-    var Face =
-    /*#__PURE__*/
-    function (_Component) {
-      _inherits(Face, _Component);
-
-      function Face(value, attributes) {
-        var _this;
-
-        _classCallCheck(this, Face);
-
-        var delay = attributes.delay || 1000;
-        _this = _possibleConstructorReturn(this, _getPrototypeOf(Face).call(this, {
-          autoStart: true,
-          countdown: false,
-          animationRate: delay / 2,
-          timer: Timer.make(delay)
-        }));
-
-        _this.setAttributes(Object.assign(_this.defaultAttributes() || {}, attributes || {}));
-
-        _this.value = !isNull(value) ? value : _this.defaultValue();
-        return _this;
-      }
-
-      _createClass(Face, [{
-        key: "interval",
-        value: function interval(instance, fn) {
-          if (this.countdown) {
-            this.decrement(instance);
-          } else {
-            this.increment(instance);
-          }
-
-          callback.call(this, fn);
-          return this.emit('interval');
-        }
-      }, {
-        key: "start",
-        value: function start(instance, fn) {
-          var _this2 = this;
-
-          this.timer.start(function () {
-            return _this2.interval(instance, fn);
-          });
-          return this.emit('start');
-        }
-      }, {
-        key: "stop",
-        value: function stop(instance, fn) {
-          this.timer.stop(fn);
-          return this.emit('stop');
-        }
-      }, {
-        key: "reset",
-        value: function reset(instance, fn) {
-          var _this3 = this;
-
-          this.timer.reset(function () {
-            return _this3.interval(instance, fn);
-          });
-          return this.emit('reset');
-        }
-      }, {
-        key: "createFaceValue",
-        value: function createFaceValue(value) {
-          var _this4 = this;
-
-          return FaceValue.make(value, {
-            format: function format(value) {
-              return _this4.format(value);
-            }
-          });
-        }
-      }, {
-        key: "format",
-        value: function format(value) {
-          return value;
-        }
-      }, {
-        key: "defaultValue",
-        value: function defaultValue() {//
-        }
-      }, {
-        key: "defaultAttributes",
-        value: function defaultAttributes() {//
-        }
-      }, {
-        key: "defaultDataType",
-        value: function defaultDataType() {//
-        }
-      }, {
-        key: "increment",
-        value: function increment(instance) {//
-        }
-      }, {
-        key: "decrement",
-        value: function decrement(instance) {//
-        }
-      }, {
-        key: "initialized",
-        value: function initialized(instance) {//
-        }
-      }, {
-        key: "rendered",
-        value: function rendered(instance) {//
-        }
-      }, {
-        key: "mounted",
-        value: function mounted(instance) {
-          if (this.autoStart && this.timer.isStopped) {
-            this.start(instance);
-          }
-        }
-      }, {
-        key: "dataType",
-        get: function get() {
-          return this.defaultDataType();
-        }
-      }, {
-        key: "value",
-        get: function get() {
-          return this.$value;
-        },
-        set: function set(value) {
-          if (this.dataType && !validate(value, [this.dataType])) {
-            error("The face value must be an instance of a ".concat(this.dataType.name));
-          }
-
-          this.$value = value instanceof FaceValue ? value : this.createFaceValue(value);
-          this.emit('updated', this.value);
-        }
-      }, {
-        key: "timer",
-        get: function get() {
-          return this.$timer;
-        },
-        set: function set(timer) {
-          if (!validate(timer, Timer)) {
-            error(ConsoleMessages.timer);
-          }
-
-          this.$timer = timer;
-        }
-      }]);
-
-      return Face;
-    }(Component);
-
-    var Counter =
-    /*#__PURE__*/
-    function (_Face) {
-      _inherits(Counter, _Face);
-
-      function Counter() {
-        _classCallCheck(this, Counter);
-
-        return _possibleConstructorReturn(this, _getPrototypeOf(Counter).apply(this, arguments));
-      }
-
-      _createClass(Counter, [{
-        key: "increment",
-        value: function increment(instance) {
-          this.value = this.value.value + 1;
-        }
-      }, {
-        key: "decrement",
-        value: function decrement(instance) {
-          this.value = this.value.value - 1;
-        }
-      }]);
-
-      return Counter;
-    }(Face);
-
-    var MinuteCounter =
-    /*#__PURE__*/
-    function (_Face) {
-      _inherits(MinuteCounter, _Face);
-
-      function MinuteCounter() {
-        _classCallCheck(this, MinuteCounter);
-
-        return _possibleConstructorReturn(this, _getPrototypeOf(MinuteCounter).apply(this, arguments));
-      }
-
-      _createClass(MinuteCounter, [{
-        key: "defaultDataType",
-        value: function defaultDataType() {
-          return Date;
-        }
-      }, {
-        key: "defaultAttributes",
-        value: function defaultAttributes() {
-          return {
-            showSeconds: true,
-            showLabels: true
-          };
-        }
-      }, {
-        key: "initialized",
-        value: function initialized(instance) {
-          this.originalValue = instance.originalValue;
-        }
-      }, {
-        key: "interval",
-        value: function interval(instance, fn) {
-          this.value = new Date();
-          callback.call(this, fn);
-          return this.emit('interval');
-        }
-      }, {
-        key: "format",
-        value: function format(value) {
-          var now = !this.timer.started ? new Date() : value;
-          var originalValue = this.originalValue || value;
-          var a = !this.countdown ? now : originalValue;
-          var b = !this.countdown ? originalValue : now;
-          return [[this.getMinutes(a, b)], [this.getSeconds(a, b)]];
-        }
-      }, {
-        key: "getMinutes",
-        value: function getMinutes(a, b) {
-          return Math.floor(this.getTotalSeconds(a, b) / 60);
-        }
-      }, {
-        key: "getSeconds",
-        value: function getSeconds(a, b) {
-          var totalSeconds = this.getTotalSeconds(a, b);
-          return Math.abs(Math.ceil(totalSeconds === 60 ? 0 : totalSeconds % 60));
-        }
-      }, {
-        key: "getTotalSeconds",
-        value: function getTotalSeconds(a, b) {
-          return Math.round((a.getTime() - b.getTime()) / 1000);
-        }
-      }]);
-
-      return MinuteCounter;
-    }(Face);
-
-    var HourCounter =
-    /*#__PURE__*/
-    function (_MinuteCounter) {
-      _inherits(HourCounter, _MinuteCounter);
-
-      function HourCounter() {
-        _classCallCheck(this, HourCounter);
-
-        return _possibleConstructorReturn(this, _getPrototypeOf(HourCounter).apply(this, arguments));
-      }
-
-      _createClass(HourCounter, [{
-        key: "format",
-        value: function format(value) {
-          var now = !this.timer.started ? new Date() : value;
-          var originalValue = this.originalValue || value;
-          var a = !this.countdown ? now : originalValue;
-          var b = !this.countdown ? originalValue : now;
-          var data = [[this.getHours(a, b)], [this.getMinutes(a, b)]];
-
-          if (this.showSeconds) {
-            data.push([this.getSeconds(a, b)]);
-          }
-
-          return data;
-        }
-      }, {
-        key: "getMinutes",
-        value: function getMinutes(a, b) {
-          return Math.abs(_get(_getPrototypeOf(HourCounter.prototype), "getMinutes", this).call(this, a, b) % 60);
-        }
-      }, {
-        key: "getHours",
-        value: function getHours(a, b) {
-          return Math.floor(this.getTotalSeconds(a, b) / 60 / 60);
-        }
-      }]);
-
-      return HourCounter;
-    }(MinuteCounter);
-
-    var DayCounter =
-    /*#__PURE__*/
-    function (_HourCounter) {
-      _inherits(DayCounter, _HourCounter);
-
-      function DayCounter() {
-        _classCallCheck(this, DayCounter);
-
-        return _possibleConstructorReturn(this, _getPrototypeOf(DayCounter).apply(this, arguments));
-      }
-
-      _createClass(DayCounter, [{
-        key: "format",
-        value: function format(value) {
-          var now = !this.timer.started ? new Date() : value;
-          var originalValue = this.originalValue || value;
-          var a = !this.countdown ? now : originalValue;
-          var b = !this.countdown ? originalValue : now;
-          var data = [[this.getDays(a, b)], [this.getHours(a, b)], [this.getMinutes(a, b)]];
-
-          if (this.showSeconds) {
-            data.push([this.getSeconds(a, b)]);
-          }
-
-          return data;
-        }
-      }, {
-        key: "getDays",
-        value: function getDays(a, b) {
-          return Math.floor(this.getTotalSeconds(a, b) / 60 / 60 / 24);
-        }
-      }, {
-        key: "getHours",
-        value: function getHours(a, b) {
-          return Math.abs(_get(_getPrototypeOf(DayCounter.prototype), "getHours", this).call(this, a, b) % 24);
-        }
-      }]);
-
-      return DayCounter;
-    }(HourCounter);
-
-    var TwentyFourHourClock =
-    /*#__PURE__*/
-    function (_Face) {
-      _inherits(TwentyFourHourClock, _Face);
-
-      function TwentyFourHourClock() {
-        _classCallCheck(this, TwentyFourHourClock);
-
-        return _possibleConstructorReturn(this, _getPrototypeOf(TwentyFourHourClock).apply(this, arguments));
-      }
-
-      _createClass(TwentyFourHourClock, [{
-        key: "defaultValue",
-
-        /*
-        defaultDataType() {
-            return Date;
-        }
-        */
-        value: function defaultValue() {
-          return new Date();
-        }
-      }, {
-        key: "defaultAttributes",
-        value: function defaultAttributes() {
-          return {
-            showSeconds: true,
-            showLabels: false
-          };
-        }
-      }, {
-        key: "format",
-        value: function format(value) {
-          var groups = [[value.getHours()], [value.getMinutes()]];
-
-          if (this.showSeconds) {
-            groups.push([value.getSeconds()]);
-          }
-
-          return groups;
-        }
-      }, {
-        key: "interval",
-        value: function interval(instance, fn) {
-          this.value = new Date();
-          callback.call(this, fn);
-          return this.emit('interval');
-        }
-      }]);
-
-      return TwentyFourHourClock;
-    }(Face);
-
-    var TwelveHourClock =
-    /*#__PURE__*/
-    function (_TwentyFourHourClock) {
-      _inherits(TwelveHourClock, _TwentyFourHourClock);
-
-      function TwelveHourClock() {
-        _classCallCheck(this, TwelveHourClock);
-
-        return _possibleConstructorReturn(this, _getPrototypeOf(TwelveHourClock).apply(this, arguments));
-      }
-
-      _createClass(TwelveHourClock, [{
-        key: "defaultDataType",
-        value: function defaultDataType() {
-          return Date;
-        }
-      }, {
-        key: "defaultAttributes",
-        value: function defaultAttributes() {
-          return {
-            showLabels: false,
-            showSeconds: true,
-            showMeridium: true
-          };
-        }
-      }, {
-        key: "format",
-        value: function format(value) {
-          var hours = value.getHours();
-          var groups = [hours > 12 ? hours - 12 : hours === 0 ? 12 : hours, value.getMinutes()];
-          this.meridium = hours > 12 ? 'pm' : 'am';
-
-          if (this.showSeconds) {
-            groups.push(value.getSeconds());
-          }
-
-          return groups;
-        }
-      }]);
-
-      return TwelveHourClock;
-    }(TwentyFourHourClock);
-
-    var WeekCounter =
-    /*#__PURE__*/
-    function (_DayCounter) {
-      _inherits(WeekCounter, _DayCounter);
-
-      function WeekCounter() {
-        _classCallCheck(this, WeekCounter);
-
-        return _possibleConstructorReturn(this, _getPrototypeOf(WeekCounter).apply(this, arguments));
-      }
-
-      _createClass(WeekCounter, [{
-        key: "format",
-        value: function format(value) {
-          var now = !this.timer.started ? new Date() : value;
-          var originalValue = this.originalValue || value;
-          var a = !this.countdown ? now : originalValue;
-          var b = !this.countdown ? originalValue : now;
-          var data = [[this.getWeeks(a, b)], [this.getDays(a, b)], [this.getHours(a, b)], [this.getMinutes(a, b)]];
-
-          if (this.showSeconds) {
-            data.push([this.getSeconds(a, b)]);
-          }
-
-          return data;
-        }
-      }, {
-        key: "getWeeks",
-        value: function getWeeks(a, b) {
-          return Math.floor(this.getTotalSeconds(a, b) / 60 / 60 / 24 / 7);
-        }
-      }, {
-        key: "getDays",
-        value: function getDays(a, b) {
-          return Math.abs(_get(_getPrototypeOf(WeekCounter.prototype), "getDays", this).call(this, a, b) % 7);
-        }
-      }]);
-
-      return WeekCounter;
-    }(DayCounter);
-
-    var YearCounter =
-    /*#__PURE__*/
-    function (_WeekCounter) {
-      _inherits(YearCounter, _WeekCounter);
-
-      function YearCounter() {
-        _classCallCheck(this, YearCounter);
-
-        return _possibleConstructorReturn(this, _getPrototypeOf(YearCounter).apply(this, arguments));
-      }
-
-      _createClass(YearCounter, [{
-        key: "format",
-        value: function format(value) {
-          var now = !this.timer.started ? new Date() : value;
-          var originalValue = this.originalValue || value;
-          var a = !this.countdown ? now : originalValue;
-          var b = !this.countdown ? originalValue : now;
-          var data = [[this.getYears(a, b)], [this.getWeeks(a, b)], [this.getDays(a, b)], [this.getHours(a, b)], [this.getMinutes(a, b)]];
-
-          if (this.showSeconds) {
-            data.push([this.getSeconds(a, b)]);
-          }
-
-          return data;
-        }
-      }, {
-        key: "getYears",
-        value: function getYears(a, b) {
-          return Math.floor(Math.max(0, this.getTotalSeconds(a, b) / 60 / 60 / 24 / 7 / 52));
-        }
-      }, {
-        key: "getWeeks",
-        value: function getWeeks(a, b) {
-          return Math.abs(_get(_getPrototypeOf(YearCounter.prototype), "getWeeks", this).call(this, a, b) % 52);
-        }
-      }]);
-
-      return YearCounter;
-    }(WeekCounter);
-
-
-
-    var Faces = /*#__PURE__*/Object.freeze({
-        Counter: Counter,
-        DayCounter: DayCounter,
-        MinuteCounter: MinuteCounter,
-        HourCounter: HourCounter,
-        TwelveHourClock: TwelveHourClock,
-        TwentyFourHourClock: TwentyFourHourClock,
-        WeekCounter: WeekCounter,
-        YearCounter: YearCounter
-    });
-
-    function _translate (value, from) {
-      return (isString(from || 'en-us') ? language(from) : from).dictionary[value] || value;
-    }
-
-    function swap(el, existing) {
-      if (existing.parentNode) {
-        existing.parentNode.replaceChild(el, existing);
-        return el;
-      }
-
-      return existing;
-    }
-    function setAttributes(el, attributes) {
-      if (isObject(attributes)) {
-        for (var i in attributes) {
-          el.setAttribute(i, attributes[i]);
-        }
-      }
-
-      return el;
-    }
-    function appendChildren(el, children) {
-      if (isArray(children)) {
-        children.filter(noop).forEach(function (child) {
-          if (child instanceof HTMLElement) {
-            el.appendChild(child);
-          }
-        });
-      }
-
-      return el;
-    }
-    function createElement(el, children, attributes) {
-      if (!(el instanceof HTMLElement)) {
-        el = document.createElement(el);
-      }
-
-      setAttributes(el, isObject(children) ? children : attributes);
-
-      if (!isObject(children) && !isArray(children)) {
-        el.innerHTML = children;
-      } else {
-        appendChildren(el, children);
-      }
-
-      return el;
-    }
-    /*
-    export default function(value, attributes) {
-    	const template = document.createElement('template');
-
-        template.innerHTML = isArray(value) ?
-    		deepFlatten(value).filter(noop).join('') : value;
-
-    	if(isObject(attributes)) {
-    		for(const i in attributes) {
-    			template.content.firstChild.setAttribute(i, attributes[i]);
-    		}
-    	}
-
-        return template.content.firstChild;
-    }
-    */
-
-    var DomComponent =
-    /*#__PURE__*/
-    function (_Component) {
-      _inherits(DomComponent, _Component);
-
-      function DomComponent(attributes) {
-        var _this;
-
-        _classCallCheck(this, DomComponent);
-
-        _this = _possibleConstructorReturn(this, _getPrototypeOf(DomComponent).call(this, Object.assign({
-          parent: null
-        }, attributes)));
-
-        if (!_this.theme) {
-          error("".concat(_this.name, " does not have a theme defined."));
-        }
-
-        if (!_this.language) {
-          error("".concat(_this.name, " does not have a language defined."));
-        }
-
-        if (!_this.theme[_this.name]) {
-          throw new Error("".concat(_this.name, " cannot be rendered because it has no template."));
-        }
-
-        return _this;
-      }
-
-      _createClass(DomComponent, [{
-        key: "translate",
-        value: function translate(key) {
-          return _translate(key, this.language);
-        }
-      }, {
-        key: "t",
-        value: function t(key) {
-          return this.translate(key);
-        }
-      }, {
-        key: "render",
-        value: function render() {
-          var el = createElement('div', {
-            class: this.className === 'flip-clock' ? this.className : 'flip-clock-' + this.className
-          });
-          this.theme[this.name](el, this);
-
-          if (!this.el) {
-            this.el = el;
-          } else if (this.el.innerHTML !== el.innerHTML) {
-            this.el = swap(el, this.el);
-          }
-
-          return this.el;
-        }
-      }, {
-        key: "mount",
-        value: function mount(parent, before) {
-          this.render();
-          this.parent = parent;
-
-          if (!before) {
-            this.parent.appendChild(this.el);
-          } else {
-            this.parent.insertBefore(this.el, before);
-          }
-
-          return this.el;
-        }
-      }, {
-        key: "el",
-        get: function get() {
-          return this.$el;
-        },
-        set: function set(value) {
-          if (!validate(value, null, HTMLElement)) {
-            error(ConsoleMessages.element);
-          }
-
-          this.$el = value;
-        }
-      }, {
-        key: "parent",
-        get: function get() {
-          return this.$parent;
-        },
-        set: function set(parent) {
-          this.$parent = parent;
-        }
-      }, {
-        key: "theme",
-        get: function get() {
-          return this.$theme;
-        },
-        set: function set(value) {
-          if (!validate(value, 'object')) {
-            error(ConsoleMessages.value);
-          }
-
-          this.$theme = value;
-        }
-      }, {
-        key: "language",
-        get: function get() {
-          return this.$language;
-        },
-        set: function set(value) {
-          if (!validate(value, 'object')) {
-            error(ConsoleMessages.language);
-          }
-
-          this.$language = value;
-        }
-      }]);
-
-      return DomComponent;
-    }(Component);
-
-    var Divider =
-    /*#__PURE__*/
-    function (_DomComponent) {
-      _inherits(Divider, _DomComponent);
-
-      function Divider() {
-        _classCallCheck(this, Divider);
-
-        return _possibleConstructorReturn(this, _getPrototypeOf(Divider).apply(this, arguments));
-      }
-
-      return Divider;
-    }(DomComponent);
-
-    var ListItem =
-    /*#__PURE__*/
-    function (_DomComponent) {
-      _inherits(ListItem, _DomComponent);
-
-      function ListItem(value, attributes) {
-        _classCallCheck(this, ListItem);
-
-        return _possibleConstructorReturn(this, _getPrototypeOf(ListItem).call(this, Object.assign({
-          value: value
-        }, isObject(value) ? value : null, attributes)));
-      }
-
-      return ListItem;
-    }(DomComponent);
-
-    var List =
-    /*#__PURE__*/
-    function (_DomComponent) {
-      _inherits(List, _DomComponent);
-
-      function List(value, attributes) {
-        _classCallCheck(this, List);
-
-        return _possibleConstructorReturn(this, _getPrototypeOf(List).call(this, Object.assign({
-          value: value,
-          items: []
-        }, isObject(value) ? value : null, attributes)));
-      }
-
-      _createClass(List, [{
-        key: "createListItem",
-        value: function createListItem(value, attributes) {
-          var item = new ListItem(value, Object.assign({
-            theme: this.theme,
-            language: this.language
-          }, attributes));
-          this.$items.push(item);
-          return item;
-        }
-      }, {
-        key: "value",
-        get: function get() {
-          return this.$value;
-        },
-        set: function set(value) {
-          this.$value = value;
-        }
-      }, {
-        key: "items",
-        get: function get() {
-          return this.$items;
-        },
-        set: function set(value) {
-          this.$items = value;
-        }
-      }]);
-
-      return List;
-    }(DomComponent);
-
-    var Group =
-    /*#__PURE__*/
-    function (_DomComponent) {
-      _inherits(Group, _DomComponent);
-
-      function Group(items, attributes) {
-        _classCallCheck(this, Group);
-
-        return _possibleConstructorReturn(this, _getPrototypeOf(Group).call(this, Object.assign({
-          items: items
-        }, isObject(items) ? items : null, attributes)));
-      }
-
-      return Group;
-    }(DomComponent);
-
-    var Label =
-    /*#__PURE__*/
-    function (_DomComponent) {
-      _inherits(Label, _DomComponent);
-
-      function Label(label, attributes) {
-        _classCallCheck(this, Label);
-
-        return _possibleConstructorReturn(this, _getPrototypeOf(Label).call(this, Object.assign({
-          label: label
-        }, isObject(label) ? label : null, attributes)));
-      }
-
-      return Label;
-    }(DomComponent);
-
-    function Divider$1 (el, instance) {
-      appendChildren(el, [createElement('div', {
-        class: 'flip-clock-dot top'
-      }), createElement('div', {
-        class: 'flip-clock-dot bottom'
-      })]);
-    }
-
-    function child(el, index) {
-      return el ? el.childNodes ? el.childNodes[index] : el[index] : null;
-    }
-
-    function char(el) {
-      return el ? el.querySelector('.flip-clock-list-item:first-child .top').innerHTML : null;
-    }
-
-    function FlipClock (el, instance) {
-      var parts = instance.value.digits.map(function (group, x) {
-        var groupEl = child(instance.el ? instance.el.querySelectorAll('.flip-clock-group') : null, x);
-        var lists = group.map(function (value, y) {
-          var listEl = child(groupEl ? groupEl.querySelectorAll('.flip-clock-list') : null, y);
-          var listValue = char(listEl);
-          return instance.createList(value, {
-            domValue: listValue,
-            countdown: instance.countdown,
-            animationRate: instance.face.animationRate || instance.face.delay
-          });
-        });
-        return instance.createGroup(lists);
-      });
-      var nodes = parts.map(function (group) {
-        return group.render();
-      });
-      appendChildren(el, nodes);
-    }
-
-    function Group$1 (el, instance) {
-      var items = instance.items.map(function (item) {
-        return item.render();
-      });
-      appendChildren(el, items);
-    }
-
-    function Label$1 (el, instance) {
-      el.innerHTML = instance.t(instance.label);
-    }
-
-    function List$1 (el, instance) {
-      var beforeValue = instance.domValue || (!instance.countdown ? prev(instance.value) : next(instance.value));
-
-      if (instance.domValue && instance.domValue !== instance.value) {
-        el.classList.add('flip');
-      }
-
-      el.style.animationDelay = "".concat(instance.animationRate / 2, "ms");
-      el.style.animationDuration = "".concat(instance.animationRate / 2, "ms");
-      instance.items = [instance.createListItem(instance.value, {
-        active: true
-      }), instance.createListItem(beforeValue, {
-        active: false
-      })];
-      appendChildren(el, instance.items.map(function (item) {
-        return item.render();
-      }));
-    }
-
-    function ListItem$1 (el, instance) {
-      var className = instance.active === true ? 'active' : instance.active === false ? 'before' : null;
-      el.classList.add(className);
-      appendChildren(el, [createElement('div', [createElement('div', instance.value, {
-        class: 'top'
-      }), createElement('div', instance.value, {
-        class: 'bottom'
-      })], {
-        class: 'flip-clock-list-item-inner'
-      })]);
-    }
-
-    function DayCounter$1 (el, instance) {
-      instance.createDivider().mount(el, el.childNodes[1]);
-      instance.createDivider().mount(el, el.childNodes[3]);
-
-      if (instance.face.showSeconds) {
-        instance.createDivider().mount(el, el.childNodes[5]);
-      }
-
-      if (instance.face.showLabels) {
-        instance.createLabel('days').mount(el.childNodes[0]);
-        instance.createLabel('hours').mount(el.childNodes[2]);
-        instance.createLabel('minutes').mount(el.childNodes[4]);
-
-        if (instance.face.showSeconds) {
-          instance.createLabel('seconds').mount(el.childNodes[6]);
-        }
-      }
-    }
-
-    function HourCounter$1 (el, instance) {
-      instance.createDivider().mount(el, el.childNodes[1]);
-
-      if (instance.face.showSeconds) {
-        instance.createDivider().mount(el, el.childNodes[3]);
-      }
-
-      if (instance.face.showLabels) {
-        instance.createLabel('hours').mount(el.childNodes[0]);
-        instance.createLabel('minutes').mount(el.childNodes[2]);
-
-        if (instance.face.showSeconds) {
-          instance.createLabel('seconds').mount(el.childNodes[4]);
-        }
-      }
-    }
-
-    function MinuteCounter$1 (el, instance) {
-      instance.createDivider().mount(el, el.childNodes[1]);
-
-      if (instance.face.showLabels) {
-        instance.createLabel('minutes').mount(el.childNodes[0]);
-
-        if (instance.face.showSeconds) {
-          instance.createLabel('seconds').mount(el.childNodes[2]);
-        }
-      }
-    }
-
-    function TwentyFourHourClock$1 (el, instance) {
-      instance.createDivider().mount(el, el.childNodes[1]);
-
-      if (instance.face.showSeconds) {
-        instance.createDivider().mount(el, el.childNodes[3]);
-      }
-
-      if (instance.face.showLabels) {
-        instance.createLabel('hours').mount(el.childNodes[0]);
-        instance.createLabel('minutes').mount(el.childNodes[2]);
-
-        if (instance.face.showSeconds) {
-          instance.createLabel('seconds').mount(el.childNodes[4]);
-        }
-      }
-    }
-
-    function TwelveHourClock$1 (el, instance) {
-      TwentyFourHourClock$1(el, instance);
-
-      if (instance.face.showMeridium && instance.face.meridium) {
-        var label = instance.createLabel(instance.face.meridium);
-        var parent = el.childNodes[el.childNodes.length - 1];
-        label.mount(parent).classList.add('flip-clock-meridium');
-      }
-    }
-
-    function WeekCounter$1 (el, instance) {
-      instance.createDivider().mount(el, el.childNodes[1]);
-      instance.createDivider().mount(el, el.childNodes[3]);
-      instance.createDivider().mount(el, el.childNodes[5]);
-
-      if (instance.face.showSeconds) {
-        instance.createDivider().mount(el, el.childNodes[7]);
-      }
-
-      if (instance.face.showLabels) {
-        instance.createLabel('weeks').mount(el.childNodes[0]);
-        instance.createLabel('days').mount(el.childNodes[2]);
-        instance.createLabel('hours').mount(el.childNodes[4]);
-        instance.createLabel('minutes').mount(el.childNodes[6]);
-
-        if (instance.face.showSeconds) {
-          instance.createLabel('seconds').mount(el.childNodes[8]);
-        }
-      }
-    }
-
-    function YearCounter$1 (el, instance) {
-      instance.createDivider().mount(el, el.childNodes[1]);
-      instance.createDivider().mount(el, el.childNodes[3]);
-      instance.createDivider().mount(el, el.childNodes[5]);
-      instance.createDivider().mount(el, el.childNodes[7]);
-
-      if (instance.face.showSeconds) {
-        instance.createDivider().mount(el, el.childNodes[9]);
-      }
-
-      if (instance.face.showLabels) {
-        instance.createLabel('years').mount(el.childNodes[0]);
-        instance.createLabel('weeks').mount(el.childNodes[2]);
-        instance.createLabel('days').mount(el.childNodes[4]);
-        instance.createLabel('hours').mount(el.childNodes[6]);
-        instance.createLabel('minutes').mount(el.childNodes[8]);
-
-        if (instance.face.showSeconds) {
-          instance.createLabel('seconds').mount(el.childNodes[10]);
-        }
-      }
-    }
-
-
-
-    var faces = /*#__PURE__*/Object.freeze({
-        DayCounter: DayCounter$1,
-        HourCounter: HourCounter$1,
-        MinuteCounter: MinuteCounter$1,
-        TwelveHourClock: TwelveHourClock$1,
-        TwentyFourHourClock: TwentyFourHourClock$1,
-        WeekCounter: WeekCounter$1,
-        YearCounter: YearCounter$1
-    });
-
-    var Original = {
-      Divider: Divider$1,
-      FlipClock: FlipClock,
-      Group: Group$1,
-      Label: Label$1,
-      List: List$1,
-      ListItem: ListItem$1,
-      faces: faces
-    };
-
-    /**
-     * FlipClock Arabic Language Pack
-     *
-     * This class will be used to translate tokens into the Arabic language.
-     */
-
-    /**
-     * FlipClock Czech Language Pack
-     *
-     * This class will used to translate tokens into the Czech language.
-     */
-
-    /**
-     * FlipClock Danish Language Pack
-     *
-     * This class will used to translate tokens into the Danish language.
-     */
-
-    /**
-     * FlipClock German Language Pack
-     *
-     * This class will used to translate tokens into the German language.
-     */
-
-    /**
-     * FlipClock English Language Pack
-     *
-     * This class will used to translate tokens into the English language.
-     */
-    var dictionary$4 = {
-      'years': 'Years',
-      'months': 'Months',
-      'days': 'Days',
-      'hours': 'Hours',
-      'minutes': 'Minutes',
-      'seconds': 'Seconds'
-    };
-    var aliases$4 = ['en', 'en-us', 'english'];
-
-    var English = /*#__PURE__*/Object.freeze({
-        dictionary: dictionary$4,
-        aliases: aliases$4
-    });
-
-    /**
-     * FlipClock Spanish Language Pack
-     *
-     * This class will used to translate tokens into the Spanish language.
-     */
-
-    /**
-     * FlipClock Persian Language Pack
-     *
-     * This class will used to translate tokens into the English language.
-     */
-
-    /**
-     * FlipClock Finnish Language Pack
-     *
-     * This class will used to translate tokens into the Finnish language.
-     */
-
-    /**
-     * FlipClock Canadian French Language Pack
-     *
-     * This class will used to translate tokens into the Canadian French language.
-     */
-
-    /**
-     * FlipClock Hebrew Language Pack
-     *
-     * This class will used to translate tokens into the Canadian French language.
-     */
-
-    /**
-     * FlipClock Hungarian Language Pack
-     *
-     * This class will used to translate tokens into the Hungarian language.
-     */
-
-    /**
-     * FlipClock Italian Language Pack
-     *
-     * This class will used to translate tokens into the Italian language.
-     */
-
-    /**
-     * FlipClock Japanese Language Pack
-     *
-     * This class will used to translate tokens into the Japanese language.
-     */
-
-    /**
-     * FlipClock Korean Language Pack
-     *
-     * This class will used to translate tokens into the Korean language.
-     */
-
-    /**
-     * FlipClock Latvian Language Pack
-     *
-     * This class will used to translate tokens into the Latvian language.
-     */
-
-    /**
-     * FlipClock Dutch Language Pack
-     *
-     * This class will used to translate tokens into the Dutch language.
-     */
-
-    /**
-     * FlipClock Norwegian-Bokmål Language Pack
-     *
-     * This class will used to translate tokens into the Norwegian language.
-     */
-
-    /**
-     * FlipClock Polish Language Pack
-     *
-     * This class will used to translate tokens into the Polish language.
-     */
-
-    /**
-     * FlipClock Portuguese Language Pack
-     *
-     * This class will used to translate tokens into the Portuguese language.
-     */
-
-    /**
-     * FlipClock Russian Language Pack
-     *
-     * This class will used to translate tokens into the Russian language.
-     */
-
-    /**
-     * FlipClock Slovak Language Pack
-     *
-     * This class will used to translate tokens into the Slovak language.
-     */
-
-    /**
-     * FlipClock Swedish Language Pack
-     *
-     * This class will used to translate tokens into the Swedish language.
-     */
-
-    /**
-     * FlipClock Thai Language Pack
-     *
-     * This class will used to translate tokens into the Thai language.
-     */
-
-    /**
-     * FlipClock Turkish Language Pack
-     *
-     * This class will used to translate tokens into the Turkish language.
-     */
-
-    /**
-     * FlipClock Ukrainian Language Pack
-     *
-     * This class will used to translate tokens into the Ukrainian language.
-     */
-
-    /**
-     * FlipClock Chinese Language Pack
-     *
-     * This class will used to translate tokens into the Chinese language.
-     */
-
-    /**
-     * FlipClock Traditional Chinese Language Pack
-     *
-     * This class will used to translate tokens into the Traditional Chinese.
-     */
-
-    var DefaultValues = {
-      face: Counter,
-      theme: Original,
-      language: English
-    };
-
-    var FlipClock$1 =
-    /*#__PURE__*/
-    function (_DomComponent) {
-      _inherits(FlipClock, _DomComponent);
-
-      function FlipClock(el, value, attributes) {
-        var _this;
-
-        _classCallCheck(this, FlipClock);
-
-        if (!validate(el, HTMLElement)) {
-          error(ConsoleMessages.element);
-        }
-
-        if (isObject(value) && !attributes) {
-          attributes = value;
-          value = null;
-        }
-
-        var face = attributes.face || DefaultValues.face;
-        delete attributes.face;
-        _this = _possibleConstructorReturn(this, _getPrototypeOf(FlipClock).call(this, Object.assign({
-          originalValue: value,
-          theme: DefaultValues.theme,
-          language: DefaultValues.language
-        }, isObject(value) ? value : null, attributes)));
-        _this.face = face;
-
-        _this.mount(el);
-
-        return _this;
-      }
-
-      _createClass(FlipClock, [{
-        key: "bindFaceEvents",
-        value: function bindFaceEvents() {
-          var _this2 = this;
-
-          var fn = function fn() {
-            return _this2.updated();
-          };
-
-          this.$face.off('updated', fn).on('updated', fn);
-          ['updated', 'start', 'stop', 'reset', 'interval'].forEach(function (event) {
-            var fn = function fn() {
-              return _this2.emit(event);
-            };
-
-            _this2.face.off(event, fn).on(event, fn);
-          });
-        }
-      }, {
-        key: "updated",
-        value: function updated() {
-          this.render();
-
-          if (this.stopAt !== undefined && this.stopAt === this.face.value.value) {
-            this.stop();
-          }
-        }
-      }, {
-        key: "mount",
-        value: function mount(el) {
-          _get(_getPrototypeOf(FlipClock.prototype), "mount", this).call(this, el);
-
-          this.face.mounted(this);
-          return this;
-        }
-      }, {
-        key: "render",
-        value: function render() {
-          // Call the parent render function
-          _get(_getPrototypeOf(FlipClock.prototype), "render", this).call(this); // Check to see if the face has a render function defined in the theme.
-          // This allows a face to completely re-render or add to the theme.
-          // This allows face specific interfaces for a theme.
-
-
-          if (this.theme.faces[this.face.name]) {
-            this.theme.faces[this.face.name](this.el, this);
-          } // Pass the clock instance to the rendered() function on the face.
-          // This allows global modifications to the rendered templates not
-          // theme specific.
-
-
-          this.face.rendered(this); // Return the rendered element.
-
-          return this.el;
-        }
-      }, {
-        key: "reset",
-        value: function reset(fn) {
-          this.face.reset(this, fn);
-          return this;
-        }
-      }, {
-        key: "start",
-        value: function start(fn) {
-          this.face.start(this, fn);
-          return this;
-        }
-      }, {
-        key: "stop",
-        value: function stop(fn) {
-          this.face.stop(this, fn);
-          return this;
-        }
-      }, {
-        key: "createDivider",
-        value: function createDivider(attributes) {
-          return Divider.make(Object.assign({
-            theme: this.theme,
-            language: this.language
-          }, attributes));
-        }
-      }, {
-        key: "createList",
-        value: function createList(value, attributes) {
-          return List.make(value, Object.assign({
-            theme: this.theme,
-            language: this.language
-          }, attributes));
-        }
-      }, {
-        key: "createLabel",
-        value: function createLabel(value, attributes) {
-          return Label.make(value, Object.assign({
-            theme: this.theme,
-            language: this.language
-          }, attributes));
-        }
-      }, {
-        key: "createGroup",
-        value: function createGroup(items, attributes) {
-          return Group.make(items, Object.assign({
-            theme: this.theme,
-            language: this.language
-          }, attributes));
-        }
-      }, {
-        key: "face",
-        get: function get$$1() {
-          return this.$face;
-        },
-        set: function set(value) {
-          if (!validate(value, [Face, 'string', 'function'])) {
-            error(ConsoleMessages.face);
-          }
-
-          if (isString(value) && Faces[value]) {
-            this.$face = new Faces[value](this.originalValue, this.getPublicAttributes());
-          } else {
-            this.$face = new value(this.originalValue, this.getPublicAttributes());
-          }
-
-          this.bindFaceEvents();
-          this.face.initialized(this);
-          this.el && this.render();
-        }
-      }, {
-        key: "stopAt",
-        get: function get$$1() {
-          return isFunction(this.$stopAt) ? this.$stopAt(this) : this.$stopAt;
-        },
-        set: function set(value) {
-          this.$stopAt = value;
-        }
-      }, {
-        key: "timer",
-        get: function get$$1() {
-          return this.face.timer;
-        },
-        set: function set(value) {
-          this.face.timer = value;
-        }
-      }, {
-        key: "value",
-        get: function get$$1() {
-          return this.face.value;
-        },
-        set: function set(value) {
-          this.face.reset(this, value);
-          this.face.value = value;
-        }
-      }], [{
-        key: "setDefaultFace",
-        value: function setDefaultFace(value) {
-          validate(value, [Face, 'function']).then(function () {
-            DefaultValues.face = value;
-          }, function () {
-            error(ConsoleMessages.face);
-          });
-        }
-      }, {
-        key: "setDefaultTheme",
-        value: function setDefaultTheme(value) {
-          if (!validate(value, 'object')) {
-            error(ConsoleMessages.theme);
-          }
-
-          DefaultValues.theme = value;
-        }
-      }, {
-        key: "setDefaultLanguage",
-        value: function setDefaultLanguage(value) {
-          if (!validate(value, 'object')) {
-            error(ConsoleMessages.language);
-          }
-
-          DefaultValues.language = value;
-        }
-      }, {
-        key: "defaults",
-        get: function get$$1() {
-          return DefaultValues;
-        }
-      }]);
-
-      return FlipClock;
-    }(DomComponent);
-
-    return FlipClock$1;
-
-})));
-//# sourceMappingURL=flipclock.js.map
-
+module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.woff?fee66e712a8a08eef5805a46892932ad";
 
 /***/ }),
 
@@ -8742,6 +6943,36 @@ function isSlowBuffer (obj) {
   return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/izitoast/dist/css/iziToast.min.css":
+/*!*********************************************************!*\
+  !*** ./node_modules/izitoast/dist/css/iziToast.min.css ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../css-loader??ref--6-1!../../../postcss-loader/src??ref--6-2!./iziToast.min.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/izitoast/dist/css/iziToast.min.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 
@@ -39022,6 +37253,786 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/regenerator-runtime/runtime-module.js":
+/*!************************************************************!*\
+  !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+// This method of obtaining a reference to the global object needs to be
+// kept identical to the way it is obtained in runtime.js
+var g = (function() {
+  return this || (typeof self === "object" && self);
+})() || Function("return this")();
+
+// Use `getOwnPropertyNames` because not all browsers support calling
+// `hasOwnProperty` on the global `self` object in a worker. See #183.
+var hadRuntime = g.regeneratorRuntime &&
+  Object.getOwnPropertyNames(g).indexOf("regeneratorRuntime") >= 0;
+
+// Save the old regeneratorRuntime in case it needs to be restored later.
+var oldRuntime = hadRuntime && g.regeneratorRuntime;
+
+// Force reevalutation of runtime.js.
+g.regeneratorRuntime = undefined;
+
+module.exports = __webpack_require__(/*! ./runtime */ "./node_modules/regenerator-runtime/runtime.js");
+
+if (hadRuntime) {
+  // Restore the original runtime.
+  g.regeneratorRuntime = oldRuntime;
+} else {
+  // Remove the global property added by runtime.js.
+  try {
+    delete g.regeneratorRuntime;
+  } catch(e) {
+    g.regeneratorRuntime = undefined;
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/regenerator-runtime/runtime.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/regenerator-runtime/runtime.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+!(function(global) {
+  "use strict";
+
+  var Op = Object.prototype;
+  var hasOwn = Op.hasOwnProperty;
+  var undefined; // More compressible than void 0.
+  var $Symbol = typeof Symbol === "function" ? Symbol : {};
+  var iteratorSymbol = $Symbol.iterator || "@@iterator";
+  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+
+  var inModule = typeof module === "object";
+  var runtime = global.regeneratorRuntime;
+  if (runtime) {
+    if (inModule) {
+      // If regeneratorRuntime is defined globally and we're in a module,
+      // make the exports object identical to regeneratorRuntime.
+      module.exports = runtime;
+    }
+    // Don't bother evaluating the rest of this file if the runtime was
+    // already defined globally.
+    return;
+  }
+
+  // Define the runtime globally (as expected by generated code) as either
+  // module.exports (if we're in a module) or a new, empty object.
+  runtime = global.regeneratorRuntime = inModule ? module.exports : {};
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+    var generator = Object.create(protoGenerator.prototype);
+    var context = new Context(tryLocsList || []);
+
+    // The ._invoke method unifies the implementations of the .next,
+    // .throw, and .return methods.
+    generator._invoke = makeInvokeMethod(innerFn, self, context);
+
+    return generator;
+  }
+  runtime.wrap = wrap;
+
+  // Try/catch helper to minimize deoptimizations. Returns a completion
+  // record like context.tryEntries[i].completion. This interface could
+  // have been (and was previously) designed to take a closure to be
+  // invoked without arguments, but in all the cases we care about we
+  // already have an existing method we want to call, so there's no need
+  // to create a new function object. We can even get away with assuming
+  // the method takes exactly one argument, since that happens to be true
+  // in every case, so we don't have to touch the arguments object. The
+  // only additional allocation required is the completion record, which
+  // has a stable shape and so hopefully should be cheap to allocate.
+  function tryCatch(fn, obj, arg) {
+    try {
+      return { type: "normal", arg: fn.call(obj, arg) };
+    } catch (err) {
+      return { type: "throw", arg: err };
+    }
+  }
+
+  var GenStateSuspendedStart = "suspendedStart";
+  var GenStateSuspendedYield = "suspendedYield";
+  var GenStateExecuting = "executing";
+  var GenStateCompleted = "completed";
+
+  // Returning this object from the innerFn has the same effect as
+  // breaking out of the dispatch switch statement.
+  var ContinueSentinel = {};
+
+  // Dummy constructor functions that we use as the .constructor and
+  // .constructor.prototype properties for functions that return Generator
+  // objects. For full spec compliance, you may wish to configure your
+  // minifier not to mangle the names of these two functions.
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+
+  // This is a polyfill for %IteratorPrototype% for environments that
+  // don't natively support it.
+  var IteratorPrototype = {};
+  IteratorPrototype[iteratorSymbol] = function () {
+    return this;
+  };
+
+  var getProto = Object.getPrototypeOf;
+  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  if (NativeIteratorPrototype &&
+      NativeIteratorPrototype !== Op &&
+      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
+    // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+  }
+
+  var Gp = GeneratorFunctionPrototype.prototype =
+    Generator.prototype = Object.create(IteratorPrototype);
+  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
+  GeneratorFunctionPrototype.constructor = GeneratorFunction;
+  GeneratorFunctionPrototype[toStringTagSymbol] =
+    GeneratorFunction.displayName = "GeneratorFunction";
+
+  // Helper for defining the .next, .throw, and .return methods of the
+  // Iterator interface in terms of a single ._invoke method.
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function(method) {
+      prototype[method] = function(arg) {
+        return this._invoke(method, arg);
+      };
+    });
+  }
+
+  runtime.isGeneratorFunction = function(genFun) {
+    var ctor = typeof genFun === "function" && genFun.constructor;
+    return ctor
+      ? ctor === GeneratorFunction ||
+        // For the native GeneratorFunction constructor, the best we can
+        // do is to check its .name property.
+        (ctor.displayName || ctor.name) === "GeneratorFunction"
+      : false;
+  };
+
+  runtime.mark = function(genFun) {
+    if (Object.setPrototypeOf) {
+      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+    } else {
+      genFun.__proto__ = GeneratorFunctionPrototype;
+      if (!(toStringTagSymbol in genFun)) {
+        genFun[toStringTagSymbol] = "GeneratorFunction";
+      }
+    }
+    genFun.prototype = Object.create(Gp);
+    return genFun;
+  };
+
+  // Within the body of any async function, `await x` is transformed to
+  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+  // `hasOwn.call(value, "__await")` to determine if the yielded value is
+  // meant to be awaited.
+  runtime.awrap = function(arg) {
+    return { __await: arg };
+  };
+
+  function AsyncIterator(generator) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if (record.type === "throw") {
+        reject(record.arg);
+      } else {
+        var result = record.arg;
+        var value = result.value;
+        if (value &&
+            typeof value === "object" &&
+            hasOwn.call(value, "__await")) {
+          return Promise.resolve(value.__await).then(function(value) {
+            invoke("next", value, resolve, reject);
+          }, function(err) {
+            invoke("throw", err, resolve, reject);
+          });
+        }
+
+        return Promise.resolve(value).then(function(unwrapped) {
+          // When a yielded Promise is resolved, its final value becomes
+          // the .value of the Promise<{value,done}> result for the
+          // current iteration.
+          result.value = unwrapped;
+          resolve(result);
+        }, function(error) {
+          // If a rejected Promise was yielded, throw the rejection back
+          // into the async generator function so it can be handled there.
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+    }
+
+    var previousPromise;
+
+    function enqueue(method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new Promise(function(resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise =
+        // If enqueue has been called before, then we want to wait until
+        // all previous Promises have been resolved before calling invoke,
+        // so that results are always delivered in the correct order. If
+        // enqueue has not been called before, then it is important to
+        // call invoke immediately, without waiting on a callback to fire,
+        // so that the async generator function has the opportunity to do
+        // any necessary setup in a predictable way. This predictability
+        // is why the Promise constructor synchronously invokes its
+        // executor callback, and why async functions synchronously
+        // execute code before the first await. Since we implement simple
+        // async functions in terms of async generators, it is especially
+        // important to get this right, even though it requires care.
+        previousPromise ? previousPromise.then(
+          callInvokeWithMethodAndArg,
+          // Avoid propagating failures to Promises returned by later
+          // invocations of the iterator.
+          callInvokeWithMethodAndArg
+        ) : callInvokeWithMethodAndArg();
+    }
+
+    // Define the unified helper method that is used to implement .next,
+    // .throw, and .return (see defineIteratorMethods).
+    this._invoke = enqueue;
+  }
+
+  defineIteratorMethods(AsyncIterator.prototype);
+  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
+    return this;
+  };
+  runtime.AsyncIterator = AsyncIterator;
+
+  // Note that simple async functions are implemented on top of
+  // AsyncIterator objects; they just return a Promise for the value of
+  // the final result produced by the iterator.
+  runtime.async = function(innerFn, outerFn, self, tryLocsList) {
+    var iter = new AsyncIterator(
+      wrap(innerFn, outerFn, self, tryLocsList)
+    );
+
+    return runtime.isGeneratorFunction(outerFn)
+      ? iter // If outerFn is a generator, return the full iterator.
+      : iter.next().then(function(result) {
+          return result.done ? result.value : iter.next();
+        });
+  };
+
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = GenStateSuspendedStart;
+
+    return function invoke(method, arg) {
+      if (state === GenStateExecuting) {
+        throw new Error("Generator is already running");
+      }
+
+      if (state === GenStateCompleted) {
+        if (method === "throw") {
+          throw arg;
+        }
+
+        // Be forgiving, per 25.3.3.3.3 of the spec:
+        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+        return doneResult();
+      }
+
+      context.method = method;
+      context.arg = arg;
+
+      while (true) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+
+        if (context.method === "next") {
+          // Setting context._sent for legacy support of Babel's
+          // function.sent implementation.
+          context.sent = context._sent = context.arg;
+
+        } else if (context.method === "throw") {
+          if (state === GenStateSuspendedStart) {
+            state = GenStateCompleted;
+            throw context.arg;
+          }
+
+          context.dispatchException(context.arg);
+
+        } else if (context.method === "return") {
+          context.abrupt("return", context.arg);
+        }
+
+        state = GenStateExecuting;
+
+        var record = tryCatch(innerFn, self, context);
+        if (record.type === "normal") {
+          // If an exception is thrown from innerFn, we leave state ===
+          // GenStateExecuting and loop back for another invocation.
+          state = context.done
+            ? GenStateCompleted
+            : GenStateSuspendedYield;
+
+          if (record.arg === ContinueSentinel) {
+            continue;
+          }
+
+          return {
+            value: record.arg,
+            done: context.done
+          };
+
+        } else if (record.type === "throw") {
+          state = GenStateCompleted;
+          // Dispatch the exception by looping back around to the
+          // context.dispatchException(context.arg) call above.
+          context.method = "throw";
+          context.arg = record.arg;
+        }
+      }
+    };
+  }
+
+  // Call delegate.iterator[context.method](context.arg) and handle the
+  // result, either by returning a { value, done } result from the
+  // delegate iterator, or by modifying context.method and context.arg,
+  // setting context.delegate to null, and returning the ContinueSentinel.
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+    if (method === undefined) {
+      // A .throw or .return when the delegate iterator has no .throw
+      // method always terminates the yield* loop.
+      context.delegate = null;
+
+      if (context.method === "throw") {
+        if (delegate.iterator.return) {
+          // If the delegate iterator has a return method, give it a
+          // chance to clean up.
+          context.method = "return";
+          context.arg = undefined;
+          maybeInvokeDelegate(delegate, context);
+
+          if (context.method === "throw") {
+            // If maybeInvokeDelegate(context) changed context.method from
+            // "return" to "throw", let that override the TypeError below.
+            return ContinueSentinel;
+          }
+        }
+
+        context.method = "throw";
+        context.arg = new TypeError(
+          "The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+
+    if (record.type === "throw") {
+      context.method = "throw";
+      context.arg = record.arg;
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    var info = record.arg;
+
+    if (! info) {
+      context.method = "throw";
+      context.arg = new TypeError("iterator result is not an object");
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    if (info.done) {
+      // Assign the result of the finished delegate to the temporary
+      // variable specified by delegate.resultName (see delegateYield).
+      context[delegate.resultName] = info.value;
+
+      // Resume execution at the desired location (see delegateYield).
+      context.next = delegate.nextLoc;
+
+      // If context.method was "throw" but the delegate handled the
+      // exception, let the outer generator proceed normally. If
+      // context.method was "next", forget context.arg since it has been
+      // "consumed" by the delegate iterator. If context.method was
+      // "return", allow the original .return call to continue in the
+      // outer generator.
+      if (context.method !== "return") {
+        context.method = "next";
+        context.arg = undefined;
+      }
+
+    } else {
+      // Re-yield the result returned by the delegate method.
+      return info;
+    }
+
+    // The delegate iterator is finished, so forget it and continue with
+    // the outer generator.
+    context.delegate = null;
+    return ContinueSentinel;
+  }
+
+  // Define Generator.prototype.{next,throw,return} in terms of the
+  // unified ._invoke helper method.
+  defineIteratorMethods(Gp);
+
+  Gp[toStringTagSymbol] = "Generator";
+
+  // A Generator should always return itself as the iterator object when the
+  // @@iterator function is called on it. Some browsers' implementations of the
+  // iterator prototype chain incorrectly implement this, causing the Generator
+  // object to not be returned from this call. This ensures that doesn't happen.
+  // See https://github.com/facebook/regenerator/issues/274 for more details.
+  Gp[iteratorSymbol] = function() {
+    return this;
+  };
+
+  Gp.toString = function() {
+    return "[object Generator]";
+  };
+
+  function pushTryEntry(locs) {
+    var entry = { tryLoc: locs[0] };
+
+    if (1 in locs) {
+      entry.catchLoc = locs[1];
+    }
+
+    if (2 in locs) {
+      entry.finallyLoc = locs[2];
+      entry.afterLoc = locs[3];
+    }
+
+    this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal";
+    delete record.arg;
+    entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    // The root entry object (effectively a try statement without a catch
+    // or a finally block) gives us a place to store values thrown from
+    // locations where there is no enclosing try statement.
+    this.tryEntries = [{ tryLoc: "root" }];
+    tryLocsList.forEach(pushTryEntry, this);
+    this.reset(true);
+  }
+
+  runtime.keys = function(object) {
+    var keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    keys.reverse();
+
+    // Rather than returning an object with a next method, we keep
+    // things simple and return the next function itself.
+    return function next() {
+      while (keys.length) {
+        var key = keys.pop();
+        if (key in object) {
+          next.value = key;
+          next.done = false;
+          return next;
+        }
+      }
+
+      // To avoid creating an additional object, we just hang the .value
+      // and .done properties off the next function object itself. This
+      // also ensures that the minifier will not anonymize the function.
+      next.done = true;
+      return next;
+    };
+  };
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) {
+        return iteratorMethod.call(iterable);
+      }
+
+      if (typeof iterable.next === "function") {
+        return iterable;
+      }
+
+      if (!isNaN(iterable.length)) {
+        var i = -1, next = function next() {
+          while (++i < iterable.length) {
+            if (hasOwn.call(iterable, i)) {
+              next.value = iterable[i];
+              next.done = false;
+              return next;
+            }
+          }
+
+          next.value = undefined;
+          next.done = true;
+
+          return next;
+        };
+
+        return next.next = next;
+      }
+    }
+
+    // Return an iterator with no values.
+    return { next: doneResult };
+  }
+  runtime.values = values;
+
+  function doneResult() {
+    return { value: undefined, done: true };
+  }
+
+  Context.prototype = {
+    constructor: Context,
+
+    reset: function(skipTempReset) {
+      this.prev = 0;
+      this.next = 0;
+      // Resetting context._sent for legacy support of Babel's
+      // function.sent implementation.
+      this.sent = this._sent = undefined;
+      this.done = false;
+      this.delegate = null;
+
+      this.method = "next";
+      this.arg = undefined;
+
+      this.tryEntries.forEach(resetTryEntry);
+
+      if (!skipTempReset) {
+        for (var name in this) {
+          // Not sure about the optimal order of these conditions:
+          if (name.charAt(0) === "t" &&
+              hasOwn.call(this, name) &&
+              !isNaN(+name.slice(1))) {
+            this[name] = undefined;
+          }
+        }
+      }
+    },
+
+    stop: function() {
+      this.done = true;
+
+      var rootEntry = this.tryEntries[0];
+      var rootRecord = rootEntry.completion;
+      if (rootRecord.type === "throw") {
+        throw rootRecord.arg;
+      }
+
+      return this.rval;
+    },
+
+    dispatchException: function(exception) {
+      if (this.done) {
+        throw exception;
+      }
+
+      var context = this;
+      function handle(loc, caught) {
+        record.type = "throw";
+        record.arg = exception;
+        context.next = loc;
+
+        if (caught) {
+          // If the dispatched exception was caught by a catch block,
+          // then let that catch block handle the exception normally.
+          context.method = "next";
+          context.arg = undefined;
+        }
+
+        return !! caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        var record = entry.completion;
+
+        if (entry.tryLoc === "root") {
+          // Exception thrown outside of any try block that could handle
+          // it, so set the completion value of the entire function to
+          // throw the exception.
+          return handle("end");
+        }
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc");
+          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            } else if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            }
+
+          } else if (hasFinally) {
+            if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else {
+            throw new Error("try statement without catch or finally");
+          }
+        }
+      }
+    },
+
+    abrupt: function(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev &&
+            hasOwn.call(entry, "finallyLoc") &&
+            this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      if (finallyEntry &&
+          (type === "break" ||
+           type === "continue") &&
+          finallyEntry.tryLoc <= arg &&
+          arg <= finallyEntry.finallyLoc) {
+        // Ignore the finally entry if control is not jumping to a
+        // location outside the try/catch block.
+        finallyEntry = null;
+      }
+
+      var record = finallyEntry ? finallyEntry.completion : {};
+      record.type = type;
+      record.arg = arg;
+
+      if (finallyEntry) {
+        this.method = "next";
+        this.next = finallyEntry.finallyLoc;
+        return ContinueSentinel;
+      }
+
+      return this.complete(record);
+    },
+
+    complete: function(record, afterLoc) {
+      if (record.type === "throw") {
+        throw record.arg;
+      }
+
+      if (record.type === "break" ||
+          record.type === "continue") {
+        this.next = record.arg;
+      } else if (record.type === "return") {
+        this.rval = this.arg = record.arg;
+        this.method = "return";
+        this.next = "end";
+      } else if (record.type === "normal" && afterLoc) {
+        this.next = afterLoc;
+      }
+
+      return ContinueSentinel;
+    },
+
+    finish: function(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) {
+          this.complete(entry.completion, entry.afterLoc);
+          resetTryEntry(entry);
+          return ContinueSentinel;
+        }
+      }
+    },
+
+    "catch": function(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if (record.type === "throw") {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+
+      // The context.catch method must only be called with a location
+      // argument that corresponds to a known catch block.
+      throw new Error("illegal catch attempt");
+    },
+
+    delegateYield: function(iterable, resultName, nextLoc) {
+      this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      };
+
+      if (this.method === "next") {
+        // Deliberately forget the last sent value so that we don't
+        // accidentally pass it on to the delegate.
+        this.arg = undefined;
+      }
+
+      return ContinueSentinel;
+    }
+  };
+})(
+  // In sloppy mode, unbound `this` refers to the global object, fallback to
+  // Function constructor if we're in global strict mode. That is sadly a form
+  // of indirect eval which violates Content Security Policy.
+  (function() {
+    return this || (typeof self === "object" && self);
+  })() || Function("return this")()
+);
+
+
+/***/ }),
+
 /***/ "./node_modules/rtcpeerconnection-shim/rtcpeerconnection.js":
 /*!******************************************************************!*\
   !*** ./node_modules/rtcpeerconnection-shim/rtcpeerconnection.js ***!
@@ -41812,6 +40823,96 @@ if (true) {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/AdminLogin.vue?vue&type=style&index=0&id=b7f4eb6a&scoped=true&lang=css&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Login/AdminLogin.vue?vue&type=style&index=0&id=b7f4eb6a&scoped=true&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./AdminLogin.vue?vue&type=style&index=0&id=b7f4eb6a&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/AdminLogin.vue?vue&type=style&index=0&id=b7f4eb6a&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/UserLogin.vue?vue&type=style&index=0&id=0c104106&scoped=true&lang=css&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Login/UserLogin.vue?vue&type=style&index=0&id=0c104106&scoped=true&lang=css& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./UserLogin.vue?vue&type=style&index=0&id=0c104106&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/UserLogin.vue?vue&type=style&index=0&id=0c104106&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Register/DownloadFile.vue?vue&type=style&index=0&id=f40f6656&scoped=true&lang=css&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Register/DownloadFile.vue?vue&type=style&index=0&id=f40f6656&scoped=true&lang=css& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./DownloadFile.vue?vue&type=style&index=0&id=f40f6656&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Register/DownloadFile.vue?vue&type=style&index=0&id=f40f6656&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/lib/addStyles.js":
 /*!****************************************************!*\
   !*** ./node_modules/style-loader/lib/addStyles.js ***!
@@ -42396,6 +41497,1900 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-izitoast/dist/vue-izitoast.js":
+/*!********************************************************!*\
+  !*** ./node_modules/vue-izitoast/dist/vue-izitoast.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(true)
+		module.exports = factory();
+	else {}
+})(typeof self !== 'undefined' ? self : this, function() {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["default"] = plugin;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_izitoast__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_izitoast___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_izitoast__);
+
+
+
+
+function plugin(Vue, options = {}) {
+    if (options && options.constructor !== Object) throw 'Options must be a object';
+
+    const version = Vue.version && Number(Vue.version.split('.')[0]) || -1;
+
+    if (false) {}
+
+    plugin.installed = true;
+
+    if (false) {}
+
+    const defaultOptions = {
+        zindex: 99999,
+        layout: 1,
+        balloon: false,
+        close: true,
+        closeOnEscape: false,
+        rtl: false,
+        position: 'bottomRight',
+        timeout: 5000,
+        animateInside: true,
+        drag: true,
+        pauseOnHover: true,
+        resetOnHover: false,
+        transitionIn: 'fadeInUp',
+        transitionOut: 'fadeOut',
+        transitionInMobile: 'fadeInUp',
+        transitionOutMobile: 'fadeOutDown',
+        buttons: {},
+        inputs: {},
+        onOpening: function () {},
+        onOpened: function () {},
+        onClosing: function () {},
+        onClosed: function () {}
+    };
+
+    __WEBPACK_IMPORTED_MODULE_0_izitoast___default.a.settings(Object.assign({}, defaultOptions, options));
+
+    const toasts = new Vue({
+        _izi: __WEBPACK_IMPORTED_MODULE_0_izitoast___default.a,
+        _checkParams(message, title, options) {
+            if (!message || message.constructor !== String) throw 'Message must be a string';
+            if (title && title.constructor !== String) throw 'Title must be a string';
+            if (options && options.constructor !== Object) throw 'Options must be a object';
+        },
+        _checkEventNames(eventName) {
+            if (!eventName || eventName.constructor !== String) throw 'Event Name must be a string';
+            if (eventName !== 'iziToast-open' && eventName !== 'iziToast-close') throw 'Event Name has only two possible values: iziToast-open or iziToast-close';
+        },
+        methods: {
+            show(message, title = '', options = {}) {
+                this.$options._checkParams(message, title, options);
+                this.$options._izi.show(Object.assign({}, options, { message, title }));
+            },
+            hide(toast = null, options = {}) {
+                if (toast && toast.constructor !== String) toast = document.querySelector(toast);
+                if (!toast || toast.constructor !== HTMLDivElement) toast = document.querySelector('.iziToast');
+                if (options && options.constructor !== Object) throw 'Options must be a object';
+                this.$options._izi.hide(options, toast);
+            },
+            progress(toast, options = {}, callback = () => {}) {
+                if (toast && toast.constructor !== String) toast = document.querySelector(toast);
+                if (!toast || toast.constructor !== HTMLDivElement) toast = document.querySelector('.iziToast');
+                if (options && options.constructor !== Object) throw 'Options must be a object';
+                if (callback && callback.constructor !== Function) throw 'Callback must be a function';
+
+                return this.$options._izi.progress(toast, options, callback);
+            },
+            destroy() {
+                this.$options._izi.destroy();
+            },
+            info(message, title = '', options = {}) {
+                this.$options._checkParams(message, title, options);
+                this.$options._izi.info(Object.assign({}, options, { message, title }));
+            },
+            success(message, title = '', options = {}) {
+                this.$options._checkParams(message, title, options);
+                this.$options._izi.success(Object.assign({}, options, { message, title }));
+            },
+            warning(message, title = '', options = {}) {
+                this.$options._checkParams(message, title, options);
+                this.$options._izi.warning(Object.assign({}, options, { message, title }));
+            },
+            error(message, title = '', options = {}) {
+                this.$options._checkParams(message, title, options);
+                this.$options._izi.error(Object.assign({}, options, { message, title }));
+            },
+            question(message, title = '', options = {}) {
+                this.$options._checkParams(message, title, options);
+                this.$options._izi.question(Object.assign({}, options, { message, title }));
+            },
+            on(eventName, callback) {
+                this.$options._checkEventNames(eventName);
+                if (!callback || callback.constructor !== Function) throw 'Callback must be a function';
+                document.addEventListener(eventName, callback);
+            },
+            off(eventName) {
+                this.$options._checkEventNames(eventName);
+                document.removeEventListener(eventName);
+            }
+        }
+    });
+
+    Object.defineProperty(Vue.prototype, '$toast', {
+        get() {
+            return toasts;
+        }
+    });
+}
+
+if (typeof window !== 'undefined' && window.Vue) {
+    window.Vue.use(plugin);
+}
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
+* iziToast | v1.4.0
+* http://izitoast.marcelodolce.com
+* by Marcelo Dolce.
+*/
+(function (root, factory) {
+	if(true) {
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory(root)),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+})(typeof global !== 'undefined' ? global : window || this.window || this.global, function (root) {
+
+	'use strict';
+
+	//
+	// Variables
+	//
+	var $iziToast = {},
+		PLUGIN_NAME = 'iziToast',
+		BODY = document.querySelector('body'),
+		ISMOBILE = (/Mobi/.test(navigator.userAgent)) ? true : false,
+		ISCHROME = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor),
+		ISFIREFOX = typeof InstallTrigger !== 'undefined',
+		ACCEPTSTOUCH = 'ontouchstart' in document.documentElement,
+		POSITIONS = ['bottomRight','bottomLeft','bottomCenter','topRight','topLeft','topCenter','center'],
+		THEMES = {
+			info: {
+				color: 'blue',
+				icon: 'ico-info'
+			},
+			success: {
+				color: 'green',
+				icon: 'ico-success'
+			},
+			warning: {
+				color: 'orange',
+				icon: 'ico-warning'
+			},
+			error: {
+				color: 'red',
+				icon: 'ico-error'
+			},
+			question: {
+				color: 'yellow',
+				icon: 'ico-question'
+			}
+		},
+		MOBILEWIDTH = 568,
+		CONFIG = {};
+
+	$iziToast.children = {};
+
+	// Default settings
+	var defaults = {
+		id: null, 
+		class: '',
+		title: '',
+		titleColor: '',
+		titleSize: '',
+		titleLineHeight: '',
+		message: '',
+		messageColor: '',
+		messageSize: '',
+		messageLineHeight: '',
+		backgroundColor: '',
+		theme: 'light', // dark
+		color: '', // blue, red, green, yellow
+		icon: '',
+		iconText: '',
+		iconColor: '',
+		iconUrl: null,
+		image: '',
+		imageWidth: 50,
+		maxWidth: null,
+		zindex: null,
+		layout: 1,
+		balloon: false,
+		close: true,
+		closeOnEscape: false,
+		closeOnClick: false,
+		displayMode: 0,
+		position: 'bottomRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter, center
+		target: '',
+		targetFirst: true,
+		timeout: 5000,
+		rtl: false,
+		animateInside: true,
+		drag: true,
+		pauseOnHover: true,
+		resetOnHover: false,
+		progressBar: true,
+		progressBarColor: '',
+		progressBarEasing: 'linear',
+		overlay: false,
+		overlayClose: false,
+		overlayColor: 'rgba(0, 0, 0, 0.6)',
+		transitionIn: 'fadeInUp', // bounceInLeft, bounceInRight, bounceInUp, bounceInDown, fadeIn, fadeInDown, fadeInUp, fadeInLeft, fadeInRight, flipInX
+		transitionOut: 'fadeOut', // fadeOut, fadeOutUp, fadeOutDown, fadeOutLeft, fadeOutRight, flipOutX
+		transitionInMobile: 'fadeInUp',
+		transitionOutMobile: 'fadeOutDown',
+		buttons: {},
+		inputs: {},
+		onOpening: function () {},
+		onOpened: function () {},
+		onClosing: function () {},
+		onClosed: function () {}
+	};
+
+	//
+	// Methods
+	//
+
+
+	/**
+	 * Polyfill for remove() method
+	 */
+	if(!('remove' in Element.prototype)) {
+	    Element.prototype.remove = function() {
+	        if(this.parentNode) {
+	            this.parentNode.removeChild(this);
+	        }
+	    };
+	}
+
+	/*
+     * Polyfill for CustomEvent for IE >= 9
+     * https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent#Polyfill
+     */
+    if(typeof window.CustomEvent !== 'function') {
+        var CustomEventPolyfill = function (event, params) {
+            params = params || { bubbles: false, cancelable: false, detail: undefined };
+            var evt = document.createEvent('CustomEvent');
+            evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
+            return evt;
+        };
+
+        CustomEventPolyfill.prototype = window.Event.prototype;
+
+        window.CustomEvent = CustomEventPolyfill;
+    }
+
+	/**
+	 * A simple forEach() implementation for Arrays, Objects and NodeLists
+	 * @private
+	 * @param {Array|Object|NodeList} collection Collection of items to iterate
+	 * @param {Function} callback Callback function for each iteration
+	 * @param {Array|Object|NodeList} scope Object/NodeList/Array that forEach is iterating over (aka `this`)
+	 */
+	var forEach = function (collection, callback, scope) {
+		if(Object.prototype.toString.call(collection) === '[object Object]') {
+			for (var prop in collection) {
+				if(Object.prototype.hasOwnProperty.call(collection, prop)) {
+					callback.call(scope, collection[prop], prop, collection);
+				}
+			}
+		} else {
+			if(collection){
+				for (var i = 0, len = collection.length; i < len; i++) {
+					callback.call(scope, collection[i], i, collection);
+				}
+			}
+		}
+	};
+
+	/**
+	 * Merge defaults with user options
+	 * @private
+	 * @param {Object} defaults Default settings
+	 * @param {Object} options User options
+	 * @returns {Object} Merged values of defaults and options
+	 */
+	var extend = function (defaults, options) {
+		var extended = {};
+		forEach(defaults, function (value, prop) {
+			extended[prop] = defaults[prop];
+		});
+		forEach(options, function (value, prop) {
+			extended[prop] = options[prop];
+		});
+		return extended;
+	};
+
+
+	/**
+	 * Create a fragment DOM elements
+	 * @private
+	 */
+	var createFragElem = function(htmlStr) {
+		var frag = document.createDocumentFragment(),
+			temp = document.createElement('div');
+		temp.innerHTML = htmlStr;
+		while (temp.firstChild) {
+			frag.appendChild(temp.firstChild);
+		}
+		return frag;
+	};
+
+
+	/**
+	 * Generate new ID
+	 * @private
+	 */
+	var generateId = function(params) {
+		var newId = btoa(encodeURIComponent(params));
+		return newId.replace(/=/g, "");
+	};
+
+
+	/**
+	 * Check if is a color
+	 * @private
+	 */
+	var isColor = function(color){
+		if( color.substring(0,1) == '#' || color.substring(0,3) == 'rgb' || color.substring(0,3) == 'hsl' ){
+			return true;
+		} else {
+			return false;
+		}
+	};
+
+
+	/**
+	 * Check if is a Base64 string
+	 * @private
+	 */
+	var isBase64 = function(str) {
+	    try {
+	        return btoa(atob(str)) == str;
+	    } catch (err) {
+	        return false;
+	    }
+	};
+
+
+	/**
+	 * Drag method of toasts
+	 * @private
+	 */
+	var drag = function() {
+	    
+	    return {
+	        move: function(toast, instance, settings, xpos) {
+
+	        	var opacity,
+	        		opacityRange = 0.3,
+	        		distance = 180;
+	            
+	            if(xpos !== 0){
+	            	
+	            	toast.classList.add(PLUGIN_NAME+'-dragged');
+
+	            	toast.style.transform = 'translateX('+xpos + 'px)';
+
+		            if(xpos > 0){
+		            	opacity = (distance-xpos) / distance;
+		            	if(opacity < opacityRange){
+							instance.hide(extend(settings, { transitionOut: 'fadeOutRight', transitionOutMobile: 'fadeOutRight' }), toast, 'drag');
+						}
+		            } else {
+		            	opacity = (distance+xpos) / distance;
+		            	if(opacity < opacityRange){
+							instance.hide(extend(settings, { transitionOut: 'fadeOutLeft', transitionOutMobile: 'fadeOutLeft' }), toast, 'drag');
+						}
+		            }
+					toast.style.opacity = opacity;
+			
+					if(opacity < opacityRange){
+
+						if(ISCHROME || ISFIREFOX)
+							toast.style.left = xpos+'px';
+
+						toast.parentNode.style.opacity = opacityRange;
+
+		                this.stopMoving(toast, null);
+					}
+	            }
+
+				
+	        },
+	        startMoving: function(toast, instance, settings, e) {
+
+	            e = e || window.event;
+	            var posX = ((ACCEPTSTOUCH) ? e.touches[0].clientX : e.clientX),
+	                toastLeft = toast.style.transform.replace('px)', '');
+	                toastLeft = toastLeft.replace('translateX(', '');
+	            var offsetX = posX - toastLeft;
+
+				if(settings.transitionIn){
+					toast.classList.remove(settings.transitionIn);
+				}
+				if(settings.transitionInMobile){
+					toast.classList.remove(settings.transitionInMobile);
+				}
+				toast.style.transition = '';
+
+	            if(ACCEPTSTOUCH) {
+	                document.ontouchmove = function(e) {
+	                    e.preventDefault();
+	                    e = e || window.event;
+	                    var posX = e.touches[0].clientX,
+	                        finalX = posX - offsetX;
+                        drag.move(toast, instance, settings, finalX);
+	                };
+	            } else {
+	                document.onmousemove = function(e) {
+	                    e.preventDefault();
+	                    e = e || window.event;
+	                    var posX = e.clientX,
+	                        finalX = posX - offsetX;
+                        drag.move(toast, instance, settings, finalX);
+	                };
+	            }
+
+	        },
+	        stopMoving: function(toast, e) {
+
+	            if(ACCEPTSTOUCH) {
+	                document.ontouchmove = function() {};
+	            } else {
+	            	document.onmousemove = function() {};
+	            }
+
+				toast.style.opacity = '';
+				toast.style.transform = '';
+
+	            if(toast.classList.contains(PLUGIN_NAME+'-dragged')){
+	            	
+	            	toast.classList.remove(PLUGIN_NAME+'-dragged');
+
+					toast.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
+					setTimeout(function() {
+						toast.style.transition = '';
+					}, 400);
+	            }
+
+	        }
+	    };
+
+	}();
+
+
+
+
+
+	$iziToast.setSetting = function (ref, option, value) {
+
+		$iziToast.children[ref][option] = value;
+
+	};
+
+
+	$iziToast.getSetting = function (ref, option) {
+
+		return $iziToast.children[ref][option];
+
+	};
+
+
+	/**
+	 * Destroy the current initialization.
+	 * @public
+	 */
+	$iziToast.destroy = function () {
+
+		forEach(document.querySelectorAll('.'+PLUGIN_NAME+'-overlay'), function(element, index) {
+			element.remove();
+		});
+
+		forEach(document.querySelectorAll('.'+PLUGIN_NAME+'-wrapper'), function(element, index) {
+			element.remove();
+		});
+
+		forEach(document.querySelectorAll('.'+PLUGIN_NAME), function(element, index) {
+			element.remove();
+		});
+
+		this.children = {};
+
+		// Remove event listeners
+		document.removeEventListener(PLUGIN_NAME+'-opened', {}, false);
+		document.removeEventListener(PLUGIN_NAME+'-opening', {}, false);
+		document.removeEventListener(PLUGIN_NAME+'-closing', {}, false);
+		document.removeEventListener(PLUGIN_NAME+'-closed', {}, false);
+		document.removeEventListener('keyup', {}, false);
+
+		// Reset variables
+		CONFIG = {};
+	};
+
+	/**
+	 * Initialize Plugin
+	 * @public
+	 * @param {Object} options User settings
+	 */
+	$iziToast.settings = function (options) {
+
+		// Destroy any existing initializations
+		$iziToast.destroy();
+
+		CONFIG = options;
+		defaults = extend(defaults, options || {});
+	};
+
+
+	/**
+	 * Building themes functions.
+	 * @public
+	 * @param {Object} options User settings
+	 */
+	forEach(THEMES, function (theme, name) {
+
+		$iziToast[name] = function (options) {
+
+			var settings = extend(CONFIG, options || {});
+			settings = extend(theme, settings || {});
+
+			this.show(settings);
+		};
+
+	});
+
+
+	/**
+	 * Do the calculation to move the progress bar
+	 * @private
+	 */
+	$iziToast.progress = function (options, $toast, callback) {
+
+
+		var that = this,
+			ref = $toast.getAttribute('data-iziToast-ref'),
+			settings = extend(this.children[ref], options || {}),
+			$elem = $toast.querySelector('.'+PLUGIN_NAME+'-progressbar div');
+
+	    return {
+	        start: function() {
+
+	        	if(typeof settings.time.REMAINING == 'undefined'){
+
+	        		$toast.classList.remove(PLUGIN_NAME+'-reseted');
+
+		        	if($elem !== null){
+						$elem.style.transition = 'width '+ settings.timeout +'ms '+settings.progressBarEasing;
+						$elem.style.width = '0%';
+					}
+
+		        	settings.time.START = new Date().getTime();
+		        	settings.time.END = settings.time.START + settings.timeout;
+					settings.time.TIMER = setTimeout(function() {
+
+						clearTimeout(settings.time.TIMER);
+
+						if(!$toast.classList.contains(PLUGIN_NAME+'-closing')){
+
+							that.hide(settings, $toast, 'timeout');
+
+							if(typeof callback === 'function'){
+								callback.apply(that);
+							}
+						}
+
+					}, settings.timeout);			
+		        	that.setSetting(ref, 'time', settings.time);
+	        	}
+	        },
+	        pause: function() {
+
+	        	if(typeof settings.time.START !== 'undefined' && !$toast.classList.contains(PLUGIN_NAME+'-paused') && !$toast.classList.contains(PLUGIN_NAME+'-reseted')){
+
+        			$toast.classList.add(PLUGIN_NAME+'-paused');
+
+					settings.time.REMAINING = settings.time.END - new Date().getTime();
+
+					clearTimeout(settings.time.TIMER);
+
+					that.setSetting(ref, 'time', settings.time);
+
+					if($elem !== null){
+						var computedStyle = window.getComputedStyle($elem),
+							propertyWidth = computedStyle.getPropertyValue('width');
+
+						$elem.style.transition = 'none';
+						$elem.style.width = propertyWidth;					
+					}
+
+					if(typeof callback === 'function'){
+						setTimeout(function() {
+							callback.apply(that);						
+						}, 10);
+					}
+        		}
+	        },
+	        resume: function() {
+
+				if(typeof settings.time.REMAINING !== 'undefined'){
+
+					$toast.classList.remove(PLUGIN_NAME+'-paused');
+
+		        	if($elem !== null){
+						$elem.style.transition = 'width '+ settings.time.REMAINING +'ms '+settings.progressBarEasing;
+						$elem.style.width = '0%';
+					}
+
+		        	settings.time.END = new Date().getTime() + settings.time.REMAINING;
+					settings.time.TIMER = setTimeout(function() {
+
+						clearTimeout(settings.time.TIMER);
+
+						if(!$toast.classList.contains(PLUGIN_NAME+'-closing')){
+
+							that.hide(settings, $toast, 'timeout');
+
+							if(typeof callback === 'function'){
+								callback.apply(that);
+							}
+						}
+
+
+					}, settings.time.REMAINING);
+
+					that.setSetting(ref, 'time', settings.time);
+				} else {
+					this.start();
+				}
+	        },
+	        reset: function(){
+
+				clearTimeout(settings.time.TIMER);
+
+				delete settings.time.REMAINING;
+
+				that.setSetting(ref, 'time', settings.time);
+
+				$toast.classList.add(PLUGIN_NAME+'-reseted');
+
+				$toast.classList.remove(PLUGIN_NAME+'-paused');
+
+				if($elem !== null){
+					$elem.style.transition = 'none';
+					$elem.style.width = '100%';
+				}
+
+				if(typeof callback === 'function'){
+					setTimeout(function() {
+						callback.apply(that);						
+					}, 10);
+				}
+	        }
+	    };
+
+	};
+
+
+	/**
+	 * Close the specific Toast
+	 * @public
+	 * @param {Object} options User settings
+	 */
+	$iziToast.hide = function (options, $toast, closedBy) {
+
+		if(typeof $toast != 'object'){
+			$toast = document.querySelector($toast);
+		}		
+
+		var that = this,
+			settings = extend(this.children[$toast.getAttribute('data-iziToast-ref')], options || {});
+			settings.closedBy = closedBy || null;
+
+		delete settings.time.REMAINING;
+
+		$toast.classList.add(PLUGIN_NAME+'-closing');
+
+		// Overlay
+		(function(){
+
+			var $overlay = document.querySelector('.'+PLUGIN_NAME+'-overlay');
+			if($overlay !== null){
+				var refs = $overlay.getAttribute('data-iziToast-ref');		
+					refs = refs.split(',');
+				var index = refs.indexOf(String(settings.ref));
+
+				if(index !== -1){
+					refs.splice(index, 1);			
+				}
+				$overlay.setAttribute('data-iziToast-ref', refs.join());
+
+				if(refs.length === 0){
+					$overlay.classList.remove('fadeIn');
+					$overlay.classList.add('fadeOut');
+					setTimeout(function() {
+						$overlay.remove();
+					}, 700);
+				}
+			}
+
+		})();
+
+		if(settings.transitionIn){
+			$toast.classList.remove(settings.transitionIn);
+		} 
+
+		if(settings.transitionInMobile){
+			$toast.classList.remove(settings.transitionInMobile);
+		}
+
+		if(ISMOBILE || window.innerWidth <= MOBILEWIDTH){
+			if(settings.transitionOutMobile)
+				$toast.classList.add(settings.transitionOutMobile);
+		} else {
+			if(settings.transitionOut)
+				$toast.classList.add(settings.transitionOut);
+		}
+		var H = $toast.parentNode.offsetHeight;
+				$toast.parentNode.style.height = H+'px';
+				$toast.style.pointerEvents = 'none';
+		
+		if(!ISMOBILE || window.innerWidth > MOBILEWIDTH){
+			$toast.parentNode.style.transitionDelay = '0.2s';
+		}
+
+		try {
+			var event = new CustomEvent(PLUGIN_NAME+'-closing', {detail: settings, bubbles: true, cancelable: true});
+			document.dispatchEvent(event);
+		} catch(ex){
+			console.warn(ex);
+		}
+
+		setTimeout(function() {
+			
+			$toast.parentNode.style.height = '0px';
+			$toast.parentNode.style.overflow = '';
+
+			setTimeout(function(){
+				
+				delete that.children[settings.ref];
+
+				$toast.parentNode.remove();
+
+				try {
+					var event = new CustomEvent(PLUGIN_NAME+'-closed', {detail: settings, bubbles: true, cancelable: true});
+					document.dispatchEvent(event);
+				} catch(ex){
+					console.warn(ex);
+				}
+
+				if(typeof settings.onClosed !== 'undefined'){
+					settings.onClosed.apply(null, [settings, $toast, closedBy]);
+				}
+
+			}, 1000);
+		}, 200);
+
+
+		if(typeof settings.onClosing !== 'undefined'){
+			settings.onClosing.apply(null, [settings, $toast, closedBy]);
+		}
+	};
+
+	/**
+	 * Create and show the Toast
+	 * @public
+	 * @param {Object} options User settings
+	 */
+	$iziToast.show = function (options) {
+
+		var that = this;
+
+		// Merge user options with defaults
+		var settings = extend(CONFIG, options || {});
+			settings = extend(defaults, settings);
+			settings.time = {};
+
+		if(settings.id === null){
+			settings.id = generateId(settings.title+settings.message+settings.color);
+		}
+
+		if(settings.displayMode === 1 || settings.displayMode == 'once'){
+			try {
+				if(document.querySelectorAll('.'+PLUGIN_NAME+'#'+settings.id).length > 0){
+					return false;
+				}
+			} catch (exc) {
+				console.warn('['+PLUGIN_NAME+'] Could not find an element with this selector: '+'#'+settings.id+'. Try to set an valid id.');
+			}
+		}
+
+		if(settings.displayMode === 2 || settings.displayMode == 'replace'){
+			try {
+				forEach(document.querySelectorAll('.'+PLUGIN_NAME+'#'+settings.id), function(element, index) {
+					that.hide(settings, element, 'replaced');
+				});
+			} catch (exc) {
+				console.warn('['+PLUGIN_NAME+'] Could not find an element with this selector: '+'#'+settings.id+'. Try to set an valid id.');
+			}
+		}
+
+		settings.ref = new Date().getTime() + Math.floor((Math.random() * 10000000) + 1);
+
+		$iziToast.children[settings.ref] = settings;
+
+		var $DOM = {
+			body: document.querySelector('body'),
+			overlay: document.createElement('div'),
+			toast: document.createElement('div'),
+			toastBody: document.createElement('div'),
+			toastTexts: document.createElement('div'),
+			toastCapsule: document.createElement('div'),
+			cover: document.createElement('div'),
+			buttons: document.createElement('div'),
+			inputs: document.createElement('div'),
+			icon: !settings.iconUrl ? document.createElement('i') : document.createElement('img'),
+			wrapper: null
+		};
+
+		$DOM.toast.setAttribute('data-iziToast-ref', settings.ref);
+		$DOM.toast.appendChild($DOM.toastBody);
+		$DOM.toastCapsule.appendChild($DOM.toast);
+
+		// CSS Settings
+		(function(){
+
+			$DOM.toast.classList.add(PLUGIN_NAME);
+			$DOM.toast.classList.add(PLUGIN_NAME+'-opening');
+			$DOM.toastCapsule.classList.add(PLUGIN_NAME+'-capsule');
+			$DOM.toastBody.classList.add(PLUGIN_NAME + '-body');
+			$DOM.toastTexts.classList.add(PLUGIN_NAME + '-texts');
+
+			if(ISMOBILE || window.innerWidth <= MOBILEWIDTH){
+				if(settings.transitionInMobile)
+					$DOM.toast.classList.add(settings.transitionInMobile);
+			} else {
+				if(settings.transitionIn)
+					$DOM.toast.classList.add(settings.transitionIn);
+			}
+
+			if(settings.class){
+				var classes = settings.class.split(' ');
+				forEach(classes, function (value, index) {
+					$DOM.toast.classList.add(value);
+				});
+			}
+
+			if(settings.id){ $DOM.toast.id = settings.id; }
+
+			if(settings.rtl){
+				$DOM.toast.classList.add(PLUGIN_NAME + '-rtl');
+				$DOM.toast.setAttribute('dir', 'rtl');
+			}
+
+			if(settings.layout > 1){ $DOM.toast.classList.add(PLUGIN_NAME+'-layout'+settings.layout); }
+
+			if(settings.balloon){ $DOM.toast.classList.add(PLUGIN_NAME+'-balloon'); }
+
+			if(settings.maxWidth){
+				if( !isNaN(settings.maxWidth) ){
+					$DOM.toast.style.maxWidth = settings.maxWidth+'px';
+				} else {
+					$DOM.toast.style.maxWidth = settings.maxWidth;
+				}
+			}
+
+			if(settings.theme !== '' || settings.theme !== 'light') {
+
+				$DOM.toast.classList.add(PLUGIN_NAME+'-theme-'+settings.theme);
+			}
+
+			if(settings.color) { //#, rgb, rgba, hsl
+				
+				if( isColor(settings.color) ){
+					$DOM.toast.style.background = settings.color;
+				} else {
+					$DOM.toast.classList.add(PLUGIN_NAME+'-color-'+settings.color);
+				}
+			}
+
+			if(settings.backgroundColor) {
+				$DOM.toast.style.background = settings.backgroundColor;
+				if(settings.balloon){
+					$DOM.toast.style.borderColor = settings.backgroundColor;				
+				}
+			}
+		})();
+
+		// Cover image
+		(function(){
+			if(settings.image) {
+				$DOM.cover.classList.add(PLUGIN_NAME + '-cover');
+				$DOM.cover.style.width = settings.imageWidth + 'px';
+
+				if(isBase64(settings.image.replace(/ /g,''))){
+					$DOM.cover.style.backgroundImage = 'url(data:image/png;base64,' + settings.image.replace(/ /g,'') + ')';
+				} else {
+					$DOM.cover.style.backgroundImage = 'url(' + settings.image + ')';
+				}
+
+				if(settings.rtl){
+					$DOM.toastBody.style.marginRight = (settings.imageWidth + 10) + 'px';
+				} else {
+					$DOM.toastBody.style.marginLeft = (settings.imageWidth + 10) + 'px';				
+				}
+				$DOM.toast.appendChild($DOM.cover);
+			}
+		})();
+
+		// Button close
+		(function(){
+			if(settings.close){
+				
+				$DOM.buttonClose = document.createElement('button');
+				$DOM.buttonClose.type = 'button';
+				$DOM.buttonClose.classList.add(PLUGIN_NAME + '-close');
+				$DOM.buttonClose.addEventListener('click', function (e) {
+					var button = e.target;
+					that.hide(settings, $DOM.toast, 'button');
+				});
+				$DOM.toast.appendChild($DOM.buttonClose);
+			} else {
+				if(settings.rtl){
+					$DOM.toast.style.paddingLeft = '18px';
+				} else {
+					$DOM.toast.style.paddingRight = '18px';
+				}
+			}
+		})();
+
+		// Progress Bar & Timeout
+		(function(){
+
+			if(settings.progressBar){
+				$DOM.progressBar = document.createElement('div');
+				$DOM.progressBarDiv = document.createElement('div');
+				$DOM.progressBar.classList.add(PLUGIN_NAME + '-progressbar');
+				$DOM.progressBarDiv.style.background = settings.progressBarColor;
+				$DOM.progressBar.appendChild($DOM.progressBarDiv);
+				$DOM.toast.appendChild($DOM.progressBar);
+			}
+
+			if(settings.timeout) {
+
+				if(settings.pauseOnHover && !settings.resetOnHover){
+					
+					$DOM.toast.addEventListener('mouseenter', function (e) {
+						that.progress(settings, $DOM.toast).pause();
+					});
+					$DOM.toast.addEventListener('mouseleave', function (e) {
+						that.progress(settings, $DOM.toast).resume();
+					});
+				}
+
+				if(settings.resetOnHover){
+
+					$DOM.toast.addEventListener('mouseenter', function (e) {
+						that.progress(settings, $DOM.toast).reset();
+					});
+					$DOM.toast.addEventListener('mouseleave', function (e) {
+						that.progress(settings, $DOM.toast).start();
+					});
+				}
+			}
+		})();
+
+		// Icon
+		(function(){
+
+			if(settings.iconUrl) {
+
+				$DOM.icon.setAttribute('class', PLUGIN_NAME + '-icon');
+				$DOM.icon.setAttribute('src', settings.iconUrl);
+
+			} else if(settings.icon) {
+				$DOM.icon.setAttribute('class', PLUGIN_NAME + '-icon ' + settings.icon);
+				
+				if(settings.iconText){
+					$DOM.icon.appendChild(document.createTextNode(settings.iconText));
+				}
+				
+				if(settings.iconColor){
+					$DOM.icon.style.color = settings.iconColor;
+				}				
+			}
+
+			if(settings.icon || settings.iconUrl) {
+
+				if(settings.rtl){
+					$DOM.toastBody.style.paddingRight = '33px';
+				} else {
+					$DOM.toastBody.style.paddingLeft = '33px';				
+				}
+
+				$DOM.toastBody.appendChild($DOM.icon);
+			}
+
+		})();
+
+		// Title & Message
+		(function(){
+			if(settings.title.length > 0) {
+
+				$DOM.strong = document.createElement('strong');
+				$DOM.strong.classList.add(PLUGIN_NAME + '-title');
+				$DOM.strong.appendChild(createFragElem(settings.title));
+				$DOM.toastTexts.appendChild($DOM.strong);
+
+				if(settings.titleColor) {
+					$DOM.strong.style.color = settings.titleColor;
+				}
+				if(settings.titleSize) {
+					if( !isNaN(settings.titleSize) ){
+						$DOM.strong.style.fontSize = settings.titleSize+'px';
+					} else {
+						$DOM.strong.style.fontSize = settings.titleSize;
+					}
+				}
+				if(settings.titleLineHeight) {
+					if( !isNaN(settings.titleSize) ){
+						$DOM.strong.style.lineHeight = settings.titleLineHeight+'px';
+					} else {
+						$DOM.strong.style.lineHeight = settings.titleLineHeight;
+					}
+				}
+			}
+
+			if(settings.message.length > 0) {
+
+				$DOM.p = document.createElement('p');
+				$DOM.p.classList.add(PLUGIN_NAME + '-message');
+				$DOM.p.appendChild(createFragElem(settings.message));
+				$DOM.toastTexts.appendChild($DOM.p);
+
+				if(settings.messageColor) {
+					$DOM.p.style.color = settings.messageColor;
+				}
+				if(settings.messageSize) {
+					if( !isNaN(settings.titleSize) ){
+						$DOM.p.style.fontSize = settings.messageSize+'px';
+					} else {
+						$DOM.p.style.fontSize = settings.messageSize;
+					}
+				}
+				if(settings.messageLineHeight) {
+					
+					if( !isNaN(settings.titleSize) ){
+						$DOM.p.style.lineHeight = settings.messageLineHeight+'px';
+					} else {
+						$DOM.p.style.lineHeight = settings.messageLineHeight;
+					}
+				}
+			}
+
+			if(settings.title.length > 0 && settings.message.length > 0) {
+				if(settings.rtl){
+					$DOM.strong.style.marginLeft = '10px';
+				} else if(settings.layout !== 2 && !settings.rtl) {
+					$DOM.strong.style.marginRight = '10px';	
+				}
+			}
+		})();
+
+		$DOM.toastBody.appendChild($DOM.toastTexts);
+
+		// Inputs
+		var $inputs;
+		(function(){
+			if(settings.inputs.length > 0) {
+
+				$DOM.inputs.classList.add(PLUGIN_NAME + '-inputs');
+
+				forEach(settings.inputs, function (value, index) {
+					$DOM.inputs.appendChild(createFragElem(value[0]));
+
+					$inputs = $DOM.inputs.childNodes;
+
+					$inputs[index].classList.add(PLUGIN_NAME + '-inputs-child');
+
+					if(value[3]){
+						setTimeout(function() {
+							$inputs[index].focus();
+						}, 300);
+					}
+
+					$inputs[index].addEventListener(value[1], function (e) {
+						var ts = value[2];
+						return ts(that, $DOM.toast, this, e);
+					});
+				});
+				$DOM.toastBody.appendChild($DOM.inputs);
+			}
+		})();
+
+		// Buttons
+		(function(){
+			if(settings.buttons.length > 0) {
+
+				$DOM.buttons.classList.add(PLUGIN_NAME + '-buttons');
+
+				forEach(settings.buttons, function (value, index) {
+					$DOM.buttons.appendChild(createFragElem(value[0]));
+
+					var $btns = $DOM.buttons.childNodes;
+
+					$btns[index].classList.add(PLUGIN_NAME + '-buttons-child');
+
+					if(value[2]){
+						setTimeout(function() {
+							$btns[index].focus();
+						}, 300);
+					}
+
+					$btns[index].addEventListener('click', function (e) {
+						e.preventDefault();
+						var ts = value[1];
+						return ts(that, $DOM.toast, this, e, $inputs);
+					});
+				});
+			}
+			$DOM.toastBody.appendChild($DOM.buttons);
+		})();
+
+		if(settings.message.length > 0 && (settings.inputs.length > 0 || settings.buttons.length > 0)) {
+			$DOM.p.style.marginBottom = '0';
+		}
+
+		if(settings.inputs.length > 0 || settings.buttons.length > 0){
+			if(settings.rtl){
+				$DOM.toastTexts.style.marginLeft = '10px';
+			} else {
+				$DOM.toastTexts.style.marginRight = '10px';
+			}
+			if(settings.inputs.length > 0 && settings.buttons.length > 0){
+				if(settings.rtl){
+					$DOM.inputs.style.marginLeft = '8px';
+				} else {
+					$DOM.inputs.style.marginRight = '8px';
+				}
+			}
+		}
+
+		// Wrap
+		(function(){
+			$DOM.toastCapsule.style.visibility = 'hidden';
+			setTimeout(function() {
+				var H = $DOM.toast.offsetHeight;
+				var style = $DOM.toast.currentStyle || window.getComputedStyle($DOM.toast);
+				var marginTop = style.marginTop;
+					marginTop = marginTop.split('px');
+					marginTop = parseInt(marginTop[0]);
+				var marginBottom = style.marginBottom;
+					marginBottom = marginBottom.split('px');
+					marginBottom = parseInt(marginBottom[0]);
+
+				$DOM.toastCapsule.style.visibility = '';
+				$DOM.toastCapsule.style.height = (H+marginBottom+marginTop)+'px';
+
+				setTimeout(function() {
+					$DOM.toastCapsule.style.height = 'auto';
+					if(settings.target){
+						$DOM.toastCapsule.style.overflow = 'visible';
+					}
+				}, 500);
+
+				if(settings.timeout) {
+					that.progress(settings, $DOM.toast).start();
+				}
+			}, 100);
+		})();
+
+		// Target
+		(function(){
+			var position = settings.position;
+
+			if(settings.target){
+
+				$DOM.wrapper = document.querySelector(settings.target);
+				$DOM.wrapper.classList.add(PLUGIN_NAME + '-target');
+
+				if(settings.targetFirst) {
+					$DOM.wrapper.insertBefore($DOM.toastCapsule, $DOM.wrapper.firstChild);
+				} else {
+					$DOM.wrapper.appendChild($DOM.toastCapsule);
+				}
+
+			} else {
+
+				if( POSITIONS.indexOf(settings.position) == -1 ){
+					console.warn('['+PLUGIN_NAME+'] Incorrect position.\nIt can be › ' + POSITIONS);
+					return;
+				}
+
+				if(ISMOBILE || window.innerWidth <= MOBILEWIDTH){
+					if(settings.position == 'bottomLeft' || settings.position == 'bottomRight' || settings.position == 'bottomCenter'){
+						position = PLUGIN_NAME+'-wrapper-bottomCenter';
+					}
+					else if(settings.position == 'topLeft' || settings.position == 'topRight' || settings.position == 'topCenter'){
+						position = PLUGIN_NAME+'-wrapper-topCenter';
+					}
+					else {
+						position = PLUGIN_NAME+'-wrapper-center';
+					}
+				} else {
+					position = PLUGIN_NAME+'-wrapper-'+position;
+				}
+				$DOM.wrapper = document.querySelector('.' + PLUGIN_NAME + '-wrapper.'+position);
+
+				if(!$DOM.wrapper) {
+					$DOM.wrapper = document.createElement('div');
+					$DOM.wrapper.classList.add(PLUGIN_NAME + '-wrapper');
+					$DOM.wrapper.classList.add(position);
+					document.body.appendChild($DOM.wrapper);
+				}
+				if(settings.position == 'topLeft' || settings.position == 'topCenter' || settings.position == 'topRight'){
+					$DOM.wrapper.insertBefore($DOM.toastCapsule, $DOM.wrapper.firstChild);
+				} else {
+					$DOM.wrapper.appendChild($DOM.toastCapsule);
+				}
+			}
+
+			if(!isNaN(settings.zindex)) {
+				$DOM.wrapper.style.zIndex = settings.zindex;
+			} else {
+				console.warn('['+PLUGIN_NAME+'] Invalid zIndex.');
+			}
+		})();
+
+		// Overlay
+		(function(){
+
+			if(settings.overlay) {
+
+				if( document.querySelector('.'+PLUGIN_NAME+'-overlay.fadeIn') !== null ){
+
+					$DOM.overlay = document.querySelector('.'+PLUGIN_NAME+'-overlay');
+					$DOM.overlay.setAttribute('data-iziToast-ref', $DOM.overlay.getAttribute('data-iziToast-ref') + ',' + settings.ref);
+
+					if(!isNaN(settings.zindex) && settings.zindex !== null) {
+						$DOM.overlay.style.zIndex = settings.zindex-1;
+					}
+
+				} else {
+
+					$DOM.overlay.classList.add(PLUGIN_NAME+'-overlay');
+					$DOM.overlay.classList.add('fadeIn');
+					$DOM.overlay.style.background = settings.overlayColor;
+					$DOM.overlay.setAttribute('data-iziToast-ref', settings.ref);
+					if(!isNaN(settings.zindex) && settings.zindex !== null) {
+						$DOM.overlay.style.zIndex = settings.zindex-1;
+					}
+					document.querySelector('body').appendChild($DOM.overlay);
+				}
+
+				if(settings.overlayClose) {
+
+					$DOM.overlay.removeEventListener('click', {});
+					$DOM.overlay.addEventListener('click', function (e) {
+						that.hide(settings, $DOM.toast, 'overlay');
+					});
+				} else {
+					$DOM.overlay.removeEventListener('click', {});
+				}
+			}			
+		})();
+
+		// Inside animations
+		(function(){
+			if(settings.animateInside){
+				$DOM.toast.classList.add(PLUGIN_NAME+'-animateInside');
+			
+				var animationTimes = [200, 100, 300];
+				if(settings.transitionIn == 'bounceInLeft' || settings.transitionIn == 'bounceInRight'){
+					animationTimes = [400, 200, 400];
+				}
+
+				if(settings.title.length > 0) {
+					setTimeout(function(){
+						$DOM.strong.classList.add('slideIn');
+					}, animationTimes[0]);
+				}
+
+				if(settings.message.length > 0) {
+					setTimeout(function(){
+						$DOM.p.classList.add('slideIn');
+					}, animationTimes[1]);
+				}
+
+				if(settings.icon || settings.iconUrl) {
+					setTimeout(function(){
+						$DOM.icon.classList.add('revealIn');
+					}, animationTimes[2]);
+				}
+
+				var counter = 150;
+				if(settings.buttons.length > 0 && $DOM.buttons) {
+
+					setTimeout(function(){
+
+						forEach($DOM.buttons.childNodes, function(element, index) {
+
+							setTimeout(function(){
+								element.classList.add('revealIn');
+							}, counter);
+							counter = counter + 150;
+						});
+
+					}, settings.inputs.length > 0 ? 150 : 0);
+				}
+
+				if(settings.inputs.length > 0 && $DOM.inputs) {
+					counter = 150;
+					forEach($DOM.inputs.childNodes, function(element, index) {
+
+						setTimeout(function(){
+							element.classList.add('revealIn');
+						}, counter);
+						counter = counter + 150;
+					});
+				}
+			}
+		})();
+
+		settings.onOpening.apply(null, [settings, $DOM.toast]);
+
+		try {
+			var event = new CustomEvent(PLUGIN_NAME + '-opening', {detail: settings, bubbles: true, cancelable: true});
+			document.dispatchEvent(event);
+		} catch(ex){
+			console.warn(ex);
+		}
+
+		setTimeout(function() {
+
+			$DOM.toast.classList.remove(PLUGIN_NAME+'-opening');
+			$DOM.toast.classList.add(PLUGIN_NAME+'-opened');
+
+			try {
+				var event = new CustomEvent(PLUGIN_NAME + '-opened', {detail: settings, bubbles: true, cancelable: true});
+				document.dispatchEvent(event);
+			} catch(ex){
+				console.warn(ex);
+			}
+
+			settings.onOpened.apply(null, [settings, $DOM.toast]);
+		}, 1000);
+
+		if(settings.drag){
+
+			if(ACCEPTSTOUCH) {
+
+			    $DOM.toast.addEventListener('touchstart', function(e) {
+			        drag.startMoving(this, that, settings, e);
+			    }, false);
+
+			    $DOM.toast.addEventListener('touchend', function(e) {
+			        drag.stopMoving(this, e);
+			    }, false);
+			} else {
+
+			    $DOM.toast.addEventListener('mousedown', function(e) {
+			    	e.preventDefault();
+			        drag.startMoving(this, that, settings, e);
+			    }, false);
+
+			    $DOM.toast.addEventListener('mouseup', function(e) {
+			    	e.preventDefault();
+			        drag.stopMoving(this, e);
+			    }, false);
+			}
+		}
+
+		if(settings.closeOnEscape) {
+
+			document.addEventListener('keyup', function (evt) {
+				evt = evt || window.event;
+				if(evt.keyCode == 27) {
+				    that.hide(settings, $DOM.toast, 'esc');
+				}
+			});
+		}
+
+		if(settings.closeOnClick) {
+			$DOM.toast.addEventListener('click', function (evt) {
+				that.hide(settings, $DOM.toast, 'toast');
+			});
+		}
+
+		that.toast = $DOM.toast;		
+	};
+	
+
+	return $iziToast;
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ })
+/******/ ]);
+});
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row justify-content-center" }, [
+        _c("div", { staticClass: "col-md-8" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-header" }, [
+              _vm._v("Example Component")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _vm._v(
+                "\n                    I'm an example component.\n                "
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/AdminLogin.vue?vue&type=template&id=b7f4eb6a&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Login/AdminLogin.vue?vue&type=template&id=b7f4eb6a&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "row justify-content-center mt-5" }, [
+    _c(
+      "div",
+      { staticClass: "col-md-3" },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("qrcode-stream", {
+          staticClass: "qrcodeBox",
+          on: { decode: _vm.onDecode, init: _vm.onInit }
+        }),
+        _vm._v(" "),
+        _vm._m(1)
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "h3",
+      { staticClass: "text-info display-4", attrs: { align: "center" } },
+      [_c("i", { staticClass: "fa fa-user-circle" }), _vm._v(" Admin Log In")]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "p",
+      {
+        staticClass: "text-white mt-2",
+        attrs: { "data-aos-delay": "2000", align: "center" }
+      },
+      [
+        _vm._v("powered by "),
+        _c("i", { staticClass: "fa fa-code" }),
+        _vm._v(" codehive")
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/UserLogin.vue?vue&type=template&id=0c104106&scoped=true&":
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Login/UserLogin.vue?vue&type=template&id=0c104106&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "row justify-content-center mt-5" }, [
+    _c(
+      "div",
+      { staticClass: "col-md-3" },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("qrcode-stream", {
+          staticClass: "qrcodeBox",
+          on: { decode: _vm.onDecode, init: _vm.onInit }
+        }),
+        _vm._v(" "),
+        _vm._m(1)
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "h3",
+      { staticClass: "text-info display-4", attrs: { align: "center" } },
+      [_c("i", { staticClass: "fa fa-qrcode" }), _vm._v(" QR Code Scanner")]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-white", attrs: { align: "center" } }, [
+      _vm._v("powered by "),
+      _c("i", { staticClass: "fa fa-code mt-2" }),
+      _vm._v(" codehive")
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Register/DownloadFile.vue?vue&type=template&id=f40f6656&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Register/DownloadFile.vue?vue&type=template&id=f40f6656&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-4" }, [
+        _c("div", { attrs: { align: "center" } }, [
+          _c("img", {
+            staticClass: "img-thumbnail mt-2",
+            attrs: { src: "/img/qrcode.png" }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "a",
+              {
+                staticClass: "btn btn-outline-info my-3",
+                attrs: { href: "/admin/register/downloadfile" },
+                on: {
+                  click: function($event) {
+                    return _vm.download()
+                  }
+                }
+              },
+              [
+                _c("i", { staticClass: "fa fa-download" }),
+                _vm._v(" " + _vm._s(_vm.title) + "\r\n\t\t\t\t\t\t\t\t\t\t")
+              ]
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("ol", { staticClass: "breadcrumb" }, [
+        _c("li", { staticClass: "breadcrumb-item active" }, [
+          _c("a", { attrs: { href: "/admin/register" } }, [_vm._v("users")])
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "breadcrumb-item" }, [
+          _vm._v("\r\n\t\t    \tcreate\r\n\t\t  ")
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "breadcrumb-item" }, [
+          _vm._v("\r\n\t\t    \tdownload\r\n\t\t  ")
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return normalizeComponent; });
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+function normalizeComponent (
+  scriptExports,
+  render,
+  staticRenderFns,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier, /* server only */
+  shadowMode /* vue-cli only */
+) {
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (render) {
+    options.render = render
+    options.staticRenderFns = staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = 'data-v-' + scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = shadowMode
+      ? function () { injectStyles.call(this, this.$root.$options.shadowRoot) }
+      : injectStyles
+  }
+
+  if (hook) {
+    if (options.functional) {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functioal component in vue file
+      var originalRender = options.render
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return originalRender(h, context)
+      }
+    } else {
+      // inject component registration as beforeCreate hook
+      var existing = options.beforeCreate
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    }
+  }
+
+  return {
+    exports: scriptExports,
+    options: options
+  }
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-qrcode-reader/dist/vue-qrcode-reader.common.js":
 /*!*************************************************************************!*\
   !*** ./node_modules/vue-qrcode-reader/dist/vue-qrcode-reader.common.js ***!
@@ -42469,7 +43464,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global, setImmediate) {/*!
- * Vue.js v2.6.8
+ * Vue.js v2.6.10
  * (c) 2014-2019 Evan You
  * Released under the MIT License.
  */
@@ -44327,10 +45322,11 @@ function invokeWithErrorHandling (
   var res;
   try {
     res = args ? handler.apply(context, args) : handler.call(context);
-    if (res && !res._isVue && isPromise(res)) {
+    if (res && !res._isVue && isPromise(res) && !res._handled) {
+      res.catch(function (e) { return handleError(e, vm, info + " (Promise/async)"); });
       // issue #9511
-      // reassign to res to avoid catch triggering multiple times when nested calls
-      res = res.catch(function (e) { return handleError(e, vm, info + " (Promise/async)"); });
+      // avoid catch triggering multiple times when nested calls
+      res._handled = true;
     }
   } catch (e) {
     handleError(e, vm, info);
@@ -45013,7 +46009,8 @@ function normalizeScopedSlots (
   prevSlots
 ) {
   var res;
-  var isStable = slots ? !!slots.$stable : true;
+  var hasNormalSlots = Object.keys(normalSlots).length > 0;
+  var isStable = slots ? !!slots.$stable : !hasNormalSlots;
   var key = slots && slots.$key;
   if (!slots) {
     res = {};
@@ -45025,7 +46022,8 @@ function normalizeScopedSlots (
     prevSlots &&
     prevSlots !== emptyObject &&
     key === prevSlots.$key &&
-    Object.keys(normalSlots).length === 0
+    !hasNormalSlots &&
+    !prevSlots.$hasNormal
   ) {
     // fast path 2: stable scoped slots w/ no normal slots to proxy,
     // only need to normalize once
@@ -45051,6 +46049,7 @@ function normalizeScopedSlots (
   }
   def(res, '$stable', isStable);
   def(res, '$key', key);
+  def(res, '$hasNormal', hasNormalSlots);
   return res
 }
 
@@ -45060,8 +46059,10 @@ function normalizeScopedSlot(normalSlots, key, fn) {
     res = res && typeof res === 'object' && !Array.isArray(res)
       ? [res] // single vnode
       : normalizeChildren(res);
-    return res && res.length === 0
-      ? undefined
+    return res && (
+      res.length === 0 ||
+      (res.length === 1 && res[0].isComment) // #9658
+    ) ? undefined
       : res
   };
   // this is a slot using the new v-slot syntax without scope. although it is
@@ -45241,12 +46242,13 @@ function bindObjectProps (
             : data.attrs || (data.attrs = {});
         }
         var camelizedKey = camelize(key);
-        if (!(key in hash) && !(camelizedKey in hash)) {
+        var hyphenatedKey = hyphenate(key);
+        if (!(camelizedKey in hash) && !(hyphenatedKey in hash)) {
           hash[key] = value[key];
 
           if (isSync) {
             var on = data.on || (data.on = {});
-            on[("update:" + camelizedKey)] = function ($event) {
+            on[("update:" + key)] = function ($event) {
               value[key] = $event;
             };
           }
@@ -46081,7 +47083,7 @@ function resolveAsyncComponent (
   }
 
   var owner = currentRenderingInstance;
-  if (isDef(factory.owners) && factory.owners.indexOf(owner) === -1) {
+  if (owner && isDef(factory.owners) && factory.owners.indexOf(owner) === -1) {
     // already pending
     factory.owners.push(owner);
   }
@@ -46090,9 +47092,11 @@ function resolveAsyncComponent (
     return factory.loadingComp
   }
 
-  if (!isDef(factory.owners)) {
+  if (owner && !isDef(factory.owners)) {
     var owners = factory.owners = [owner];
-    var sync = true
+    var sync = true;
+    var timerLoading = null;
+    var timerTimeout = null
 
     ;(owner).$on('hook:destroyed', function () { return remove(owners, owner); });
 
@@ -46103,6 +47107,14 @@ function resolveAsyncComponent (
 
       if (renderCompleted) {
         owners.length = 0;
+        if (timerLoading !== null) {
+          clearTimeout(timerLoading);
+          timerLoading = null;
+        }
+        if (timerTimeout !== null) {
+          clearTimeout(timerTimeout);
+          timerTimeout = null;
+        }
       }
     };
 
@@ -46149,7 +47161,8 @@ function resolveAsyncComponent (
           if (res.delay === 0) {
             factory.loading = true;
           } else {
-            setTimeout(function () {
+            timerLoading = setTimeout(function () {
+              timerLoading = null;
               if (isUndef(factory.resolved) && isUndef(factory.error)) {
                 factory.loading = true;
                 forceRender(false);
@@ -46159,7 +47172,8 @@ function resolveAsyncComponent (
         }
 
         if (isDef(res.timeout)) {
-          setTimeout(function () {
+          timerTimeout = setTimeout(function () {
+            timerTimeout = null;
             if (isUndef(factory.resolved)) {
               reject(
                 "timeout (" + (res.timeout) + "ms)"
@@ -46705,11 +47719,21 @@ var getNow = Date.now;
 // timestamp can either be hi-res (relative to page load) or low-res
 // (relative to UNIX epoch), so in order to compare time we have to use the
 // same timestamp type when saving the flush timestamp.
-if (inBrowser && getNow() > document.createEvent('Event').timeStamp) {
-  // if the low-res timestamp which is bigger than the event timestamp
-  // (which is evaluated AFTER) it means the event is using a hi-res timestamp,
-  // and we need to use the hi-res version for event listeners as well.
-  getNow = function () { return performance.now(); };
+// All IE versions use low-res event timestamps, and have problematic clock
+// implementations (#9632)
+if (inBrowser && !isIE) {
+  var performance = window.performance;
+  if (
+    performance &&
+    typeof performance.now === 'function' &&
+    getNow() > document.createEvent('Event').timeStamp
+  ) {
+    // if the event timestamp, although evaluated AFTER the Date.now(), is
+    // smaller than it, it means the event is using a hi-res timestamp,
+    // and we need to use the hi-res version for event listener timestamps as
+    // well.
+    getNow = function () { return performance.now(); };
+  }
 }
 
 /**
@@ -47874,7 +48898,7 @@ Object.defineProperty(Vue, 'FunctionalRenderContext', {
   value: FunctionalRenderContext
 });
 
-Vue.version = '2.6.8';
+Vue.version = '2.6.10';
 
 /*  */
 
@@ -49966,8 +50990,10 @@ function add$1 (
         e.target === e.currentTarget ||
         // event is fired after handler attachment
         e.timeStamp >= attachedTimestamp ||
-        // #9462 bail for iOS 9 bug: event.timeStamp is 0 after history.pushState
-        e.timeStamp === 0 ||
+        // bail for environments that have buggy event.timeStamp implementations
+        // #9462 iOS 9 bug: event.timeStamp is 0 after history.pushState
+        // #9681 QtWebEngine event.timeStamp is negative value
+        e.timeStamp <= 0 ||
         // #9448 bail if event is fired in another document in a multi-page
         // electron/nw.js app, since event.timeStamp will be using a different
         // starting reference
@@ -50034,10 +51060,11 @@ function updateDOMProps (oldVnode, vnode) {
   }
 
   for (key in oldProps) {
-    if (isUndef(props[key])) {
+    if (!(key in props)) {
       elm[key] = '';
     }
   }
+
   for (key in props) {
     cur = props[key];
     // ignore children if the node has textContent or innerHTML,
@@ -50585,8 +51612,8 @@ function enter (vnode, toggleDisplay) {
   var context = activeInstance;
   var transitionNode = activeInstance.$vnode;
   while (transitionNode && transitionNode.parent) {
-    transitionNode = transitionNode.parent;
     context = transitionNode.context;
+    transitionNode = transitionNode.parent;
   }
 
   var isAppear = !context._isMounted || !vnode.isRootInsert;
@@ -52293,7 +53320,7 @@ function parse (
         text = preserveWhitespace ? ' ' : '';
       }
       if (text) {
-        if (whitespaceOption === 'condense') {
+        if (!inPre && whitespaceOption === 'condense') {
           // condense consecutive whitespaces into single space
           text = text.replace(whitespaceRE$1, ' ');
         }
@@ -53154,7 +54181,7 @@ function isDirectChildOfTemplateFor (node) {
 
 /*  */
 
-var fnExpRE = /^([\w$_]+|\([^)]*?\))\s*=>|^function\s*\(/;
+var fnExpRE = /^([\w$_]+|\([^)]*?\))\s*=>|^function\s*(?:[\w$]+)?\s*\(/;
 var fnInvokeRE = /\([^)]*?\);*$/;
 var simplePathRE = /^[A-Za-z_$][\w$]*(?:\.[A-Za-z_$][\w$]*|\['[^']*?']|\["[^"]*?"]|\[\d+]|\[[A-Za-z_$][\w$]*])*$/;
 
@@ -57460,15 +58487,17 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _fortawesome_fontawesome_free_css_all_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-free/css/all.css */ "./node_modules/@fortawesome/fontawesome-free/css/all.css");
-/* harmony import */ var _fortawesome_fontawesome_free_css_all_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_free_css_all_css__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var flipclock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! flipclock */ "./node_modules/flipclock/dist/flipclock.js");
-/* harmony import */ var flipclock__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flipclock__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var flipclock_dist_flipclock_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! flipclock/dist/flipclock.css */ "./node_modules/flipclock/dist/flipclock.css");
-/* harmony import */ var flipclock_dist_flipclock_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(flipclock_dist_flipclock_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var vue_qrcode_reader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-qrcode-reader */ "./node_modules/vue-qrcode-reader/index.js");
-/* harmony import */ var vue_qrcode_reader_dist_vue_qrcode_reader_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-qrcode-reader/dist/vue-qrcode-reader.css */ "./node_modules/vue-qrcode-reader/dist/vue-qrcode-reader.css");
-/* harmony import */ var vue_qrcode_reader_dist_vue_qrcode_reader_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(vue_qrcode_reader_dist_vue_qrcode_reader_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var flipclock_dist_flipclock_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flipclock/dist/flipclock.css */ "./node_modules/flipclock/dist/flipclock.css");
+/* harmony import */ var flipclock_dist_flipclock_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flipclock_dist_flipclock_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vue_qrcode_reader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-qrcode-reader */ "./node_modules/vue-qrcode-reader/index.js");
+/* harmony import */ var vue_qrcode_reader_dist_vue_qrcode_reader_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-qrcode-reader/dist/vue-qrcode-reader.css */ "./node_modules/vue-qrcode-reader/dist/vue-qrcode-reader.css");
+/* harmony import */ var vue_qrcode_reader_dist_vue_qrcode_reader_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_qrcode_reader_dist_vue_qrcode_reader_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var font_awesome_css_font_awesome_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! font-awesome/css/font-awesome.css */ "./node_modules/font-awesome/css/font-awesome.css");
+/* harmony import */ var font_awesome_css_font_awesome_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(font_awesome_css_font_awesome_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var vue_izitoast__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-izitoast */ "./node_modules/vue-izitoast/dist/vue-izitoast.js");
+/* harmony import */ var vue_izitoast__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(vue_izitoast__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var izitoast_dist_css_iziToast_min_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! izitoast/dist/css/iziToast.min.css */ "./node_modules/izitoast/dist/css/iziToast.min.css");
+/* harmony import */ var izitoast_dist_css_iziToast_min_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(izitoast_dist_css_iziToast_min_css__WEBPACK_IMPORTED_MODULE_5__);
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -57476,14 +58505,19 @@ __webpack_require__.r(__webpack_exports__);
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); //import FontAwesome from '@fortawesome/fontawesome-free';
+window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); // import FlipClock from 'flipclock';
+
+ // vue-qrcode-reader
+
+
+ // font-awesome
+
+ // vue-iziToast 
 
 
 
-
-
-
-Vue.use(vue_qrcode_reader__WEBPACK_IMPORTED_MODULE_3__["default"]);
+Vue.use(vue_izitoast__WEBPACK_IMPORTED_MODULE_4___default.a);
+Vue.use(vue_qrcode_reader__WEBPACK_IMPORTED_MODULE_1__["default"]);
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -57493,9 +58527,11 @@ Vue.use(vue_qrcode_reader__WEBPACK_IMPORTED_MODULE_3__["default"]);
  */
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
-//Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-//Vue.component('admin-login', require('./components/AdminLogin/AdminLogin.vue').default);
 
+Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue").default);
+Vue.component('admin-login', __webpack_require__(/*! ./components/Login/AdminLogin.vue */ "./resources/js/components/Login/AdminLogin.vue").default);
+Vue.component('user-login', __webpack_require__(/*! ./components/Login/UserLogin.vue */ "./resources/js/components/Login/UserLogin.vue").default);
+Vue.component('download-file', __webpack_require__(/*! ./components/Register/DownloadFile.vue */ "./resources/js/components/Register/DownloadFile.vue").default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -57563,6 +58599,336 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/ExampleComponent.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/components/ExampleComponent.vue ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ExampleComponent.vue?vue&type=template&id=299e239e& */ "./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&");
+/* harmony import */ var _ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExampleComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ExampleComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ExampleComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e& ***!
+  \*************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ExampleComponent.vue?vue&type=template&id=299e239e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Login/AdminLogin.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/components/Login/AdminLogin.vue ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _AdminLogin_vue_vue_type_template_id_b7f4eb6a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AdminLogin.vue?vue&type=template&id=b7f4eb6a&scoped=true& */ "./resources/js/components/Login/AdminLogin.vue?vue&type=template&id=b7f4eb6a&scoped=true&");
+/* harmony import */ var _AdminLogin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AdminLogin.vue?vue&type=script&lang=js& */ "./resources/js/components/Login/AdminLogin.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _AdminLogin_vue_vue_type_style_index_0_id_b7f4eb6a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AdminLogin.vue?vue&type=style&index=0&id=b7f4eb6a&scoped=true&lang=css& */ "./resources/js/components/Login/AdminLogin.vue?vue&type=style&index=0&id=b7f4eb6a&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _AdminLogin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _AdminLogin_vue_vue_type_template_id_b7f4eb6a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _AdminLogin_vue_vue_type_template_id_b7f4eb6a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "b7f4eb6a",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Login/AdminLogin.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Login/AdminLogin.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/Login/AdminLogin.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminLogin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./AdminLogin.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/AdminLogin.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminLogin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Login/AdminLogin.vue?vue&type=style&index=0&id=b7f4eb6a&scoped=true&lang=css&":
+/*!***************************************************************************************************************!*\
+  !*** ./resources/js/components/Login/AdminLogin.vue?vue&type=style&index=0&id=b7f4eb6a&scoped=true&lang=css& ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminLogin_vue_vue_type_style_index_0_id_b7f4eb6a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./AdminLogin.vue?vue&type=style&index=0&id=b7f4eb6a&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/AdminLogin.vue?vue&type=style&index=0&id=b7f4eb6a&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminLogin_vue_vue_type_style_index_0_id_b7f4eb6a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminLogin_vue_vue_type_style_index_0_id_b7f4eb6a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminLogin_vue_vue_type_style_index_0_id_b7f4eb6a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminLogin_vue_vue_type_style_index_0_id_b7f4eb6a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminLogin_vue_vue_type_style_index_0_id_b7f4eb6a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Login/AdminLogin.vue?vue&type=template&id=b7f4eb6a&scoped=true&":
+/*!*************************************************************************************************!*\
+  !*** ./resources/js/components/Login/AdminLogin.vue?vue&type=template&id=b7f4eb6a&scoped=true& ***!
+  \*************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminLogin_vue_vue_type_template_id_b7f4eb6a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./AdminLogin.vue?vue&type=template&id=b7f4eb6a&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/AdminLogin.vue?vue&type=template&id=b7f4eb6a&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminLogin_vue_vue_type_template_id_b7f4eb6a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminLogin_vue_vue_type_template_id_b7f4eb6a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Login/UserLogin.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/Login/UserLogin.vue ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _UserLogin_vue_vue_type_template_id_0c104106_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UserLogin.vue?vue&type=template&id=0c104106&scoped=true& */ "./resources/js/components/Login/UserLogin.vue?vue&type=template&id=0c104106&scoped=true&");
+/* harmony import */ var _UserLogin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UserLogin.vue?vue&type=script&lang=js& */ "./resources/js/components/Login/UserLogin.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _UserLogin_vue_vue_type_style_index_0_id_0c104106_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./UserLogin.vue?vue&type=style&index=0&id=0c104106&scoped=true&lang=css& */ "./resources/js/components/Login/UserLogin.vue?vue&type=style&index=0&id=0c104106&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _UserLogin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _UserLogin_vue_vue_type_template_id_0c104106_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _UserLogin_vue_vue_type_template_id_0c104106_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "0c104106",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Login/UserLogin.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Login/UserLogin.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/Login/UserLogin.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UserLogin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./UserLogin.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/UserLogin.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UserLogin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Login/UserLogin.vue?vue&type=style&index=0&id=0c104106&scoped=true&lang=css&":
+/*!**************************************************************************************************************!*\
+  !*** ./resources/js/components/Login/UserLogin.vue?vue&type=style&index=0&id=0c104106&scoped=true&lang=css& ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_UserLogin_vue_vue_type_style_index_0_id_0c104106_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./UserLogin.vue?vue&type=style&index=0&id=0c104106&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/UserLogin.vue?vue&type=style&index=0&id=0c104106&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_UserLogin_vue_vue_type_style_index_0_id_0c104106_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_UserLogin_vue_vue_type_style_index_0_id_0c104106_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_UserLogin_vue_vue_type_style_index_0_id_0c104106_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_UserLogin_vue_vue_type_style_index_0_id_0c104106_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_UserLogin_vue_vue_type_style_index_0_id_0c104106_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Login/UserLogin.vue?vue&type=template&id=0c104106&scoped=true&":
+/*!************************************************************************************************!*\
+  !*** ./resources/js/components/Login/UserLogin.vue?vue&type=template&id=0c104106&scoped=true& ***!
+  \************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UserLogin_vue_vue_type_template_id_0c104106_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./UserLogin.vue?vue&type=template&id=0c104106&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/UserLogin.vue?vue&type=template&id=0c104106&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UserLogin_vue_vue_type_template_id_0c104106_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UserLogin_vue_vue_type_template_id_0c104106_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Register/DownloadFile.vue":
+/*!***********************************************************!*\
+  !*** ./resources/js/components/Register/DownloadFile.vue ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _DownloadFile_vue_vue_type_template_id_f40f6656_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DownloadFile.vue?vue&type=template&id=f40f6656&scoped=true& */ "./resources/js/components/Register/DownloadFile.vue?vue&type=template&id=f40f6656&scoped=true&");
+/* harmony import */ var _DownloadFile_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DownloadFile.vue?vue&type=script&lang=js& */ "./resources/js/components/Register/DownloadFile.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _DownloadFile_vue_vue_type_style_index_0_id_f40f6656_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DownloadFile.vue?vue&type=style&index=0&id=f40f6656&scoped=true&lang=css& */ "./resources/js/components/Register/DownloadFile.vue?vue&type=style&index=0&id=f40f6656&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _DownloadFile_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _DownloadFile_vue_vue_type_template_id_f40f6656_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _DownloadFile_vue_vue_type_template_id_f40f6656_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "f40f6656",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Register/DownloadFile.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Register/DownloadFile.vue?vue&type=script&lang=js&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/Register/DownloadFile.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DownloadFile_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./DownloadFile.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Register/DownloadFile.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DownloadFile_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Register/DownloadFile.vue?vue&type=style&index=0&id=f40f6656&scoped=true&lang=css&":
+/*!********************************************************************************************************************!*\
+  !*** ./resources/js/components/Register/DownloadFile.vue?vue&type=style&index=0&id=f40f6656&scoped=true&lang=css& ***!
+  \********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DownloadFile_vue_vue_type_style_index_0_id_f40f6656_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./DownloadFile.vue?vue&type=style&index=0&id=f40f6656&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Register/DownloadFile.vue?vue&type=style&index=0&id=f40f6656&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DownloadFile_vue_vue_type_style_index_0_id_f40f6656_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DownloadFile_vue_vue_type_style_index_0_id_f40f6656_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DownloadFile_vue_vue_type_style_index_0_id_f40f6656_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DownloadFile_vue_vue_type_style_index_0_id_f40f6656_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DownloadFile_vue_vue_type_style_index_0_id_f40f6656_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Register/DownloadFile.vue?vue&type=template&id=f40f6656&scoped=true&":
+/*!******************************************************************************************************!*\
+  !*** ./resources/js/components/Register/DownloadFile.vue?vue&type=template&id=f40f6656&scoped=true& ***!
+  \******************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DownloadFile_vue_vue_type_template_id_f40f6656_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./DownloadFile.vue?vue&type=template&id=f40f6656&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Register/DownloadFile.vue?vue&type=template&id=f40f6656&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DownloadFile_vue_vue_type_template_id_f40f6656_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DownloadFile_vue_vue_type_template_id_f40f6656_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 

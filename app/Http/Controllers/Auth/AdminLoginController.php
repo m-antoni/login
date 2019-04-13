@@ -16,30 +16,18 @@ class AdminLoginController extends Controller
 
     public function login(Request $request)
     {
-
-        // Validation form data
-        $data = $request->validate([
-            'password' => 'required',
-        ]);
-
         // Attempt to log in using qrcode
         if(Auth::guard('admin')->attempt(['username' => 'admin', 'password' => $request->password])){
-
-            return redirect()->intended(route('dashboard'));
-
-            // this is for vue-components only
             //return ['redirect' => route('admin.dashboard')];
-            // $redirect = response(['redirect' => route('admin.dashboard')], 200)                        
-            //                     ->header('Content-Type', 'text/plan');
-            // return $redirect;
+            $redirect = response(['redirect' => route('dashboard')], 200)                        
+                                ->header('Content-Type', 'text/plan');
+            return $redirect;
         }
         
-        return redirect()->back()->with($request->only('username'));
-
-        // this is for vue-components only
-        // $response = response(['message' => 'Unauthorized Attempt To Log In!',], 422)
-        //                     ->header('Content-Type', 'text/plan');
-        // return $response;
+        // default response error
+        $response = response(['message' => 'Unauthorized Attempt To Log In!',], 422)
+                            ->header('Content-Type', 'text/plan');
+        return $response;
     }
 
     public function adminLogout()

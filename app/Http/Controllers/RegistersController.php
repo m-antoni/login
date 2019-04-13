@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Faker\Generator as Faker;
 use App\Register;
+use File;
+use QRCode;
 
 class RegistersController extends Controller
 {
@@ -48,8 +51,17 @@ class RegistersController extends Controller
         // Validate the database
         $this->validateRequest();
 
+        $passcode = str_random(60);
+        // Generate QR Code
+        $qrcode = QRCode::text($passcode)
+                        ->setSize(10)
+                        ->setMargin(2)
+                        ->setOutFile(public_path('storage/temporary_qrcode.png'))
+                        ->png();    
+
         // Store in database
         $register = Register::create([
+            'qrcode' => $passcode,
             'first' => $request->first,
             'last' => $request->last,
             'middle' => strtoupper($request->middle),
@@ -66,9 +78,31 @@ class RegistersController extends Controller
             'photo' => $filenametoStore,
         ]);    
 
-        session()->flash('message', 'New user has been successfully added');
-        
-        return redirect()->route('register.show', $register->id);
+        return redirect()->route('register.download');
+    }
+
+    public function downloadpage()
+    {
+        return view('register.download');
+    }
+
+    public function downloadfile(){
+
+        $headers = array(
+            'Content-type: image/png'
+        );
+        // check if the file  exists
+        $result = File::exists(public_path('storage/temporary_qrcode.png'));
+
+        if($result){
+            // download the file and delete it from original directory
+            return response()
+                    ->download(public_path('storage/temporary_qrcode.png'),'generated-qrcode.png', $headers)
+                    ->deleteFileAfterSend(true);
+        }else{
+            
+            return redirect()->route('register.index');
+        }
     }
 
     public function show(Register $register)
@@ -97,9 +131,9 @@ class RegistersController extends Controller
     {
         $register->delete();
 
-        session()->flash('message', 'User has been deleted successfully');
+        //session()->flash('message', 'User has been deleted successfully');
 
-        return redirect()->route('register.index');
+        return redirect()->route('register.index')->with('message', 'User has been deleted successfully');
     }
 
     private function validateRequest()

@@ -13,6 +13,7 @@
 
 	{{--  alert messages --}}
 	@include('partials.message')
+	
  		@if(count($registers) > 0)
  		 	<table class="table table-hover table-responsive-sm">
 				<tr class="text-white bg-secondary">

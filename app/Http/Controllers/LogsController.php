@@ -11,8 +11,15 @@ class LogsController extends Controller
 {
 	  public function index()
 	  {
-	  	$logs = Logs::orderBy('created_at', 'desc')->paginate(5);
+		  	$logs = Logs::orderBy('created_at', 'desc')->paginate(5);
 
-	  	return view('logs.index', compact('logs'));
+		  	return view('logs.index', compact('logs'));
+	  }
+
+	  public function destroy(Logs $logs)
+	  {
+	  		$logs->delete();
+
+	  		return redirect()->route('logs.index')->with('message', 'Log removed successfully');
 	  }
 }

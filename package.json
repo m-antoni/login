@@ -20,18 +20,18 @@
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
-        "vue": "^2.5.17",
-        "vue-template-compiler": "^2.6.6"
+        "vue": "^2.6.10"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.7.2",
         "flipclock": "^0.10.0",
+        "font-awesome": "^4.7.0",
         "jspdf": "^1.5.3",
         "jspdf-autotable": "^3.0.13",
         "vee-validate": "^2.1.7",
         "vue-chartjs": "^3.4.0",
         "vue-izitoast": "^1.1.2",
         "vue-moment": "^4.0.0",
-        "vue-qrcode-reader": "^1.4.0"
+        "vue-qrcode-reader": "^1.4.0",
+        "vue-template-compiler": "^2.6.10"
     }
 }

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 	<ol class="breadcrumb">
 	  <li class="breadcrumb-item">
 	    	<a href="{{route('register.index')}}">users</a>
@@ -13,15 +14,12 @@
 	  </li>
 	</ol>
 
-	{{--  alert messages --}}
-	@include('partials.message')
-
 	<h3 class="display-4"><i class="fa fa-user-circle"></i> General Information</h3 class="display-5">
 	<div class="card">
 			<div class="card-header">
 				<div class="row">
 						<div class="ml-1">
-								<a class="btn btn-default text-primary" href="{{route('register.edit', $register->id)}}"><i class="fa fa-edit"></i> Edit</a>
+								<a class="btn btn-outline-info btn-sm" href="{{route('register.edit', $register->id)}}"><i class="fa fa-edit"></i></a>
 						</div>
 						<div class="ml-auto mr-md-1">
 							{{-- <form action="{{route('register.delete', $register->id)}}" method="POST">
@@ -30,8 +28,8 @@
 									<button type="submit" class="btn btn-default text-danger"><i class="fa fa-times"></i> delete</button>
 							</form> --}}
 							<!-- Button trigger modal -->
-							<button type="button" class="btn btn-default text-danger" data-toggle="modal" data-target="#deleteModal">
-								<i class="fa fw fa-times"></i>
+							<button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#deleteModal">
+								<i class="fa fa-times"></i> 
 							</button>
 						</div>
 				</div>
@@ -56,7 +54,7 @@
 													            </span>
 									        				@endif
 																	<button type="submit" class="btn btn-info btn-sm">
-																		<i class="fa fw fa-image"></i> Upload Image
+																		<i class="fa fa-upload`"></i> Upload
 																	</button>
 															</div>
 													</div>
@@ -115,5 +113,5 @@
 	    </div>
 	  </div>
 	</div>
-
+	
 @endsection 

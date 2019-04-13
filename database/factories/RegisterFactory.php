@@ -4,6 +4,7 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Register::class, function (Faker $faker) {
     return [
+        'qrcode' => $faker->sha256,
         'first' => $faker->randomElement(array($faker->firstNameMale, $faker->firstNameFemale)),
         'last' => $faker->lastName,
         'gender' => $faker->randomElement(array('Male', 'Female')),
