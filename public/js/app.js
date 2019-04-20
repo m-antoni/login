@@ -1849,7 +1849,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         if (error.response.status == 422) {
           _this.message = error.response.data.message;
 
-          _this.$toast.error('<strong>' + _this.message + '</strong>', 'Error', {
+          _this.$toast.error("<strong>".concat(_this.message, "</strong>"), 'Error', {
             icon: 'ico-warning',
             position: 'topCenter',
             transitionOut: 'fadeOutUp'
@@ -1961,7 +1961,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }).then(function (response) {
         // response message
         if (response.data.message) {
-          _this.$toast.show('<strong>' + response.data.message + '</strong>', 'Success', {
+          // <strong>' + response.data.message + '</strong>
+          _this.$toast.show("<strong>".concat(response.data.message, "</strong>"), 'Success', {
             icon: 'fa fa-user-circle',
             iconColor: 'rgb(0, 255, 184)',
             theme: 'dark',
@@ -1971,7 +1972,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             transitionOut: 'fadeOutUp'
           });
         } else {
-          _this.$toast.error('<strong>' + 'Unauthorized Log In attempt!' + '</strong>', 'Error', {
+          _this.$toast.error("<strong> ".concat(response.data.error, "</strong>"), 'Error', {
             icon: 'fa fa-warning',
             position: 'topCenter',
             transitionIn: 'bounceInDown',
@@ -1980,7 +1981,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }
       }).catch(function (error) {
         // console.log(error)
-        _this.$toast.error('<strong>' + 'QR Code is not registered' + '</strong>', 'Error', {
+        _this.$toast.error("<strong>".concat('QR Code is not registered', "</strong>"), 'Error', {
           icon: 'fa fa-warning',
           position: 'topCenter',
           progressBarColor: '#333',

@@ -34,7 +34,7 @@ export default {
           if(error.response.status == 422){
               this.message = error.response.data.message
 
-              this.$toast.error('<strong>' + this.message + '</strong>', 'Error',{
+              this.$toast.error(`<strong>${this.message}</strong>`, 'Error',{
                 icon: 'ico-warning',
                 position: 'topCenter',
                 transitionOut: 'fadeOutUp'

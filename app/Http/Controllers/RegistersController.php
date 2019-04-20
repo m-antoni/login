@@ -51,7 +51,9 @@ class RegistersController extends Controller
         // Validate the database
         $this->validateRequest();
 
+        // Generate random string
         $passcode = str_random(60);
+
         // Generate QR Code
         $qrcode = QRCode::text($passcode)
                         ->setSize(10)
@@ -59,7 +61,7 @@ class RegistersController extends Controller
                         ->setOutFile(public_path('storage/temporary_qrcode.png'))
                         ->png();    
 
-        // Store in database
+        // Store data in database
         $register = Register::create([
             'qrcode' => $passcode,
             'first' => $request->first,
@@ -95,7 +97,7 @@ class RegistersController extends Controller
         $result = File::exists(public_path('storage/temporary_qrcode.png'));
 
         if($result){
-            // download the file and delete it from original directory
+            // download the file and delete it from root directory
             return response()
                     ->download(public_path('storage/temporary_qrcode.png'),'generated-qrcode.png', $headers)
                     ->deleteFileAfterSend(true);
@@ -131,9 +133,9 @@ class RegistersController extends Controller
     {
         $register->delete();
 
-        //session()->flash('message', 'User has been deleted successfully');
+        session()->flash('message', 'User has been deleted successfully');
 
-        return redirect()->route('register.index')->with('message', 'User has been deleted successfully');
+        return redirect()->route('register.index');
     }
 
     private function validateRequest()

@@ -26,7 +26,8 @@ export default {
        }).then(response => {
             // response message
             if(response.data.message){
-                this.$toast.show('<strong>' + response.data.message + '</strong>', 'Success', {
+              // <strong>' + response.data.message + '</strong>
+                this.$toast.show(`<strong>${response.data.message}</strong>`, 'Success', {
                     icon: 'fa fa-user-circle',
                     iconColor: 'rgb(0, 255, 184)',
                     theme: 'dark',
@@ -36,7 +37,7 @@ export default {
                     transitionOut: 'fadeOutUp',
                 });
             }else{
-                this.$toast.error('<strong>' + 'Unauthorized Log In attempt!' +'</strong>' , 'Error', {
+                this.$toast.error(`<strong> ${response.data.error}</strong>`, 'Error', {
                     icon: 'fa fa-warning',
                     position: 'topCenter',
                     transitionIn: 'bounceInDown',
@@ -46,7 +47,7 @@ export default {
 
       }).catch(error => {
           // console.log(error)
-          this.$toast.error('<strong>' + 'QR Code is not registered' +'</strong>' , 'Error', {
+          this.$toast.error(`<strong>${'QR Code is not registered'}</strong>`, 'Error', {
               icon: 'fa fa-warning',
               position: 'topCenter',
               progressBarColor: '#333',

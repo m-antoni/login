@@ -17,36 +17,54 @@ class LoginQRCodeController extends Controller
 
     public function login_store(Request $request)
     {
-	    	$time = Carbon::now(); // carbon instance
-	    	$qrcode = $request->qrcode; // request qrcode
-	    	// check if qrcode is registered
+        // carbon instance
+    	$time = Carbon::now(); 
+        // request qrcode
+    	$qrcode = $request->qrcode; 
+
+    	// check if qrcode is registered
         $register = Register::where('qrcode', $qrcode)->firstOrFail();
+
         // check if the user is already log
         $user = Logs::where('qrcode', $register->qrcode)->first();
 
         if(!$user){
-        		// fullname
-        		$fullname = $register->first . ' ' . $register->last;
+    		// fullname
+    		$fullname = $register->first . ' ' . $register->last;
 
-        		// store in database
-        		$this->store_login($register->id, $qrcode, $fullname, $time);
+    		// store in database
+    		$this->store_login($register->id, $qrcode, $fullname, $time);
 
-        		return response()->json(['message' => $fullname . ' Time In: ' . Carbon::now()->format('M j, Y | h:iA')]);
+    		return response()->json(['message' => $fullname . ' Time In: ' . Carbon::now()->format('M j, Y | h:iA')]);
 
         }else{
 
-        		if($user->status == 'Inactive'){
+            // Check if 
+            if(!$user->time_in->isToday()){
+                
+                // create new data for the same user
+                $this->store_login($user->register_id, $request->qrcode, $user->name, $time);
 
-                return response()->json(['error' => 'Unauthorized attempt to Log...']);
+                return response()->json(['message' => $user->name . ' Time In: ' . Carbon::now()->format('M j, Y | h:iA')]);
 
-           }else{
+            }elseif($user->status == 'Active'){
 
-	              $user->time_out = $time;
-	        			$user->status = 'Inactive';
-	        			$user->save();
+                // Check first the time
 
-	        			return response()->json(['message' => 'Time Out: ' . Carbon::now()->format('M j, Y | h:iA')]);
-           }
+
+
+                // Save time out data
+                $user->time_out = $time;
+                $user->status = 'Inactive';
+                $user->save();
+                // return response time out
+                return response()->json(['message' => 'Time Out: ' . Carbon::now()->format('M j, Y | h:iA')]);
+
+            }else{
+
+                // if try to log in at the same date
+                return response()->json(['error' => 'Sorry you cannot log in twice!']);
+            }
         			
         }
     }
@@ -54,8 +72,8 @@ class LoginQRCodeController extends Controller
     public function store_login($id, $qrcode, $fullname, $time)
     {
         $log = Logs::create([
-        		'register_id' => $id,
-        	  'qrcode' => $qrcode,
+        	'register_id' => $id,
+        	'qrcode' => $qrcode,
             'name' => $fullname,
             'time_in'=> $time,
             'time_out' => null,

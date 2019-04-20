@@ -8,6 +8,9 @@
 	2019-03-30: File Upload Implementation
 	
 */
+use Carbon\Carbon;
+
+
 Route::prefix('/')->group(function(){
 		Route::view('', 'welcome')->name('home');
 		Route::get('login', 'LoginQRCodeController@login')->name('user.login');
@@ -74,6 +77,19 @@ Route::prefix('admin')->group(function(){
 				}
 		});
 
+		// Carbon Testing
+		Route::get('/carbon',function(){
+
+			$now = Carbon::now();
+
+	  		$test = Carbon::create(2019,4,20,7,10,10);
+
+	  		$diffInRealHours = $now->diffInRealHours($test);
+	  		$diffForHumans = $now->diffForHumans($test);
+	  		$timespan = $now->timespan($test);
+	  		
+	  		return dd([$diffInRealHours, $diffForHumans, $timespan ]);
+	  });
 
 });
 

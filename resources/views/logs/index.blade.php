@@ -22,16 +22,16 @@
 				</tr>
 	 		@foreach($logs as $log)
 	 			<tr>
-	 					<td><a href="">{{$log->name}}</a></td>
+	 					<td><a href="{{route('register.show', $log->register_id)}}">{{$log->name}}</a></td>
 	 					<td>{{$log->time_in->format('M j, Y h:iA')}}</td>
 						<td>{{($log->time_out ? $log->time_out->format('M j, Y h:iA') : " ")}}</td>
 	 					<td>{{$log->status}}</td>
-	 					<td>{{$log->time_in->diffForHumans($log->time_out)}}</td>
+	 					<td>{{$log->time_in->timespan($log->time_out)}}</td>
 	 					<td>
-	 							<form action="{{route('log.delete', $log->id)}}" method="POST">
+	 							<form action="{{route('log.delete', $log->id)}}" method="POST" align="center">
 	 									@csrf
 	 									@method('DELETE')	
-	 									<button type="submit" class="btn btn-sm btn-default text-danger btn-block">
+	 									<button type="submit" class="btn btn-sm btn-outline-danger btn-block">
 	 											<i class="fa fa-times"></i>
 	 									</button>
 	 							</form>
