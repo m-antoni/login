@@ -1,12 +1,20 @@
 <?php
 /*
 --------------------------------------------------------------------------
- 	Project Heirarchy 
+	Project Heirarchy  [ Login In System version 1.0 by Michael Antoni ]
 --------------------------------------------------------------------------
-	2019-03-17: Admin Guard Authentication
-	2019-03-21: Reusable Form and Route Binding Fix
-	2019-03-30: File Upload Implementation
-	
+	2019-03-14: Initial commit to the project
+	2019-03-17: Create an Admin Guard Authentication
+	2019-03-19: Route Model Bindings Implementation {RegistrationsController}
+	2019-03-20: Revise the form UI 
+	2019-03-22: Reusable Form and Route Binding Fix Bugs
+	2019-03-30: File Image Upload Implementation
+	2019-04-07: Create the index page ui
+	2019-04-13: User Login Implementation UI and Functionality
+	2019-04-16: Index page UI revised layout
+	2019-04-21: Cannot Log In Twice Implementation {LoginQRCodeController}
+
+		
 */
 use Carbon\Carbon;
 
@@ -47,7 +55,11 @@ Route::prefix('admin')->group(function(){
 		Route::get('/logs', 'LogsController@index')->name('logs.index')->middleware('auth:admin');
 		Route::delete('/logs/{logs}', 'LogsController@destroy')->name('log.delete')->middleware('auth:admin');
 
-
+		/*
+				Code block here...
+				only for testing purposes
+	
+		*/
 
 		Route::get('/qrcode', function(){
 			 return QRCode::text('Michael_antoni')
@@ -80,15 +92,17 @@ Route::prefix('admin')->group(function(){
 		// Carbon Testing
 		Route::get('/carbon',function(){
 
-			$now = Carbon::now();
+				$now = Carbon::now();
 
 	  		$test = Carbon::create(2019,4,20,7,10,10);
 
 	  		$diffInRealHours = $now->diffInRealHours($test);
+	  		$diffInHours = $now->diffInHours($test);
 	  		$diffForHumans = $now->diffForHumans($test);
 	  		$timespan = $now->timespan($test);
-	  		
-	  		return dd([$diffInRealHours, $diffForHumans, $timespan ]);
+	  		$sub = $now->sub('hour', '1')->format('h:iA'); // sub and add
+	  		$isToday = $now->isToday();
+	  		return dd([$diffInRealHours, $diffInHours, $diffForHumans, $timespan, $sub, $isToday, $now ]);
 	  });
 
 });
