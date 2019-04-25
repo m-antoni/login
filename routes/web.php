@@ -13,7 +13,6 @@
 	2019-04-13: User Login Implementation UI and Functionality
 	2019-04-16: Index page UI revised layout
 	2019-04-21: Cannot Log In Twice Implementation {LoginQRCodeController}
-
 		
 */
 use Carbon\Carbon;
@@ -94,7 +93,12 @@ Route::prefix('admin')->group(function(){
 
 				$now = Carbon::now();
 
-	  		$test = Carbon::create(2019,4,20,7,10,10);
+	  		$test = Carbon::create(2019,4,21,13,00,10)->format('h:iA M j, Y');
+
+	  		$hour = Carbon::createFromTime(13,00,00);
+
+	  		$isAfter = $now->isAfter($hour);
+
 
 	  		$diffInRealHours = $now->diffInRealHours($test);
 	  		$diffInHours = $now->diffInHours($test);
@@ -102,7 +106,8 @@ Route::prefix('admin')->group(function(){
 	  		$timespan = $now->timespan($test);
 	  		$sub = $now->sub('hour', '1')->format('h:iA'); // sub and add
 	  		$isToday = $now->isToday();
-	  		return dd([$diffInRealHours, $diffInHours, $diffForHumans, $timespan, $sub, $isToday, $now ]);
+	  		$toDateTimeString = $now->toDateTimeString();
+	  		return dd([$diffInRealHours, $diffInHours, $diffForHumans, $timespan, $sub, $isToday, $isAfter ]);
 	  });
 
 });

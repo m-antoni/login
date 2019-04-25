@@ -1962,18 +1962,34 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         // response message
         if (response.data.message) {
           // <strong>' + response.data.message + '</strong>
-          _this.$toast.show("<strong>".concat(response.data.message, "</strong>"), 'Success', {
-            icon: 'fa fa-user-circle',
+          _this.$toast.show("<strong>".concat(response.data.message, "</strong>"), '', {
+            // icon: 'fa fa-user-circle',
+            image: 'storage/photos/06_1555127562.jpg',
+            imageWidth: 60,
+            messageSize: 21,
             iconColor: 'rgb(0, 255, 184)',
             theme: 'dark',
             progressBarColor: 'rgb(0, 255, 184)',
             position: 'topCenter',
-            transitionIn: 'bounceInLeft',
+            transitionIn: 'bounceInUp',
+            transitionOut: 'fadeOutUp'
+          });
+        } else if (response.data.late) {
+          _this.$toast.show("<strong>".concat(response.data.late, "</strong>"), '', {
+            // icon: 'fa fa-user-circle',
+            image: 'storage/photos/06_1555127562.jpg',
+            imageWidth: 60,
+            messageSize: 21,
+            messageColor: 'lightpink',
+            iconColor: 'rgb(0, 255, 184)',
+            theme: 'dark',
+            progressBarColor: 'rgb(0, 255, 184)',
+            position: 'topCenter',
+            transitionIn: 'bounceInUp',
             transitionOut: 'fadeOutUp'
           });
         } else {
-          _this.$toast.error("<strong> ".concat(response.data.error, "</strong>"), 'Error', {
-            icon: 'fa fa-warning',
+          _this.$toast.warning("<strong> ".concat(response.data.error, "</strong>"), 'Warning', {
             position: 'topCenter',
             transitionIn: 'bounceInDown',
             transitionOut: 'fadeOutUp'
@@ -1982,7 +1998,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }).catch(function (error) {
         // console.log(error)
         _this.$toast.error("<strong>".concat('QR Code is not registered', "</strong>"), 'Error', {
-          icon: 'fa fa-warning',
           position: 'topCenter',
           progressBarColor: '#333',
           transitionIn: 'bounceInDown',

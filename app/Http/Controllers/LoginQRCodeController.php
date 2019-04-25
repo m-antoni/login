@@ -24,41 +24,50 @@ class LoginQRCodeController extends Controller
         // check if the user is already log
         $user = Logs::where('qrcode', $register->qrcode)->first();
 
-        $userNull = Logs::where('qrcode', $request->qrcode)
+        $oldUser = Logs::where('qrcode', $request->qrcode)
                              ->whereNull('time_out')
                              ->first();
 
-        if($userNull){
-
+        if($oldUser){
             // Save time out data
-            $userNull->time_out = Carbon::now();
-            $userNull->status = 'Inactive';
-            $userNull->save();
+            $oldUser->time_out = Carbon::now();
+            $oldUser->status = 'Inactive';
+            $oldUser->save();
+            
             // return response time out
-            return response()->json(['message' => 'Time Out: ' . Carbon::now()->format('M j, Y | h:iA')]);
+            return response()->json(['message' => 'Logged out: ' . Carbon::now()->format('h:iA M j, Y')]);
 
         }else{
 
+            // Get the latest log of the qrcode
             $latest = Logs::where('qrcode', $register->qrcode)->latest()->first();    
-             // Check if time in is not today
+            
+            // Check if time in is not today
             if(!$latest->time_in->isToday()){
                 
                 // Create new data
-                
                 $fullname = $register->first . ' ' . $register->last;
 
                 // store in database
                 $this->store_login($register->id, $request->qrcode, $fullname, Carbon::now());
 
-                return response()->json(['message' => $fullname . ' Time In: ' . Carbon::now()->format('M j, Y | h:iA')]);
+                // time to beat
+                $hour = Carbon::createFromTime(13,00,00);
+
+                // condition returns true
+                if($isAfter = Carbon::now()->isAfter($hour)){
+                    // is late
+                    return response()->json(['late' => 'Late in: ' . Carbon::now()->format('h:iA M j, Y')]);
+                }else{
+                    // not late
+                    return response()->json(['message' => 'Logged in: ' . Carbon::now()->format('h:iA M j, Y')]);
+                }
 
             }else{
                 
                 // if try to log in at the same date
-                return response()->json(['error' => 'Sorry you cannot log in twice!']);
-                
+                return response()->json(['error' => 'Unauthorize to log in twice!']);
             }
-    	
         }
     }
 
