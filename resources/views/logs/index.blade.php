@@ -14,8 +14,8 @@
  		 	<table class="table table-hover table-responsive-sm">
 				<tr class="text-white bg-secondary">
 						<th>Name</th>
-						<th>Time In</th>
-						<th>Time Out</th>
+						<th>Log In</th>
+						<th>Log Out</th>
 						<th>Status</th>
 						<th>Time</th>
 						<th>Action</th>

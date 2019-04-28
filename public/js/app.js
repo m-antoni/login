@@ -1964,7 +1964,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           // <strong>' + response.data.message + '</strong>
           _this.$toast.show("<strong>".concat(response.data.message, "</strong>"), '', {
             // icon: 'fa fa-user-circle',
-            image: 'storage/photos/06_1555127562.jpg',
+            image: response.data.image,
             imageWidth: 60,
             messageSize: 21,
             iconColor: 'rgb(0, 255, 184)',
@@ -1977,7 +1977,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         } else if (response.data.late) {
           _this.$toast.show("<strong>".concat(response.data.late, "</strong>"), '', {
             // icon: 'fa fa-user-circle',
-            image: 'storage/photos/06_1555127562.jpg',
+            image: response.data.image,
             imageWidth: 60,
             messageSize: 21,
             messageColor: 'lightpink',

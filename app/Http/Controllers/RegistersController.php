@@ -109,6 +109,7 @@ class RegistersController extends Controller
 
     public function show(Register $register)
     {   
+        //return dd(asset('/storage/photos/' . $register->photo));
         return view('register.show', compact('register'));
     }
 

@@ -29,7 +29,7 @@ export default {
               // <strong>' + response.data.message + '</strong>
                 this.$toast.show(`<strong>${response.data.message}</strong>`, '', {
                     // icon: 'fa fa-user-circle',
-                    image: 'storage/photos/06_1555127562.jpg',
+                    image: response.data.image,
                     imageWidth: 60,
                     messageSize: 21,
                     iconColor: 'rgb(0, 255, 184)',
@@ -42,7 +42,7 @@ export default {
             }else if(response.data.late){
                 this.$toast.show(`<strong>${response.data.late}</strong>`, '', {
                     // icon: 'fa fa-user-circle',
-                    image: 'storage/photos/06_1555127562.jpg',
+                    image: response.data.image,
                     imageWidth: 60,
                     messageSize: 21,
                     messageColor: 'lightpink',
@@ -53,7 +53,6 @@ export default {
                     transitionIn: 'bounceInUp',
                     transitionOut: 'fadeOutUp',
                 });
-               
             }else{
                 this.$toast.warning(`<strong> ${response.data.error}</strong>`, 'Warning', {
                     position: 'topCenter',
@@ -61,7 +60,6 @@ export default {
                     transitionOut: 'fadeOutUp',
                 });
             }
-
       }).catch(error => {
           // console.log(error)
           this.$toast.error(`<strong>${'QR Code is not registered'}</strong>`, 'Error', {

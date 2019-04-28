@@ -34,8 +34,9 @@ class LoginQRCodeController extends Controller
             $oldUser->status = 'Inactive';
             $oldUser->save();
             
+             $imageURL = asset('/storage/photos/' . $register->photo);
             // return response time out
-            return response()->json(['message' => 'Logged out: ' . Carbon::now()->format('h:iA M j, Y')]);
+            return response()->json(['message' => 'Logged out: ' . Carbon::now()->format('h:iA M j, Y'), 'image' => $imageURL]);
 
         }else{
 
@@ -53,14 +54,14 @@ class LoginQRCodeController extends Controller
 
                 // time to beat
                 $hour = Carbon::createFromTime(13,00,00);
-
+                $imageURL = asset('/storage/photos/' . $register->photo);
                 // condition returns true
                 if($isAfter = Carbon::now()->isAfter($hour)){
                     // is late
-                    return response()->json(['late' => 'Late in: ' . Carbon::now()->format('h:iA M j, Y')]);
+                    return response()->json(['late' => 'Late in: ' . Carbon::now()->format('h:iA M j, Y'), 'image' => $imageURL]);
                 }else{
                     // not late
-                    return response()->json(['message' => 'Logged in: ' . Carbon::now()->format('h:iA M j, Y')]);
+                    return response()->json(['message' => 'Logged in: ' . Carbon::now()->format('h:iA M j, Y'),'image' => $imageURL]);
                 }
 
             }else{
