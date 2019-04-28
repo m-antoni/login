@@ -47,7 +47,7 @@ class LoginQRCodeController extends Controller
             $latest = Logs::where('qrcode', $register->qrcode)->latest()->first();    
             
             // Check if time in is not today
-            if(!$latest->time_in->isToday() && !$time->isSunday()){
+            if(! $latest->time_in->isToday() && ! $time->isSunday()){
                 // fullname
                 $fullname = $register->first . ' ' . $register->last; 
 
@@ -56,7 +56,7 @@ class LoginQRCodeController extends Controller
 
                 // time to beat
                 $hour = Carbon::createFromTime(13,00,00);
-                
+
                 // condition returns true
                 if($isAfter = $time->isAfter($hour)){
                     // is late
