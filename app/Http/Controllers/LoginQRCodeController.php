@@ -50,10 +50,13 @@ class LoginQRCodeController extends Controller
             if(!$latest->time_in->isToday() && !$time->isSunday()){
                 // fullname
                 $fullname = $register->first . ' ' . $register->last; 
+
                 // store in database to Create new data
                 $this->store_login($register->id, $request->qrcode, $fullname, $time);
 
-                $hour = Carbon::createFromTime(13,00,00); // time to beat
+                // time to beat
+                $hour = Carbon::createFromTime(13,00,00);
+                
                 // condition returns true
                 if($isAfter = $time->isAfter($hour)){
                     // is late

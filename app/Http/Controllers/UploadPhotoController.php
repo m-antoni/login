@@ -52,11 +52,13 @@ class UploadPhotoController extends Controller
 
    public function destroy(Register $register)
    {
-   		$photoDelete = Register::where('id', $register->id)
-											    		->update([
-													    	'photo' => 'default.jpg',
-												   	  ]);
-												   	  
-      return redirect()->route('register.show', $register->id);
+   		// delete the user image file
+   		$deleteImage = Storage::delete('public/photos/' . $register->photo);
+ 
+   	  // update the path to default.jpg
+	   	$update = Register::where('id', $register->id)
+							    				->update(['photo' => 'default.jpg',]);
+
+   		return redirect()->route('register.show', $register->id);
    }
 }
