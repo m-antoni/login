@@ -18,25 +18,28 @@ class LoginQRCodeController extends Controller
 
     public function login_store(Request $request)
     {
+        $time = Carbon::now('Asia/Manila'); //set timezone to manila
+
     	// check if qrcode is registered
         $register = Register::where('qrcode', $request->qrcode)->firstOrFail();
 
         // check if the user is already log
         $user = Logs::where('qrcode', $register->qrcode)->first();
 
+        // check user has time in
         $oldUser = Logs::where('qrcode', $request->qrcode)
                              ->whereNull('time_out')
                              ->first();
-
+        // user image path                    
+        $imageURL = asset('/storage/photos/' . $register->photo); 
+                                
         if($oldUser){
-            // Save time out data
-            $oldUser->time_out = Carbon::now();
+            // Save time out datas
+            $oldUser->time_out = $time;
             $oldUser->status = 'Inactive';
             $oldUser->save();
-            
-             $imageURL = asset('/storage/photos/' . $register->photo);
             // return response time out
-            return response()->json(['message' => 'Logged out: ' . Carbon::now()->format('h:iA M j, Y'), 'image' => $imageURL]);
+            return response()->json(['message' => 'Logged out: ' . $time->format('h:iA M j, Y'), 'image' => $imageURL]);
 
         }else{
 
@@ -44,30 +47,31 @@ class LoginQRCodeController extends Controller
             $latest = Logs::where('qrcode', $register->qrcode)->latest()->first();    
             
             // Check if time in is not today
-            if(!$latest->time_in->isToday()){
-                
-                // Create new data
-                $fullname = $register->first . ' ' . $register->last;
+            if(!$latest->time_in->isToday() && !$time->isSunday()){
+                // fullname
+                $fullname = $register->first . ' ' . $register->last; 
+                // store in database to Create new data
+                $this->store_login($register->id, $request->qrcode, $fullname, $time);
 
-                // store in database
-                $this->store_login($register->id, $request->qrcode, $fullname, Carbon::now());
-
-                // time to beat
-                $hour = Carbon::createFromTime(13,00,00);
-                $imageURL = asset('/storage/photos/' . $register->photo);
+                $hour = Carbon::createFromTime(13,00,00); // time to beat
                 // condition returns true
-                if($isAfter = Carbon::now()->isAfter($hour)){
+                if($isAfter = $time->isAfter($hour)){
                     // is late
-                    return response()->json(['late' => 'Late in: ' . Carbon::now()->format('h:iA M j, Y'), 'image' => $imageURL]);
+                    return response()->json(['late' => 'Late in: ' . $time->format('h:iA M j, Y'), 
+                                            'image' => $imageURL]);
                 }else{
                     // not late
-                    return response()->json(['message' => 'Logged in: ' . Carbon::now()->format('h:iA M j, Y'),'image' => $imageURL]);
+                    return response()->json(['message' => 'Logged in: ' . $time->format('h:iA M j, Y'),
+                                            'image' => $imageURL]);
                 }
 
             }else{
-                
-                // if try to log in at the same date
-                return response()->json(['error' => 'Unauthorize to log in twice!']);
+
+                return $time->isSunday() ? 
+                        response()->json(['error' => 'Cannot log in during sunday!']) : 
+                        response()->json(['error' => 'Unauthorize to log in twice!']);  
+
+                //return response()->json(['error' => 'Unauthorize to log in twice!']);
             }
         }
     }

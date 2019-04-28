@@ -13,7 +13,7 @@
 	2019-04-13: User Login Implementation UI and Functionality
 	2019-04-16: Index page UI revised layout
 	2019-04-21: Cannot Log In Twice Implementation {LoginQRCodeController}
-		
+	2019-04-28: Show User image in alert box
 */
 use Carbon\Carbon;
 
@@ -54,11 +54,7 @@ Route::prefix('admin')->group(function(){
 		Route::get('/logs', 'LogsController@index')->name('logs.index')->middleware('auth:admin');
 		Route::delete('/logs/{logs}', 'LogsController@destroy')->name('log.delete')->middleware('auth:admin');
 
-		/*
-				Code block here...
-				only for testing purposes
-	
-		*/
+		//	Code block only for testing purposes 
 
 		Route::get('/qrcode', function(){
 			 return QRCode::text('Michael_antoni')
@@ -92,14 +88,12 @@ Route::prefix('admin')->group(function(){
 		Route::get('/carbon',function(){
 
 				$now = Carbon::now();
-
-	  		$test = Carbon::create(2019,4,21,13,00,10)->format('h:iA M j, Y');
-
+				$format = $now->format('h:iA M j, Y');
+	  		$manilaTime = Carbon::now('Asia/Manila')->format('h:iA M j, Y');
 	  		$hour = Carbon::createFromTime(13,00,00);
-
 	  		$isAfter = $now->isAfter($hour);
 
-
+				$test = Carbon::create(2019,4,21,13,00,10)->format('h:iA M j, Y');
 	  		$diffInRealHours = $now->diffInRealHours($test);
 	  		$diffInHours = $now->diffInHours($test);
 	  		$diffForHumans = $now->diffForHumans($test);
@@ -107,7 +101,7 @@ Route::prefix('admin')->group(function(){
 	  		$sub = $now->sub('hour', '1')->format('h:iA'); // sub and add
 	  		$isToday = $now->isToday();
 	  		$toDateTimeString = $now->toDateTimeString();
-	  		return dd([$diffInRealHours, $diffInHours, $diffForHumans, $timespan, $sub, $isToday, $isAfter ]);
+	  		return dd([$diffInRealHours, $diffInHours, $diffForHumans, $timespan, $sub, $isToday, $isAfter, $format, $toDateTimeString, $manilaTime  ]);
 	  });
 
 });
