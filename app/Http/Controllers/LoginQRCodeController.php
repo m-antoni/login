@@ -36,10 +36,10 @@ class LoginQRCodeController extends Controller
             $oldUser->status = 'Inactive';
             $oldUser->save();
 
-            // set time to end 6:00PM
-            $setTimeToEnd = Carbon::create()->hour(18)->minute(0);
+            // set a time to end 6:00PM
+            $setTimeToEnd = Carbon::createFromTime(18,00,00,'Asia/Manila');
             //return dd([!$time->isBefore($setTimeToEnd), $oldUser->time_out->format('h:iA'), $setTimeToEnd->format('h:iA')]);
-            if(!$time->isBefore($setTimeToEnd)){
+            if(!$time->copy()->greaterThan($setTimeToEnd)){
                 // is under time
                 return response()->json(['wrong' => 'Under Time: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
             }else{
@@ -49,7 +49,6 @@ class LoginQRCodeController extends Controller
 
          // Check if user has logs   
         }elseif(Logs::where('qrcode', $register->qrcode)->exists()){
-
             // Get user's time in and check if today this will return true
             $latest = Logs::where('qrcode', $register->qrcode)->latest()->first()->time_in->isToday();
 
@@ -61,8 +60,8 @@ class LoginQRCodeController extends Controller
                 // store in database to Create new data
                 $this->store_login($register->id, $request->qrcode, $fullname, $time);
 
-                // time to beat
-                $setTimetoBeat = Carbon::create()->hour(9)->minute(15);
+                // time to beat is 9:00AM
+                $setTimetoBeat = Carbon::createFromTime(9,00,00,'Asia/Manila');
 
                 // condition returns true
                 if($time->isAfter($setTimetoBeat)){
@@ -81,16 +80,16 @@ class LoginQRCodeController extends Controller
             }
 
         }else{
-            // doesen't exists in logs table but registered qrcode
+            // doesen't exists in logs and not sunday
             if(!$time->isSunday()){
-                //fullname
+                // fullname concat
                 $fullname = $register->first . ' ' . $register->last; 
 
                 // store in database to Create new data
                 $this->store_login($register->id, $request->qrcode, $fullname, $time);
 
-                // time to beat
-                $setTimetoBeat = Carbon::create()->hour(9)->minute(15);
+                // time to beat is 9:00AM
+                $setTimetoBeat = Carbon::createFromTime(9,00,00,'Asia/Manila');
                 // condition returns true
                 if($time->isAfter($setTimetoBeat)){
                     // is late
@@ -120,7 +119,6 @@ class LoginQRCodeController extends Controller
         ]);
     }
 }
-
 
 /*  
     michael: ZG45GSLiaXiB3UclOrKZNY6nGwHVjBxis1MhOQxGBTzrGjRUhQ8uOc0nPcUc

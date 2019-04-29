@@ -16,17 +16,21 @@
 						<th>Name</th>
 						<th>Log In</th>
 						<th>Log Out</th>
+						<th>Late</th>
+						<th>Under</th>
 						<th>Status</th>
-						<th>Time</th>
+						<th>Total</th>
 						<th>Action</th>
 				</tr>
 	 		@foreach($logs as $log)
 	 			<tr>
 	 					<td><a href="{{route('register.show', $log->register_id)}}">{{$log->name}}</a></td>
-	 					<td>{{$log->time_in->format('M j, Y h:iA')}}</td>
-						<td>{{($log->time_out ? $log->time_out->format('M j, Y h:iA') : " ")}}</td>
+	 					<td>{{$log->time_in->format('m-j-y h:iA')}}</td>
+						<td>{{($log->time_out ? $log->time_out->format('m-j-y h:iA') : " ")}}</td>
+						<td>{{$log->time_in->diffInHours($setTimetoBeat)}} hrs</td>
+						<td>{{($log->time_out != null ? $log->time_out->diffInHours($setTimeToEnd) . ' hrs': '')}}</td>
 	 					<td>{{$log->status}}</td>
-	 					<td>{{$log->time_in->diffForHumans($log->time_out)}}</td>
+	 					<td>{{($log->status == 'Active' ? '': $log->time_in->diffForHumans($log->time_out) )}}</td>
 	 					<td>
 	 							<form action="{{route('log.delete', $log->id)}}" method="POST" align="center">
 	 									@csrf

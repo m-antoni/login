@@ -88,17 +88,15 @@ Route::prefix('admin')->group(function(){
 		Route::get('/carbon',function(){
 
 				$now = Carbon::now()->setTimezone('Asia/Manila');
-				$set = Carbon::create()->hour(18)->minute(0)->toTimeString();
-				$isAfter = $now > $set ? 'TRUE' : 'FALSE';
-				$toArray = Carbon::now()->toJSON();
+				$set = Carbon::createFromTime(20,00,00,'Asia/Manila');
+				$toArray = Carbon::now()->setTimezone('Asia/Manila')->toArray();
 				$isSameDay = !$now->isSameDay($now);
 				$toFormattedDateString = $now->toFormattedDateString();
 				$toDateString = $now->toDateString();
 				$toDayDateTimeString = $now->toDayDateTimeString();
 				$toTimeString = $now->toTimeString();
 			
-				$diffInHours = array('hours' => $now->diffInHours($set), 'minutes' => $now->diffInMinutes($set)); // test interval hours late
-
+				$diffInHours = $now->diffInHours($set); // test interval hours late
 				$diffInMinutes = $now->diffInMinutes($set); // test interval minutes late
 
   		//$manilaTime = Carbon::now('Asia/Manila')->format('h:iA M j, Y');
@@ -110,7 +108,7 @@ Route::prefix('admin')->group(function(){
 	  	// 	$diffForHumans = $now->diffForHumans($test);
 	  	// 	$timespan = $now->timespan($test);
 	  	// 	$sub = $now->sub('hour', '1')->format('h:iA'); // sub and add
-	  		return dd([$now, $toFormattedDateString, $toDateString, $toDayDateTimeString, $toTimeString, $set, $isAfter, $diffInHours, $toArray]);
+	  		return dd([$now, $toFormattedDateString, $toDateString, $toDayDateTimeString, $toTimeString, $set, $diffInHours, $toArray]);
 	  });
 
 });
