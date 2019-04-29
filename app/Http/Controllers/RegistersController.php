@@ -66,7 +66,7 @@ class RegistersController extends Controller
             'qrcode' => $passcode,
             'first' => $request->first,
             'last' => $request->last,
-            'middle' => strtoupper($request->middle),
+            'middle' => $request->middle,
             'age' => $request->age,
             'gender' => $request->gender,
             'birthday' => $request->birthday,
@@ -90,39 +90,36 @@ class RegistersController extends Controller
 
     public function downloadfile(){
 
-        $headers = array(
-            'Content-type: image/png'
-        );
+        $headers = array('Content-type: image/png');
+
         // check if the file  exists
         $result = File::exists(public_path('storage/temporary_qrcode.png'));
 
         if($result){
-            // download the file and delete it from root directory
+            // download the file and delete it from storage directory
             return response()
                     ->download(public_path('storage/temporary_qrcode.png'),'generated-qrcode.png', $headers)
                     ->deleteFileAfterSend(true);
         }else{
-            
             return redirect()->route('register.index');
         }
     }
 
     public function show(Register $register)
     {   
-        //return dd(asset('/storage/photos/' . $register->photo));
         return view('register.show', compact('register'));
     }
 
     public function edit(Register $register)
     {
-        $department = $this->department();
+        $department = $this->department(); // get the department select
 
         return view('register.edit', compact('register', 'department')); 
     }
 
     public function update(Register $register)
     {   
-        // Validation and Store in database
+        // Validation and Update
         $register->update($this->validateRequest());
 
         session()->flash('message', 'User has been updated successfully');
@@ -132,7 +129,7 @@ class RegistersController extends Controller
 
     public function destroy(Register $register)
     {
-        $register->delete();
+        $register->delete(); // delete user
 
         session()->flash('message', 'User has been deleted successfully');
 
@@ -141,7 +138,7 @@ class RegistersController extends Controller
 
     private function validateRequest()
     {
-        // Validate the data
+        // Validation code block
         return request()->validate([
             'first' => 'required',
             'last' => 'required',
@@ -162,6 +159,7 @@ class RegistersController extends Controller
 
     public function department()
     {
+      // department select values in array  
       return [
          '0' => 'President\'s Office',
          '1' => 'Finance',

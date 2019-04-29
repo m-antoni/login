@@ -87,21 +87,30 @@ Route::prefix('admin')->group(function(){
 		// Carbon Testing
 		Route::get('/carbon',function(){
 
-				$now = Carbon::now();
-				$format = $now->format('h:iA M j, Y');
-	  		$manilaTime = Carbon::now('Asia/Manila')->format('h:iA M j, Y');
-	  		$hour = Carbon::createFromTime(13,00,00);
-	  		$isAfter = $now->isAfter($hour);
+				$now = Carbon::now()->setTimezone('Asia/Manila');
+				$set = Carbon::create()->hour(18)->minute(0)->toTimeString();
+				$isAfter = $now > $set ? 'TRUE' : 'FALSE';
+				$toArray = Carbon::now()->toJSON();
+				$isSameDay = !$now->isSameDay($now);
+				$toFormattedDateString = $now->toFormattedDateString();
+				$toDateString = $now->toDateString();
+				$toDayDateTimeString = $now->toDayDateTimeString();
+				$toTimeString = $now->toTimeString();
+			
+				$diffInHours = array('hours' => $now->diffInHours($set), 'minutes' => $now->diffInMinutes($set)); // test interval hours late
 
-				$test = Carbon::create(2019,4,21,13,00,10)->format('h:iA M j, Y');
-	  		$diffInRealHours = $now->diffInRealHours($test);
-	  		$diffInHours = $now->diffInHours($test);
-	  		$diffForHumans = $now->diffForHumans($test);
-	  		$timespan = $now->timespan($test);
-	  		$sub = $now->sub('hour', '1')->format('h:iA'); // sub and add
-	  		$isToday = $now->isToday();
-	  		$toDateTimeString = $now->toDateTimeString();
-	  		return dd([$diffInRealHours, $diffInHours, $diffForHumans, $timespan, $sub, $isToday, $isAfter, $format, $toDateTimeString, $manilaTime  ]);
+				$diffInMinutes = $now->diffInMinutes($set); // test interval minutes late
+
+  		//$manilaTime = Carbon::now('Asia/Manila')->format('h:iA M j, Y');
+	  		// $create = Carbon::createFromTime(13,00,00);
+	  		// // $isAfter = $now->isAfter($create);
+				// $test = Carbon::create(2019,4,21,13,00,10)->format('h:iA M j, Y');
+	  	// 	$diffInRealHours = $now->diffInRealHours($test);
+	  	// 	$diffInHours = $now->diffInHours($test);
+	  	// 	$diffForHumans = $now->diffForHumans($test);
+	  	// 	$timespan = $now->timespan($test);
+	  	// 	$sub = $now->sub('hour', '1')->format('h:iA'); // sub and add
+	  		return dd([$now, $toFormattedDateString, $toDateString, $toDayDateTimeString, $toTimeString, $set, $isAfter, $diffInHours, $toArray]);
 	  });
 
 });

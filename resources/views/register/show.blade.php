@@ -68,7 +68,7 @@
 											@endif
 							</div>
 							<div class="col-md-4">
-									<p><strong class="text-secondary">Name: </strong>{{$register->last . ', ' . $register->first . ' ' . $register->middle}}</p>
+									<p><strong class="text-secondary">Name: </strong>{{$register->last . ', ' . $register->first . ' ' . strtoupper($register->middle)}}</p>
 									<p><strong class="text-secondary">Gender: </strong>{{$register->gender}}</p>
 									<p><strong class="text-secondary">Age: </strong>{{$register->age}}</p>
 									<p><strong class="text-secondary">Birthday: </strong>{{date('M j, Y', strtotime($register->birthday))}}</p>

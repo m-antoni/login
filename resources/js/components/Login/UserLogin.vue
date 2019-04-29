@@ -39,8 +39,8 @@ export default {
                     transitionIn: 'bounceInUp',
                     transitionOut: 'fadeOutUp',
                 });
-            }else if(response.data.late){
-                this.$toast.show(`<strong>${response.data.late}</strong>`, '', {
+            }else if(response.data.wrong){
+                this.$toast.show(`<strong>${response.data.wrong}</strong>`, '', {
                     // icon: 'fa fa-user-circle',
                     image: response.data.image,
                     imageWidth: 60,

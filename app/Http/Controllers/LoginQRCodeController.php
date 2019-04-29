@@ -18,64 +18,93 @@ class LoginQRCodeController extends Controller
 
     public function login_store(Request $request)
     {
-        $time = Carbon::now('Asia/Manila'); //set timezone to manila
-
+        // set timezone to Asia/Manila
+        $time = Carbon::now()->setTimezone('Asia/Manila');
     	// check if qrcode is registered
         $register = Register::where('qrcode', $request->qrcode)->firstOrFail();
-
-        // check if the user is already log
-        $user = Logs::where('qrcode', $register->qrcode)->first();
+        // user image path                    
+        $imageURL = asset('/storage/photos/' . $register->photo);
 
         // check user has time in
-        $oldUser = Logs::where('qrcode', $request->qrcode)
+        $oldUser = Logs::where('qrcode', $register->qrcode)
                              ->whereNull('time_out')
                              ->first();
-        // user image path                    
-        $imageURL = asset('/storage/photos/' . $register->photo); 
                                 
         if($oldUser){
-            // Save time out datas
+            // Save time out data
             $oldUser->time_out = $time;
             $oldUser->status = 'Inactive';
             $oldUser->save();
-            // return response time out
-            return response()->json(['message' => 'Logged out: ' . $time->format('h:iA M j, Y'), 'image' => $imageURL]);
 
-        }else{
+            // set time to end 6:00PM
+            $setTimeToEnd = Carbon::create()->hour(18)->minute(0);
+            //return dd([!$time->isBefore($setTimeToEnd), $oldUser->time_out->format('h:iA'), $setTimeToEnd->format('h:iA')]);
+            if(!$time->isBefore($setTimeToEnd)){
+                // is under time
+                return response()->json(['wrong' => 'Under Time: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
+            }else{
+                // is correct time out
+                return response()->json(['message' => 'Logged out: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
+            }
 
-            // Get the latest log of the qrcode
-            $latest = Logs::where('qrcode', $register->qrcode)->latest()->first();    
-            
-            // Check if time in is not today
-            if(! $latest->time_in->isToday() && ! $time->isSunday()){
-                // fullname
+         // Check if user has logs   
+        }elseif(Logs::where('qrcode', $register->qrcode)->exists()){
+
+            // Get user's time in and check if today this will return true
+            $latest = Logs::where('qrcode', $register->qrcode)->latest()->first()->time_in->isToday();
+
+            // is not today and not sunday
+            if(!$latest && !$time->isSunday()){
+                // fullname concat
                 $fullname = $register->first . ' ' . $register->last; 
 
                 // store in database to Create new data
                 $this->store_login($register->id, $request->qrcode, $fullname, $time);
 
                 // time to beat
-                $hour = Carbon::createFromTime(13,00,00);
+                $setTimetoBeat = Carbon::create()->hour(9)->minute(15);
 
                 // condition returns true
-                if($isAfter = $time->isAfter($hour)){
+                if($time->isAfter($setTimetoBeat)){
                     // is late
-                    return response()->json(['late' => 'Late in: ' . $time->format('h:iA M j, Y'), 
-                                            'image' => $imageURL]);
+                    return response()->json(['wrong' => 'Late in: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
                 }else{
                     // not late
-                    return response()->json(['message' => 'Logged in: ' . $time->format('h:iA M j, Y'),
-                                            'image' => $imageURL]);
+                    return response()->json(['message' => 'Logged in: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
+                }  
+
+            }else{
+                // return response if sunday or log in twice
+                return $time->isSunday() ? 
+                        response()->json(['error' => 'Cannot log in during sunday!']) : 
+                        response()->json(['error' => 'Unauthorized to log in twice!']);  
+            }
+
+        }else{
+            // doesen't exists in logs table but registered qrcode
+            if(!$time->isSunday()){
+                //fullname
+                $fullname = $register->first . ' ' . $register->last; 
+
+                // store in database to Create new data
+                $this->store_login($register->id, $request->qrcode, $fullname, $time);
+
+                // time to beat
+                $setTimetoBeat = Carbon::create()->hour(9)->minute(15);
+                // condition returns true
+                if($time->isAfter($setTimetoBeat)){
+                    // is late
+                    return response()->json(['wrong' => 'Late in: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
+                }else{
+                    // not late
+                    return response()->json(['message' => 'Logged in: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
                 }
 
             }else{
-
-                return $time->isSunday() ? 
-                        response()->json(['error' => 'Cannot log in during sunday!']) : 
-                        response()->json(['error' => 'Unauthorize to log in twice!']);  
-
-                //return response()->json(['error' => 'Unauthorize to log in twice!']);
+                // cannot log in new user during sunday
+                return response()->json(['error' => 'Cannot log in during sunday!']);
             }
+
         }
     }
 
@@ -92,4 +121,9 @@ class LoginQRCodeController extends Controller
     }
 }
 
-// SAnztLd5vJa9rtYCRHH3IjMzeRRSNt2f6M0ZJTJeTNVyqGBnrsvnW4vZPmio
+
+/*  
+    michael: ZG45GSLiaXiB3UclOrKZNY6nGwHVjBxis1MhOQxGBTzrGjRUhQ8uOc0nPcUc
+    bruce: 7ecSHaTtJ8ERFxcU0HcPGiQefCwQ285Us7wYJofVcPoYAFEH5IAOVw4Lxlby
+    sansa: W8fUCgcOK6DuciawVislkQPCFKnm0K7wEECpmK34KakYlQq4epE50l93BN0u
+*/

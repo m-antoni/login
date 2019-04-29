@@ -26,7 +26,7 @@
 	 					<td>{{$log->time_in->format('M j, Y h:iA')}}</td>
 						<td>{{($log->time_out ? $log->time_out->format('M j, Y h:iA') : " ")}}</td>
 	 					<td>{{$log->status}}</td>
-	 					<td>{{$log->time_in->timespan($log->time_out)}}</td>
+	 					<td>{{$log->time_in->diffForHumans($log->time_out)}}</td>
 	 					<td>
 	 							<form action="{{route('log.delete', $log->id)}}" method="POST" align="center">
 	 									@csrf

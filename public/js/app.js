@@ -1974,8 +1974,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             transitionIn: 'bounceInUp',
             transitionOut: 'fadeOutUp'
           });
-        } else if (response.data.late) {
-          _this.$toast.show("<strong>".concat(response.data.late, "</strong>"), '', {
+        } else if (response.data.wrong) {
+          _this.$toast.show("<strong>".concat(response.data.wrong, "</strong>"), '', {
             // icon: 'fa fa-user-circle',
             image: response.data.image,
             imageWidth: 60,
