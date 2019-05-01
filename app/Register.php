@@ -7,31 +7,80 @@ use Illuminate\Database\Eloquent\Model;
 
 class Register extends Model
 {
+    /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+    */
   	protected	$guarded = [];
 
-    // encrypt password
+    /**
+     * Set encrypt password
+     *
+     * @param  string  $value
+     * @return void
+     */
     public function setPasswordAttribute($value)
     {
       $this->attributes['password'] = Crypt::encryptString($value);
     }
 
-    // decrypt password
+    /**
+     * Get decrypt password
+     *
+     * @param  string  $value
+     * @return void
+     */
     public function getPassword()
     {
       return Crypt::decryptString($this->attributes['password']);
     }
 
-    // default value in department option
+    /**
+     * Get the user's full name.
+     *
+     * @return string
+     */
+    public function getFullNameAttribute()
+    {
+        return "{$this->last}, {$this->first} {$this->middle}";
+    }
+
+    /**
+     * Get the middle name
+     *
+     * @param  string  $value
+     * @return string
+     */
+    public function getMiddleAttribute($value)
+    {
+        return ucfirst($value);
+    }
+
+    /**
+     * Set the value in department option
+     *
+     * @return string
+    */
     protected $attributes = [
         'department' => 0
     ];
 
+    /**
+     * Get the department and set to departmentoptions()
+     *
+     * @return string
+    */
     public function getDepartmentAttribute($attribute)
     {
-    	return $this->departmentOption()[$attribute];
+      return $this->departmentOption()[$attribute];
     }
 
-    // Incharge of select value 
+    /**
+     * Set the incharge of select value 
+     *
+     * @return string
+    */
     public function departmentOption()
     {
       return [
@@ -45,6 +94,19 @@ class Register extends Model
       	];
     }
 
+    /**
+     * Scope a query for desc order
+     *
+    */
+     public function scopeOrdered($query, $sort = 'desc')
+     {
+        return $query->orderBy('created_at', $sort);
+     }
+
+    /**
+     * Get the logs of the register
+     *
+    */
     public function logs()
     {
       return $this->hasMany('App\Logs');

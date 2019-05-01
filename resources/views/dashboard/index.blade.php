@@ -19,15 +19,25 @@
             <div class="card">
                 <div class="card-body bg-dark text-white">
                     <h1 class="display-4 text-warning">Logs</h1> 
-                    <h2><i class="fa fa-clock-o"></i> {{$logs}}</h2>
+                    <h2><i class="fa fa-check"></i> {{$logs}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body bg-dark text-white">
+                    <h1 class="display-4 text-warning">Active</h1> 
+                    <h2><i class="fa fa-user"></i> {{$active}}</h2>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body bg-dark text-white">
-                    <h1 class="display-4 text-warning">Active</h1> 
-                    <h2><i class="fa fa-user"></i> {{$active}}</h2>
+                    <h1 class="display-4 text-warning">Inactive</h1> 
+                    <h2><i class="fa fa-user-times"></i> {{$inactive}}</h2>
                 </div>
             </div>
         </div>

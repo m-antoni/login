@@ -13,7 +13,7 @@ class RegistersController extends Controller
 {
     public function index()
     {
-    	$registers = Register::orderBy('created_at', 'DESC')->paginate(7);
+    	$registers = Register::Ordered()->paginate(7);
 
         return view('register.index', compact('registers'));
     }

@@ -25,12 +25,12 @@
 	 		@foreach($logs as $log)
 	 			<tr>
 	 					<td><a href="{{route('register.show', $log->register_id)}}">{{$log->name}}</a></td>
-	 					<td>{{$log->time_in->format('m-j-y h:iA')}}</td>
-						<td>{{($log->time_out ? $log->time_out->format('m-j-y h:iA') : " ")}}</td>
-						<td>{{$log->time_in->diffInHours($setTimetoBeat)}} hrs</td>
-						<td>{{($log->time_out != null ? $log->time_out->diffInHours($setTimeToEnd) . ' hrs': '')}}</td>
-	 					<td>{{$log->status}}</td>
-	 					<td>{{($log->status == 'Active' ? '': $log->time_in->diffForHumans($log->time_out) )}}</td>
+	 					<td>{{$log->log_in->format('m-j-Y h:iA' )}}</td>
+						<td>{{($log->log_out ? $log->log_out->format('m-j-Y h:iA') : '')}}</td>
+						<td>{{$log->log_in->diffInHours($setTimetoBeat)}} hrs</td>
+						<td>{{($log->log_out != null ? $log->log_out->diffInHours($setTimeToEnd) . ' hrs' : '')}}</td>
+	 					<td><strong class={{($log->status == 'active' ? 'text-success': 'text-danger')}}>{{$log->status}}</strong></td>
+	 					<td>{{($log->log_out == null ? '' : $log->log_in->diffForHumans($log->log_out))}}</td>
 	 					<td>
 	 							<form action="{{route('log.delete', $log->id)}}" method="POST" align="center">
 	 									@csrf

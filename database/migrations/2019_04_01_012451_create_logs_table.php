@@ -18,9 +18,11 @@ class CreateLogsTable extends Migration
             $table->unsignedInteger('register_id');
             $table->string('qrcode');
             $table->string('name');
-            $table->string('time_in');
-            $table->string('time_out')->nullable();
-            $table->string('status');
+            $table->string('log_in');
+            $table->string('log_out')->nullable();
+            $table->string('late')->nullable();
+            $table->string('under')->nullable();
+            $table->integer('status');
             $table->timestamps();
         });
     }

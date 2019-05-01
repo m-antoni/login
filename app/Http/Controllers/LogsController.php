@@ -12,13 +12,15 @@ class LogsController extends Controller
 	  public function index()
 	  {
 	  		// Logs table
-		  	$logs = Logs::orderBy('created_at', 'desc')->paginate(5);
+		  	$logs = Logs::Ordered()->paginate(7);
 
 				// time to beat 
 		  	$setTimetoBeat = Carbon::create()->hour(9)->minute(0)->toTimeString();
+		  	//$setTimetoBeat = Carbon::createFromTime(9,00,0,'Asia/Manila');
 
 		  	// set a time to end 
 		  	$setTimeToEnd = Carbon::create()->hour(18)->minute(0)->toTimeString();
+		  	//$setTimeToEnd = Carbon::createFromTime(18,00,0,'Asia/Manila');
 
 		  	return view('logs.index', compact(['logs', 'setTimetoBeat', 'setTimeToEnd']));
 	  }

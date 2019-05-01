@@ -14,10 +14,10 @@ class AdminsController extends Controller
 	{
 			$register = Register::count();
 			$logs = Logs::count();
-			$active = Logs::where('status', 'Active')->count();
-			$time = Carbon::now()->format('M j, Y h:iA');
+			$active = Logs::where('status', 1)->count();
+			$inactive = Logs::where('status', 0)->count();
 
-			return view('dashboard.index', compact('register','logs', 'active', 'time'));
+			return view('dashboard.index', compact('register','logs', 'active', 'inactive'));
 	}
 
 }

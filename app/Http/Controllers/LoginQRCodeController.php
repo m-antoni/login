@@ -27,18 +27,18 @@ class LoginQRCodeController extends Controller
 
         // check user has time in
         $oldUser = Logs::where('qrcode', $register->qrcode)
-                             ->whereNull('time_out')
+                             ->whereNull('log_out')
                              ->first();
                                 
         if($oldUser){
             // Save time out data
-            $oldUser->time_out = $time;
-            $oldUser->status = 'Inactive';
+            $oldUser->log_out = $time;
+            $oldUser->status = 0;
             $oldUser->save();
 
             // set a time to end 6:00PM
             $setTimeToEnd = Carbon::createFromTime(18,00,00,'Asia/Manila');
-            //return dd([!$time->isBefore($setTimeToEnd), $oldUser->time_out->format('h:iA'), $setTimeToEnd->format('h:iA')]);
+            // not greater than set time to end
             if(!$time->copy()->greaterThan($setTimeToEnd)){
                 // is under time
                 return response()->json(['wrong' => 'Under Time: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
@@ -46,24 +46,24 @@ class LoginQRCodeController extends Controller
                 // is correct time out
                 return response()->json(['message' => 'Logged out: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
             }
-
+            
          // Check if user has logs   
         }elseif(Logs::where('qrcode', $register->qrcode)->exists()){
             // Get user's time in and check if today this will return true
-            $latest = Logs::where('qrcode', $register->qrcode)->latest()->first()->time_in->isToday();
+            $latest = Logs::where('qrcode', $register->qrcode)->latest()->first()->log_in->isToday();
 
             // is not today and not sunday
             if(!$latest && !$time->isSunday()){
-                // fullname concat
-                $fullname = $register->first . ' ' . $register->last; 
+                // fullname
+                $fullName = $register->getFullNameAttribute(); 
 
                 // store in database to Create new data
-                $this->store_login($register->id, $request->qrcode, $fullname, $time);
+                $this->store_login($register->id, $request->qrcode, $fullName, $time);
 
                 // time to beat is 9:00AM
                 $setTimetoBeat = Carbon::createFromTime(9,00,00,'Asia/Manila');
 
-                // condition returns true
+                // condition late or not
                 if($time->isAfter($setTimetoBeat)){
                     // is late
                     return response()->json(['wrong' => 'Late in: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
@@ -73,7 +73,7 @@ class LoginQRCodeController extends Controller
                 }  
 
             }else{
-                // return response if sunday or log in twice
+                // return responses if sunday or log in twice
                 return $time->isSunday() ? 
                         response()->json(['error' => 'Cannot log in during sunday!']) : 
                         response()->json(['error' => 'Unauthorized to log in twice!']);  
@@ -82,11 +82,11 @@ class LoginQRCodeController extends Controller
         }else{
             // doesen't exists in logs and not sunday
             if(!$time->isSunday()){
-                // fullname concat
-                $fullname = $register->first . ' ' . $register->last; 
+                // fullname
+               $fullName = $register->getFullNameAttribute(); 
 
                 // store in database to Create new data
-                $this->store_login($register->id, $request->qrcode, $fullname, $time);
+                $this->store_login($register->id, $request->qrcode, $fullName, $time);
 
                 // time to beat is 9:00AM
                 $setTimetoBeat = Carbon::createFromTime(9,00,00,'Asia/Manila');
@@ -103,7 +103,6 @@ class LoginQRCodeController extends Controller
                 // cannot log in new user during sunday
                 return response()->json(['error' => 'Cannot log in during sunday!']);
             }
-
         }
     }
 
@@ -113,9 +112,9 @@ class LoginQRCodeController extends Controller
         	'register_id' => $id,
         	'qrcode' => $qrcode,
             'name' => $fullname,
-            'time_in'=> $time,
-            'time_out' => null,
-            'status' => 'Active'
+            'log_in'=> $time,
+            'log_out' => null,
+            'status' => 1
         ]);
     }
 }
@@ -123,5 +122,5 @@ class LoginQRCodeController extends Controller
 /*  
     michael: ZG45GSLiaXiB3UclOrKZNY6nGwHVjBxis1MhOQxGBTzrGjRUhQ8uOc0nPcUc
     bruce: 7ecSHaTtJ8ERFxcU0HcPGiQefCwQ285Us7wYJofVcPoYAFEH5IAOVw4Lxlby
-    sansa: W8fUCgcOK6DuciawVislkQPCFKnm0K7wEECpmK34KakYlQq4epE50l93BN0u
+    john: W8fUCgcOK6DuciawVislkQPCFKnm0K7wEECpmK34KakYlQq4epE50l93BN0u
 */

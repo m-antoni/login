@@ -6,30 +6,63 @@ use Illuminate\Database\Eloquent\Model;
 
 class Logs extends Model
 {	 
-	   /**
-     * The attributes that aren't mass assignable.
-     *
-     * @var array
-     */
- 
-	protected $fillable = [
-			'register_id',
-			'qrcode',
-    	'name',
-    	'time_in',
-    	'time_out',
-    	'status'
-    ];
+		/**
+		 * The attributes that aren't mass assignable.
+		 *
+		 * @var array
+		*/
+		protected $guarded = [];
 
-    protected $dates = [
-			'time_in',
-			'time_out',
+		/**
+		 * The attributes that should be mutated to dates.
+		 *
+		 * @var array
+		*/
+	  protected $dates = [
+			'log_in',
+			'log_out',
 			'created_at',
 			'updated_at'
-    ];
+	  ];
 
+	  /**
+	   * Get the status attribute
+	   *
+	   * @return string
+	  */
+	  public function getStatusAttribute($attribute)
+	  {
+	      return $this->statusOption()[$attribute];
+	  }
+
+	  /**
+	   * Set the status values
+	   *
+	   * @return string
+	  */
+	  public function statusOption()
+	  {
+	    return [
+	         '1' => 'active',
+	         '0' => 'inactive',
+	    	];
+	   }
+
+	  /**
+     * Scope a query for desc order
+     *
+    */
+	  public function scopeOrdered($query, $sort = 'desc')
+	  {
+	  		return $query->orderBy('created_at', $sort);
+	  }	
+
+	 	/**
+		 * Get the register of the logs
+		 *
+		*/
 	  public function register()
 	  {
-	    return $this->belongsTo('App\Register');
+	    	return $this->belongsTo('App\Register');
 	  }
 }
