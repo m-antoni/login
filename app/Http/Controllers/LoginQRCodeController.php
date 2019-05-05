@@ -24,50 +24,66 @@ class LoginQRCodeController extends Controller
         $register = Register::where('qrcode', $request->qrcode)->firstOrFail();
         // user image path                    
         $imageURL = asset('/storage/photos/' . $register->photo);
-
-        // check user has time in
+        // check if user has log in 
         $oldUser = Logs::where('qrcode', $register->qrcode)
                              ->whereNull('log_out')
                              ->first();
                                 
         if($oldUser){
-            // Save time out data
-            $oldUser->log_out = $time;
-            $oldUser->status = 0;
-            $oldUser->save();
-
             // set a time to end 6:00PM
             $setTimeToEnd = Carbon::createFromTime(18,00,00,'Asia/Manila');
+
             // not greater than set time to end
             if(!$time->copy()->greaterThan($setTimeToEnd)){
+                // Save time out data
+                $oldUser->log_out = $time;
+                $oldUser->under = $time->diffInHours($setTimeToEnd);
+                $oldUser->status = 0;
+                $oldUser->save();
+
                 // is under time
                 return response()->json(['wrong' => 'Under Time: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
             }else{
+                // Save time out data
+                $oldUser->log_out = $time;
+                $oldUser->under = 0;
+                $oldUser->status = 0;
+                $oldUser->save();
+
                 // is correct time out
                 return response()->json(['message' => 'Logged out: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
             }
             
-         // Check if user has logs   
+         // Check if user has logs  
         }elseif(Logs::where('qrcode', $register->qrcode)->exists()){
             // Get user's time in and check if today this will return true
             $latest = Logs::where('qrcode', $register->qrcode)->latest()->first()->log_in->isToday();
 
             // is not today and not sunday
-            if(!$latest && !$time->isSunday()){
+            if(!$latest){ //&& !$time->isSunday()
                 // fullname
                 $fullName = $register->getFullNameAttribute(); 
-
-                // store in database to Create new data
-                $this->store_login($register->id, $request->qrcode, $fullName, $time);
 
                 // time to beat is 9:00AM
                 $setTimetoBeat = Carbon::createFromTime(9,00,00,'Asia/Manila');
 
                 // condition late or not
                 if($time->isAfter($setTimetoBeat)){
+                    // get the late
+                    $late = $time->diffInHours($setTimetoBeat);
+
+                    // store in database to create new data
+                    $this->store_login($register->id, $request->qrcode, $fullName, $time, $late);
+
                     // is late
                     return response()->json(['wrong' => 'Late in: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
                 }else{
+                    // get the late
+                    $late = null;
+
+                    // store in database to Create new data
+                    $this->store_login($register->id, $request->qrcode, $fullName, $time, $late);
+
                     // not late
                     return response()->json(['message' => 'Logged in: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
                 }  
@@ -83,22 +99,29 @@ class LoginQRCodeController extends Controller
             // doesen't exists in logs and not sunday
             if(!$time->isSunday()){
                 // fullname
-               $fullName = $register->getFullNameAttribute(); 
-
-                // store in database to Create new data
-                $this->store_login($register->id, $request->qrcode, $fullName, $time);
+                $fullName = $register->getFullNameAttribute(); 
 
                 // time to beat is 9:00AM
                 $setTimetoBeat = Carbon::createFromTime(9,00,00,'Asia/Manila');
+
                 // condition returns true
                 if($time->isAfter($setTimetoBeat)){
+                    // get the late
+                    $late = $time->diffInHours($setTimetoBeat);
+                    // store in database to Create new data
+                    $this->store_login($register->id, $request->qrcode, $fullName, $time, $late);
+
                     // is late
                     return response()->json(['wrong' => 'Late in: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
                 }else{
+                    // set late to null
+                    $late = null;
+                    // store in database to Create new data
+                    $this->store_login($register->id, $request->qrcode, $fullName, $time, $late);
+
                     // not late
                     return response()->json(['message' => 'Logged in: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
                 }
-
             }else{
                 // cannot log in new user during sunday
                 return response()->json(['error' => 'Cannot log in during sunday!']);
@@ -106,7 +129,7 @@ class LoginQRCodeController extends Controller
         }
     }
 
-    public function store_login($id, $qrcode, $fullname, $time)
+    public function store_login($id, $qrcode, $fullname, $time, $late)
     {
         $log = Logs::create([
         	'register_id' => $id,
@@ -114,6 +137,7 @@ class LoginQRCodeController extends Controller
             'name' => $fullname,
             'log_in'=> $time,
             'log_out' => null,
+            'late' => $late,
             'status' => 1
         ]);
     }

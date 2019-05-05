@@ -13,16 +13,15 @@ class LogsController extends Controller
 	  {
 	  		// Logs table
 		  	$logs = Logs::Ordered()->paginate(7);
-
 				// time to beat 
-		  	$setTimetoBeat = Carbon::create()->hour(9)->minute(0)->toTimeString();
+		  	// $setTimetoBeat = Carbon::create()->hour(9)->minute(0)->toTimeString();
 		  	//$setTimetoBeat = Carbon::createFromTime(9,00,0,'Asia/Manila');
 
 		  	// set a time to end 
-		  	$setTimeToEnd = Carbon::create()->hour(18)->minute(0)->toTimeString();
+		  	// $setTimeToEnd = Carbon::create()->hour(18)->minute(0)->toTimeString();
 		  	//$setTimeToEnd = Carbon::createFromTime(18,00,0,'Asia/Manila');
 
-		  	return view('logs.index', compact(['logs', 'setTimetoBeat', 'setTimeToEnd']));
+		  	return view('logs.index', compact(['logs']));
 	  }
 
 	  public function destroy(Logs $logs)
