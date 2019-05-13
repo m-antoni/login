@@ -35,22 +35,20 @@ class LoginQRCodeController extends Controller
 
             // not greater than set time to end
             if(!$time->copy()->greaterThan($setTimeToEnd)){
-                // Save time out data
+                // is under time
                 $oldUser->log_out = $time;
                 $oldUser->under = $time->diffInHours($setTimeToEnd);
                 $oldUser->status = 0;
                 $oldUser->save();
 
-                // is under time
                 return response()->json(['wrong' => 'Under Time: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
             }else{
-                // Save time out data
+                // is correct time out
                 $oldUser->log_out = $time;
                 $oldUser->under = 0;
                 $oldUser->status = 0;
                 $oldUser->save();
 
-                // is correct time out
                 return response()->json(['message' => 'Logged out: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
             }
             
@@ -60,9 +58,9 @@ class LoginQRCodeController extends Controller
             $latest = Logs::where('qrcode', $register->qrcode)->latest()->first()->log_in->isToday();
 
             // is not today and not sunday
-            if(!$latest){ //&& !$time->isSunday()
+            if(!$latest){ // && !$time->isSunday()
                 // fullname
-                $fullName = $register->getFullNameAttribute(); 
+                $fullName = $register->getFullNameAttribute();
 
                 // time to beat is 9:00AM
                 $setTimetoBeat = Carbon::createFromTime(9,00,00,'Asia/Manila');

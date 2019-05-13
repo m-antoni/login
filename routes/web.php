@@ -16,6 +16,7 @@
 	2019-04-28: Show User image in alert box
 */
 use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 
 
 Route::prefix('/')->group(function(){
@@ -30,7 +31,11 @@ Route::prefix('admin')->group(function(){
 		Route::post('/login', 'Auth\AdminLoginController@login')->name('login.post')->middleware('guest:admin');
 		Route::get('/logout', 'Auth\AdminLoginController@adminLogout')->name('logout');
 
+		// Dashboard
 		Route::get('/dashboard', 'AdminsController@index')->name('dashboard')->middleware('auth:admin');
+		Route::get('/dashboard/late', 'AdminsController@late')->name('dashboard.late')->middleware('auth:admin');
+		Route::get('/dashboard/under', 'AdminsController@under')->name('dashboard.under')->middleware('auth:admin');
+
 		// Register Users
 		Route::get('/register', 'RegistersController@index')->name('register.index')->middleware('auth:admin');
 		Route::get('/register/create', 'RegistersController@create')->name('register.create')->middleware('auth:admin');
@@ -98,6 +103,7 @@ Route::prefix('admin')->group(function(){
 			
 				$diffInHours = $now->diffInHours($set); // test interval hours late
 				$diffInMinutes = $now->diffInMinutes($set); // test interval minutes late
+				$sum = DB::table('logs')->sum('late');
 
   		//$manilaTime = Carbon::now('Asia/Manila')->format('h:iA M j, Y');
 	  		// $create = Carbon::createFromTime(13,00,00);
@@ -108,7 +114,7 @@ Route::prefix('admin')->group(function(){
 	  	// 	$diffForHumans = $now->diffForHumans($test);
 	  	// 	$timespan = $now->timespan($test);
 	  	// 	$sub = $now->sub('hour', '1')->format('h:iA'); // sub and add
-	  		return dd([$now, $toFormattedDateString, $toDateString, $toDayDateTimeString, $toTimeString, $set, $diffInHours, $toArray]);
+	  		return dd([$now, $toFormattedDateString, $toDateString, $toDayDateTimeString, $toTimeString, $set, $diffInHours, $toArray, number_format($sum)]);
 	  });
 
 });
