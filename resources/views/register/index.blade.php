@@ -25,7 +25,7 @@
 				</tr>
 	 		@foreach($registers as $register)
 	 			<tr>
-	 					<td><a href="{{route('register.show', $register->id)}}">{{$register->last . ', ' . $register->first}}</a></td>
+	 					<td><a href="{{route('register.show', $register->id)}}">{{$register->getFullNameAttribute()}}</a></td>
 	 					<td>{{$register->id_number}}</td>
 	 					<td>{{$register->contact}}</td>
 	 					<td>{{$register->department}}</td>

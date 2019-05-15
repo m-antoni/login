@@ -29,9 +29,9 @@
                 <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
                   <i class="fa fa-bars"></i>
                 </button>
-            <div class="navbar-nav m-auto mr-md-0 text-white">
+           {{--  <div class="navbar-nav m-auto mr-md-0 text-white">
               {{ now()->setTimezone('Asia/Manila')->format('M j, Y h:iA') }}
-            </div>
+            </div> --}}
             <!-- Navbar -->
             <ul class="navbar-nav ml-auto mr-md-0">
               <li class="nav-item dropdown no-arrow">

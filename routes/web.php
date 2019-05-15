@@ -1,7 +1,7 @@
 <?php
 /*
 --------------------------------------------------------------------------
-	Project Heirarchy  [ Login In System version 1.0 by Michael Antoni ]
+	Project Heirarchy  [ LogIn System using QR Code version 1.0 by Michael Antoni ]
 --------------------------------------------------------------------------
 	2019-03-14: Initial commit to the project
 	2019-03-17: Create an Admin Guard Authentication
@@ -14,6 +14,8 @@
 	2019-04-16: Index page UI revised layout
 	2019-04-21: Cannot Log In Twice Implementation {LoginQRCodeController}
 	2019-04-28: Show User image in alert box
+	2019-05-13: Implements the total of late and under time in current day
+
 */
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
@@ -35,6 +37,8 @@ Route::prefix('admin')->group(function(){
 		Route::get('/dashboard', 'AdminsController@index')->name('dashboard')->middleware('auth:admin');
 		Route::get('/dashboard/late', 'AdminsController@late')->name('dashboard.late')->middleware('auth:admin');
 		Route::get('/dashboard/under', 'AdminsController@under')->name('dashboard.under')->middleware('auth:admin');
+		Route::get('/dashboard/employess', 'AdminsController@employees')->name('dashboard.employees')->middleware('auth:admin');
+		Route::get('/dashboard/interns', 'AdminsController@interns')->name('dashboard.interns')->middleware('auth:admin');
 
 		// Register Users
 		Route::get('/register', 'RegistersController@index')->name('register.index')->middleware('auth:admin');

@@ -12,23 +12,48 @@ class AdminsController extends Controller
 {
 	public function index()
 	{
-			//return dd(Logs::whereDate('log_in', now())->count());
+		// return dd(Logs::whereDate('log_in', now())->count());
 
-			$time = Carbon::now()->setTimezone('Asia/Manila')->format('h:iA','M j, Y');
+		// Initial Carbon instance set timezone to Asia/Manila
+		$time = Carbon::now()->setTimezone('Asia/Manila')->format('h:iA M j, Y');
 
-			$register = Register::count();
-			$logs = Logs::count();
+		// Total Register count
+		$register = Register::count();
 
-			$active = Logs::where('status', 1)->count();
+		// Total logs count
+		$logs = Logs::count();
 
-			$inactive = Logs::whereDate('log_out', now())
-											->where('status', 0)
-											->count();
+		// Total Lates
+		$lates = Logs::sum('late');
 
-			$lateToday = Logs::whereDate('log_in', now())->count();
-			$underTimeToday = Logs::whereDate('log_out', now())->count();
+		// Total Under Time
+		$under = Logs::sum('under');
 
-			return view('dashboard.index', compact('time','register','logs', 'active', 'inactive', 'lateToday', 'underTimeToday'));
+		// Total Employee
+		$employees = Register::where('user_type', 'Employee')->count();
+
+		// Total Intern
+		$interns = Register::where('user_type', 'Intern')->count();
+
+		// Actice today
+		$active = Logs::where('status', 1)->count();
+
+		// Inactive today
+		$inactive = Logs::whereDate('log_out', now())
+										->where('status', 0)
+										->count();
+
+		// Late time today
+		$lateToday = Logs::where('late','>', 0)
+										->whereDate('log_in', now())
+										->count();
+
+		// Under time today								
+		$underTimeToday = Logs::where('under', '>', 0)
+										->whereDate('log_out', now())
+										->count();
+
+		return view('dashboard.index', compact(['time','register','logs', 'lates','under','employees','interns','active', 'inactive', 'lateToday', 'underTimeToday']));
 	}
 
 	public function late()
@@ -36,12 +61,26 @@ class AdminsController extends Controller
 		$lates = Logs::whereDate('log_in', now())->paginate(7);
 
 		return view('dashboard.late', compact('lates'));
-	}
+	}	
 
 	public function under()
 	{
 		$under = Logs::whereDate('log_out', now())->paginate(7);
 
 		return view('dashboard.under', compact('under'));
+	}
+
+	public function employees()
+	{
+		$employees = Register::where('user_type', 'Employee')->orderBy('created_at', 'DESC')->paginate(7);
+
+		return view('dashboard.employees', compact('employees'));
+	}
+
+	public function interns()
+	{
+		$interns = Register::where('user_type', 'Intern')->orderBy('created_at', 'DESC')->paginate(7);
+
+		return view('dashboard.interns', compact('interns'));
 	}
 }
