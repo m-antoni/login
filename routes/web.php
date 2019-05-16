@@ -39,6 +39,8 @@ Route::prefix('admin')->group(function(){
 		Route::get('/dashboard/under', 'AdminsController@under')->name('dashboard.under')->middleware('auth:admin');
 		Route::get('/dashboard/employess', 'AdminsController@employees')->name('dashboard.employees')->middleware('auth:admin');
 		Route::get('/dashboard/interns', 'AdminsController@interns')->name('dashboard.interns')->middleware('auth:admin');
+		Route::get('/dashboard/active', 'AdminsController@active')->name('dashboard.active')->middleware('auth:admin');
+		Route::get('/dashboard/inactive', 'AdminsController@inactive')->name('dashboard.inactive')->middleware('auth:admin');
 
 		// Register Users
 		Route::get('/register', 'RegistersController@index')->name('register.index')->middleware('auth:admin');

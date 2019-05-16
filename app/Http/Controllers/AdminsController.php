@@ -36,7 +36,9 @@ class AdminsController extends Controller
 		$interns = Register::where('user_type', 'Intern')->count();
 
 		// Actice today
-		$active = Logs::where('status', 1)->count();
+		$active = Logs::whereDate('log_in', now())
+										->where('status', 1)
+										->count();
 
 		// Inactive today
 		$inactive = Logs::whereDate('log_out', now())
@@ -58,18 +60,18 @@ class AdminsController extends Controller
 
 	public function late()
 	{
-		$lates = Logs::whereDate('log_in', now())->paginate(7);
+		$lates = Logs::whereDate('log_in', now())->orderBy('created_at', 'DESC')->paginate(7);
 
 		return view('dashboard.late', compact('lates'));
 	}	
 
 	public function under()
 	{
-		$under = Logs::whereDate('log_out', now())->paginate(7);
+		$under = Logs::whereDate('log_out', now())->orderBy('created_at', 'DESC')->paginate(7);
 
 		return view('dashboard.under', compact('under'));
 	}
-
+							
 	public function employees()
 	{
 		$employees = Register::where('user_type', 'Employee')->orderBy('created_at', 'DESC')->paginate(7);
@@ -82,5 +84,25 @@ class AdminsController extends Controller
 		$interns = Register::where('user_type', 'Intern')->orderBy('created_at', 'DESC')->paginate(7);
 
 		return view('dashboard.interns', compact('interns'));
+	}
+
+	public function active()
+	{
+		$activeUsers = Logs::whereDate('log_in', now())
+											->where('status', 1)
+											->orderBy('created_at', 'DESC')
+											->paginate(7);
+
+		return view('dashboard.active', compact('activeUsers'));
+	}
+
+	public function inactive()
+	{
+		$inactiveUsers = Logs::whereDate('log_out', now())
+											->where('status', 0)
+											->orderBy('created_at', 'DESC')
+											->paginate(7);
+
+		return view('dashboard.inactive', compact('inactiveUsers'));
 	}
 }

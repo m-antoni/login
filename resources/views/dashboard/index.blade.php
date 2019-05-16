@@ -31,7 +31,9 @@
                     <div class="card bg-secondary text-white">
                         <div class="card-body">
                             <h1 class="display-4">Active</h1> 
-                            <h2><i class="fa fa-user"></i> {{$active}}</h2>
+                            <h2><i class="fa fa-user"></i> 
+                                <a class="text-white" href="{{route('dashboard.active')}}">{{$active}}</a>
+                            </h2>
                         </div>
                     </div>
                 </div>
@@ -40,7 +42,9 @@
                     <div class="card bg-secondary text-white">
                         <div class="card-body">
                             <h1 class="display-4">Inactive</h1> 
-                            <h2><i class="fa fa-user-times"></i> {{$inactive}}</h2>
+                            <h2><i class="fa fa-user-times"></i>
+                                <a class="text-white" href="{{route('dashboard.inactive')}}">{{$inactive}}</a>
+                            </h2>
                         </div>
                     </div>
                 </div>

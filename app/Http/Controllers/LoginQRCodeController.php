@@ -76,8 +76,8 @@ class LoginQRCodeController extends Controller
                     // is late
                     return response()->json(['wrong' => 'Late in: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
                 }else{
-                    // get the late
-                    $late = null;
+                    // not late
+                    $late = 0;
 
                     // store in database to Create new data
                     $this->store_login($register->id, $request->qrcode, $fullName, $time, $late);

@@ -80,12 +80,6 @@
 
           <li class="nav-item">
             <a class="nav-link" href="admin/login">
-              <i class="fa fa-trash"></i>
-              <span>Trashed</span></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="admin/login">
               <i class="fa fa-qrcode"></i>
               <span>Tester</span></a>
           </li>

@@ -7,26 +7,24 @@
 		    		<a href="{{route('dashboard')}}">dashboard</a>
 		    </li>
 		    <li class="breadcrumb-item text-secondary">
-		    		late
+		    		inactive
 		    </li>
 		</ol>
 
-		@if(count($lates) > 0)
+		@if(count($inactiveUsers) > 0)
 		<table class="table table-striped table-hover table-responsive-md">
 					<tr class="text-white bg-secondary">
 							<th>Name</th>
 							<th>Log In</th>
 							<th>Log Out</th>
-							<th>Late (hr)</th>
 							<th>Status</th>
 					</tr>
-				@foreach($lates as $late)
+				@foreach($inactiveUsers as $inactive)
 					<tr>
-							<td>{{$late->name}}</td>
-							<td>{{$late->log_in->format('m-j-Y h:iA' )}}</td>
-							<td>{{($late->log_out ? $late->log_out->format('m-j-Y h:iA') : '')}}</td>
-							<td>{{$late->late}}</td>
-							<td><strong class={{($late->status == 'active' ? 'text-success': 'text-danger')}}>{{$late->status}}</strong></td>
+							<td>{{$inactive->name}}</td>
+							<td>{{$inactive->log_in->format('m-j-Y h:iA' )}}</td>
+							<td>{{($inactive->log_out ? $inactive->log_out->format('m-j-Y h:iA') : '')}}</td>
+							<td><strong class="text-danger">{{$inactive->status}}</strong></td>
 					</tr>		
 				@endforeach
 			
@@ -34,6 +32,6 @@
 				<h1 class="display-4">There's no data to show...</h1>
 			@endif
 		</table>
-		{{$lates->links()}}
+		{{$inactiveUsers->links()}}
 </div>
 @endsection

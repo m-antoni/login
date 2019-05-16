@@ -17,16 +17,16 @@
 							<th>Name</th>
 							<th>Log In</th>
 							<th>Log Out</th>
-							<th>Late</th>
-							<th>Under Time</th>
+							<th>Late (hr)</th>
+							<th>Under Time (hr)</th>
 					</tr>
 				@foreach($under as $user)
 					<tr>
 							<td>{{$user->name}}</td>
 							<td>{{$user->log_in->format('m-j-Y h:iA' )}}</td>
 							<td>{{($user->log_out ? $user->log_out->format('m-j-Y h:iA') : '')}}</td>
-							<td>{{($user->late == 1 ? '1 hr' : $user->late . ' hrs')}}</td>
-							<td>{{$user->under == 1 ? '1 hr' : $user->under . ' hrs'}}</td>
+							<td>{{$user->late}}</td>
+							<td>{{$user->under}}</td>
 					</tr>		
 				@endforeach
 			
