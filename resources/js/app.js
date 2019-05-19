@@ -38,7 +38,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('admin-login', require('./components/Login/AdminLogin.vue').default);
 Vue.component('user-login', require('./components/Login/UserLogin.vue').default);
 Vue.component('download-file', require('./components/Register/DownloadFile.vue').default);
-
+Vue.component('testerqrcode', require('./components/Tester/TesterQRCode.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

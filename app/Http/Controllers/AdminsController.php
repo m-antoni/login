@@ -105,4 +105,20 @@ class AdminsController extends Controller
 
 		return view('dashboard.inactive', compact('inactiveUsers'));
 	}
+
+	public function tester()
+	{
+		return view('pages.tester');
+	}
+
+	public function about()
+	{
+		$info = [
+			'title' => 'About',
+			'github' => 'www.github.com/m-antoni',
+			'email' => 'codehive2018@gmail.com',
+			'name' => 'Michael Antoni',
+		];
+		return view('pages.about', compact('info'));
+	}
 }

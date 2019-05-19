@@ -26,7 +26,7 @@ export default {
        }).then(response => {
             // response message
             if(response.data.message){
-              // <strong>' + response.data.message + '</strong>
+                // <strong>' + response.data.message + '</strong>
                 this.$toast.show(`<strong>${response.data.message}</strong>`, '', {
                     // icon: 'fa fa-user-circle',
                     image: response.data.image,

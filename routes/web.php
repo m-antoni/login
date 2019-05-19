@@ -15,11 +15,10 @@
 	2019-04-21: Cannot Log In Twice Implementation {LoginQRCodeController}
 	2019-04-28: Show User image in alert box
 	2019-05-13: Implements the total of late and under time in current day
-
+	2019-05-16: Filter active and inactive users in dashboard
 */
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
-
 
 Route::prefix('/')->group(function(){
 		Route::view('', 'welcome')->name('home');
@@ -46,15 +45,12 @@ Route::prefix('admin')->group(function(){
 		Route::get('/register', 'RegistersController@index')->name('register.index')->middleware('auth:admin');
 		Route::get('/register/create', 'RegistersController@create')->name('register.create')->middleware('auth:admin');
 		Route::post('/register/create/store', 'RegistersController@store')->name('register.store')->middleware('auth:admin');
-
-		// download qrcode
-		Route::get('register/download', 'RegistersController@downloadpage')->name('register.download')->middleware('auth:admin');
-		Route::get('register/downloadfile', 'RegistersController@downloadfile')->name('register.downloadfile')->middleware('auth:admin');
-
 		Route::get('/register/{register}', 'RegistersController@show')->name('register.show')->middleware('auth:admin');
 		Route::get('/register/{register}/edit', 'RegistersController@edit')->name('register.edit')->middleware('auth:admin');
 		Route::patch('/register/{register}', 'RegistersController@update')->name('register.update')->middleware('auth:admin');
 		Route::delete('/register/{register}', 'RegistersController@destroy')->name('register.delete')->middleware('auth:admin');
+		Route::get('register/download', 'RegistersController@downloadpage')->name('register.download')->middleware('auth:admin');
+		Route::get('register/downloadfile', 'RegistersController@downloadfile')->name('register.downloadfile')->middleware('auth:admin');
 
 		// Upload Photo
 		Route::get('/register/{register}/photo', 'UploadPhotoController@index')->name('upload')->middleware('auth:admin');
@@ -65,8 +61,17 @@ Route::prefix('admin')->group(function(){
 		Route::get('/logs', 'LogsController@index')->name('logs.index')->middleware('auth:admin');
 		Route::delete('/logs/{logs}', 'LogsController@destroy')->name('log.delete')->middleware('auth:admin');
 
-		//	Code block only for testing purposes 
+		// QR Code Tester DragInDrop and Scanner
+		Route::get('/tester', 'AdminsController@tester')->name('admin.tester')->middleware('auth:admin');
 
+		// About 
+		Route::get('/about', 'AdminsController@about')->name('admin.about')->middleware('auth:admin');
+
+
+		/*	
+				This Code block only for my testing purposes
+		*/
+				
 		Route::get('/qrcode', function(){
 			 return QRCode::text('Michael_antoni')
 							->setSize(10)
@@ -97,7 +102,6 @@ Route::prefix('admin')->group(function(){
 
 		// Carbon Testing
 		Route::get('/carbon',function(){
-
 				$now = Carbon::now()->setTimezone('Asia/Manila');
 				$set = Carbon::createFromTime(20,00,00,'Asia/Manila');
 				$toArray = Carbon::now()->setTimezone('Asia/Manila')->toArray();

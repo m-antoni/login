@@ -17,10 +17,12 @@ footer{
 	border-radius: 0px 0px 0px 0px !important;
 }
 
-#totalDetails > h6, #totalDetails li > h6{
+/*#totalDetails > h6, #totalDetails li > h6{
 	font-size: 1.2rem !important;
 	font-weight: 400;
-}
+}*/
+
+
 /*.img-thumbnail{
 	border-radius: 8rem !important;
 }*/

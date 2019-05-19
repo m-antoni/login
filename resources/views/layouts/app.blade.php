@@ -39,8 +39,8 @@
                        <i class="fa fa-user-circle text-info"></i>
                     </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                    <a class="dropdown-item" href="#">Settings</a>
-                    <a class="dropdown-item" href="#">Activity Log</a>
+{{--                     <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">Activity Log</a> --}}
                     <a class="dropdown-item" href="{{ route('logout') }}"
                          onclick="event.preventDefault();
                                        document.getElementById('logout-form').submit();">
@@ -79,18 +79,23 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="admin/login">
-              <i class="fa fa-qrcode"></i>
+            <a class="nav-link" href="{{route('admin.tester')}}">
+              <i class="fa fa-warning"></i>
               <span>Tester</span></a>
           </li>
 
           <li class="nav-item">
+            <a class="nav-link" href="{{route('admin.about')}}">
+              <i class="fa fa-search"></i>
+              <span>About</span></a>
+          </li>
+{{--      
+          <li class="nav-item">
               <a class="nav-link" href="admin/login">
                 <i class="fa fa-cog"></i>
                 <span>Setting</span></a>
-          </li>
+          </li> --}}
         </ul>
-        
     @endauth
 
       <div id="content-wrapper">
@@ -106,7 +111,7 @@
                   <footer class="sticky-footer mt-0">
                       <div class="container my-auto">
                         <div class="copyright text-center my-auto">
-                          <span>Copyright © Your Website 2019</span>
+                          <span>Copyright © All Rights Reserved 2019</span>
                         </div>
                       </div>
                   </footer>
