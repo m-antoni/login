@@ -94,7 +94,7 @@ class RegistersController extends Controller
 
         // check if the file  exists
         $result = File::exists(public_path('storage/temporary_qrcode.png'));
-
+        
         if($result){
             // download the file and delete it from storage directory
             return response()

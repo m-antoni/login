@@ -49,8 +49,8 @@ Route::prefix('admin')->group(function(){
 		Route::get('/register/{register}/edit', 'RegistersController@edit')->name('register.edit')->middleware('auth:admin');
 		Route::patch('/register/{register}', 'RegistersController@update')->name('register.update')->middleware('auth:admin');
 		Route::delete('/register/{register}', 'RegistersController@destroy')->name('register.delete')->middleware('auth:admin');
-		Route::get('register/download', 'RegistersController@downloadpage')->name('register.download')->middleware('auth:admin');
-		Route::get('register/downloadfile', 'RegistersController@downloadfile')->name('register.downloadfile')->middleware('auth:admin');
+		Route::get('register/download/file', 'RegistersController@downloadpage')->name('register.download')->middleware('auth:admin');
+		Route::get('register/download/file/get', 'RegistersController@downloadfile')->name('register.downloadfile')->middleware('auth:admin');
 
 		// Upload Photo
 		Route::get('/register/{register}/photo', 'UploadPhotoController@index')->name('upload')->middleware('auth:admin');
@@ -67,9 +67,8 @@ Route::prefix('admin')->group(function(){
 		// About 
 		Route::get('/about', 'AdminsController@about')->name('admin.about')->middleware('auth:admin');
 
-
 		/*	
-				This Code block only for my testing purposes
+			This Code block only for my testing purposes
 		*/
 				
 		Route::get('/qrcode', function(){
@@ -132,3 +131,9 @@ Route::prefix('admin')->group(function(){
 
 // Auth::routes();
 // Route::get('/home', 'HomeController@index')->name('home');
+
+/* 
+    michael: ZG45GSLiaXiB3UclOrKZNY6nGwHVjBxis1MhOQxGBTzrGjRUhQ8uOc0nPcUc
+    bruce: 7ecSHaTtJ8ERFxcU0HcPGiQefCwQ285Us7wYJofVcPoYAFEH5IAOVw4Lxlby
+    sansa: W8fUCgcOK6DuciawVislkQPCFKnm0K7wEECpmK34KakYlQq4epE50l93BN0u
+*/
