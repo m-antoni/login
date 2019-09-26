@@ -170,7 +170,7 @@
 
 <div class="form-group row mb-0">
     <div class="col-md-12">
-        <button type="submit" class="btn btn-info">
+        <button type="submit" class="btn btn-primary">
            <i class="fa fw fa-user-circle"></i> {{Request::is('admin/register/create') ? 'Add New User' : 'Update User'}}
         </button>
     </div>

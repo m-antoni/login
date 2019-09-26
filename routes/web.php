@@ -34,23 +34,20 @@ Route::prefix('admin')->group(function(){
 
 		// Dashboard
 		Route::get('/dashboard', 'AdminsController@index')->name('dashboard')->middleware('auth:admin');
-		Route::get('/dashboard/late', 'AdminsController@late')->name('dashboard.late')->middleware('auth:admin');
-		Route::get('/dashboard/under', 'AdminsController@under')->name('dashboard.under')->middleware('auth:admin');
-		Route::get('/dashboard/employess', 'AdminsController@employees')->name('dashboard.employees')->middleware('auth:admin');
-		Route::get('/dashboard/interns', 'AdminsController@interns')->name('dashboard.interns')->middleware('auth:admin');
-		Route::get('/dashboard/active', 'AdminsController@active')->name('dashboard.active')->middleware('auth:admin');
-		Route::get('/dashboard/inactive', 'AdminsController@inactive')->name('dashboard.inactive')->middleware('auth:admin');
+		Route::get('/logs/employess', 'AdminsController@employees')->name('employees')->middleware('auth:admin');
+		Route::get('/logs/interns', 'AdminsController@interns')->name('interns')->middleware('auth:admin');
 
 		// Register Users
 		Route::get('/register', 'RegistersController@index')->name('register.index')->middleware('auth:admin');
+		Route::get('/register/getusers', 'RegistersController@getUsers')->name('get.users')->middleware('auth:admin');
 		Route::get('/register/create', 'RegistersController@create')->name('register.create')->middleware('auth:admin');
 		Route::post('/register/create/store', 'RegistersController@store')->name('register.store')->middleware('auth:admin');
 		Route::get('/register/{register}', 'RegistersController@show')->name('register.show')->middleware('auth:admin');
 		Route::get('/register/{register}/edit', 'RegistersController@edit')->name('register.edit')->middleware('auth:admin');
 		Route::patch('/register/{register}', 'RegistersController@update')->name('register.update')->middleware('auth:admin');
 		Route::delete('/register/{register}', 'RegistersController@destroy')->name('register.delete')->middleware('auth:admin');
-		Route::get('register/download/file', 'RegistersController@downloadpage')->name('register.download')->middleware('auth:admin');
-		Route::get('register/download/file/get', 'RegistersController@downloadfile')->name('register.downloadfile')->middleware('auth:admin');
+		Route::get('/register/download/file', 'RegistersController@downloadpage')->name('register.download')->middleware('auth:admin');
+		Route::get('/register/download/file/get', 'RegistersController@downloadfile')->name('register.downloadfile')->middleware('auth:admin');
 
 		// Upload Photo
 		Route::get('/register/{register}/photo', 'UploadPhotoController@index')->name('upload')->middleware('auth:admin');
@@ -60,12 +57,21 @@ Route::prefix('admin')->group(function(){
 		// LogsController
 		Route::get('/logs', 'LogsController@index')->name('logs.index')->middleware('auth:admin');
 		Route::delete('/logs/{logs}', 'LogsController@destroy')->name('log.delete')->middleware('auth:admin');
+		Route::get('/logs/late', 'LogsController@late')->name('late')->middleware('auth:admin');
+		Route::get('/logs/under', 'LogsController@under')->name('under')->middleware('auth:admin');
+		Route::get('/logs/active', 'LogsController@active')->name('active')->middleware('auth:admin');
+		Route::get('/logs/inactive', 'LogsController@inactive')->name('inactive')->middleware('auth:admin');
 
 		// QR Code Tester DragInDrop and Scanner
-		Route::get('/tester', 'AdminsController@tester')->name('admin.tester')->middleware('auth:admin');
+		Route::get('/tester', 'AdminsController@tester')->name('testqrcode')->middleware('auth:admin');
 
 		// About 
-		Route::get('/about', 'AdminsController@about')->name('admin.about')->middleware('auth:admin');
+		Route::get('/about', 'AdminsController@about')->name('about')->middleware('auth:admin');
+
+
+		Route::get('/sbadmin', function(){
+			return view('dashboard');
+		})->middleware('auth:admin');
 
 		/*	
 			This Code block only for my testing purposes

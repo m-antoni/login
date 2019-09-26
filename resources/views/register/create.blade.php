@@ -2,21 +2,15 @@
 
 @section('content')
 
-<ol class="breadcrumb">
-  <li class="breadcrumb-item active">
-    <a href="{{route('register.index')}}">users</a>
-  </li>
-  <li class="breadcrumb-item">
-    	create
-  </li>
-</ol>
-
-<div class="card mt-2">
-	<div class="card-body">
+<div class="container">
+	<h4>Add New</h4>
+	<div class="card border-left-primary">
+		<div class="card-body">
 			<form method="POST" action="{{ route('register.store') }}">
 				@csrf
 				@include('partials.form')
 			</form>
+		</div>
 	</div>
 </div>
 

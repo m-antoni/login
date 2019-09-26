@@ -2,132 +2,88 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="description" content="Attendance Monitoring using QR Code">
+    <meta name="author" content="Michael Antoni">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>{{ config('app.name', 'Attendance Monitoring') }}</title>
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <!-- Custom fonts-->
+    <link href="{{ asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-    
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-{{--     <link href="{{ asset('css/flipclock.css') }}" rel="stylesheet"> --}}
+    {{--<link href="{{ asset('css/flipclock.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
     <link href="{{ asset('css/iziToast.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/sb-admin.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 </head>
 <body class="{{Request::is('admin/login') ? 'bg-dark' : ''}} || {{Request::is('/', 'login') ? 'bg-dark' : ''}}">
 {{-- <body> --}}
 <div id="app" >
-    @auth()
-        <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
-            <a class="navbar-brand mr-1 text-info" href="admin/dashboard">{{ config('app.name')}}</a>
-                <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
-                  <i class="fa fa-bars"></i>
-                </button>
-           {{--  <div class="navbar-nav m-auto mr-md-0 text-white">
-              {{ now()->setTimezone('Asia/Manila')->format('M j, Y h:iA') }}
-            </div> --}}
-            <!-- Navbar -->
-            <ul class="navbar-nav ml-auto mr-md-0">
-              <li class="nav-item dropdown no-arrow">
-                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       <i class="fa fa-user-circle text-info"></i>
-                    </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-{{--                     <a class="dropdown-item" href="#">Settings</a>
-                    <a class="dropdown-item" href="#">Activity Log</a> --}}
-                    <a class="dropdown-item" href="{{ route('logout') }}"
-                         onclick="event.preventDefault();
-                                       document.getElementById('logout-form').submit();">
-                          {{ __('logout') }}
-                    </a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="GET" style="display: none;">
-                            @csrf
-                    </form>
-                </div>
-              </li>
-            </ul>    
-        </nav>
-        
-     <div id="wrapper">
-  
-        <!-- Sidebar -->
-        <ul class="sidebar navbar-nav">
+  <div id="wrapper">
 
-          <li class="nav-item">
-            <a class="nav-link" href="{{route('dashboard')}}">
-               <i class="fa fa-bar-chart-o"></i>
-              <span>Dashboard</span>
-            </a>
-          </li>
+      @auth
+        @include('partials.sidebar')
+      @endauth
 
-          <li class="nav-item">
-            <a class="nav-link" href="{{route('register.index')}}">
-              <i class="fa fa-users"></i>
-              <span>Users</span></a>
-          </li>
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
 
-          <li class="nav-item">
-            <a class="nav-link" href="{{route('logs.index')}}">
-              <i class="fa fa-edit"></i>
-              <span>Logs</span></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="{{route('admin.tester')}}">
-              <i class="fa fa-warning"></i>
-              <span>Tester</span></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="{{route('admin.about')}}">
-              <i class="fa fa-search"></i>
-              <span>About</span></a>
-          </li>
-{{--      
-          <li class="nav-item">
-              <a class="nav-link" href="admin/login">
-                <i class="fa fa-cog"></i>
-                <span>Setting</span></a>
-          </li> --}}
-        </ul>
-    @endauth
-
-      <div id="content-wrapper">
+        <!-- Main Content -->
+        <div id="content">
+          
+          @auth()
+            @include('partials.navbar')
+          @endauth
+          <!-- Begin Page Content -->
           <div class="container-fluid">
-              <main>
-                
-                  {{--  content --}}
-                  @yield('content')
+            
+            <!-- Content Row -->
+            <div class="row">
 
-              </main>
+                @yield('content')
 
-              @auth()
-                  <footer class="sticky-footer mt-0">
-                      <div class="container my-auto">
-                        <div class="copyright text-center my-auto">
-                          <span>Copyright © All Rights Reserved 2019</span>
-                        </div>
-                      </div>
-                  </footer>
-              @endauth
-          </div><!-- container-fluid -->
-      </div> <!-- content-wrapper -->  
-  </div><!-- wrapper -->
+            </div>
+            
+          </div>
+          <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+        @auth()
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; Attendance Monitoring System 2019</span>
+            </div>
+          </div>
+        </footer>
+        @endauth()
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
+  </div>
 </div><!-- app -->
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
 {{-- <script src="{{ asset('js/flipclock.min.js') }}"></script> --}}
-<script src="{{ asset('js/sb-admin.min.js') }}"></script>
+<script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
+{{-- <script src="{{ asset('/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script> --}}
+<script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('js/dataTables.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('js/iziToast.min.js') }}"></script>
 <script src="{{ asset('js/script.js') }}"></script>
-
+{{-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> --}}
+<!-- Page level plugins -->
+{{-- <script src="vendor/chart.js/Chart.min.js"></script> --}}
+<!-- Page level custom scripts -->
 {{-- Added scripts --}}
 @yield('script')
 

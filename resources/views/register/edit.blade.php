@@ -2,27 +2,27 @@
 
 @section('content')
 
-<ol class="breadcrumb">
-  <li class="breadcrumb-item active">
-    <a href="{{route('register.index')}}">users</a>
-  </li>
-  <li class="breadcrumb-item">
-    	<a href="{{route('register.show', $register->id)}}">show</a>
-  </li>
-  <li class="breadcrumb-item">
-    	edit
-  </li>
-</ol>
+<div class="container">
+  <div class="card border-left-primary">
+    <div class="card-header">
+      <div class="row">
+        <div class="ml-1">
+          <h3 class="display-4"><i class="fa fa-user-circle"></i> Edit Information</h3>
+        </div>
+        <div class="ml-auto mr-md-1">
+          <a class="btn btn-default" href="{{route('register.index')}}"><i class="fa fa-arrow-left"></i> Cancel</a>
+        </div>
+      </div>
+    </div>
+  	<div class="card-body">
+  			<form method="POST" action="{{ route('register.update', $register->id) }}">
+  				@method('PATCH')
+  				@csrf
 
-<div class="card mt-2 mb-5">
-	<div class="card-body">
-			<form method="POST" action="{{ route('register.update', $register->id) }}">
-				@method('PATCH')
-				@csrf
-
-				@include('partials.form')
-			</form>
-	</div>
+  				@include('partials.form')
+  			</form>
+  	</div>
+  </div>
 </div>
 
 @endsection

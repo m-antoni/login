@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Yajra\DataTables\Facades\DataTables;
 use Faker\Generator as Faker;
 use App\Register;
 use File;
@@ -13,9 +14,28 @@ class RegistersController extends Controller
 {
     public function index()
     {
-    	$registers = Register::Ordered()->paginate(7);
+    	$users = Register::all();
+        return view('register.index', compact('users'));
+    }
 
-        return view('register.index', compact('registers'));
+    public function getUsers()
+    {
+        return DataTables::of(Register::query())
+
+            ->addColumn('name', '{{$first}} {{$last}}')
+            ->setRowId(function($user){
+                return $user->id;
+            })
+            ->addColumn('action', function(Register $register){
+                return '
+                <a href='. route("register.show", $register->id) .' data-id=' . $register->id .' class="btn btn-primary btn-circle btn-sm">
+                <i class="fa fa-eye"></i></a>
+                <a href='. route("register.edit", $register->id) .' data-id=' . $register->id .' class="btn btn-warning btn-circle btn-sm">
+                <i class="fa fa-edit"></i></a>
+                <a href="#" data-id=' . $register->id .' class="btn btn-danger btn-circle btn-sm deletebtn">
+                <i class="fa fa-trash"></i></a>';
+            })
+            ->toJson();
     }
 
     public function create()

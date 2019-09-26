@@ -58,20 +58,6 @@ class AdminsController extends Controller
 		return view('dashboard.index', compact(['time','register','logs', 'lates','under','employees','interns','active', 'inactive', 'lateToday', 'underTimeToday']));
 	}
 
-	public function late()
-	{
-		$lates = Logs::whereDate('log_in', now())->orderBy('created_at', 'DESC')->paginate(7);
-
-		return view('dashboard.late', compact('lates'));
-	}	
-
-	public function under()
-	{
-		$under = Logs::whereDate('log_out', now())->orderBy('created_at', 'DESC')->paginate(7);
-
-		return view('dashboard.under', compact('under'));
-	}
-							
 	public function employees()
 	{
 		$employees = Register::where('user_type', 'Employee')->orderBy('created_at', 'DESC')->paginate(7);
@@ -85,27 +71,6 @@ class AdminsController extends Controller
 
 		return view('dashboard.interns', compact('interns'));
 	}
-
-	public function active()
-	{
-		$activeUsers = Logs::whereDate('log_in', now())
-											->where('status', 1)
-											->orderBy('created_at', 'DESC')
-											->paginate(7);
-
-		return view('dashboard.active', compact('activeUsers'));
-	}
-
-	public function inactive()
-	{
-		$inactiveUsers = Logs::whereDate('log_out', now())
-											->where('status', 0)
-											->orderBy('created_at', 'DESC')
-											->paginate(7);
-
-		return view('dashboard.inactive', compact('inactiveUsers'));
-	}
-
 	public function tester()
 	{
 		return view('pages.tester');
