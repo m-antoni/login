@@ -1,12 +1,14 @@
 <template>
-  <div class="row justify-content-center mt-5">
-    <div class="col-md-3">
-      <h3 class="text-info display-4" align="center"><i class="fa fa-qrcode"></i> QR Code Scanner</h3>
-     <!--  <p class="error">{{ error }}</p> -->
-    <!--   <p class="decode-result">Last result: <b class="text-warning">{{ result }}</b></p> -->
-      <qrcode-stream @decode="onDecode" @init="onInit" class="qrcodeBox"/>
-      <p align="center" class="text-white">powered by <i class="fa fa-code mt-2"></i> codehive</p>
-    </div>
+  <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4" style="margin-top: 70px">
+          <h4 class="text-white" align="center"><i class="fa fa-qrcode"></i> QR Code Scanner</h4>
+         <!--  <p class="error">{{ error }}</p> -->
+        <!--   <p class="decode-result">Last result: <b class="text-warning">{{ result }}</b></p> -->
+          <qrcode-stream @decode="onDecode" @init="onInit" class="qrcodeBox"/>
+          <p align="center" class="text-white">powered by <i class="fa fa-code mt-2"></i> codehive</p>
+        </div>
+      </div>
   </div>
 </template>
 

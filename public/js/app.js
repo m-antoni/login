@@ -1944,6 +1944,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1966,7 +1968,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             // icon: 'fa fa-user-circle',
             image: response.data.image,
             imageWidth: 60,
-            messageSize: 21,
             iconColor: 'rgb(0, 255, 184)',
             theme: 'dark',
             progressBarColor: 'rgb(0, 255, 184)',
@@ -1979,7 +1980,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             // icon: 'fa fa-user-circle',
             image: response.data.image,
             imageWidth: 60,
-            messageSize: 21,
             messageColor: 'lightpink',
             iconColor: 'rgb(0, 255, 184)',
             theme: 'dark',
@@ -43544,22 +43544,24 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row justify-content-center mt-5" }, [
-    _c(
-      "div",
-      { staticClass: "col-md-3" },
-      [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("qrcode-stream", {
-          staticClass: "qrcodeBox",
-          on: { decode: _vm.onDecode, init: _vm.onInit }
-        }),
-        _vm._v(" "),
-        _vm._m(1)
-      ],
-      1
-    )
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-4", staticStyle: { "margin-top": "70px" } },
+        [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("qrcode-stream", {
+            staticClass: "qrcodeBox",
+            on: { decode: _vm.onDecode, init: _vm.onInit }
+          }),
+          _vm._v(" "),
+          _vm._m(1)
+        ],
+        1
+      )
+    ])
   ])
 }
 var staticRenderFns = [
@@ -43567,11 +43569,10 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "h3",
-      { staticClass: "text-info display-4", attrs: { align: "center" } },
-      [_c("i", { staticClass: "fa fa-qrcode" }), _vm._v(" QR Code Scanner")]
-    )
+    return _c("h4", { staticClass: "text-white", attrs: { align: "center" } }, [
+      _c("i", { staticClass: "fa fa-qrcode" }),
+      _vm._v(" QR Code Scanner")
+    ])
   },
   function() {
     var _vm = this
@@ -59721,8 +59722,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\_devprojects\login\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\_devprojects\login\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\MICHAEL\_devprojects\login\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\MICHAEL\_devprojects\login\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

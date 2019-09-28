@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.particles')
 
 @section('content')
 	
-		<user-login></user-login>
+	<user-login></user-login>
 
 @endsection
