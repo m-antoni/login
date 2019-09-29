@@ -43,12 +43,12 @@
                     </div>
 
                     <form id="adminForm">
-                        <div class="form-group mb-4">
-                            <label>Username:</label>
+                        <div class="form-group mb-3">
+                            {{-- <h4>Username:</h4> --}}
                             <input type="text" id="username" name="username" class="form-control" placeholder="Username">
                         </div>
-                        <div class="form-group mb-4">
-                            <label>Password:</label>
+                        <div class="form-group mb-3">
+                            {{-- <h4>Password:</h4> --}}
                             <input type="password" id="password" name="password" class="form-control" placeholder="Password">
                         </div>
                          <div class="form-group">
@@ -66,6 +66,47 @@
 @section('script')
 <script>
 $(document).ready(function(){
+
+    let date = new Date();
+    let localeDate = date.toDateString();
+    $('#displayDate').html('<i class="fa fa-calendar"></i> ' + localeDate);
+    
+    setInterval(displayTime, 500);
+
+    function displayTime(){
+        let time = new Date();
+        let hrs = time.getHours();
+        let min = time.getMinutes();
+        let sec = time.getSeconds();
+        let en = 'AM';
+           
+        if(hrs > 12){
+            hrs = hrs - 12;
+        }
+
+        if(hrs < 12){
+            en = 'PM';
+        }
+
+        if (hrs == 0){
+            hrs = 12;
+        }
+
+        if(hrs < 10){
+            hrs = '0' + hrs;
+        }
+
+        if(min < 10){
+            min = '0' + min;
+        }
+        if(sec < 10){
+            sec = '0'+ sec;
+        }
+
+        $('#displayTime').html('<i class="fa fa-clock"></i> '+ hrs + ':' + min + ':' + sec + ' ' +en);
+    }
+
+
     $('#adminBtn').on('click', function(){
         $('#adminModal').modal('show');
 
@@ -129,6 +170,7 @@ $(document).ready(function(){
             });
         });
     });
+
 });
 </script>
 @endsection

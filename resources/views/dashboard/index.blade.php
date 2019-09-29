@@ -118,7 +118,7 @@
                 hrs = hrs - 12;
             }
 
-            if(hrs >= 12){
+            if(hrs < 12){
                 en = 'PM';
             }
 
