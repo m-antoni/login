@@ -8,16 +8,17 @@
 	{{--  alert messages --}}
 	@include('partials.message')
 
-	<table id="users" class="table table-hover">
+	<table id="users" class="table table-hover table-striped">
 		<thead>
 			<tr>
 				<th>ID</th>
-				<th>ID NUMBER</th>
-				<th>Name</th>
+				<th>NO</th>
+				<th>First</th>
+				<th>Last</th>
 				<th>Contact</th>
 				<th>Email</th>
 				<th>Department</th>
-				<th>Action</th>
+				<th width="90px">Action</th>
 			</tr>
 		</thead>
 	</table>
@@ -25,22 +26,29 @@
 
 <!-- Modal for delete user-->
 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  	<div class="modal-dialog" role="document">
+  	<div class="modal-dialog modal-sm" role="document">
 	    <div class="modal-content">
 		     <div class="modal-header">
-		        <h5 class="modal-title text-danger"><i class="fa fw fa-warning"></i> Warning</h5>
+		        {{-- <h5 class="modal-title text-danger"></h5> --}}
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
 		     </div>
 		     <div class="modal-body">
 		      	<div class="container">
-		  			<h4 align="center">Do you want to delete this user?</h4>
+		  			<h4 align="center">Are you sure?</h4>
 		  			<div class="row justify-content-center mb-3">
-		      			<form action="#" method="POST">
+
+		  				<div class="text-center loader" style="display: none; margin: 20px;">
+				            <div class="spinner-border" style="width: 3rem; height: 3rem; color: #00b0ff" role="status">
+				              <span class="sr-only">Loading...</span>
+				            </div>
+				            <p class="my-2">Please wait...</p>
+				        </div>
+
+		      			<form id="deleteForm">
 							@method('DELETE')
-							@csrf
-							
+							<input id="deleteID" type="hidden" name="id" value="">
 							<button type="submit" class="btn btn-primary mt-3">
 								<i class="fa fa-check"></i> Confirm
 							</button>
@@ -57,29 +65,74 @@
 @section('script')
 <script>
 	$(document).ready(function(){
-
-		$('h4').on('click', function(e){
-			e.preventDefault();
-
-			$('#deleteModal').modal('show');
-			console.log(123123);
-		});
+	   	$.ajaxSetup({
+	        headers:{
+	          'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+	        }
+	    });
 
 		$('#users').DataTable({
 			processing: true,
 			serverSide: true,
-			ajax: '{!! route('get.users') !!}',
+			ajax: '{{ route('register.index') }}',
 			columns: [
 				{data: 'id', name: 'id'},
 				{data: 'id_number', name: 'id'},
-				{data: 'name', name: 'name'},
+				{data: 'first', name: 'first'},
+				{data: 'last', name: 'last'},
 				{data: 'contact', name: 'contact'},
 				{data: 'email', name: 'email'},
-				{data: 'department', name: 'department'},
-				{data: 'action', name: 'action'},
+				{data: 'department', name: 'department', ordering: false, searching: false},
+				{data: 'action', name: 'action', ordering: false, searching: false},
 			]
 		});
 
+		$('body').on('click', '.delete', function(){
+			let id = $(this).data('id');
+			$('#deleteID').val(id);
+			$('#deleteModal').modal('show');
+
+			$('#deleteForm').on('submit', function(e){
+				e.preventDefault();
+
+				$.ajax({
+					type: 'DELETE',
+					url: "register" + "/" + id,
+					data: {id: id},
+					dataType: 'json',
+					beforeSend: function(){
+						$('.loader').show();
+						$('#deleteForm').hide();
+					},
+					success: function(data){
+						if(data.success){
+							$('#deleteModal').modal('hide');
+							iziToast.show({
+				                title: 'Success',
+				                theme: 'dark',
+				                icon: 'ico-success',
+				                progressBarColor: '#ffff',
+				                position: 'bottomRight',
+				                transitionIn: 'bounceInLeft',
+				                transitionOut: 'flipOutX',
+				                message: '<b>' + data.success + '</b>',
+				            });
+				            $('.loader').hide();
+							$('#deleteForm').show();
+							$('#users').DataTable().ajax.reload();
+							// window.location.reload();
+						}
+					},
+					error: function(data){
+						console.log(data)
+					}	
+				});
+		
+			})
+		});
+
 	});
+
+
 </script>
 @endsection

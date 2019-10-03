@@ -72,17 +72,16 @@
 
 <!-- Modal for delete user-->
 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title text-danger"><i class="fa fw fa-warning"></i> Warning</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
       	<div class="container">
-  			<h4 align="center">Do you want to delete this user?</h4>
+  			<h4 align="center">Are you sure?</h4>
   			<div class="row justify-content-center mb-3">
       			<form action="{{route('register.delete', $register->id)}}" method="POST">
 					@method('DELETE')

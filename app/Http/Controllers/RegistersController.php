@@ -12,30 +12,32 @@ use QRCode;
 
 class RegistersController extends Controller
 {
-    public function index()
-    {
-    	$users = Register::all();
-        return view('register.index', compact('users'));
-    }
-
-    public function getUsers()
-    {
-        return DataTables::of(Register::query())
-
-            ->addColumn('name', '{{$first}} {{$last}}')
-            ->setRowId(function($user){
+    public function index(Request $request)
+    {   
+        if($request->ajax()){
+            $data = Register::latest()->get();
+            return Datatables::of($data)
+                 ->setRowId(function($user){
                 return $user->id;
             })
-            ->addColumn('action', function(Register $register){
-                return '
-                <a href='. route("register.show", $register->id) .' data-id=' . $register->id .' class="btn btn-primary btn-circle btn-sm">
-                <i class="fa fa-eye"></i></a>
-                <a href='. route("register.edit", $register->id) .' data-id=' . $register->id .' class="btn btn-warning btn-circle btn-sm">
-                <i class="fa fa-edit"></i></a>
-                <a href="#" data-id=' . $register->id .' class="btn btn-danger btn-circle btn-sm deletebtn">
-                <i class="fa fa-trash"></i></a>';
+            ->addColumn('action', function($row){
+                $btn  = '<a href="register/'. $row->id .'" class="btn btn-sm btn-primary btn-circle">
+                        <i class="fa fa-eye"></i></a>
+                        <a href="register/' . $row->id .'/edit" class="btn btn-sm btn-warning btn-circle">
+                        <i class="fa fa-edit"></i></a>
+                        <a href="#" class="delete btn btn-sm btn-danger btn-circle" data-id=' . $row->id . '>
+                        <i class="fa fa-trash"></i></a>
+                       
+                        ';
+                return $btn;
             })
-            ->toJson();
+            ->rawColumns(['action'])
+            ->make(true);
+        }
+
+    	$users = Register::all();
+
+        return view('register.index', compact('users'));
     }
 
     public function create()
@@ -151,9 +153,9 @@ class RegistersController extends Controller
     {
         $register->delete(); // delete user
 
-        session()->flash('message', 'User has been deleted successfully');
+        // session()->flash('message', 'User has been deleted successfully');
 
-        return redirect()->route('register.index');
+        return response()->json(['success'=>'User deleted successfully.'],200);
     }
 
     private function validateRequest()

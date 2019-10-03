@@ -15,7 +15,7 @@
       </div>
     </div>
   	<div class="card-body">
-  			<form method="POST" action="{{ route('register.update', $register->id) }}">
+  			<form id="editForm">
   				@method('PATCH')
   				@csrf
 
@@ -25,4 +25,29 @@
   </div>
 </div>
 
+@endsection
+
+@section('script')
+<script type="text/javascript">
+$(document).ready(function(){
+    $.ajaxSetup({
+        headers:{
+          'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        }
+    });
+
+    $('#editForm').on('submit', function(e){
+        e.preventDefault();
+
+        $.ajax({
+            type: 'PUT',
+            url: '{{url()->full()}}',
+            data: $('#editForm').data,
+        });
+    });
+
+
+
+});
+</script>
 @endsection

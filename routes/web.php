@@ -39,7 +39,6 @@ Route::prefix('admin')->group(function(){
 
 		// Register Users
 		Route::get('/register', 'RegistersController@index')->name('register.index')->middleware('auth:admin');
-		Route::get('/register/getusers', 'RegistersController@getUsers')->name('get.users')->middleware('auth:admin');
 		Route::get('/register/create', 'RegistersController@create')->name('register.create')->middleware('auth:admin');
 		Route::post('/register/create/store', 'RegistersController@store')->name('register.store')->middleware('auth:admin');
 		Route::get('/register/{register}', 'RegistersController@show')->name('register.show')->middleware('auth:admin');
