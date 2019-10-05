@@ -3,10 +3,10 @@
 @section('content')
 
 <div class="container">
+
 	<h4>{{ count($users) <= 0 ? 'There is No Data....' : 'Users'}}</h4>
 
-	{{--  alert messages --}}
-	@include('partials.message')
+	<a href="{{ route('register.create') }}" class="btn btn-primary btn-sm mb-2"><i class="fa fa-plus"></i> Add New</a>
 
 	<table id="users" class="table table-hover table-striped">
 		<thead>
@@ -48,7 +48,6 @@
 
 		      			<form id="deleteForm">
 							@method('DELETE')
-							<input id="deleteID" type="hidden" name="id" value="">
 							<button type="submit" class="btn btn-primary mt-3">
 								<i class="fa fa-check"></i> Confirm
 							</button>
@@ -111,7 +110,7 @@
 				                title: 'Success',
 				                theme: 'dark',
 				                icon: 'ico-success',
-				                progressBarColor: '#ffff',
+				                progressBarColor: '#1cc88a',
 				                position: 'bottomRight',
 				                transitionIn: 'bounceInLeft',
 				                transitionOut: 'flipOutX',

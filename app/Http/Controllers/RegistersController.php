@@ -27,7 +27,6 @@ class RegistersController extends Controller
                         <i class="fa fa-edit"></i></a>
                         <a href="#" class="delete btn btn-sm btn-danger btn-circle" data-id=' . $row->id . '>
                         <i class="fa fa-trash"></i></a>
-                       
                         ';
                 return $btn;
             })
@@ -154,7 +153,6 @@ class RegistersController extends Controller
         $register->delete(); // delete user
 
         // session()->flash('message', 'User has been deleted successfully');
-
         return response()->json(['success'=>'User deleted successfully.'],200);
     }
 
