@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 use App\Register;
+use Validator;
 
 class UploadPhotoController extends Controller
 {
@@ -16,38 +17,51 @@ class UploadPhotoController extends Controller
 
    public function update(Request $request, Register $register)
    {
-   		request()->validate([
-   				'photo' => 'required|image|max:1999'
-   		]);
+   // 		request()->validate([
+   // 				'photo' => 'required|image|max:1999'
+   // 		]);
 
-   		// Get the extension 
-			//$request->photo->extension();
-      if($request->hasFile('photo')){
-	        // Get filename with the extension
-	        $filenamewithExtension = $request->photo->getClientOriginalName();
-	        // Get filesize
-	        $fileSize = $request->photo->getClientSize();
-	        // Get just filename
-	        $filename = pathinfo($filenamewithExtension, PATHINFO_FILENAME);
-	        // Get just extension
-	        $extension = $request->file('photo')->getClientOriginalExtension();
-	        // Filename to store
-	        $filenametoStore = $filename . '_' . time() . '.' . $extension;
-	        // Upload Image
-	        $path = $request->file('photo')->storeAs('public/photos', $filenametoStore); 
+   // 		// Get the extension 
+			// //$request->photo->extension();
+   //    if($request->hasFile('photo')){
+	  //       // Get filename with the extension
+	  //       $filenamewithExtension = $request->photo->getClientOriginalName();
+	  //       // Get filesize
+	  //       $fileSize = $request->photo->getClientSize();
+	  //       // Get just filename
+	  //       $filename = pathinfo($filenamewithExtension, PATHINFO_FILENAME);
+	  //       // Get just extension
+	  //       $extension = $request->file('photo')->getClientOriginalExtension();
+	  //       // Filename to store
+	  //       $filenametoStore = $filename . '_' . time() . '.' . $extension;
+	  //       // Upload Image
+	  //       $path = $request->file('photo')->storeAs('public/photos', $filenametoStore); 
 
-	    }else{
-	        // If no image is uploaded
-	        $filenametoStore = 'default.jpg';
-	    }
-   		
-   		// store in database
-	    $photo = Register::where('id', $register->id)
-										    ->update([
-										    	'photo' => $filenametoStore,
-										    ]);
+	  //   }else{
+	  //       // If no image is uploaded
+	  //       $filenametoStore = 'noimage.jpg';
+	  //   }
 
-	    return redirect()->route('register.show', $register->id);
+   		$rules = array(
+   			'photo' => 'required|image|5999',
+   		);
+
+   		$error = Validator::make(request()->all(), $rules);
+
+   		if($error->fails()){
+   			// return errors response
+   			return response()->json(['errors' => $error->errors()->all()]);
+
+   		}else{
+
+   			// save to image to database
+   			Register::where('id', $register->id)->update([
+		   								'photo' => request()->photo->store('photos','public')
+		   							]);
+
+
+   			return response()->json(['success' => 'Image Uploaded Successfully!']);
+   		}
    }
 
    public function destroy(Register $register)
@@ -57,7 +71,7 @@ class UploadPhotoController extends Controller
  
    	  // update the path to default.jpg
 	   	$update = Register::where('id', $register->id)
-							    				->update(['photo' => 'default.jpg',]);
+							->update(['photo' => 'default.jpg']);
 
    		return redirect()->route('register.show', $register->id);
    }

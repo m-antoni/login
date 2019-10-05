@@ -18,6 +18,5 @@ $factory->define(App\Register::class, function (Faker $faker) {
         'date_hired' => $faker->date($format = 'Y-m-d', $max = 'now'),
         'user_type' => $faker->randomElement(array('Employee', 'Intern')),
         'id_number' => $faker->numerify('2019####'),
-        'photo' => 'default.jpg',
     ];
 });

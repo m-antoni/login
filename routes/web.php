@@ -49,7 +49,7 @@ Route::prefix('admin')->group(function(){
 		Route::get('/register/download/file/get', 'RegistersController@downloadfile')->name('register.downloadfile')->middleware('auth:admin');
 
 		// Upload Photo
-		Route::get('/register/{register}/photo', 'UploadPhotoController@index')->name('upload')->middleware('auth:admin');
+		// Route::get('/register/{register}/photo', 'UploadPhotoController@index')->name('upload')->middleware('auth:admin');
 		Route::patch('/register/{register}/update', 'UploadPhotoController@update')->name('upload.update')->middleware('auth:admin');
 		Route::patch('/register/{register}/photo', 'UploadPhotoController@destroy')->name('upload.delete')->middleware('auth:admin');
 	

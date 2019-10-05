@@ -21,44 +21,34 @@
 		<div class="card-body">
 			<div class="row">
 				<div class="col-md-3">
-					<img src="" class="image img-thumbnail border-secondary mb-2">
+					<img src="{{asset('storage/photos/' . $register->photo)}}" class="image img-thumbnail border-secondary mb-2">
 
 					<div class="text-center imageLoader" style="display: none; margin: 20px;">
 			            <div class="spinner-border" style="width: 3rem; height: 3rem; color: #00b0ff" role="status">
 			              <span class="sr-only">Loading...</span>
 			            </div>
-			            <p class="my-2">Please wait...</p>
+			            <p class="my-2">Loading...</p>
 			        </div>
 
-					@if($register->photo == 'default.jpg')
-						<form id="uploadImageForm" action="{{ route('upload.update',$register->id)}}" method="POST" enctype="multipart/form-data">
-							@method('PATCH')
-							@csrf
-							<div class="row">
-								<div class="col-md-12">
-										<input type="file" name="photo">	
-								</div>
-								<div class="col-md-12 pt-1">
-								@if ($errors->has('photo'))
-						            <span class="text-danger" role="alert">
-						                {{ $errors->first('photo') }}
-						            </span>
-		        				@endif
-									<button type="submit" class="btn btn-primary btn-sm btn-block">
-										<i class="fa fa-upload"></i> Upload Image
-									</button>
-								</div>
+					<form id="uploadForm" enctype="multipart/form-data">
+						<div class="row">
+							<div class="col-md-12">
+								<input id="photo" type="file" name="photo">	
 							</div>
-						</form>
-					@else
-						<form action="{{route('upload.delete', $register->id)}}" method="POST">
-							@method('PATCH')
-							@csrf
-							<button type="submit" class="btn btn-sm btn-danger btn-block">
-								<i class="fa fw fa-image"></i> Delete Image
-							</button>	
-						</form>
-					@endif
+							<div class="col-md-12 pt-1">
+								<button type="submit" class="btn btn-primary btn-sm btn-block">
+									<i class="fa fa-upload"></i> Upload Image
+								</button>
+							</div>
+						</div>
+					</form>
+				
+				{{-- 	<form action="{{route('upload.delete', $register->id)}}" method="POST">
+						<button type="submit" class="btn btn-sm btn-danger btn-block">
+							<i class="fa fw fa-image"></i> Delete Image
+						</button>	
+					</form> --}}
+					
 				</div>
 				<div class="col-md-4">
 					<p><strong class="text-secondary">Name: </strong>{{$register->getFullNameAttribute()}}</p>
@@ -101,9 +91,9 @@
 		            <p class="my-2">Please wait...</p>
 		        </div>
 
-		        <div id="output" class="text-center text-success" style="display: none; margin: 20px;">
-		        	<i class="fa fa-check-circle fa-3x"></i>
-		        	<div>Deleted Successfully!</div>
+		        <div id="output" class="text-center" style="display: none; margin: 20px;">
+		        	<i class="fa fa-check-circle fa-3x text-success"></i>
+		        	<div class="my-2"><b>Deleted Successfully!</b></div>
 		        </div>
 
       			<form id="deleteShow">
@@ -129,14 +119,6 @@
 	          'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
 	        }
 	    });
-
-		if($('.img-thumbnail').attr("href", null)){
-			$('.img-thumbnail').attr("href", "{{ asset('/storage/photos/default.jpg' ) }}")
-
-		}else{
-			$('.img-thumbnail').attr("href", "{{ asset('/storage/photos/' . $register->photo) }}")
-		}
-
 
 		$('.deleteBtn').on('click', function(){
 			$('#deleteModal').modal('show');
@@ -168,14 +150,18 @@
 					}
 				})
 			});
+		});
 
 
-			$('#uploadImageForm').on('submit', function(e){
-				e.preventDefault();
+		// Upload image
+		$('#uploadForm').on('submit', function(){
+
+				let photo = $('#photo').val();
+				let id = '{{$register->id}}';
 
 				$.ajax({
 					type: 'PATCH',
-					url: "register/" + '{{$register->id}}' + "/update",
+					url: "{{url()->full()}}/update",
 					data: new FormData(this),
 					cache: false,
 					contentType: false,
@@ -187,11 +173,14 @@
 					},
 					success: function(data){
 						$('.imageLoader').hide();
+						$('.image').show();
+						alert('success');
+					},
+					error: function(data){
+						console.log('Error ' + data);
 					}
 				});
 			})
-			
-		});
 	});
 </script>
 @endsection

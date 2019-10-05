@@ -29,7 +29,7 @@ class CreateRegistersTable extends Migration
             $table->string('date_hired');
             $table->string('user_type');
             $table->string('id_number');
-            $table->string('photo')->default('noimage.jpg');
+            $table->string('photo')->nullable()->default('default.jpg');
             $table->timestamps();
         });
     }

@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Yajra\DataTables\Facades\DataTables;
 use Faker\Generator as Faker;
 use App\Register;
+use Validator;
 use File;
 use QRCode;
 
@@ -49,59 +50,66 @@ class RegistersController extends Controller
 
     public function store(Request $request)
     {   
-    
-        if($request->hasFile('photo')){
-            // Get filename with the extension
-            $filenamewithExtension = $request->photo->getClientOriginalName();
-            // Get filesize
-            $fileSize = $request->photo->getClientSize();
-            // Get just filename
-            $filename = pathinfo($filenamewithExtension, PATHINFO_FILENAME);
-            // Get just extension
-            $extension = $request->file('photo')->getClientOriginalExtension();
-            // Filename to store
-            $filenametoStore = $filename . '_' . time() . '.' . $extension;
-            // Upload Image
-            $path = $request->file('photo')->storeAs('public/photos', $filenametoStore); 
+        
+        $rules = array(
+            'first' => 'required',
+            'last' => 'required',
+            'middle' => 'nullable',
+            'age' => 'required|numeric',
+            'gender' => 'required',
+            'birthday' => 'required|date',
+            'contact' => 'required|numeric',
+            'email' => 'required|email',
+            'address' => 'required',
+            'department' => 'required',
+            'date_hired' => 'required|date',
+            'user_type' => 'required',
+            'id_number' => 'required|numeric'
+        );
+
+
+        $error = Validator::make($request->all(), $rules);
+
+        if($error->fails()){
+            // return error
+            return response()->json(['errors' => $error->errors()->all()]);
 
         }else{
-            // set the default image file
-            $filenametoStore = 'default.jpg';
+
+            // Validate the database
+            $this->validateRequest();
+
+            // Generate random string
+            $passcode = str_random(60);
+
+            // Generate QR Code
+            $qrcode = QRCode::text($passcode)
+                            ->setSize(10)
+                            ->setMargin(2)
+                            ->setOutFile(public_path('storage/temporary_qrcode.png'))
+                            ->png();    
+
+            // Store data in database
+            $register = Register::create([
+                'qrcode' => $passcode,
+                'first' => $request->first,
+                'last' => $request->last,
+                'middle' => $request->middle,
+                'age' => $request->age,
+                'gender' => $request->gender,
+                'birthday' => $request->birthday,
+                'contact' => $request->contact,
+                'email' => $request->email,
+                'address' => $request->address,
+                'department' => $request->department,
+                'date_hired' => $request->date_hired,
+                'user_type' => $request->user_type,
+                'id_number' => $request->id_number
+            ]);
+
+            return response()->json(['success' => 'Success!']);
         }
-
-        // Validate the database
-        $this->validateRequest();
-
-        // Generate random string
-        $passcode = str_random(60);
-
-        // Generate QR Code
-        $qrcode = QRCode::text($passcode)
-                        ->setSize(10)
-                        ->setMargin(2)
-                        ->setOutFile(public_path('storage/temporary_qrcode.png'))
-                        ->png();    
-
-        // Store data in database
-        $register = Register::create([
-            'qrcode' => $passcode,
-            'first' => $request->first,
-            'last' => $request->last,
-            'middle' => $request->middle,
-            'age' => $request->age,
-            'gender' => $request->gender,
-            'birthday' => $request->birthday,
-            'contact' => $request->contact,
-            'email' => $request->email,
-            'address' => $request->address,
-            'department' => $request->department,
-            'date_hired' => $request->date_hired,
-            'user_type' => $request->user_type,
-            'id_number' => $request->id_number,
-            'photo' => $filenametoStore,
-        ]);    
-
-        return redirect()->route('register.download');
+        
     }
 
     public function downloadpage()
@@ -121,13 +129,11 @@ class RegistersController extends Controller
             return response()
                     ->download(public_path('storage/temporary_qrcode.png'),'generated-qrcode.png', $headers)
                     ->deleteFileAfterSend(true);
-        }else{
-            return redirect()->route('register.index');
         }
     }
 
     public function show(Register $register)
-    {   
+    { 
         return view('register.show', compact('register'));
     }
 
