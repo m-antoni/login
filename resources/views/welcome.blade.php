@@ -134,40 +134,40 @@ $(document).ready(function(){
                 beforeSend: function(){
                     $('#adminForm').hide();
                     $('#loader').show();
-                },
-                success: function(data){
-                    let html = '';
-
-                    if(data.errors){
-                        html = '<div class="alert alert-danger">';
-                        for(let count=0; count < data.errors.length; count++ ){
-                            html += data.errors[count] + '</br>';
-                        }
-                        html += '</div>';
-
-                        $('#loader').hide();
-                        $('#adminForm').show();
-                    }
-
-                    if(data.status){
-                        html = '<div class="alert alert-danger"> ' + data.status + '</div>';
-                        $('#username').val('');
-                        $('#password').val('');
-
-                        $('#loader').hide();
-                        $('#adminForm').show();
-                    } 
-
-                    if(data.redirect){
-
-                        window.location = data.redirect;
-                    }
-
-                    $('#errors').html(html);
-                },
-                error: function(error){
-                    console.log(error);
                 }
+            })
+            .done(function(data){
+                let html = '';
+
+                if(data.errors){
+                    html = '<div class="alert alert-danger">';
+                    for(let count=0; count < data.errors.length; count++ ){
+                        html += data.errors[count] + '</br>';
+                    }
+                    html += '</div>';
+
+                    $('#loader').hide();
+                    $('#adminForm').show();
+                }
+
+                if(data.status){
+                    html = '<div class="alert alert-danger"> ' + data.status + '</div>';
+                    $('#username').val('');
+                    $('#password').val('');
+
+                    $('#loader').hide();
+                    $('#adminForm').show();
+                } 
+
+                if(data.redirect){
+
+                    window.location = data.redirect;
+                }
+
+                $('#errors').html(html);
+            })
+            .fail(function(error){
+                console.log(error);
             });
         });
     });

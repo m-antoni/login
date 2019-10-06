@@ -22,9 +22,9 @@ class RegistersController extends Controller
                 return $user->id;
             })
             ->addColumn('action', function($row){
-                $btn  = '<a href="register/'. $row->id .'" class="btn btn-sm btn-primary btn-circle">
+                $btn  = '<a href="register/'. $row->id .'" class="btn btn-sm btn-warning btn-circle">
                         <i class="fa fa-eye"></i></a>
-                        <a href="register/' . $row->id .'/edit" class="btn btn-sm btn-warning btn-circle">
+                        <a href="register/' . $row->id .'/edit" class="btn btn-sm btn-primary btn-circle">
                         <i class="fa fa-edit"></i></a>
                         <a href="#" class="delete btn btn-sm btn-danger btn-circle" data-id=' . $row->id . '>
                         <i class="fa fa-trash"></i></a>
@@ -67,7 +67,6 @@ class RegistersController extends Controller
             'id_number' => 'required|numeric'
         );
 
-
         $error = Validator::make($request->all(), $rules);
 
         if($error->fails()){
@@ -75,9 +74,6 @@ class RegistersController extends Controller
             return response()->json(['errors' => $error->errors()->all()]);
 
         }else{
-
-            // Validate the database
-            $this->validateRequest();
 
             // Generate random string
             $passcode = str_random(60);
@@ -145,19 +141,64 @@ class RegistersController extends Controller
         return view('register.edit', compact('register', 'department')); 
     }
 
-    public function update(Register $register)
+    public function update(Request $request, Register $register)
     {   
-        // Validation and Update
-        $register->update($this->validateRequest());
+        
+        $rules = array(
+            'first' => 'required',
+            'last' => 'required',
+            'middle' => 'nullable',
+            'age' => 'required|numeric',
+            'gender' => 'required',
+            'birthday' => 'required|date',
+            'contact' => 'required|numeric',
+            'email' => 'required|email',
+            'address' => 'required',
+            'department' => 'required',
+            'date_hired' => 'required|date',
+            'user_type' => 'required',
+            'id_number' => 'required|numeric'
+        );
 
-        session()->flash('message', 'User has been updated successfully');
+        $error = Validator::make($request->all(), $rules);
 
-        return redirect()->route('register.show', $register->id);
+          if($error->fails()){
+            // return error
+            return response()->json(['errors' => $error->errors()->all()]);
+
+        }else{
+
+            // Store data in database
+            $register->update([
+                'first' => $request->first,
+                'last' => $request->last,
+                'middle' => $request->middle,
+                'age' => $request->age,
+                'gender' => $request->gender,
+                'birthday' => $request->birthday,
+                'contact' => $request->contact,
+                'email' => $request->email,
+                'address' => $request->address,
+                'department' => $request->department,
+                'date_hired' => $request->date_hired,
+                'user_type' => $request->user_type,
+                'id_number' => $request->id_number
+            ]);
+
+            return response()->json(['success' => 'Success!']);
+        }    
+
     }
 
     public function destroy(Register $register)
     {
-        $register->delete(); // delete user
+        // remove if has photo
+        if($register->photo != 'photos/default.jpg'){
+            $path = public_path() . '/storage/' . $register->photo;
+            unlink($path);
+        }
+        // delete the user
+        $register->delete();
 
         // session()->flash('message', 'User has been deleted successfully');
         return response()->json(['success'=>'User deleted successfully.'],200);

@@ -2,7 +2,8 @@
 
 @section('content')
 	
-	{{-- QR Code Tester Drag In and Scanner --}}
-	<testerqrcode></testerqrcode>	
-
+	<div class="container">
+		{{-- QR Code Tester Drag In and Scanner --}}
+		<testerqrcode></testerqrcode>		
+	</div>	
 @endsection

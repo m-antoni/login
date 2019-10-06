@@ -3,11 +3,20 @@
 @section('content')
 
 <div class="container">
-	<h4>Add New</h4>
+    <div id="errors"></div>
 	<div class="card border-left-primary">
-		<div class="card-body">
-		  	<div id="errors"></div>
+        <div class="card-header">
+            <div class="row">
+                <div class="ml-1">
+                    <h3 class="display-4"><i class="fa fa-user"></i> Add New User</h3>
+                </div>
+                <div class="ml-auto mr-md-1">
+                    <a class="btn btn-secondary btn-circle" href="{{route('register.index')}}"><i class="fa fa-times"></i></a>
+                </div>
+            </div>
+        </div>
 
+		<div class="card-body">
 			<div id="output" align="center" style="display:none; margin: 50px;">
 	            <h3 class="text-success"><i class="fa fa-check-circle fa-4x"></i> <br>
 	            	<b>Registration Complete.</b>
@@ -80,37 +89,39 @@ $(document).ready(function(){
     		beforeSend: function(){
     			$('#addForm').hide();
     			$('.loader').show();
-    		},
-    		success: function(data){
-
-    			if(data.errors){
-    				html = '<div class="alert alert-danger">';
-                    for(let count=0; count < data.errors.length; count++ ){
-                        html += data.errors[count] + '</br>';
-                    }
-                    html += '</div>';
-
-                    $('.loader').hide();
-                    $('#addForm').show();
-    			}
-    			
-    			if(data.success){
-    				// success
-    				$('#errors').hide();
-    				$('.loader').hide();
-    				$('#output').show();
-
-    				setInterval(function(){
-    					window.location = '{{route('register.download')}}';
-    				}, 2000)
-    			}
-
-    			$('#errors').html(html);
-    		},
-    		error: function(data){
-    			console.log('Error: ' + data);
     		}
-    	});
+    	})
+        .done(function(data){
+
+            if(data.errors){
+                html = '<div class="alert alert-danger alert-dismissible fade show" role="alert">';
+                for(let count=0; count < data.errors.length; count++ ){
+                    html += data.errors[count] + '</br>';
+                }
+                html += '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
+
+                $('#errors').html(html);
+                $('.loader').hide();
+                $('#addForm').show();
+
+            }
+            
+            if(data.success){
+                // success
+                $('#errors').hide();
+                $('.loader').hide();
+                $('#addForm').hide();
+                $('#output').show();
+
+                setInterval(function(){
+                    window.location = '{{route('register.download')}}';
+                }, 2000)
+            }
+        })
+        .fail(function(data){
+            console.log('Error: ' + data);
+        });
+        
     });
 });
 </script>

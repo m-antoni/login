@@ -18,7 +18,7 @@ class UploadPhotoController extends Controller
 
    public function update(Request $request)
    {  
-
+      // validate data
       $rules = array(
 			'photo' => 'required|image|mimes:jpeg,jpg,png|max:5999',
 		);
@@ -31,7 +31,7 @@ class UploadPhotoController extends Controller
 
 		}else{
 
-			// Save to image to database
+			// Save the path and storage
 			Register::where('id', $request->id )->update([
 						'photo' => $request->photo->store('photos','public')
 					]);
@@ -49,9 +49,9 @@ class UploadPhotoController extends Controller
 
    		// delete the user image file
    		$path = public_path() . '/storage/' . $user->photo;
- 		unlink($path);
+ 		   unlink($path);
  		
- 		$new_path = 'photos/default.jpg';
+ 		   $new_path = 'photos/default.jpg';
    	  	// update the path to default.jpg
 	   	Register::find($id)->update(['photo' => $new_path ]);
 

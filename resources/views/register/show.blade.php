@@ -12,9 +12,9 @@
 					<h3 class="display-4"><i class="fa fa-user-circle"></i> General Information</h3>
 				</div>
 				<div class="ml-auto mr-md-1">
-					<a class="btn btn-secondary btn-circle btn-sm" href="{{route('register.index')}}"><i class="fa fa-arrow-left"></i></a>
-					<a class="btn btn-primary btn-circle btn-sm" href="{{route('register.edit', $register->id)}}"><i class="fa fa-edit"></i></a>
-					<button type="button" class="deleteBtn btn btn-danger btn-circle btn-sm">
+					<a class="btn btn-secondary btn-circle" href="{{route('register.index')}}"><i class="fa fa-reply"></i></a>
+					<a class="btn btn-primary btn-circle" href="{{route('register.edit', $register->id)}}"><i class="fa fa-edit"></i></a>
+					<button type="button" class="deleteBtn btn btn-danger btn-circle">
 						<i class="fa fa-times"></i> 
 					</button>
 				</div>
@@ -185,13 +185,13 @@
 
 				if(data.errors){
 
-					let html = '<div class="alert alert-danger my-2">';
+					let html = '<div class="alert alert-danger alert-dismissible fade show" role="alert">';
 
 					for(let count=0; count < data.errors.length; count++){
 						html += data.errors[count] + '</br>';
 					}
 					
-					html += '</div>';
+					 html += '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
 
 					$('#errors').html(html);
 					$('#photo').val('');

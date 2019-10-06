@@ -163,25 +163,29 @@
 <!-- Logout Modal-->
 
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+        <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-user-circle text-dark"></i> Log out now?</h5>
         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
       </div>
-      <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-      <div class="modal-footer">
-        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="{{ route('logout') }}"
+      <div class="modal-body">
+        <div align="center" class="my-4">
+             <a class="btn btn-dark btn-lg" href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                          document.getElementById('logout-form').submit();">
-            {{ __('logout') }}
-          </a>
-           <form id="logout-form" action="{{ route('logout') }}" method="GET" style="display: none;">
-                @csrf
-          </form>
+              <i class="fa fa-check-circle"></i> Confirm
+            </a>
+             <form id="logout-form" action="{{ route('logout') }}" method="GET" style="display: none;">
+                  @csrf
+            </form>
+        </div>
+          
+      </div>
+      <div class="modal-footer">
+      
       </div>
     </div>
   </div>
