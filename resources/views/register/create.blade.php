@@ -9,10 +9,10 @@
 		  	<div id="errors"></div>
 
 			<div id="output" align="center" style="display:none; margin: 50px;">
-	            <div style="width: 200px;">
-	            	<h2 class="text-success"><i class="fa fa-check-circle fa-5x"></i> <b>Success!</b></h2>
-	            	<h4>Please wait...</h4>
-	            </div>
+	            <h2 class="text-success"><i class="fa fa-check-circle fa-5x"></i> <br>
+	            	<b>Registration Complete.</b>
+	            </h2>
+	            <h4>Please wait...</h4>
 	        </div>
 
 		  	<div class="text-center loader" style="display: none; margin: 70px;">

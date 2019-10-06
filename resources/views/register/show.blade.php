@@ -91,9 +91,9 @@
 		            <p class="my-2">Please wait...</p>
 		        </div>
 
-		        <div id="output" class="text-center" style="display: none; margin: 20px;">
-		        	<i class="fa fa-check-circle fa-3x text-success"></i>
-		        	<div class="my-2"><b>Deleted Successfully!</b></div>
+		        <div id="output" class="text-center" style="display: none; margin: 10px;">
+		        	<i class="fa fa-check-circle fa-4x text-success"></i><br>
+		        	<h4 class="my-2"><b>Complete.</b></h4>
 		        </div>
 
       			<form id="deleteShow">
@@ -139,6 +139,7 @@
 					},
 					success: function(data){
 						$('.loader').hide();
+						$('h4').hide();
 						$('#output').modal('show');
 
 			            setInterval(function(){
