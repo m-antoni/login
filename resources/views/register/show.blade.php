@@ -3,6 +3,8 @@
 @section('content')
 
 <div class="container">
+	<div id="errors"></div>
+
 	<div class="card border-left-primary">
 		<div class="card-header">
 			<div class="row">
@@ -21,19 +23,20 @@
 		<div class="card-body">
 			<div class="row">
 				<div class="col-md-3">
-					<img src="{{asset('storage/photos/' . $register->photo)}}" class="image img-thumbnail border-secondary mb-2">
+					<img src="{{asset('storage/' . $register->photo)}}" class="image img-thumbnail border-secondary mb-2">
 
-					<div class="text-center imageLoader" style="display: none; margin: 20px;">
+					<div class="text-center imageLoader" style="display: none; margin: 70px 0 70px 0;">
 			            <div class="spinner-border" style="width: 3rem; height: 3rem; color: #00b0ff" role="status">
 			              <span class="sr-only">Loading...</span>
 			            </div>
 			            <p class="my-2">Loading...</p>
 			        </div>
-
+			       
 					<form id="uploadForm" enctype="multipart/form-data">
 						<div class="row">
 							<div class="col-md-12">
-								<input id="photo" type="file" name="photo">	
+								<input type="hidden" name="id" value="{{$register->id}}">
+								<input id="photo" name="photo" type="file" class="form-control">	
 							</div>
 							<div class="col-md-12 pt-1">
 								<button type="submit" class="btn btn-primary btn-sm btn-block">
@@ -43,11 +46,11 @@
 						</div>
 					</form>
 				
-				{{-- 	<form action="{{route('upload.delete', $register->id)}}" method="POST">
+					<form id="deleteImageForm">
 						<button type="submit" class="btn btn-sm btn-danger btn-block">
-							<i class="fa fw fa-image"></i> Delete Image
+							<i class="fa fw fa-image"></i> Remove Image
 						</button>	
-					</form> --}}
+					</form>
 					
 				</div>
 				<div class="col-md-4">
@@ -93,7 +96,7 @@
 
 		        <div id="output" class="text-center" style="display: none; margin: 10px;">
 		        	<i class="fa fa-check-circle fa-4x text-success"></i><br>
-		        	<h4 class="my-2"><b>Complete.</b></h4>
+		        	<div class="my-2"><b>Deleted Successfully.</b></div>
 		        </div>
 
       			<form id="deleteShow">
@@ -120,9 +123,16 @@
 	        }
 	    });
 
+		if($('.image').attr('src') == '{{Request::root()}}/storage/photos/default.jpg'){
+			$('#uploadForm').show();
+			$('#deleteImageForm').hide();
+		}else{
+			$('#deleteImageForm').show();
+			$('#uploadForm').hide();
+		}
+
 		$('.deleteBtn').on('click', function(){
 			$('#deleteModal').modal('show');
-
 			let id = $('#userID').val();
 
 			$('#deleteShow').on('submit', function(e){
@@ -130,58 +140,105 @@
 
 				$.ajax({
 					type: 'DELETE',
-					url: "{{ url()->full() }}",
+					url: "{{ route('register.delete', $register->id) }}",
 					data: {id: id},
 					dataType: 'json',
 					beforeSend: function(){
 						$('.loader').show();
 						$('#deleteShow').hide();
-					},
-					success: function(data){
-						$('.loader').hide();
-						$('h4').hide();
-						$('#output').modal('show');
-
-			            setInterval(function(){
-			            	window.location = "{{route('register.index')}}";
-			            }, 1000);
-					},
-					error: function(data){
-						console.log('Error ' + data);
 					}
+				})
+				.done(function(){
+					$('.loader').hide();
+					$('h4').hide();
+					$('#output').modal('show');
+
+		            setInterval(function(){
+		            	window.location = "{{route('register.index')}}";
+		            }, 1000);
+				})
+				.fail(function(error){
+					console.log('Error ' + error);
 				})
 			});
 		});
 
 
 		// Upload image
-		$('#uploadForm').on('submit', function(){
+		$('#uploadForm').on('submit', function(e){
+			e.preventDefault();
 
-				let photo = $('#photo').val();
-				let id = '{{$register->id}}';
+			$.ajax({
+				type: 'POST',
+				url: "{{ route('upload.photo') }}",
+				data: new FormData(this),
+				contentType: false,
+				cache: false,
+				processData:false,
+				dataType: 'json',
+				beforeSend: function(){
+					$('.image').hide();
+					$('.imageLoader').show();
+					$('#photo').val('');
+				}
+			}).done(function(data){
 
-				$.ajax({
-					type: 'PATCH',
-					url: "{{url()->full()}}/update",
-					data: new FormData(this),
-					cache: false,
-					contentType: false,
-					processData:false,
-					dataType: 'json',
-					beforeSend: function(){
-						$('.image').hide();
-						$('.imageLoader').show();
-					},
-					success: function(data){
-						$('.imageLoader').hide();
-						$('.image').show();
-						alert('success');
-					},
-					error: function(data){
-						console.log('Error ' + data);
+				if(data.errors){
+
+					let html = '<div class="alert alert-danger my-2">';
+
+					for(let count=0; count < data.errors.length; count++){
+						html += data.errors[count] + '</br>';
 					}
-				});
+					
+					html += '</div>';
+
+					$('#errors').html(html);
+					$('#photo').val('');
+					$('.imageLoader').hide();
+					$('.image').show();
+
+				}else{
+					$('#errors').html('');
+					$('.imageLoader').hide();
+					$('.image').attr('src', '{{Request::root()}}/storage/' + data.path);
+					$('.image').show();
+					$('#uploadForm').hide();
+					$('#deleteImageForm').show();
+
+					$('#photo').val(''); //clear
+				}
+
+			}).fail(function(data){
+				console.log('Error ' + data);
 			})
+		})
+
+		$('#deleteImageForm').on('submit', function(e){
+			e.preventDefault();
+
+			$.ajax({
+				url: '{{route('upload.delete', $register->id )}}',
+				type: 'DELETE',
+				beforeSend: function(){
+					$('.image').hide();
+					$('.imageLoader').show();
+				}
+			})
+			.done(function(data) {
+				$('.imageLoader').hide();
+				$('.image').attr('src', '{{Request::root()}}/storage/' + data.path);
+				$('.image').show();
+				$('#uploadForm').show();
+				$('#deleteImageForm').hide();
+
+			})
+			.fail(function(data) {
+				console.log('Error ' + data);
+			})
+			
+		});
+
 	});
 </script>
 @endsection

@@ -15,7 +15,7 @@ class CreateRegistersTable extends Migration
     {
         Schema::create('registers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('qrcode');
+            $table->string('qrcode')->nullable();
             $table->string('first');
             $table->string('last');
             $table->string('middle')->nullable();
@@ -29,7 +29,7 @@ class CreateRegistersTable extends Migration
             $table->string('date_hired');
             $table->string('user_type');
             $table->string('id_number');
-            $table->string('photo')->nullable()->default('default.jpg');
+            $table->string('photo')->nullable()->default('photos/default.jpg');
             $table->timestamps();
         });
     }

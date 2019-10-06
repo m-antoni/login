@@ -133,7 +133,8 @@ class RegistersController extends Controller
     }
 
     public function show(Register $register)
-    { 
+    {   
+        // dd($register->id);
         return view('register.show', compact('register'));
     }
 
@@ -160,27 +161,6 @@ class RegistersController extends Controller
 
         // session()->flash('message', 'User has been deleted successfully');
         return response()->json(['success'=>'User deleted successfully.'],200);
-    }
-
-    private function validateRequest()
-    {
-        // Validation code block
-        return request()->validate([
-            'first' => 'required',
-            'last' => 'required',
-            'middle' => 'nullable',
-            'age' => 'required|numeric',
-            'gender' => 'required',
-            'birthday' => 'required|date',
-            'contact' => 'required|numeric',
-            'email' => 'required|email',
-            'address' => 'required',
-            'department' => 'required',
-            'date_hired' => 'required|date',
-            'user_type' => 'required',
-            'id_number' => 'required|numeric',
-            'photo' => 'image|nullable|max:1999',
-        ]);
     }
 
     public function department()

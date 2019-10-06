@@ -11,6 +11,6 @@ class RegisterTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Register::class, 5)->create();
+        factory(App\Register::class, 10)->create();
     }
 }

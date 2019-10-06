@@ -50,8 +50,8 @@ Route::prefix('admin')->group(function(){
 
 		// Upload Photo
 		// Route::get('/register/{register}/photo', 'UploadPhotoController@index')->name('upload')->middleware('auth:admin');
-		Route::patch('/register/{register}/update', 'UploadPhotoController@update')->name('upload.update')->middleware('auth:admin');
-		Route::patch('/register/{register}/photo', 'UploadPhotoController@destroy')->name('upload.delete')->middleware('auth:admin');
+		Route::post('/register/upload', 'UploadPhotoController@update')->name('upload.photo')->middleware('auth:admin');
+		Route::delete('/register/upload/{register}', 'UploadPhotoController@destroy')->name('upload.delete')->middleware('auth:admin');
 	
 		// LogsController
 		Route::get('/logs', 'LogsController@index')->name('logs.index')->middleware('auth:admin');

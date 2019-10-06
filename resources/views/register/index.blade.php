@@ -103,35 +103,36 @@
 						$('.loader').show();
 						$('#deleteForm').hide();
 					},
-					success: function(data){
-						if(data.success){
-							$('#deleteModal').modal('hide');
-							iziToast.show({
-				                title: 'Success',
-				                theme: 'dark',
-				                icon: 'ico-success',
-				                progressBarColor: '#1cc88a',
-				                position: 'bottomRight',
-				                transitionIn: 'bounceInLeft',
-				                transitionOut: 'flipOutX',
-				                message: '<b>' + data.success + '</b>',
-				            });
-				            $('.loader').hide();
-							$('#deleteForm').show();
-							$('#users').DataTable().ajax.reload();
-							// window.location.reload();
-						}
-					},
-					error: function(data){
-						console.log(data)
-					}	
-				});
+				})
+				.done(function(data){
+					if(data.success){
+						$('#deleteModal').modal('hide');
+						iziToast.show({
+			                title: 'Success',
+			                theme: 'dark',
+			                icon: 'ico-success',
+			                progressBarColor: '#1cc88a',
+			                position: 'bottomRight',
+			                transitionIn: 'bounceInLeft',
+			                transitionOut: 'flipOutX',
+			                message: '<b>' + data.success + '</b>',
+			            });
+
+			            $('.loader').hide();
+						$('#deleteForm').show();
+						$('#users').DataTable().ajax.reload();
+					// window.location.reload();
+					}
+				})
+				.fail(function(data){
+					console.log('Error' + data)
+				})
 		
 			})
 		});
 
 	});
 
-
+	
 </script>
 @endsection

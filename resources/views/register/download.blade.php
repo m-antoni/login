@@ -14,13 +14,6 @@
 	            </div>
 	        </div>
 
-		  	<div class="text-center loader" style="display: none; margin: 70px;">
-	            <div class="spinner-border" style="width: 8rem; height: 8rem; color: #00b0ff" role="status">
-	              <span class="sr-only">Loading...</span>
-	            </div>
-	            <h4 class="my-2">Downloading...</h4>
-	        </div>
-
 			<div id="downloadForm" align="center">
 				<img src="/img/qrcode.png" class="img-thumbnail mt-2 border-dark" style="width: 250px;">
 				<div class="form-group">
@@ -46,13 +39,12 @@ $(document).ready(function(){
 
 	$('a').on('click', function(){
 
-		$('.loader').hide();
 		$('#output').show();
 		$('#downloadForm').hide();
 
 		setInterval(function(){
 			window.location = '{{route('register.index')}}';
-		},3000);
+		},2000);
 
 	});
 });
