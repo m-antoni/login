@@ -4,11 +4,13 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Logs::class, function (Faker $faker) {
     return [
-    		'register_id' => 0, 
+    	'register_id' => $faker->randomDigit, 
         'qrcode' => $faker->sha256,
         'name' => $faker->name,
-        'time_in' => $faker->dateTime,
-        'time_out' => $faker->dateTime,
-        'status' => $faker->randomElement(array('Active', 'Inactive')),
+        'log_in' => $faker->dateTime,
+        'log_out' => $faker->dateTime,
+        'late' => $faker->dateTime,
+        'under' => $faker->dateTime,
+        'status' => $faker->randomElement(array(true, false)),
     ];
 });

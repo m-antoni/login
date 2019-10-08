@@ -111,4 +111,9 @@ class Register extends Model
     {
       return $this->hasMany('App\Logs');
     }
+
+    public function notification()
+    {
+        return $this->hasMany('App\Notification'); 
+    }
 }

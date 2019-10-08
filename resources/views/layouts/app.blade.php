@@ -72,17 +72,85 @@
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
-{{-- <script src="{{ asset('js/flipclock.min.js') }}"></script> --}}
 <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
-{{-- <script src="{{ asset('/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script> --}}
 <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('js/dataTables.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('js/iziToast.min.js') }}"></script>
 <script src="{{ asset('js/script.js') }}"></script>
-{{-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> --}}
-<!-- Page level plugins -->
-{{-- <script src="vendor/chart.js/Chart.min.js"></script> --}}
-<!-- Page level custom scripts -->
+<script type="text/javascript">
+  $(document).ready(function(){
+      $.ajaxSetup({
+          headers:{
+            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+          }
+      });
+
+      setInterval(function(){
+          getNotification();  
+      },1000);
+
+      // Get all the notifications
+      function getNotification(){
+        $.ajax({
+          url: '{{ route('notifications')}}',
+          type: 'GET',
+          dataType: 'json',
+          beforeSend(){
+              $('#notif-loader').show();
+          }
+        })
+        .done(function(data) {
+          console.log(data);
+
+          $('#notif-loader').hide();
+
+          if(data.notifications.length > 0){
+            let output = '';
+            $('#notif-counter').html(data.count > 0 ?  data.count : '' );
+
+                data.notifications.forEach(function(notif){
+                 output += `<a class="dropdown-item d-flex align-items-center" href="/admin/register/${notif.register_id}">
+                            <div class='mr-3'>
+                              <div>
+                                  <img src='/storage/${notif.photo}' class='img-fluid rounded-circle' style='width: 50px !important;'>
+                                </div>
+                              </div>
+                              <div>
+                                <div class='small text-danger'>${notif.date}</div>
+                                  <div><strong>${notif.title}</strong></div>
+                                  <div>${notif.description}</div> 
+                              </div>
+                          </a>`;
+                });
+
+               $('#notif-output').html(output);   
+          }else{
+
+            $('#notif-output').html('<div align="center" class="py-3"><strong>There is no data to show...<strong><div>');   
+          }
+           
+        })
+        .fail(function(error) {
+          console.log('Error ' + error);
+        });
+      }
+
+      $('#notif-btn').on('click', function(){
+
+          $.ajax({  
+              url: '{{route('notifications.read')}}',
+              type: 'POST',
+          })
+          .done(function(data){
+              $('#notif-counter').html('');
+          })
+          .fail(function(error){
+              console.log('Error ' + error);
+          })
+      })
+
+  });
+</script>
 {{-- Added scripts --}}
 @yield('script')
 

@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
     	$this->call([
             AdminTableSeeder::class,
             RegisterTableSeeder::class,
+            NotificationsSeeder::class,
             // LogTableSeeder::class,
         ]);
     }

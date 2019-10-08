@@ -61,6 +61,10 @@ Route::prefix('admin')->group(function(){
 		Route::get('/logs/active', 'LogsController@active')->name('active')->middleware('auth:admin');
 		Route::get('/logs/inactive', 'LogsController@inactive')->name('inactive')->middleware('auth:admin');
 
+		// Notifications Controller
+		Route::get('/notifications', 'NotificationController@get_notifications')->name('notifications')->middleware('auth:admin');
+		Route::post('/notifications/read', 'NotificationController@read_notifications')->name('notifications.read')->middleware('auth:admin');
+
 		// QR Code Tester DragInDrop and Scanner
 		Route::get('/tester', 'AdminsController@tester')->name('testqrcode')->middleware('auth:admin');
 
