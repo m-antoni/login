@@ -131,7 +131,7 @@ class LoginQRCodeController extends Controller
                     $this->store_login($register->id, $request->qrcode, $fullName, $time, $late);
 
                     // send notification
-                    $this->send_notification($register->id, $fullName, 'Late in: ' . $time->format('h:i A'), $time->format('M j, Y'));
+                    $this->send_notification($register->id, $fullName, 'Late in: ' . $time->format('h:i A'), $time->format('F j, Y'));
 
                     // is late
                     return response()->json(['wrong' => 'Late in: ' . $time->format('h:i A M j, Y'),'image' => $imageURL]);
@@ -144,7 +144,7 @@ class LoginQRCodeController extends Controller
                     $this->store_login($register->id, $request->qrcode, $fullName, $time, $late);
 
                     // send notification
-                    $this->send_notification($register->id, $fullName, 'Logged in: ' . $time->format('h:i A'), $time->format('M j, Y'));
+                    $this->send_notification($register->id, $fullName, 'Logged in: ' . $time->format('h:i A'), $time->format('F j, Y'));
 
                     // not late
                     return response()->json(['message' => 'Logged in: ' . $time->format('h:i A M j, Y'),'image' => $imageURL]);

@@ -43,7 +43,7 @@ class Register extends Model
      */
     public function getFullNameAttribute()
     {
-        return "{$this->last}, {$this->first} {$this->middle}";
+        return "{$this->first} {$this->last}";
     }
 
     /**
