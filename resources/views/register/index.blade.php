@@ -18,7 +18,7 @@
 				<th>Contact</th>
 				<th>Email</th>
 				<th>Department</th>
-				<th width="90px">Action</th>
+				<th width="100px">Action</th>
 			</tr>
 		</thead>
 	</table>
@@ -47,7 +47,6 @@
 				        </div>
 
 		      			<form id="deleteForm">
-							@method('DELETE')
 							<button type="submit" class="btn btn-primary mt-3">
 								<i class="fa fa-check"></i> Confirm
 							</button>
@@ -86,17 +85,16 @@
 			]
 		});
 
-		$('body').on('click', '.delete', function(){
-			let id = $(this).data('id');
-			$('#deleteID').val(id);
+		$('body').on('click', '.deleteBtn', function(){
 			$('#deleteModal').modal('show');
+			let id = $(this).data('id');
 
 			$('#deleteForm').on('submit', function(e){
 				e.preventDefault();
 
 				$.ajax({
 					type: 'DELETE',
-					url: "register" + "/" + id,
+					url: '{{ url()->current() }}/' + id,
 					data: {id: id},
 					dataType: 'json',
 					beforeSend: function(){
@@ -107,6 +105,7 @@
 				.done(function(data){
 					if(data.success){
 						$('#deleteModal').modal('hide');
+						// show izitoast
 						iziToast.show({
 			                title: 'Success',
 			                theme: 'dark',
@@ -120,19 +119,18 @@
 
 			            $('.loader').hide();
 						$('#deleteForm').show();
-						$('#users').DataTable().ajax.reload();
-					// window.location.reload();
+						setInterval(function(){
+							window.location.reload();
+							// $('#users').DataTable().ajax.reload();
+						},2000);
 					}
 				})
 				.fail(function(data){
 					console.log('Error' + data)
 				})
-		
 			})
-		});
+		}); //deleteBtn
 
-	});
-
-	
+	});// document
 </script>
 @endsection

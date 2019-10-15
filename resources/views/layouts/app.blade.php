@@ -86,8 +86,9 @@
       });
 
       setInterval(function(){
+          // make request every 2 secs.
           getNotification();  
-      },1000);
+      },2000);
 
       // Get all the notifications
       function getNotification(){
@@ -106,7 +107,7 @@
 
           if(data.notifications.length > 0){
             let output = '';
-            $('#notif-counter').html(data.count > 0 ?  data.count : '' );
+            $('#notif-counter').html(data.count > 0 ? data.count : '' );
 
                 data.notifications.forEach(function(notif){
                  output += `<a class="dropdown-item d-flex align-items-center" href="/admin/register/${notif.register_id}">
@@ -135,8 +136,8 @@
         });
       }
 
+      // this will read the unread notifications
       $('#notif-btn').on('click', function(){
-
           $.ajax({  
               url: '{{route('notifications.read')}}',
               type: 'POST',

@@ -44,7 +44,7 @@ Route::prefix('admin')->group(function(){
 		Route::get('/register/{register}', 'RegistersController@show')->name('register.show')->middleware('auth:admin');
 		Route::get('/register/{register}/edit', 'RegistersController@edit')->name('register.edit')->middleware('auth:admin');
 		Route::patch('/register/{register}', 'RegistersController@update')->name('register.update')->middleware('auth:admin');
-		Route::delete('/register/{register}', 'RegistersController@destroy')->name('register.delete')->middleware('auth:admin');
+		Route::delete('/register/{id}', 'RegistersController@destroy')->name('register.delete')->middleware('auth:admin');
 		Route::get('/register/download/file', 'RegistersController@downloadpage')->name('register.download')->middleware('auth:admin');
 		Route::get('/register/download/file/get', 'RegistersController@downloadfile')->name('register.downloadfile')->middleware('auth:admin');
 

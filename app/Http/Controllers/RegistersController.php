@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Yajra\DataTables\Facades\DataTables;
 use Faker\Generator as Faker;
+use DB;
 use App\Register;
 use Validator;
 use File;
@@ -18,7 +19,7 @@ class RegistersController extends Controller
         if($request->ajax()){
             $data = Register::latest()->get();
             return Datatables::of($data)
-                 ->setRowId(function($user){
+                ->setRowId(function($user){
                 return $user->id;
             })
             ->addColumn('action', function($row){
@@ -26,7 +27,7 @@ class RegistersController extends Controller
                         <i class="fa fa-eye"></i></a>
                         <a href="register/' . $row->id .'/edit" class="btn btn-sm btn-primary btn-circle">
                         <i class="fa fa-edit"></i></a>
-                        <a href="#" class="delete btn btn-sm btn-danger btn-circle" data-id=' . $row->id . '>
+                        <a href="#" class="deleteBtn btn btn-sm btn-danger btn-circle" data-id='.$row->id.'>
                         <i class="fa fa-trash"></i></a>
                         ';
                 return $btn;
@@ -120,11 +121,12 @@ class RegistersController extends Controller
         // check if the file  exists
         $result = File::exists(public_path('storage/temporary_qrcode.png'));
         
-        if($result){
+        if($result)
+        {
             // download the file and delete it from storage directory
             return response()
-                    ->download(public_path('storage/temporary_qrcode.png'),'generated-qrcode.png', $headers)
-                    ->deleteFileAfterSend(true);
+                ->download(public_path('storage/temporary_qrcode.png'),'generated-qrcode.png', $headers)
+                ->deleteFileAfterSend(true);
         }
     }
 
@@ -162,7 +164,8 @@ class RegistersController extends Controller
 
         $error = Validator::make($request->all(), $rules);
 
-          if($error->fails()){
+        if($error->fails()){
+
             // return error
             return response()->json(['errors' => $error->errors()->all()]);
 
@@ -190,15 +193,18 @@ class RegistersController extends Controller
 
     }
 
-    public function destroy(Register $register)
+    public function destroy($id)
     {
-        // remove if has photo
-        if($register->photo != 'photos/default.jpg'){
-            $path = public_path() . '/storage/' . $register->photo;
-            unlink($path);
-        }
+        
+        DB::table('registers')->where('id', $id)->delete();
+
+        // if($register->photo != 'photos/default.jpg'){
+        //     $path = public_path() . '/storage/' . $register->photo;
+        //     unlink($path);
+        // }
+
         // delete the user
-        $register->delete();
+
 
         // session()->flash('message', 'User has been deleted successfully');
         return response()->json(['success'=>'User deleted successfully.'],200);

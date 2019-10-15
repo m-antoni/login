@@ -9,8 +9,8 @@ $factory->define(App\Logs::class, function (Faker $faker) {
         'name' => $faker->name,
         'log_in' => $faker->dateTime,
         'log_out' => $faker->dateTime,
-        'late' => $faker->dateTime,
-        'under' => $faker->dateTime,
+        'late' =>  0,
+        'under' => 0,
         'status' => $faker->randomElement(array(true, false)),
     ];
 });

@@ -11,11 +11,11 @@ class NotificationController extends Controller
 {
     public function get_notifications()
     {	
-    	// $notifications = DB::table('notifications')->select('register_id','title', 'description', 'date')->limit(4)->latest()->get();
+        // get the notification count()
+    	$count = DB::table('notifications')->where('status', '=', false)->count();
 
-    	$count = Notification::where('status', false)->count();
-
-    	$notif = DB::table('notifications')
+        // inner join the registers and notifications table to get the desire data
+    	$notif = DB::table('notifications')  
     				->join('registers', 'notifications.register_id', '=', 'registers.id')
     				->select(
     					'notifications.register_id',
@@ -31,10 +31,13 @@ class NotificationController extends Controller
     }
 
     public function read_notifications()
-    {
-    	$read = Notification::where('status', false)->update([
-    		'status' => true
-    	]);
+    {   
+        // update all to status true or 0
+    	$read = DB::table('notifications')
+                    ->where('status', false)
+                    ->update([
+    		              'status' => true
+    	            ]);
 
     	return response()->json(['success' => 'Read Notifications'],200);
     }

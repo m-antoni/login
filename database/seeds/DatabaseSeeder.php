@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
             AdminTableSeeder::class,
             RegisterTableSeeder::class,
             NotificationsSeeder::class,
-            // LogTableSeeder::class,
+            LogTableSeeder::class,
         ]);
     }
 }
