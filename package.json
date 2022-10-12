@@ -25,7 +25,7 @@
     "dependencies": {
         "flipclock": "^0.10.0",
         "font-awesome": "^4.7.0",
-        "jspdf": "^1.5.3",
+        "jspdf": "^2.5.1",
         "jspdf-autotable": "^3.0.13",
         "vee-validate": "^2.1.7",
         "vue-chartjs": "^3.4.0",
