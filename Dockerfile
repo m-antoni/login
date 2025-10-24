@@ -1,24 +1,34 @@
-# 1️⃣ Start from a base image
-FROM php:8.2-fpm
+# Use PHP with Composer and extensions
+FROM php:8.2-apache
 
-# 2️⃣ Install required system packages or extensions
+# Install dependencies and extensions
 RUN apt-get update && apt-get install -y \
-    git curl zip unzip libpq-dev libonig-dev libzip-dev libxml2-dev \
-    && docker-php-ext-install pdo pdo_mysql mbstring zip exif pcntl bcmath
+    libpq-dev zip unzip git curl \
+    && docker-php-ext-install pdo pdo_pgsql
 
-# 3️⃣ Copy your application code into the container
+# Install Composer globally
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Set working directory
 WORKDIR /var/www/html
+
+# Copy all Laravel files
 COPY . .
 
-# 4️⃣ Install PHP dependencies (using Composer)
-COPY --from=composer:2.8 /usr/bin/composer /usr/bin/composer
+# Install dependencies
 RUN composer install --no-dev --optimize-autoloader
 
-# 5️⃣ Optional: generate key or do other Laravel setup
-RUN php artisan key:generate
+# Generate app key and cache config
+# (Will fail gracefully if APP_KEY already exists)
+RUN php artisan key:generate || true
+RUN php artisan config:cache || true
+RUN php artisan route:cache || true
 
-# 6️⃣ Expose the port Laravel runs on
-EXPOSE 8000
+# Run migrations automatically (safe with --force)
+RUN php artisan migrate --force || true
 
-# 7️⃣ Start the Laravel app
-CMD php artisan serve --host=0.0.0.0 --port=$PORT
+# Expose port Render expects
+EXPOSE 10000
+
+# Start Laravel app
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=10000"]
