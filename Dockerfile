@@ -1,40 +1,38 @@
-# Use PHP 8.2 with Apache
+# Use official PHP image with Apache
 FROM php:8.2-apache
 
-# Install required system packages
+# Install necessary system dependencies and PHP extensions
 RUN apt-get update && apt-get install -y \
-    git curl zip unzip libpq-dev libzip-dev libonig-dev libxml2-dev \
-    && docker-php-ext-install pdo pdo_pgsql bcmath mbstring zip exif pcntl tokenizer xml
+    git curl zip unzip libpq-dev libzip-dev libpng-dev libjpeg-dev libfreetype6-dev \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install pdo pdo_pgsql mbstring zip exif pcntl bcmath gd
 
-# Enable Apache rewrite module (needed for Laravel routes)
+# Enable Apache rewrite module for Laravel routing
 RUN a2enmod rewrite
 
-# Install Composer globally
+# Copy Composer from the official Composer image
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy app files
+# Copy app files into container
 COPY . .
 
-# Ensure storage & bootstrap/cache are writable
-RUN chmod -R 775 storage bootstrap/cache
+# Set permissions for storage and bootstrap/cache
+RUN chmod -R 775 storage bootstrap/cache || true
 
-# Install PHP dependencies (ignore platform reqs to fix extension mismatch)
+# Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 
-# Generate Laravel app key (ignore if exists)
+# Generate app key (if not exists)
 RUN php artisan key:generate || true
 
-# Run migrations (ignore if fails on build)
-RUN php artisan migrate --force || true
-
-# Cache configs and routes
+# Cache config and routes
 RUN php artisan config:cache || true
 RUN php artisan route:cache || true
 
-# Expose port
+# Expose Render port
 EXPOSE 10000
 
 # Start Laravel server
