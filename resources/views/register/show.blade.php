@@ -163,6 +163,20 @@
 			});
 		});
 
+		// Preview selected image before uploading
+		$('#photo').on('change', function(event) {
+			const file = event.target.files[0];
+			if (file) {
+				const reader = new FileReader();
+
+				reader.onload = function(e) {
+					$('.image').attr('src', e.target.result).show(); // preview image
+					$('.imageLoader').hide();
+				};
+
+				reader.readAsDataURL(file); // convert file to base64 for preview
+			}
+		});
 
 		// Upload image
 		$('#uploadForm').on('submit', function(e){
@@ -218,7 +232,7 @@
 			e.preventDefault();
 
 			$.ajax({
-				url: '{{route('upload.delete', $register->id )}}',
+				url: '{{ route("upload.delete", ["register" => $register->id]) }}',
 				type: 'DELETE',
 				beforeSend: function(){
 					$('.image').hide();
