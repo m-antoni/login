@@ -29,7 +29,7 @@ Route::prefix('/')->group(function(){
 Route::prefix('admin')->group(function(){
 		// Login Form
 		Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('login')->middleware('guest:admin');
-		Route::post('/login', 'Auth\AdminLoginController@login')->name('login.post')->middleware('guest:admin');
+		Route::post('/login', 'Auth\AdminLoginController@login')->name('login.post');
 		Route::get('/logout', 'Auth\AdminLoginController@adminLogout')->name('logout');
 
 		// Dashboard

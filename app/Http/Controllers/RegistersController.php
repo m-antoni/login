@@ -11,6 +11,7 @@ use App\Register;
 use Validator;
 use File;
 use QRCode;
+use Illuminate\Support\Str;
 
 class RegistersController extends Controller
 {
@@ -77,7 +78,7 @@ class RegistersController extends Controller
         }else{
 
             // Generate random string
-            $passcode = str_random(60);
+            $passcode = Str::random(60);
 
             // Generate QR Code
             $qrcode = QRCode::text($passcode)

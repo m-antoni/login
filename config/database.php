@@ -13,8 +13,8 @@ return [
     |
     */
 
-    // 'default' => env('DB_CONNECTION', 'mysql'), // use for development
-    'default' => env('DB_CONNECTION', 'pgsql'), // for production
+    'default' => env('DB_CONNECTION', 'mysql'), // use for development
+    // 'default' => env('DB_CONNECTION', 'pgsql'), // for production
 
     /*
     |--------------------------------------------------------------------------

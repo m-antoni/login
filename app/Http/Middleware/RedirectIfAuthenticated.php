@@ -1,26 +1,18 @@
 <?php
 
-namespace App\Http\Middleware;
-
-use Closure;
-use Illuminate\Support\Facades\Auth;
-
-class RedirectIfAuthenticated
+public function handle($request, Closure $next, $guard = null)
 {
-    /**
-     * Handle an incoming request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
-     * @param  string|null  $guard
-     * @return mixed
-     */
-    public function handle($request, Closure $next, $guard = null)
-    {
-        if (Auth::guard($guard)->check()) {
-            return redirect('/admin/dashboard');
+    if (Auth::guard($guard)->check()) {
+        // If the request came via AJAX or expects JSON (like your modal login)
+        if ($request->ajax() || $request->wantsJson()) {
+            return response()->json([
+                'redirect' => route('dashboard')
+            ]);
         }
 
-        return $next($request);
+        // Otherwise, normal browser redirect
+        return redirect()->route('dashboard');
     }
+
+    return $next($request);
 }

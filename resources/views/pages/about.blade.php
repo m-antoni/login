@@ -7,7 +7,7 @@
 			<div class="jumbotron py-3">
 			  <h1 class="display-3">{{$info['title']}}</h1>
 			 	<hr class="my-3">
-			  <p class="lead"><i class="fa fa-code"></i> Log In System using QR Code version 1.0</p>
+			  <p class="lead"><i class="fa fa-code"></i> Attendance Monitoring System 1.0</p>
 				<ul>
 						<li>Create, update and delete users</li>
 						<li>Upload user profile image</li>

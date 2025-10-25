@@ -10,6 +10,7 @@ use Validator;
 
 class AdminLoginController extends Controller
 {
+  
     public function showLoginForm()
     {
         return view('login.admin');

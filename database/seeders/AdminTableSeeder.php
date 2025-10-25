@@ -14,7 +14,7 @@ class AdminTableSeeder extends Seeder
     {
         Admin::factory()->create([
             'username' => 'admin',
-            'password' => bcrypt('12345678'),
+            'password' => bcrypt('123456'),
         ]);
     }
 }

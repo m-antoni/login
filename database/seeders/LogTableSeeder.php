@@ -12,6 +12,6 @@ class LogTableSeeder extends Seeder
      */
     public function run(): void
     {
-        Logs::factory()->count(10)->create();
+        Logs::factory()->count(5)->create();
     }
 }

@@ -19,163 +19,130 @@ class LoginQRCodeController extends Controller
 
     public function login_store(Request $request)
     {
-        // set timezone to Asia/Manila
+       
+        // Set timezone to Asia/Manila
         $time = Carbon::now()->setTimezone('Asia/Manila');
-    	// check if qrcode is registered
+    
+        // Check if QR code is registered
         $register = Register::where('qrcode', $request->qrcode)->firstOrFail();
-        // user image path                    
+    
+        // User image path
         $imageURL = asset('/storage/' . $register->photo);
-        // check if user has log in 
+    
+        // Check if user is already logged in (no log_out yet)
         $oldUser = Logs::where('qrcode', $register->qrcode)
-                                 ->whereNull('log_out')
-                                 ->first();
-        // get the fullname
+                       ->whereNull('log_out')
+                       ->first();
+    
+        // Full name
         $fullName = $register->getFullNameAttribute();
-
-
-        if($oldUser){
-            // set a time to end 6:00PM
-            $setTimeToEnd = Carbon::createFromTime(18,00,00,'Asia/Manila');
-
-            // not greater than set time to end
-            if(!$time->copy()->greaterThan($setTimeToEnd)){
-                // is under time
+    
+        // If user already has an active login
+        if ($oldUser) {
+            $setTimeToEnd = Carbon::createFromTime(18, 0, 0, 'Asia/Manila');
+    
+            if (!$time->copy()->greaterThan($setTimeToEnd)) {
+                // Under time
                 $oldUser->log_out = $time;
                 $oldUser->under = $time->diffInHours($setTimeToEnd);
                 $oldUser->status = 0;
                 $oldUser->save();
-
-                 // send notification
+    
                 $this->send_notification($register->id, $fullName, 'Under Time: ' . $time->format('h:i A'), $time->format('F j, Y'));
-
-                return response()->json(['wrong' => 'Under Time: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
-            }else{
-                // is correct time out
+                return response()->json(['wrong' => 'Under Time: ' . $time->format('h:iA M j, Y'), 'image' => $imageURL]);
+            } else {
+                // Correct time-out
                 $oldUser->log_out = $time;
                 $oldUser->under = 0;
                 $oldUser->status = 0;
                 $oldUser->save();
-
-                // send notification
+    
                 $this->send_notification($register->id, $fullName, 'Logged out: ' . $time->format('h:i A'), $time->format('F j, Y'));
-
-                return response()->json(['message' => 'Logged out: ' . $time->format('h:iA M j, Y'),'image' => $imageURL]);
+                return response()->json(['message' => 'Logged out: ' . $time->format('h:iA M j, Y'), 'image' => $imageURL]);
             }
-            
-         // Check if user has logs  
-        }elseif(Logs::where('qrcode', $register->qrcode)->exists()){
-            // Get user's time in and check if today this will return true
-            $latest = Logs::where('qrcode', $register->qrcode)->latest()->first()->log_in->isToday();
-
-            // is not today and not sunday
-            if(!$latest){ // && !$time->isSunday()
-                // fullname
-                // $fullName = $register->getFullNameAttribute();
-
-                // time to beat is 9:00AM
-                $setTimetoBeat = Carbon::createFromTime(9,00,00,'Asia/Manila');
-
-                // condition late or not
-                if($time->isAfter($setTimetoBeat)){
-                    // get the late
+    
+        // If user has previous logs
+        } elseif (Logs::where('qrcode', $register->qrcode)->exists()) {
+    
+            $latestLog = Logs::where('qrcode', $register->qrcode)->latest()->first();
+    
+            // Safely check if latest log-in is today
+            $latestIsToday = $latestLog ? Carbon::parse($latestLog->log_in)->isToday() : false;
+    
+            if (!$latestIsToday) {
+                $setTimetoBeat = Carbon::createFromTime(9, 0, 0, 'Asia/Manila');
+    
+                if ($time->isAfter($setTimetoBeat)) {
                     $late = $time->diffInHours($setTimetoBeat);
-
-                    // store in database to create new data
                     $this->store_login($register->id, $request->qrcode, $fullName, $time, $late);
-
-                    // send notification
+    
                     $this->send_notification($register->id, $fullName, 'Late in: ' . $time->format('h:i A'), $time->format('F j, Y'));
-
-                    // is late
-                    return response()->json(['wrong' => 'Late in: ' . $time->format('h:i A M j, Y'),'image' => $imageURL]);
-                }else{
-                    // not late
+                    return response()->json(['wrong' => 'Late in: ' . $time->format('h:i A M j, Y'), 'image' => $imageURL]);
+                } else {
                     $late = 0;
-
-                    // store in database to Create new data
                     $this->store_login($register->id, $request->qrcode, $fullName, $time, $late);
-
-                     // send notification
+    
                     $this->send_notification($register->id, $fullName, 'Logged in: ' . $time->format('h:i A'), $time->format('F j, Y'));
-
-                    // not late
-                    return response()->json(['message' => 'Logged in: ' . $time->format('h:i A M j, Y'),'image' => $imageURL]);
-                }  
-
-            }else{
-                // return responses if sunday or log in twice
-
-                 // send notification
-                $this->send_notification($register->id, $fullName, 'Unauthorized Attempt', $time->format('h:i A F j, Y'));
-
-                return $time->isSunday() ? 
-                        response()->json(['error' => 'Cannot log in during sunday!']) : 
-                        response()->json(['error' => 'Unauthorized to log in twice!']);  
-            }
-
-        }else{
-            // doesen't exists in logs and not sunday
-            if(!$time->isSunday()){
-                // fullname
-                // $fullName = $register->getFullNameAttribute(); 
-
-                // time to beat is 9:00AM
-                $setTimetoBeat = Carbon::createFromTime(9,00,00,'Asia/Manila');
-
-                // condition returns true
-                if($time->isAfter($setTimetoBeat)){
-                    // get the late
-                    $late = $time->diffInHours($setTimetoBeat);
-                    
-                    // store in database to Create new data
-                    $this->store_login($register->id, $request->qrcode, $fullName, $time, $late);
-
-                    // send notification
-                    $this->send_notification($register->id, $fullName, 'Late in: ' . $time->format('h:i A'), $time->format('F j, Y'));
-
-                    // is late
-                    return response()->json(['wrong' => 'Late in: ' . $time->format('h:i A M j, Y'),'image' => $imageURL]);
-                }else{
-
-                    // set late to null
-                    $late = null;
-
-                    // store in database to Create new data
-                    $this->store_login($register->id, $request->qrcode, $fullName, $time, $late);
-
-                    // send notification
-                    $this->send_notification($register->id, $fullName, 'Logged in: ' . $time->format('h:i A'), $time->format('F j, Y'));
-
-                    // not late
-                    return response()->json(['message' => 'Logged in: ' . $time->format('h:i A M j, Y'),'image' => $imageURL]);
+                    return response()->json(['message' => 'Logged in: ' . $time->format('h:i A M j, Y'), 'image' => $imageURL]);
                 }
-            }else{
-                // cannot log in new user during sunday
-                return response()->json(['error' => 'Cannot log in during sunday!']);
+    
+            } else {
+                // Unauthorized multiple login or Sunday restriction
+                $this->send_notification($register->id, $fullName, 'Unauthorized Attempt', $time->format('h:i A F j, Y'));
+    
+                return $time->isSunday()
+                    ? response()->json(['error' => 'Cannot log in during Sunday!'])
+                    : response()->json(['error' => 'Unauthorized to log in twice!']);
+            }
+    
+        // If user has no logs yet
+        } else {
+            if (!$time->isSunday()) {
+                $setTimetoBeat = Carbon::createFromTime(9, 0, 0, 'Asia/Manila');
+    
+                if ($time->isAfter($setTimetoBeat)) {
+                    $late = $time->diffInHours($setTimetoBeat);
+                    $this->store_login($register->id, $request->qrcode, $fullName, $time, $late);
+    
+                    $this->send_notification($register->id, $fullName, 'Late in: ' . $time->format('h:i A'), $time->format('F j, Y'));
+                    return response()->json(['wrong' => 'Late in: ' . $time->format('h:i A M j, Y'), 'image' => $imageURL]);
+                } else {
+                    $late = null;
+                    $this->store_login($register->id, $request->qrcode, $fullName, $time, $late);
+    
+                    $this->send_notification($register->id, $fullName, 'Logged in: ' . $time->format('h:i A'), $time->format('F j, Y'));
+                    return response()->json(['message' => 'Logged in: ' . $time->format('h:i A M j, Y'), 'image' => $imageURL]);
+                }
+            } else {
+                return response()->json(['error' => 'Cannot log in during Sunday!']);
             }
         }
     }
 
+    
     public function store_login($id, $qrcode, $fullname, $time, $late)
     {
+        // Ensure $time is stored as a proper datetime string
         Logs::create([
-        	'register_id' => $id,
-        	'qrcode' => $qrcode,
-            'name' => $fullname,
-            'log_in'=> $time,
-            'log_out' => null,
-            'late' => $late,
-            'status' => 1
+            'register_id' => $id,
+            'qrcode'      => $qrcode,
+            'name'        => $fullname,
+            'log_in'      => $time instanceof \Carbon\Carbon ? $time->toDateTimeString() : $time,
+            'log_out'     => null,
+            'late'        => $late ?? 0,
+            'status'      => 1,
         ]);
     }
-
+    
     public function send_notification($id, $title, $description, $date)
     {
+        // Ensure $date is always a consistent format
         Notification::create([
             'register_id' => $id,
-            'title' => $title,
+            'title'       => $title,
             'description' => $description,
-            'date' => $date
+            'date'        => $date instanceof \Carbon\Carbon ? $date->toDateString() : $date,
         ]);
     }
+    
 }

@@ -1,80 +1,188 @@
-## Login System using QR Code
-### codehive2018@gmail.com
+# Attendance Monitoring System using QRCode
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-vue.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
+This project was created on **October 2020** as a **school project**.  
+It’s a simple attendance monitoring system built with Laravel and MySQL that uses QR codes for employee and intern time tracking.
 
+---
 
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+![alt text](login.png)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## Tech Used
 
-## About Laravel
+-   Laravel 5.0
+-   MySQL
+-   iziToast (for notifications)
+-   Faker (for generating dummy data)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   Create, update, and delete users
+-   Upload user profile images
+-   Generate downloadable QR Code files
+-   Scan QR Codes for attendance logging
+-   Error handling for invalid scans and missing users
+-   Log active and inactive users
+-   Track late arrivals and undertime records
+-   Filter employee and intern records
+-   Use Seeder to populate dummy data in MySQL
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Installation & Setup
 
-## Learning Laravel
+### Prerequisites
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. Install XAMPP: [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html)
+2. Install Composer: [https://getcomposer.org/download/](https://getcomposer.org/download/)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost you and your team's skills by digging into our comprehensive video library.
+### Steps to Run the Project
 
-## Laravel Sponsors
+1. Clone the repository:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+    ```bash
+    git clone https://github.com/m-antoni/login.git
+    cd login
+    ```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
+2. Install dependencies:
 
-## Contributing
+    ```bash
+    composer install
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+3. Copy `.env.example` to `.env` and configure your database connection (MySQL).
 
-## Security Vulnerabilities
+    ```bash
+    cp .env.example .env
+    ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+4. Generate the application key:
 
-## License
+    ```bash
+    php artisan key:generate
+    ```
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+5. Run database migrations and seeders:
 
+    ```bash
+    php artisan migrate --seed
+    ```
 
+6. Start the Laravel development server:
+
+    ```bash
+    php artisan serve
+    ```
+
+7. Visit the app in your browser at:
+    ```
+    http://127.0.0.1:8000
+    ```
+
+---
+
+### Additional Commands
+
+To view all registered routes:
+
+```bash
+php artisan route:list
+```
+
+---
+
+## Customizing the Seeder Files
+
+You can modify the seeder files to generate custom dummy data or change default admin credentials.
+
+### Register Seeder
+
+File: `database/seeders/RegisterTableSeeder.php`
+
+```php
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use App\Register;
+
+class RegisterTableSeeder extends Seeder
+{
+    public function run(): void
+    {
+        Register::factory()->count(100)->create();
+    }
+}
+```
+
+To customize:
+
+-   Change the `count(100)` value to specify how many dummy users you want to generate.
+-   Modify the fields in your `RegisterFactory` to customize the dummy data (names, emails, etc.).
+-   After editing, run:
+
+```bash
+php artisan db:seed --class=RegisterTableSeeder
+```
+
+### Admin Seeder
+
+File: `database/seeders/AdminTableSeeder.php`
+
+```php
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use App\Admin;
+
+class AdminTableSeeder extends Seeder
+{
+    public function run(): void
+    {
+        Admin::factory()->create([
+            'username' => 'admin',
+            'password' => bcrypt('123456'),
+        ]);
+    }
+}
+```
+
+To customize:
+
+-   Change `'username'` or `'password'` fields as needed.
+-   Example:
+
+```php
+'username' => 'superadmin',
+'password' => bcrypt('mypassword123'),
+```
+
+After editing, run:
+
+```bash
+php artisan db:seed --class=AdminTableSeeder
+```
+
+---
+
+## Folder Overview
+
+-   `/app` — Application logic (models, controllers)
+-   `/resources/views` — Blade templates (frontend UI)
+-   `/public` — Public assets (images, scripts, styles)
+-   `/database/seeders` — Seeder files used to populate data
+-   `/routes/web.php` — Route definitions
+
+---
+
+## Notes
+
+-   This project was an academic exercise, not intended for production use.
+-   Built with Laravel 5.0, so some syntax or dependencies may need updates for modern versions.
+-   Basic QR Code generation and scanning were used to simulate a real-world attendance system.
+
+---
+
+LinkedIn: [https://linkedin.com/in/m-antoni](https://linkedin.com/in/m-antoni)  
+Email: michaelantoni.tech@gmail.com

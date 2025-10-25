@@ -7,12 +7,14 @@ use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 use App\Register;
 use App\Logs;
+use Illuminate\Support\Facades\Auth;
+
 
 class AdminsController extends Controller
 {
 	public function index()
 	{
-		// return dd(Logs::whereDate('log_in', now())->count());
+		//dd(Auth::guard('admin')->check(), Auth::guard('admin')->user());
 
 		// Initial Carbon instance set timezone to Asia/Manila
 		$time = Carbon::now()->setTimezone('Asia/Manila')->format('h:iA M j, Y');
@@ -81,7 +83,7 @@ class AdminsController extends Controller
 		$info = [
 			'title' => 'About',
 			'github' => 'www.github.com/m-antoni',
-			'email' => 'codehive2018@gmail.com',
+			'email' => 'michaelantoni.tech@gmail.com',
 			'name' => 'Michael Antoni',
 		];
 		return view('pages.about', compact('info'));
