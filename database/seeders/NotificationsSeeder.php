@@ -1,16 +1,17 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
+use App\Notification; 
 
 class NotificationsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
-        factory(App\Notification::class, 10)->create();
+        Notification::factory()->count(10)->create();
     }
 }

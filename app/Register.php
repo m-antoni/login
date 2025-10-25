@@ -4,9 +4,11 @@ namespace App;
 
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Register extends Model
 {
+    use HasFactory;
     /**
      * The attributes that aren't mass assignable.
      *

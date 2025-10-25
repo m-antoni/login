@@ -1,15 +1,21 @@
 <?php
 
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
+namespace Database\Factories;
 
-use App\Model;
-use Faker\Generator as Faker;
+use App\Notification;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
-$factory->define(App\Notification::class, function (Faker $faker) {
-    return [
-        'title' => $faker->name,
-        'register_id' => $faker->randomDigit,
-        'description' => 'Time In: ' .  now(),
-        'date' => now(),
-    ];
-});
+class NotificationFactory extends Factory
+{
+    protected $model = Notification::class;
+
+    public function definition(): array
+    {
+        return [
+            'title'        => $this->faker->name(),
+            'register_id'  => $this->faker->randomDigit(),
+            'description'  => 'Time In: ' . now(),
+            'date'         => now(),
+        ];
+    }
+}

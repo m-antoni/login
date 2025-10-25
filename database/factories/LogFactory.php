@@ -1,16 +1,35 @@
 <?php
 
-use Faker\Generator as Faker;
+namespace Database\Factories;
 
-$factory->define(App\Logs::class, function (Faker $faker) {
-    return [
-    	'register_id' => $faker->randomDigit, 
-        'qrcode' => $faker->sha256,
-        'name' => $faker->name,
-        'log_in' => $faker->dateTime,
-        'log_out' => $faker->dateTime,
-        'late' =>  0,
-        'under' => 0,
-        'status' => $faker->randomElement(array(true, false)),
-    ];
-});
+use App\Logs;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class LogsFactory extends Factory
+{
+    /**
+     * The name of the corresponding model.
+     *
+     * @var string
+     */
+    protected $model = Logs::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'register_id' => $this->faker->randomDigit(),
+            'qrcode' => $this->faker->sha256(),
+            'name' => $this->faker->name(),
+            'log_in' => $this->faker->dateTime(),
+            'log_out' => $this->faker->dateTime(),
+            'late' => 0,
+            'under' => 0,
+            'status' => $this->faker->boolean(),
+        ];
+    }
+}

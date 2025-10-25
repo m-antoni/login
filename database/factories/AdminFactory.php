@@ -1,10 +1,20 @@
 <?php
 
-use Faker\Generator as Faker;
+namespace Database\Factories;
 
-$factory->define(App\Admin::class, function (Faker $faker) {
-    return [
-        'username' => 'admin',
-        'password' => bcrypt('12345678'),
-    ];
-});
+use App\Admin;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Hash;
+
+class AdminFactory extends Factory
+{
+    protected $model = Admin::class;
+
+    public function definition(): array
+    {
+        return [
+            'username' => 'admin',
+            'password' => Hash::make('12345678'),
+        ];
+    }
+}

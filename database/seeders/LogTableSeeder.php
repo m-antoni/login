@@ -1,16 +1,17 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
+use App\Logs;
 
 class LogTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
-        factory(App\Logs::class, 50)->create();
+        Logs::factory()->count(10)->create();
     }
 }

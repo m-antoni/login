@@ -1,16 +1,18 @@
 <?php
 
+
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
+use App\Register;
 
 class RegisterTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
-        factory(App\Register::class, 100)->create();
+        Register::factory()->count(100)->create();
     }
 }
