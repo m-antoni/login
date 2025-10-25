@@ -10,11 +10,9 @@ COPY . .
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-# Install dependencies with verbose output for easier debug
 RUN composer install --no-interaction --prefer-dist --optimize-autoloader -vvv
 
-# Clear Laravel caches
-RUN php artisan config:clear && php artisan cache:clear && php artisan view:clear && php artisan route:clear
+RUN php artisan config:clear && php artisan cache:clear && php artisan route:clear && php artisan view:clear
 
 RUN chown -R www-data:www-data storage bootstrap/cache
 
