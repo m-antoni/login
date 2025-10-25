@@ -1,24 +1,34 @@
-# Use PHP 8.2 with preinstalled Composer and common PHP extensions
-FROM webdevops/php-apache:8.2
+# Use the official PHP image with necessary extensions
+FROM php:8.2-fpm
 
-# Set working directory inside the container
-WORKDIR /app
+# Set working directory
+WORKDIR /var/www/html
 
-# Copy all Laravel project files into the container
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    git curl zip unzip libpq-dev libonig-dev libzip-dev \
+    && docker-php-ext-install pdo pdo_pgsql pgsql
+
+# Copy existing application code
 COPY . .
 
-# Install PHP dependencies via Composer
-RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
+# Install Composer
+COPY --from=composer:2.6 /usr/bin/composer /usr/bin/composer
 
-# Generate app key (skip if already set)
-RUN php artisan key:generate || true
+# Install PHP dependencies
+RUN composer install --no-interaction --prefer-dist --optimize-autoloader
 
-# Cache config and routes
-RUN php artisan config:cache || true
-RUN php artisan route:cache || true
+# Clear Laravel caches (important)
+RUN php artisan config:clear && php artisan cache:clear && php artisan view:clear && php artisan route:clear
 
-# Expose the port that Render expects
-EXPOSE 10000
+# Ensure correct permissions for storage and cache
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
-# Run migrations, seed the database, then start Laravel
-CMD php artisan migrate --force && php artisan db:seed --force && php artisan serve --host=0.0.0.0 --port=10000
+# Run migrations automatically during container build
+RUN php artisan migrate --force || true
+
+# Expose port 8000 for Laravel development server
+EXPOSE 8000
+
+# Start Laravel server
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
